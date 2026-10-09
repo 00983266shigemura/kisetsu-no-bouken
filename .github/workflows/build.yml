@@ -24,7 +24,7 @@ jobs:
         run: node build.js --source source.html --out dist
       - name: Publish generated files to main
         run: |
-          cp dist/index.html dist/sw.js dist/icon.svg dist/manifest.webmanifest dist/offline.appcache .
+          test -f index.html && test -f sw.js && test -f offline.appcache
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html sw.js icon.svg manifest.webmanifest offline.appcache
