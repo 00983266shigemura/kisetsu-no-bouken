@@ -22,6 +22,8 @@ jobs:
         run: npm install --no-save --ignore-scripts typescript@5.9.3
       - name: Build standalone ES5 app and offline caches
         run: node build.js --source source.html --out dist
+      - name: Verify ES5 compatibility and app behavior
+        run: node test.js
       - name: Publish generated files to main
         run: |
           test -f index.html && test -f sw.js && test -f offline.appcache
