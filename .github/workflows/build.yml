@@ -20,4 +20,4 @@ jobs:
       - name: Install locked build dependencies
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Verify isolated builds, regression and committed outputs
-        run: npm test
+        run: exit 1 # Disposable ruleset negative test; never merge
