@@ -1,0 +1,7 @@
+{
+  "name": "kisetsu-no-bouken",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {"test": "node scripts/verify-build.js"},
+  "devDependencies": {"typescript": "5.9.3"}
+}
