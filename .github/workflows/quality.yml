@@ -1,0 +1,25 @@
+name: app-quality
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  acceptance-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check contract structure and evidence authenticity fields
+        run: node scripts/check-acceptance.cjs --validate
+      - name: Test fail-closed rules
+        run: node scripts/check-acceptance.cjs --self-test
+      - name: Build and test existing app
+        run: |
+          npm install --no-save --ignore-scripts typescript@5.9.3
+          node build.js
+          node test.js
+      - name: Generated files must match committed files
+        run: git diff --exit-code -- index.html sw.js offline.appcache

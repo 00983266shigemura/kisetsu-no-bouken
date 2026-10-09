@@ -1,36 +1,24 @@
-name: Build iOS 10-compatible static app
+name: Build iOS 10-compatible static app (read-only)
 on:
+  pull_request:
   push:
-    paths:
-      - "source.html"
-      - "build.js"
-      - "icon.svg"
-      - "manifest.webmanifest"
-      - ".github/workflows/build.yml"
+    branches: [main]
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 jobs:
-  build:
+  legacy-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Install build-only TypeScript compiler
+      - name: Install fixed build dependency
         run: npm install --no-save --ignore-scripts typescript@5.9.3
-      - name: Build standalone ES5 app and offline caches
-        run: node build.js --source source.html --out dist
-      - name: Verify ES5 compatibility and app behavior
-        run: node test.js
-      - name: Publish generated files to main
+      - name: Build and test
         run: |
-          test -f index.html && test -f sw.js && test -f offline.appcache
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html sw.js icon.svg manifest.webmanifest offline.appcache
-          if ! git diff --cached --quiet; then
-            git commit -m "Build iOS 10 compatible offline application"
-            git push origin HEAD:main
-          fi
+          node build.js
+          node test.js
+      - name: Confirm generated content matches source
+        run: git diff --exit-code -- index.html sw.js offline.appcache

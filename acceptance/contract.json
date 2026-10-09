@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "contract_id": "KISETSU-RELEASE-V1",
+  "target": "kisetsu-no-bouken",
+  "min_support": "iOS 10.3.3 Safari",
+  "policy": {
+    "unverified_blocks_release": true,
+    "fail_blocks_release": true,
+    "evidence_sha_binding": true,
+    "legacy_device_must_be_real": true,
+    "existing_publication_remains_until_release_passes": true
+  },
+  "gates": [
+    {
+      "id": "EDU_240",
+      "required": true,
+      "evidence_type": "human",
+      "criterion": "All 240 questions: correct answers, seasonal context, plausible distractors, traceable sources; ambiguity adjudicated"
+    },
+    {
+      "id": "ART_103",
+      "required": true,
+      "evidence_type": "human",
+      "criterion": "All 103 images/icons: content accuracy, subject recognizability, distinctness and license provenance"
+    },
+    {
+      "id": "LEGACY_IOS10",
+      "required": true,
+      "evidence_type": "human",
+      "criterion": "Physical iOS 10.3.3 device: open, tap, gameplay, layout, local save, refresh and home-screen launch"
+    },
+    {
+      "id": "OFFLINE_IOS10",
+      "required": true,
+      "evidence_type": "human",
+      "criterion": "Physical iOS 10.3.3 device: online priming, airplane-mode restart, images, scoring, persistence and update"
+    },
+    {
+      "id": "GAMEPLAY",
+      "required": true,
+      "evidence_type": "machine",
+      "criterion": "Build, 100 themes, 240 questions, gameplay, stamping, reload and regression tests pass"
+    },
+    {
+      "id": "PUBLICATION",
+      "required": true,
+      "evidence_type": "machine",
+      "criterion": "Deployment artifact is the verified commit; public URL and offline headers read back and are checked"
+    },
+    {
+      "id": "CONTENT_RIGHTS",
+      "required": true,
+      "evidence_type": "human",
+      "criterion": "Every distributed asset and sourced educational item has sufficient provenance and usage rights"
+    }
+  ]
+}

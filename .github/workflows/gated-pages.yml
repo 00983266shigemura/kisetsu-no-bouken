@@ -1,0 +1,41 @@
+name: gated-pages (manual until GitHub Pages Actions source is configured)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: gated-pages
+  cancel-in-progress: false
+jobs:
+  verify-artifact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify evidence from this EXACT release commit
+        run: node scripts/check-acceptance.cjs --release
+      - name: Build and run regression
+        run: |
+          npm install --no-save --ignore-scripts typescript@5.9.3
+          node build.js
+          node test.js
+          git diff --exit-code -- index.html sw.js offline.appcache
+      - name: Prepare minimal static root
+        run: |
+          mkdir -p public-out
+          cp index.html offline.appcache sw.js icon.svg manifest.webmanifest .nojekyll public-out/
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: public-out
+  deploy:
+    needs: verify-artifact
+    runs-on: ubuntu-latest
+    environment: github-pages
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/deploy-pages@v4

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "contract_id": "KISETSU-RELEASE-V1",
+  "notes": "Initial UNVERIFIED is intentional. This repository is already public; this registry gates FUTURE gated releases, not retroactive deletion of existing public deployment.",
+  "gates": {
+    "EDU_240": {
+      "status": "UNVERIFIED",
+      "source_sha": null,
+      "proof_url": null,
+      "evidence_type": "human",
+      "assessor": null,
+      "checked_at": null
+    },
+    "ART_103": {
+      "status": "UNVERIFIED",
+      "source_sha": null,
+      "proof_url": null,
+      "evidence_type": "human",
+      "assessor": null,
+      "checked_at": null
+    },
+    "LEGACY_IOS10": {
+      "status": "UNVERIFIED",
+      "source_sha": null,
+      "proof_url": null,
+      "evidence_type": "human",
+      "assessor": null,
+      "checked_at": null
+    },
+    "OFFLINE_IOS10": {
+      "status": "UNVERIFIED",
+      "source_sha": null,
+      "proof_url": null,
+      "evidence_type": "human",
+      "assessor": null,
+      "checked_at": null
+    },
+    "GAMEPLAY": {
+      "status": "UNVERIFIED",
+      "source_sha": null,
+      "proof_url": null,
+      "evidence_type": "machine",
+      "assessor": null,
+      "checked_at": null
+    },
+    "PUBLICATION": {
+      "status": "UNVERIFIED",
+      "source_sha": null,
+      "proof_url": null,
+      "evidence_type": "machine",
+      "assessor": null,
+      "checked_at": null
+    },
+    "CONTENT_RIGHTS": {
+      "status": "UNVERIFIED",
+      "source_sha": null,
+      "proof_url": null,
+      "evidence_type": "human",
+      "assessor": null,
+      "checked_at": null
+    }
+  }
+}
