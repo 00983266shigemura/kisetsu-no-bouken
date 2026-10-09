@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   build:
-    name: build
+    name: app-ci-build
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
