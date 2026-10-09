@@ -1,0 +1,39 @@
+name: Verify published app and iOS 10 offline support
+on:
+  push:
+    paths:
+      - .github/workflows/verify-public.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify live GitHub Pages and AppCache MIME
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="https://00983266shigemura.github.io/kisetsu-no-bouken"
+          READY=0
+          for i in $(seq 1 15); do
+            HTTP=$(curl -sSL --max-time 20 -o /tmp/kisetsu-index -D /tmp/kisetsu-index-header -w '%{http_code}' "$BASE/" || true)
+            if [ "$HTTP" = "200" ] && grep -q 'きせつのぼうけん' /tmp/kisetsu-index; then READY=1; break; fi
+            echo "Waiting for live Pages ($i/15): HTTP $HTTP"
+            sleep 10
+          done
+          test "$READY" = "1" || { echo "FAIL: public app not available"; exit 1; }
+          grep -q 'manifest="./offline.appcache"' /tmp/kisetsu-index
+          echo "PASS live URL: $BASE/; HTTP $HTTP"
+          for file in offline.appcache sw.js icon.svg manifest.webmanifest; do
+            curl -fsSL --max-time 25 -o "/tmp/$file" -D "/tmp/headers-$file" "$BASE/$file"
+            echo "FILE $file: $(wc -c < /tmp/$file) bytes; $(grep -i '^content-type:' /tmp/headers-$file | tail -1 | tr -d '\r')"
+          done
+          grep -q '^CACHE MANIFEST' /tmp/offline.appcache
+          if grep -qi '^content-type: *text/cache-manifest' /tmp/headers-offline.appcache; then
+            echo 'PASS: Safari iOS 10 AppCache Content-Type text/cache-manifest'
+          else
+            echo 'FAIL: Safari iOS 10 AppCache Content-Type is not text/cache-manifest'
+            exit 1
+          fi
+          echo 'PASS: live index, AppCache content and MIME, Service Worker, icon and manifest'
