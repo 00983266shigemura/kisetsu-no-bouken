@@ -1,7 +1,7 @@
 {
   "mission": "教材仕様→問題UI→画像照合→生成→QA公開",
   "mode": "checkpointed sequential image generation, one image per subject",
-  "batchSize": 4,
+  "batchSize": 1,
   "retryPolicy": "failed QA target only; reuse verified assets",
   "toolOutput": "only summary and paths; large data stays in tool orchestration/files",
   "review": "independent educational/spec and implementation reviewers",
@@ -23,5 +23,16 @@
     "localStorage key/schema"
   ],
   "releaseGate": "V3 physical iOS10 is UNVERIFIED and blocks release unless explicit exemption",
-  "continuation": "read CHECKPOINT and manifest; never restart passed assets"
+  "continuation": "read CHECKPOINT and manifest; never restart passed assets",
+  "maxImagesPerExec": 4,
+  "previewPolicy": "no large preview output during production; final contact sheet only",
+  "searchPolicy": "research complete; fetch new sources only for concrete unresolved facts",
+  "progressPolicy": "persist every returned image immediately; summary at each batch",
+  "streaming": "previous monolithic 106-request queue stopped after saved outputs; delivery root cause unverified",
+  "generationConcurrency": 1,
+  "saves": "per-result atomic locked updates",
+  "waitPolicy": "yield immediately after launch; wait at most 30s; report pending state at 60s; save each result atomically",
+  "controllerWindow": 4,
+  "maxInFlightImages": 1,
+  "controllerPolicy": "bounded 4-step window, select next item only after previous save, yield to client at every step; no bulk preloaded queue"
 }

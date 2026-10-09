@@ -371,10 +371,14 @@
       "name": "キンモクセイ",
       "output_path": "assets/generated/osmanthus.jpg",
       "required_features": [
-        "枝の葉腋に集まる小さい橙色4裂花、光沢のある楕円形の対生葉"
+        "キンモクセイの一本の枝と光沢のある楕円形の対生葉。葉腋に小さい橙色の花を3輪だけ描く。",
+        "Exactly THREE visible tiny flowers. Each flower is a simple orange cross silhouette with exactly FOUR rounded lobes/petals. Show all three flowers face-on. Four lobes at north east south west only. Avoid dense clusters; do not add other flowers."
       ],
       "forbidden_features": [
-        "大きな橙色の単独花、桜形の花"
+        "大きな橙色の単独花、桜形の花",
+        "five- or six-lobed flowers",
+        "dense flower clusters",
+        "more than three flowers"
       ],
       "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
       "assessment_use": "subject_or_scene",
@@ -2454,5 +2458,197 @@
       ],
       "ledger_status": "original PENDING unchanged"
     }
-  ]
+  ],
+  "additionalRecords": [
+    {
+      "image_id": "assets/icicle.svg",
+      "theme_id": "icicle",
+      "name": "つらら",
+      "output_path": "assets/generated/icicle.png",
+      "required_features": [
+        "屋根の軒下から垂れる透明な細長い氷",
+        "下へ尖る先端",
+        "数本の長さの差"
+      ],
+      "forbidden_features": [
+        "鍾乳石",
+        "木の根",
+        "氷柱が上向き",
+        "雪だけ"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "対象固有の形態を確認",
+        "禁止特徴なし",
+        "120pxで識別",
+        "無文字・白背景・主題を切らない"
+      ],
+      "ledger_status": "NEW; not part of protected 103 PENDING records"
+    },
+    {
+      "image_id": "assets/halloween-pumpkin.svg",
+      "theme_id": "halloween-pumpkin",
+      "name": "ハロウィンのかぼちゃ飾り",
+      "output_path": "assets/generated/halloween-pumpkin.png",
+      "required_features": [
+        "橙色の丸いカボチャ",
+        "緑褐色の柄",
+        "三角の目と口を切り抜いたジャック・オー・ランタン",
+        "怖すぎない顔"
+      ],
+      "forbidden_features": [
+        "冬至の食用カボチャだけ",
+        "文字",
+        "血や暴力"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "対象固有の形態を確認",
+        "禁止特徴なし",
+        "120pxで識別",
+        "無文字・白背景・主題を切らない"
+      ],
+      "ledger_status": "NEW; not part of protected 103 PENDING records"
+    },
+    {
+      "image_id": "assets/halloween-costume.svg",
+      "theme_id": "halloween-costume",
+      "name": "ハロウィンの仮装",
+      "output_path": "assets/generated/halloween-costume.png",
+      "required_features": [
+        "小さな子どもが魔女の黒い三角帽子とマント",
+        "無地の小袋を持つ",
+        "明るい楽しそうな顔"
+      ],
+      "forbidden_features": [
+        "卒業帽",
+        "サンタ服",
+        "怖すぎる怪物",
+        "文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "対象固有の形態を確認",
+        "禁止特徴なし",
+        "120pxで識別",
+        "無文字・白背景・主題を切らない"
+      ],
+      "ledger_status": "NEW; not part of protected 103 PENDING records"
+    },
+    {
+      "image_id": "assets/tulip-leaf.svg",
+      "theme_id": "tulip-leaf",
+      "name": "チューリップの葉",
+      "output_path": "assets/generated/tulip-leaf.png",
+      "required_features": [
+        "一枚の幅広い披針形の葉",
+        "平行葉脈",
+        "なめらかな全縁",
+        "青緑の葉",
+        "短い葉の基部"
+      ],
+      "forbidden_features": [
+        "花",
+        "球根",
+        "茎の花芽",
+        "鋸歯",
+        "タンポポの切れ込み"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "leaf_only_pairing",
+      "qa_checks": [
+        "対象固有の形態を確認",
+        "禁止特徴なし",
+        "120pxで識別",
+        "無文字・白背景・主題を切らない"
+      ],
+      "ledger_status": "NEW; not part of protected 103 PENDING records"
+    },
+    {
+      "image_id": "assets/sunflower-leaf.svg",
+      "theme_id": "sunflower-leaf",
+      "name": "ヒマワリの葉",
+      "output_path": "assets/generated/sunflower-leaf.png",
+      "required_features": [
+        "一枚の大きな心形〜卵形の葉",
+        "粗い鋸歯",
+        "網状葉脈",
+        "長い葉柄",
+        "少しざらつく質感"
+      ],
+      "forbidden_features": [
+        "花",
+        "種",
+        "細分した葉",
+        "チューリップの全縁葉"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "leaf_only_pairing",
+      "qa_checks": [
+        "対象固有の形態を確認",
+        "禁止特徴なし",
+        "120pxで識別",
+        "無文字・白背景・主題を切らない"
+      ],
+      "ledger_status": "NEW; not part of protected 103 PENDING records"
+    },
+    {
+      "image_id": "assets/tanpopo-leaf.svg",
+      "theme_id": "tanpopo-leaf",
+      "name": "タンポポの葉",
+      "output_path": "assets/generated/tanpopo-leaf.png",
+      "required_features": [
+        "一枚の長い葉",
+        "中央の主脈",
+        "両側に深いギザギザの切れ込み",
+        "葉の基部に向く裂片"
+      ],
+      "forbidden_features": [
+        "花",
+        "綿毛",
+        "茎",
+        "丸い葉",
+        "葉脈を平行に描く"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "leaf_only_pairing",
+      "qa_checks": [
+        "対象固有の形態を確認",
+        "禁止特徴なし",
+        "120pxで識別",
+        "無文字・白背景・主題を切らない"
+      ],
+      "ledger_status": "NEW; not part of protected 103 PENDING records"
+    },
+    {
+      "image_id": "assets/cosmos-leaf.svg",
+      "theme_id": "cosmos-leaf",
+      "name": "コスモスの葉",
+      "output_path": "assets/generated/cosmos-leaf.png",
+      "required_features": [
+        "細い軸から左右へ分かれ",
+        "さらに細かく裂ける糸状の羽状葉",
+        "一葉の構造を大きく"
+      ],
+      "forbidden_features": [
+        "花",
+        "つぼみ",
+        "広い単葉",
+        "昆虫の触角のような二本だけの形"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "leaf_only_pairing",
+      "qa_checks": [
+        "対象固有の形態を確認",
+        "禁止特徴なし",
+        "120pxで識別",
+        "無文字・白背景・主題を切らない"
+      ],
+      "ledger_status": "NEW; not part of protected 103 PENDING records"
+    }
+  ],
+  "additionalCount": 7
 }

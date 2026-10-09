@@ -3,9 +3,20 @@
   "newQuestionSemanticChecks": [
     "multi full season sets",
     "odd 3:1 seasonal grouping",
-    "marks full target/mark sets"
+    "marks full target/mark sets",
+    "scene six individually mapped card regions",
+    "pairing two flower/leaf pairs unordered exact set, duplicate rejection, answer label speech withheld"
   ],
-  "result": "PASS",
+  "result": "prior 335-question build tests PASS; updated 352-question source structural and old-ID compatibility checks PASS; latest build/browser/image integration verification pending",
   "ios10": "UNVERIFIED",
-  "streamingRootCause": "service-side logs unavailable; process/checkpoint continuity verified"
+  "streamingRootCause": "service-side logs unavailable; process/checkpoint continuity verified",
+  "oldQuestionDiffs": [],
+  "currentCandidate": {
+    "themes": 103,
+    "dictionaryQuestions": 352,
+    "activeQuestions": 329,
+    "types": 12
+  },
+  "images": "generation/integration incomplete",
+  "remoteCI": "FAIL due stale generated outputs; regeneration and remote recheck pending"
 }

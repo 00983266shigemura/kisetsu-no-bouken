@@ -1,0 +1,2194 @@
+{
+  "records": [
+    {
+      "image_id": "assets/sakura.svg",
+      "theme_id": "sakura",
+      "name": "サクラ（ソメイヨシノ）",
+      "category": "花",
+      "season": [
+        "spring"
+      ],
+      "explanation": "はるに えだいっぱいの はなが さくよ。",
+      "required_features": [
+        "はるに えだいっぱいの はなが さくよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/sakura.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/tulip.svg",
+      "theme_id": "tulip",
+      "name": "チューリップ",
+      "category": "花",
+      "season": [
+        "spring"
+      ],
+      "explanation": "はるの はな。コップのような はなと ながい はっぱだよ。",
+      "required_features": [
+        "はるの はな。コップのような はなと ながい はっぱだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/tulip.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/nanohana.svg",
+      "theme_id": "nanohana",
+      "name": "ナノハナ",
+      "category": "花",
+      "season": [
+        "spring"
+      ],
+      "explanation": "はるに ちいさな きいろい はなが たくさん さくよ。",
+      "required_features": [
+        "はるに ちいさな きいろい はなが たくさん さくよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/nanohana.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/tanpopo.svg",
+      "theme_id": "tanpopo",
+      "name": "セイヨウタンポポ",
+      "category": "花",
+      "season": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "explanation": "はるの はなの なかま。なつや あきにも さくよ。",
+      "required_features": [
+        "はるの はなの なかま。なつや あきにも さくよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/tanpopo.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/fuji.svg",
+      "theme_id": "fuji",
+      "name": "フジ",
+      "category": "花",
+      "season": [
+        "spring"
+      ],
+      "explanation": "はるに むらさきいろの はなが ふさになって たれるよ。",
+      "required_features": [
+        "はるに むらさきいろの はなが ふさになって たれるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/fuji.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/tsutsuji.svg",
+      "theme_id": "tsutsuji",
+      "name": "ツツジ類",
+      "category": "花",
+      "season": [
+        "spring"
+      ],
+      "explanation": "はるに えださきで はなが ひらくよ。",
+      "required_features": [
+        "はるに えださきで はなが ひらくよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/tsutsuji.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/nemophila.svg",
+      "theme_id": "nemophila",
+      "name": "ネモフィラ",
+      "category": "花",
+      "season": [
+        "spring"
+      ],
+      "explanation": "はるに あおい はなが ひらくよ。",
+      "required_features": [
+        "はるに あおい はなが ひらくよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/nemophila.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/iris.svg",
+      "theme_id": "iris",
+      "name": "ハナショウブ",
+      "category": "花",
+      "season": [
+        "spring",
+        "summer"
+      ],
+      "explanation": "はるの おわりから なつの はじめに さくよ。",
+      "required_features": [
+        "はるの おわりから なつの はじめに さくよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/iris.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/lotus.svg",
+      "theme_id": "lotus",
+      "name": "ハス",
+      "category": "花",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつに みずべで さくよ。まるい はっぱも みてね。",
+      "required_features": [
+        "なつに みずべで さくよ。まるい はっぱも みてね。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/lotus.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/hydrangea.svg",
+      "theme_id": "hydrangea",
+      "name": "アジサイ",
+      "category": "花",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつの はじめに ちいさな はなが あつまって さくよ。",
+      "required_features": [
+        "なつの はじめに ちいさな はなが あつまって さくよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/hydrangea.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/sunflower.svg",
+      "theme_id": "sunflower",
+      "name": "ヒマワリ",
+      "category": "花",
+      "season": [
+        "summer",
+        "autumn"
+      ],
+      "explanation": "なつを だいひょうする はな。あきにも さくことが あるよ。",
+      "required_features": [
+        "なつを だいひょうする はな。あきにも さくことが あるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/sunflower.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/morning.svg",
+      "theme_id": "morning",
+      "name": "アサガオ",
+      "category": "花",
+      "season": [
+        "summer",
+        "autumn"
+      ],
+      "explanation": "なつから あきに さくよ。つるが のびるよ。",
+      "required_features": [
+        "なつから あきに さくよ。つるが のびるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/morning.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/cosmos.svg",
+      "theme_id": "cosmos",
+      "name": "コスモス",
+      "category": "花",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "あきを だいひょうする はな。はっぱは ほそいよ。",
+      "required_features": [
+        "あきを だいひょうする はな。はっぱは ほそいよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/cosmos.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/spiderlily.svg",
+      "theme_id": "spiderlily",
+      "name": "ヒガンバナ",
+      "category": "花",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "あきに ほそい はなびらの はなが さくよ。",
+      "required_features": [
+        "あきに ほそい はなびらの はなが さくよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/spiderlily.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/osmanthus.svg",
+      "theme_id": "osmanthus",
+      "name": "キンモクセイ",
+      "category": "花",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "あきに ちいさな オレンジいろの はなが さくよ。",
+      "required_features": [
+        "あきに ちいさな オレンジいろの はなが さくよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/osmanthus.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/ginkgo.svg",
+      "theme_id": "ginkgo",
+      "name": "イチョウの黄葉",
+      "category": "樹木・木の実",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "あきに はっぱが きいろくなるよ。おうぎの かたちだね。",
+      "required_features": [
+        "あきに はっぱが きいろくなるよ。おうぎの かたちだね。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/ginkgo.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/maple.svg",
+      "theme_id": "maple",
+      "name": "モミジの紅葉",
+      "category": "樹木・木の実",
+      "season": [
+        "autumn",
+        "winter"
+      ],
+      "explanation": "あきから ふゆの はじめに はっぱが いろづくよ。",
+      "required_features": [
+        "あきから ふゆの はじめに はっぱが いろづくよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/maple.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/plum.svg",
+      "theme_id": "plum",
+      "name": "ウメの花",
+      "category": "花",
+      "season": [
+        "winter",
+        "spring"
+      ],
+      "explanation": "ふゆから はるの はじめに さくよ。はなびらは まるいね。",
+      "required_features": [
+        "ふゆから はるの はじめに さくよ。はなびらは まるいね。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/plum.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/sasanqua.svg",
+      "theme_id": "sasanqua",
+      "name": "サザンカ",
+      "category": "花",
+      "season": [
+        "autumn",
+        "winter"
+      ],
+      "explanation": "あきから ふゆに さくよ。はなびらが いちまいずつ ちるよ。",
+      "required_features": [
+        "あきから ふゆに さくよ。はなびらが いちまいずつ ちるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/sasanqua.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/wintersweet.svg",
+      "theme_id": "wintersweet",
+      "name": "ソシンロウバイ",
+      "category": "花",
+      "season": [
+        "winter"
+      ],
+      "explanation": "ふゆに きいろい はなが さくよ。",
+      "required_features": [
+        "ふゆに きいろい はなが さくよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/wintersweet.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/strawberry.svg",
+      "theme_id": "strawberry",
+      "name": "イチゴ（露地の旬）",
+      "category": "食べ物",
+      "season": [
+        "spring"
+      ],
+      "explanation": "そとで そだつ いちごの しゅんは はる。ハウスでは ふゆにも とれるよ。",
+      "required_features": [
+        "そとで そだつ いちごの しゅんは はる。ハウスでは ふゆにも とれるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/strawberry.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/bamboo.svg",
+      "theme_id": "bamboo",
+      "name": "タケノコ",
+      "category": "食べ物",
+      "season": [
+        "spring"
+      ],
+      "explanation": "はるの たべもの。おおきくなると たけに なるよ。",
+      "required_features": [
+        "はるの たべもの。おおきくなると たけに なるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/bamboo.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/clam.svg",
+      "theme_id": "clam",
+      "name": "アサリ",
+      "category": "食べ物",
+      "season": [
+        "spring"
+      ],
+      "explanation": "はるの しゅんの たべものの ひとつだよ。",
+      "required_features": [
+        "はるの しゅんの たべものの ひとつだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/clam.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/cucumber.svg",
+      "theme_id": "cucumber",
+      "name": "キュウリ",
+      "category": "食べ物",
+      "season": [
+        "spring",
+        "summer"
+      ],
+      "explanation": "はるや なつが しゅん。ながい みが なるよ。",
+      "required_features": [
+        "はるや なつが しゅん。ながい みが なるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/cucumber.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/tomato.svg",
+      "theme_id": "tomato",
+      "name": "トマト",
+      "category": "食べ物",
+      "season": [
+        "spring",
+        "summer"
+      ],
+      "explanation": "はるや なつが しゅん。なつの やさいとしても したしまれるよ。",
+      "required_features": [
+        "はるや なつが しゅん。なつの やさいとしても したしまれるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/tomato.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/watermelon.svg",
+      "theme_id": "watermelon",
+      "name": "スイカ",
+      "category": "食べ物",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつが しゅん。きると なかに たねが あるよ。",
+      "required_features": [
+        "なつが しゅん。きると なかに たねが あるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/watermelon.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/aji.svg",
+      "theme_id": "aji",
+      "name": "アジ",
+      "category": "食べ物",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつの しゅんの さかなの ひとつだよ。",
+      "required_features": [
+        "なつの しゅんの さかなの ひとつだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/aji.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/sweetpotato.svg",
+      "theme_id": "sweetpotato",
+      "name": "サツマイモ",
+      "category": "食べ物",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "あきに とれる たべものの ひとつだよ。",
+      "required_features": [
+        "あきに とれる たべものの ひとつだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/sweetpotato.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/persimmon.svg",
+      "theme_id": "persimmon",
+      "name": "カキ",
+      "category": "食べ物",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "あきの しゅんの くだものの ひとつだよ。",
+      "required_features": [
+        "あきの しゅんの くだものの ひとつだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/persimmon.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/sanma.svg",
+      "theme_id": "sanma",
+      "name": "サンマ",
+      "category": "食べ物",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "あきの しゅんの さかなの ひとつだよ。",
+      "required_features": [
+        "あきの しゅんの さかなの ひとつだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/sanma.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/chestnut.svg",
+      "theme_id": "chestnut",
+      "name": "クリ",
+      "category": "樹木・木の実",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "あきに みが なるよ。そとがわに とげの ある いがが あるよ。",
+      "required_features": [
+        "あきに みが なるよ。そとがわに とげの ある いがが あるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/chestnut.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/cabbage.svg",
+      "theme_id": "cabbage",
+      "name": "ハクサイ",
+      "category": "食べ物",
+      "season": [
+        "autumn",
+        "winter"
+      ],
+      "explanation": "あきから ふゆが しゅんの やさいだよ。",
+      "required_features": [
+        "あきから ふゆが しゅんの やさいだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/cabbage.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/spinach.svg",
+      "theme_id": "spinach",
+      "name": "ホウレンソウ",
+      "category": "食べ物",
+      "season": [
+        "autumn",
+        "winter"
+      ],
+      "explanation": "あきから ふゆが しゅんの やさいだよ。",
+      "required_features": [
+        "あきから ふゆが しゅんの やさいだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/spinach.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/radish.svg",
+      "theme_id": "radish",
+      "name": "ダイコン",
+      "category": "食べ物",
+      "season": [
+        "autumn",
+        "winter"
+      ],
+      "explanation": "あきから ふゆが しゅんの やさいだよ。",
+      "required_features": [
+        "あきから ふゆが しゅんの やさいだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/radish.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/broadbean.svg",
+      "theme_id": "broadbean",
+      "name": "ソラマメ",
+      "category": "食べ物",
+      "season": [
+        "spring"
+      ],
+      "explanation": "はるが しゅん。おおきな さやに まめが はいっているよ。",
+      "required_features": [
+        "はるが しゅん。おおきな さやに まめが はいっているよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/broadbean.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/corn.svg",
+      "theme_id": "corn",
+      "name": "トウモロコシ",
+      "category": "食べ物",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつの たべもの。つぶが ならんでいるね。",
+      "required_features": [
+        "なつの たべもの。つぶが ならんでいるね。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/corn.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/edamame.svg",
+      "theme_id": "edamame",
+      "name": "エダマメ",
+      "category": "食べ物",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつが しゅん。さやの なかに まめが はいっているよ。",
+      "required_features": [
+        "なつが しゅん。さやの なかに まめが はいっているよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/edamame.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/mikan.svg",
+      "theme_id": "mikan",
+      "name": "温州ミカン",
+      "category": "食べ物",
+      "season": [
+        "autumn",
+        "winter"
+      ],
+      "explanation": "あきから ふゆが しゅん。かわを むいて たべるよ。",
+      "required_features": [
+        "あきから ふゆが しゅん。かわを むいて たべるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/mikan.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/butterfly.svg",
+      "theme_id": "butterfly",
+      "name": "モンシロチョウ（成虫）",
+      "category": "生き物",
+      "season": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "explanation": "はるから あきに とぶよ。しろい はねに くろい もようが あるよ。",
+      "required_features": [
+        "はるから あきに とぶよ。しろい はねに くろい もようが あるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/butterfly.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/swallowtail.svg",
+      "theme_id": "swallowtail",
+      "name": "ナミアゲハ（成虫）",
+      "category": "生き物",
+      "season": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "explanation": "はるから あきに とぶよ。はねに くろい しまもようが あるよ。",
+      "required_features": [
+        "はるから あきに とぶよ。はねに くろい しまもようが あるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/swallowtail.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/cicada.svg",
+      "theme_id": "cicada",
+      "name": "アブラゼミ（成虫）",
+      "category": "生き物",
+      "season": [
+        "summer",
+        "autumn"
+      ],
+      "explanation": "なつから あきに みられるよ。きに とまるよ。",
+      "required_features": [
+        "なつから あきに みられるよ。きに とまるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/cicada.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/beetle.svg",
+      "theme_id": "beetle",
+      "name": "カブトムシ（成虫・雄）",
+      "category": "生き物",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつに せいちゅうが みられるよ。おすには つのが あるよ。",
+      "required_features": [
+        "なつに せいちゅうが みられるよ。おすには つのが あるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/beetle.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/chafer.svg",
+      "theme_id": "chafer",
+      "name": "カナブン（成虫）",
+      "category": "生き物",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつに せいちゅうが みられるよ。",
+      "required_features": [
+        "なつに せいちゅうが みられるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/chafer.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/firefly.svg",
+      "theme_id": "firefly",
+      "name": "ゲンジボタル（成虫）",
+      "category": "生き物",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつの はじめに ひかる すがたが みられるよ。",
+      "required_features": [
+        "なつの はじめに ひかる すがたが みられるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/firefly.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/dragonfly.svg",
+      "theme_id": "dragonfly",
+      "name": "アキアカネ（成虫）",
+      "category": "生き物",
+      "season": [
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "explanation": "なつに せいちゅうになるよ。あきの あかとんぼとして したしまれるよ。",
+      "required_features": [
+        "なつに せいちゅうになるよ。あきの あかとんぼとして したしまれるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/dragonfly.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/cricket.svg",
+      "theme_id": "cricket",
+      "name": "エンマコオロギ（成虫）",
+      "category": "生き物",
+      "season": [
+        "summer",
+        "autumn"
+      ],
+      "explanation": "なつから あきに せいちゅうが みられるよ。",
+      "required_features": [
+        "なつから あきに せいちゅうが みられるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/cricket.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/ladybird.svg",
+      "theme_id": "ladybird",
+      "name": "ナナホシテントウ（成虫）",
+      "category": "生き物",
+      "season": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "explanation": "はるから あきに みられるよ。くろい てんが ななつ あるよ。",
+      "required_features": [
+        "はるから あきに みられるよ。くろい てんが ななつ あるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/ladybird.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/stag.svg",
+      "theme_id": "stag",
+      "name": "コクワガタ（成虫・雄）",
+      "category": "生き物",
+      "season": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "explanation": "はるから あきに みられるよ。おすには おおきな あごが あるよ。",
+      "required_features": [
+        "はるから あきに みられるよ。おすには おおきな あごが あるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "精密自然図鑑",
+      "output_path": "assets/generated/stag.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/newyear.svg",
+      "theme_id": "newyear",
+      "name": "正月",
+      "category": "行事",
+      "season": [
+        "winter"
+      ],
+      "explanation": "1がつ。あたらしい としを おいわいするよ。",
+      "required_features": [
+        "1がつ。あたらしい としを おいわいするよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/newyear.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/setsubun.svg",
+      "theme_id": "setsubun",
+      "name": "節分（立春の前日）",
+      "category": "行事",
+      "season": [
+        "winter"
+      ],
+      "explanation": "2がつに まめまきを するよ。ひづけは としで かわるよ。",
+      "required_features": [
+        "2がつに まめまきを するよ。ひづけは としで かわるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/setsubun.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/hina.svg",
+      "theme_id": "hina",
+      "name": "ひな祭り（新暦）",
+      "category": "行事",
+      "season": [
+        "spring"
+      ],
+      "explanation": "3がつ3か。ひなにんぎょうを かざって おいわいするよ。",
+      "required_features": [
+        "3がつ3か。ひなにんぎょうを かざって おいわいするよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/hina.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/children.svg",
+      "theme_id": "children",
+      "name": "こどもの日",
+      "category": "行事",
+      "season": [
+        "spring"
+      ],
+      "explanation": "5がつ5か。こどもの せいちょうを おいわいするよ。",
+      "required_features": [
+        "5がつ5か。こどもの せいちょうを おいわいするよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/children.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/tanabata.svg",
+      "theme_id": "tanabata",
+      "name": "七夕（新暦）",
+      "category": "行事",
+      "season": [
+        "summer"
+      ],
+      "explanation": "しんれきでは 7がつ7か。8がつに おいわいする ちいきも あるよ。",
+      "required_features": [
+        "しんれきでは 7がつ7か。8がつに おいわいする ちいきも あるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/tanabata.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/moonview.svg",
+      "theme_id": "moonview",
+      "name": "十五夜のお月見",
+      "category": "行事",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "あきの つきを たのしむよ。9がつか 10がつに なるよ。",
+      "required_features": [
+        "あきの つきを たのしむよ。9がつか 10がつに なるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/moonview.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/shichigosan.svg",
+      "theme_id": "shichigosan",
+      "name": "七五三",
+      "category": "行事",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "11がつ15かが めやす。おまいりの ひは おうちで きめるよ。",
+      "required_features": [
+        "11がつ15かが めやす。おまいりの ひは おうちで きめるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/shichigosan.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/solstice.svg",
+      "theme_id": "solstice",
+      "name": "冬至",
+      "category": "行事",
+      "season": [
+        "winter"
+      ],
+      "explanation": "ふゆに ひるが いちばん みじかくなる ころだよ。",
+      "required_features": [
+        "ふゆに ひるが いちばん みじかくなる ころだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/solstice.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/lastday.svg",
+      "theme_id": "lastday",
+      "name": "大晦日",
+      "category": "行事",
+      "season": [
+        "winter"
+      ],
+      "explanation": "12がつ31にち。1ねんの さいごの ひだよ。",
+      "required_features": [
+        "12がつ31にち。1ねんの さいごの ひだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/lastday.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/kadomatsu.svg",
+      "theme_id": "kadomatsu",
+      "name": "門松",
+      "category": "行事の道具",
+      "season": [
+        "winter"
+      ],
+      "explanation": "おしょうがつの かざり。たけや まつを つかうよ。",
+      "required_features": [
+        "おしょうがつの かざり。たけや まつを つかうよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/kadomatsu.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/kagamimochi.svg",
+      "theme_id": "kagamimochi",
+      "name": "鏡餅",
+      "category": "行事食",
+      "season": [
+        "winter"
+      ],
+      "explanation": "おしょうがつに かざる おもちだよ。",
+      "required_features": [
+        "おしょうがつに かざる おもちだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/kagamimochi.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/osechi.svg",
+      "theme_id": "osechi",
+      "name": "おせち料理",
+      "category": "行事食",
+      "season": [
+        "winter"
+      ],
+      "explanation": "おしょうがつの おいわいの りょうりだよ。",
+      "required_features": [
+        "おしょうがつの おいわいの りょうりだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/osechi.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/zoni.svg",
+      "theme_id": "zoni",
+      "name": "雑煮",
+      "category": "行事食",
+      "season": [
+        "winter"
+      ],
+      "explanation": "おしょうがつに たべる おもちの はいった しるものだよ。",
+      "required_features": [
+        "おしょうがつに たべる おもちの はいった しるものだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/zoni.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/nanakusa.svg",
+      "theme_id": "nanakusa",
+      "name": "七草がゆ",
+      "category": "行事食",
+      "season": [
+        "winter"
+      ],
+      "explanation": "1がつ7かに たべる くさの はいった おかゆだよ。",
+      "required_features": [
+        "1がつ7かに たべる くさの はいった おかゆだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/nanakusa.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/beans.svg",
+      "theme_id": "beans",
+      "name": "福豆",
+      "category": "行事食",
+      "season": [
+        "winter"
+      ],
+      "explanation": "せつぶんに まく まめだよ。",
+      "required_features": [
+        "せつぶんに まく まめだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/beans.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/arare.svg",
+      "theme_id": "arare",
+      "name": "ひなあられ",
+      "category": "行事食",
+      "season": [
+        "spring"
+      ],
+      "explanation": "ひなまつりの おかしだよ。",
+      "required_features": [
+        "ひなまつりの おかしだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/arare.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/kashiwa.svg",
+      "theme_id": "kashiwa",
+      "name": "柏餅",
+      "category": "行事食",
+      "season": [
+        "spring"
+      ],
+      "explanation": "こどものひに たべるよ。かしわの はで つつむよ。",
+      "required_features": [
+        "こどものひに たべるよ。かしわの はで つつむよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/kashiwa.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/chimaki.svg",
+      "theme_id": "chimaki",
+      "name": "ちまき（端午の節句）",
+      "category": "行事食",
+      "season": [
+        "spring"
+      ],
+      "explanation": "たんごの せっくに たべるよ。はっぱで つつんであるね。",
+      "required_features": [
+        "たんごの せっくに たべるよ。はっぱで つつんであるね。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/chimaki.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/somen.svg",
+      "theme_id": "somen",
+      "name": "七夕のそうめん",
+      "category": "行事食",
+      "season": [
+        "summer"
+      ],
+      "explanation": "たなばたに そうめんを たべる ならわしが あるよ。",
+      "required_features": [
+        "たなばたに そうめんを たべる ならわしが あるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/somen.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/dango.svg",
+      "theme_id": "dango",
+      "name": "月見団子",
+      "category": "行事食",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "おつきみに おそなえする おだんごだよ。",
+      "required_features": [
+        "おつきみに おそなえする おだんごだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/dango.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/candy.svg",
+      "theme_id": "candy",
+      "name": "千歳飴",
+      "category": "行事食",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "しちごさんで もらう ながい あめだよ。",
+      "required_features": [
+        "しちごさんで もらう ながい あめだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/candy.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/soba.svg",
+      "theme_id": "soba",
+      "name": "年越しそば",
+      "category": "行事食",
+      "season": [
+        "winter"
+      ],
+      "explanation": "おおみそかに たべる そばだよ。",
+      "required_features": [
+        "おおみそかに たべる そばだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/soba.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/snow.svg",
+      "theme_id": "snow",
+      "name": "雪",
+      "category": "自然",
+      "season": [
+        "winter"
+      ],
+      "explanation": "さむい ふゆに よく ふるよ。ばしょにより ふりかたは ちがうよ。",
+      "required_features": [
+        "さむい ふゆに よく ふるよ。ばしょにより ふりかたは ちがうよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/snow.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/frost.svg",
+      "theme_id": "frost",
+      "name": "霜",
+      "category": "自然",
+      "season": [
+        "autumn",
+        "winter",
+        "spring"
+      ],
+      "explanation": "さむい あさに みられる こおり。はるにも みられるよ。",
+      "required_features": [
+        "さむい あさに みられる こおり。はるにも みられるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/frost.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/rainy.svg",
+      "theme_id": "rainy",
+      "name": "梅雨（関東など）",
+      "category": "自然",
+      "season": [
+        "spring",
+        "summer"
+      ],
+      "explanation": "あめや くもりの ひが つづく ころ。ばしょで じきが ちがうよ。",
+      "required_features": [
+        "あめや くもりの ひが つづく ころ。ばしょで じきが ちがうよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/rainy.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/leaves.svg",
+      "theme_id": "leaves",
+      "name": "紅葉",
+      "category": "自然",
+      "season": [
+        "autumn",
+        "winter"
+      ],
+      "explanation": "あきに はっぱが いろづくよ。ふゆの はじめまで みられることも あるよ。",
+      "required_features": [
+        "あきに はっぱが いろづくよ。ふゆの はじめまで みられることも あるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/leaves.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/hanami.svg",
+      "theme_id": "hanami",
+      "name": "桜の花見",
+      "category": "暮らし・遊び",
+      "season": [
+        "spring"
+      ],
+      "explanation": "はるに さくらの はなを みて たのしむよ。",
+      "required_features": [
+        "はるに さくらの はなを みて たのしむよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/hanami.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/fireworks.svg",
+      "theme_id": "fireworks",
+      "name": "花火",
+      "category": "暮らし・遊び",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつの よるの おたのしみ。ほかの きせつにも あがるよ。",
+      "required_features": [
+        "なつの よるの おたのしみ。ほかの きせつにも あがるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/fireworks.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/windbell.svg",
+      "theme_id": "windbell",
+      "name": "風鈴",
+      "category": "暮らし・遊び",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつに すずしげな おとを たのしむよ。",
+      "required_features": [
+        "なつに すずしげな おとを たのしむよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/windbell.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/yukata.svg",
+      "theme_id": "yukata",
+      "name": "浴衣",
+      "category": "暮らし・遊び",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつの おまつりなどで きるよ。",
+      "required_features": [
+        "なつの おまつりなどで きるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/yukata.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/ice.svg",
+      "theme_id": "ice",
+      "name": "かき氷",
+      "category": "暮らし・遊び",
+      "season": [
+        "summer"
+      ],
+      "explanation": "なつに したしまれる つめたい たべものだよ。",
+      "required_features": [
+        "なつに したしまれる つめたい たべものだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/ice.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/kite.svg",
+      "theme_id": "kite",
+      "name": "凧揚げ（正月遊び）",
+      "category": "暮らし・遊び",
+      "season": [
+        "winter"
+      ],
+      "explanation": "おしょうがつの あそび。ほかの きせつにも あそべるよ。",
+      "required_features": [
+        "おしょうがつの あそび。ほかの きせつにも あそべるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/kite.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/top.svg",
+      "theme_id": "top",
+      "name": "こま回し（正月遊び）",
+      "category": "暮らし・遊び",
+      "season": [
+        "winter"
+      ],
+      "explanation": "おしょうがつの あそび。ほかの きせつにも あそべるよ。",
+      "required_features": [
+        "おしょうがつの あそび。ほかの きせつにも あそべるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/top.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/battledore.svg",
+      "theme_id": "battledore",
+      "name": "羽根つき（正月遊び）",
+      "category": "暮らし・遊び",
+      "season": [
+        "winter"
+      ],
+      "explanation": "おしょうがつの あそび。はごいたで はねを うつよ。",
+      "required_features": [
+        "おしょうがつの あそび。はごいたで はねを うつよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/battledore.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/acorn.svg",
+      "theme_id": "acorn",
+      "name": "ドングリ",
+      "category": "樹木・木の実",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "あきに みのる きのみだよ。ぼうしの ような ものが ついているね。",
+      "required_features": [
+        "あきに みのる きのみだよ。ぼうしの ような ものが ついているね。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/acorn.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/pinecone.svg",
+      "theme_id": "pinecone",
+      "name": "アカマツの球果",
+      "category": "樹木・木の実",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "あきに じゅくすよ。おちたものは ほかの きせつにも あるよ。",
+      "required_features": [
+        "あきに じゅくすよ。おちたものは ほかの きせつにも あるよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/pinecone.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/month1.svg",
+      "theme_id": "month1",
+      "name": "1月",
+      "category": "月と順序",
+      "season": [
+        "winter"
+      ],
+      "explanation": "1がつは ふゆの なかまだよ。",
+      "required_features": [
+        "1がつは ふゆの なかまだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/month1.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/month2.svg",
+      "theme_id": "month2",
+      "name": "2月",
+      "category": "月と順序",
+      "season": [
+        "winter"
+      ],
+      "explanation": "2がつは ふゆの なかまだよ。",
+      "required_features": [
+        "2がつは ふゆの なかまだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/month2.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/month3.svg",
+      "theme_id": "month3",
+      "name": "3月",
+      "category": "月と順序",
+      "season": [
+        "spring"
+      ],
+      "explanation": "3がつは はるの なかまだよ。",
+      "required_features": [
+        "3がつは はるの なかまだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/month3.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/month4.svg",
+      "theme_id": "month4",
+      "name": "4月",
+      "category": "月と順序",
+      "season": [
+        "spring"
+      ],
+      "explanation": "4がつは はるの なかまだよ。",
+      "required_features": [
+        "4がつは はるの なかまだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/month4.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/month5.svg",
+      "theme_id": "month5",
+      "name": "5月",
+      "category": "月と順序",
+      "season": [
+        "spring"
+      ],
+      "explanation": "5がつは はるの なかまだよ。",
+      "required_features": [
+        "5がつは はるの なかまだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/month5.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/month6.svg",
+      "theme_id": "month6",
+      "name": "6月",
+      "category": "月と順序",
+      "season": [
+        "summer"
+      ],
+      "explanation": "6がつは なつの なかまだよ。",
+      "required_features": [
+        "6がつは なつの なかまだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/month6.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/month7.svg",
+      "theme_id": "month7",
+      "name": "7月",
+      "category": "月と順序",
+      "season": [
+        "summer"
+      ],
+      "explanation": "7がつは なつの なかまだよ。",
+      "required_features": [
+        "7がつは なつの なかまだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/month7.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/month8.svg",
+      "theme_id": "month8",
+      "name": "8月",
+      "category": "月と順序",
+      "season": [
+        "summer"
+      ],
+      "explanation": "8がつは なつの なかまだよ。",
+      "required_features": [
+        "8がつは なつの なかまだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/month8.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/month9.svg",
+      "theme_id": "month9",
+      "name": "9月",
+      "category": "月と順序",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "9がつは あきの なかまだよ。",
+      "required_features": [
+        "9がつは あきの なかまだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/month9.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/month10.svg",
+      "theme_id": "month10",
+      "name": "10月",
+      "category": "月と順序",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "10がつは あきの なかまだよ。",
+      "required_features": [
+        "10がつは あきの なかまだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/month10.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/month11.svg",
+      "theme_id": "month11",
+      "name": "11月",
+      "category": "月と順序",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "11がつは あきの なかまだよ。",
+      "required_features": [
+        "11がつは あきの なかまだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/month11.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/month12.svg",
+      "theme_id": "month12",
+      "name": "12月",
+      "category": "月と順序",
+      "season": [
+        "winter"
+      ],
+      "explanation": "12がつは ふゆの なかまだよ。",
+      "required_features": [
+        "12がつは ふゆの なかまだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/month12.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/spring.svg",
+      "theme_id": "spring",
+      "name": "はる",
+      "category": "四季と順序",
+      "season": [
+        "spring"
+      ],
+      "explanation": "3・4・5がつが はるだよ。",
+      "required_features": [
+        "3・4・5がつが はるだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/spring.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/summer.svg",
+      "theme_id": "summer",
+      "name": "なつ",
+      "category": "四季と順序",
+      "season": [
+        "summer"
+      ],
+      "explanation": "6・7・8がつが なつだよ。",
+      "required_features": [
+        "6・7・8がつが なつだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/summer.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/autumn.svg",
+      "theme_id": "autumn",
+      "name": "あき",
+      "category": "四季と順序",
+      "season": [
+        "autumn"
+      ],
+      "explanation": "9・10・11がつが あきだよ。",
+      "required_features": [
+        "9・10・11がつが あきだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/autumn.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/winter.svg",
+      "theme_id": "winter",
+      "name": "ふゆ",
+      "category": "四季と順序",
+      "season": [
+        "winter"
+      ],
+      "explanation": "12・1・2がつが ふゆだよ。",
+      "required_features": [
+        "12・1・2がつが ふゆだよ。"
+      ],
+      "forbidden_features": [
+        "文字・透かし・他種の形態・異なる行事の象徴"
+      ],
+      "visual_style": "明るい日本の絵本",
+      "output_path": "assets/generated/winter.jpg",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/icon.svg",
+      "theme_id": null,
+      "name": "assets/icon.svg",
+      "category": "icon",
+      "season": [],
+      "required_features": [
+        "四季の学習を表す共通マスター"
+      ],
+      "forbidden_features": [
+        "文字"
+      ],
+      "visual_style": "明るい絵本",
+      "output_path": "assets/generated/icon.png",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/icon-512.png",
+      "theme_id": null,
+      "name": "assets/icon-512.png",
+      "category": "icon",
+      "season": [],
+      "required_features": [
+        "四季の学習を表す共通マスター"
+      ],
+      "forbidden_features": [
+        "文字"
+      ],
+      "visual_style": "明るい絵本",
+      "output_path": "assets/generated/icon-512.png",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    },
+    {
+      "image_id": "assets/icon-192.png",
+      "theme_id": null,
+      "name": "assets/icon-192.png",
+      "category": "icon",
+      "season": [],
+      "required_features": [
+        "四季の学習を表す共通マスター"
+      ],
+      "forbidden_features": [
+        "文字"
+      ],
+      "visual_style": "明るい絵本",
+      "output_path": "assets/generated/icon-192.png",
+      "status": "PENDING",
+      "generation_attempts": 0,
+      "qa_result": null
+    }
+  ],
+  "counts": {
+    "themes": 100,
+    "questions": 240,
+    "images": 103
+  },
+  "baseline_commit": "8ed8487dcc6585e51ba0385be2554793aec71904"
+}

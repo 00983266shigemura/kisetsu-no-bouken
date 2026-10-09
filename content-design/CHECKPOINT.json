@@ -1,23 +1,37 @@
 {
-  "phase": "local implementation verified; external push blocked",
+  "phase": "candidate implementation extended; draft PR created; image generation and integration incomplete",
   "branch": "content-redesign-20261010",
   "research": "8 source records in content-design/SPEC.md",
-  "implemented": "335 dictionary / 312 active questions / 10 types",
+  "implemented": "352 dictionary / 329 active questions / 12 types / 103 themes",
   "remaining": [
-    "real browser QA: browser binary download unavailable",
+    "rebuild generated outputs and run current candidate tests",
+    "integrate all generated images with identity mapping and visual QA",
+    "remaining image generation including required 7 additions",
+    "real browser QA",
     "iOS10 physical device L1/L2/L3",
-    "image-specific production QA and generation",
-    "public remote candidate push approval",
-    "draft PR and authoritative CI"
+    "remote push/readback and authoritative CI PASS",
+    "release gate evidence and public readback after all prerequisites"
   ],
   "protected": "main, asset-refresh branch, 103 PENDING records, Ruleset unchanged",
-  "streaming": "server-side root cause unverified; local committed checkpoint enables restart",
+  "streaming": "service-side root cause unverified; durable repo checkpoint and incremental candidate pushes provide restart continuity",
   "fixed": [
     "8 independent-review findings",
     "two-condition marks 16",
     "SW hash and scope",
-    "speech and image hint leak"
+    "speech and image hint leak",
+    "scene 4 and pairing 6",
+    "3 source-grounded themes and 7 prerequisite/relationship questions",
+    "pairing answer-name speech hint removed"
   ],
-  "externalWriteBlocked": "auto-review rejected git push to public GitHub; no workaround attempted",
-  "protectedReadback": "main619a03f / asset bf2ffcc unchanged; no remote content-redesign branch"
+  "externalWriteBlocked": false,
+  "protectedReadback": "prior protected baseline in protection.json retained; candidate push authorized and Draft PR 6 created",
+  "draftPR": "https://github.com/00983266shigemura/kisetsu-no-bouken/pull/6",
+  "lastPushedCandidateSha": "a211105504c12116644b5f4c9b3c60eaf93bd822",
+  "authoritativeCI": "FAIL: pushed index.html is stale versus updated source; rebuild/image integration and subsequent push required",
+  "images": {
+    "reportedGenerated": 22,
+    "complete": false,
+    "integration": "in progress",
+    "visualQA": "not complete"
+  }
 }

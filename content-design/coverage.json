@@ -12,8 +12,8 @@
     }
   },
   "candidate": {
-    "totalQuestions": 335,
-    "activeQuestions": 312,
+    "totalQuestions": 352,
+    "activeQuestions": 329,
     "retiredQuestionIds": [
       "season-tanpopo",
       "season-iris",
@@ -42,9 +42,27 @@
     "newTypes": {
       "odd": 32,
       "multi": 32,
-      "event": 11,
+      "event": 12,
       "clue": 4,
-      "marks": 16
+      "marks": 16,
+      "scene": 4,
+      "pairing": 6
+    },
+    "themeCount": 103,
+    "typeCount": 12,
+    "typeCounts": {
+      "name": 85,
+      "season": 99,
+      "month": 8,
+      "match": 42,
+      "order": 12,
+      "odd": 32,
+      "multi": 32,
+      "event": 12,
+      "clue": 4,
+      "marks": 16,
+      "scene": 4,
+      "pairing": 6
     }
   },
   "themeMatrix": [
@@ -2353,6 +2371,73 @@
       "seasonPrompt": "かんけいする きせつを えらぼう",
       "teachingSeason": "winter",
       "curriculumRole": "calendar"
+    },
+    {
+      "id": "icicle",
+      "name": "つらら",
+      "label": "つらら",
+      "category": "自然",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        1,
+        2
+      ],
+      "explanation": "さむい ふゆに、みずが こおって たれさがるよ。",
+      "difficulty": 1,
+      "sources": [
+        "kaichi-2023-season"
+      ],
+      "verification": "curriculum-source-checked; image-pending",
+      "monthQuiz": false,
+      "seasonScope": "教材上の季節文脈。地域・気候差あり。",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "halloween-pumpkin",
+      "name": "はろうぃんの かぼちゃ",
+      "label": "はろうぃんの かぼちゃ",
+      "category": "行事の道具",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        10
+      ],
+      "explanation": "はろうぃんに かぼちゃの かざりを つくるよ。たべる かぼちゃの しゅんとは べつの はなしだよ。",
+      "difficulty": 1,
+      "sources": [
+        "kaichi-2023-season"
+      ],
+      "verification": "curriculum-source-checked; image-pending",
+      "monthQuiz": false,
+      "seasonScope": "教材上の季節文脈。地域・気候差あり。",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "halloween-costume",
+      "name": "はろうぃんの かそう",
+      "label": "はろうぃんの かそう",
+      "category": "行事",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        10
+      ],
+      "explanation": "10がつの はろうぃんでは かそうを たのしむことが あるよ。すべての ひとが するわけでは ないよ。",
+      "difficulty": 1,
+      "sources": [
+        "kaichi-2023-season"
+      ],
+      "verification": "curriculum-source-checked; image-pending",
+      "monthQuiz": false,
+      "seasonScope": "教材上の季節文脈。地域・気候差あり。",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
     }
   ]
 }
