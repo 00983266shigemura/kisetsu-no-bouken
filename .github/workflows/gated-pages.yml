@@ -31,8 +31,7 @@ jobs:
           mkdir -p public-out
           cp index.html offline.appcache sw.js icon.svg manifest.webmanifest .nojekyll public-out/
           DIGEST=$(node scripts/check-acceptance.cjs --digest)
-          printf '{"commit":"%s","subject_digest":"%s"}
-' "$GITHUB_SHA" "$DIGEST" > public-out/release.json
+          printf '{"commit":"%s","subject_digest":"%s"}\n' "$GITHUB_SHA" "$DIGEST" > public-out/release.json
       - uses: actions/upload-pages-artifact@v4
         with:
           path: public-out
@@ -72,8 +71,7 @@ jobs:
           curl -fsSL --max-time 20 -D /tmp/appcache.headers -o /tmp/offline.appcache "$BASE/offline.appcache"
           grep -qi '^content-type: *text/cache-manifest' /tmp/appcache.headers
           grep -q '^CACHE MANIFEST' /tmp/offline.appcache
-          printf '{"commit":"%s","subject_digest":"%s","public_http":200,"appcache_mime":"text/cache-manifest","status":"POSTDEPLOY_AUTOMATED_PASS"}
-' "$GITHUB_SHA" "$DIGEST" > release-receipt.json
+          printf '{"commit":"%s","subject_digest":"%s","public_http":200,"appcache_mime":"text/cache-manifest","status":"POSTDEPLOY_AUTOMATED_PASS"}\n' "$GITHUB_SHA" "$DIGEST" > release-receipt.json
       - uses: actions/upload-artifact@v4
         with:
           name: production-release-receipt
