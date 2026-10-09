@@ -5,7 +5,7 @@
 GitHub Pagesを有効にすると、通常は以下で公開されます。
 https://00983266shigemura.github.io/kisetsu-no-bouken/
 
-リポジトリの **Settings → Pages → Build and deployment → Deploy from a branch → main / (root) → Save** を選択してください。公開用ファイルはGitHub Actionsがmain直下に自動生成します。
+本番公開は有効化済みで、HTTP 200・AppCache MIMEも確認済みです（下記検証記録参照）。\n\nリポジトリの **Settings → Pages → Build and deployment → Deploy from a branch → main / (root) → Save** を選択してください。公開用ファイルはGitHub Actionsがmain直下に自動生成します。
 
 ## iOS 10（Safari 10.0〜10.3）で使う場合
 1. Safariで公開URLを開きます。初回は通信が必要です。
@@ -38,3 +38,6 @@ python3 -m http.server 8000
 学習履歴は端末のlocalStorageに保存し、ネットへ送信しません。Safariの履歴・Webサイトデータ削除、プライベートモード、保存容量制限などにより消える場合があります。iOS 10の日本語読み上げ音声は端末依存で、音声がない場合は文字と絵で利用してください。アカウント登録、広告、課金、ランキングはありません。
 
 教材の時期は日本の一般的な四季区分によります。花期や旬には地域・年差があります。出典39件はアプリ内のデータ・保護者向け表示で確認できます。第三者の教材や過去問の転載ではありません。
+
+## GitHub Pagesの本番配信確認（2026-10-09）
+GitHub Actionsの本番HTTP検証で、公開URL `https://00983266shigemura.github.io/kisetsu-no-bouken/` の **HTTP 200** を実測しました。`offline.appcache` は **Content-Type: text/cache-manifest** で配信され、Service Worker・SVGアイコン・Web App Manifestも公開URLから取得できました。検証記録：[Verify published app and iOS 10 offline support](https://github.com/00983266shigemura/kisetsu-no-bouken/actions/runs/37892278610)。**iOS 10.3.3実機でのオフライン再起動は未実施**です。
