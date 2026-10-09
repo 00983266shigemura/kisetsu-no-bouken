@@ -1,0 +1,23 @@
+{
+  "phase": "local implementation verified; external push blocked",
+  "branch": "content-redesign-20261010",
+  "research": "8 source records in content-design/SPEC.md",
+  "implemented": "335 dictionary / 312 active questions / 10 types",
+  "remaining": [
+    "real browser QA: browser binary download unavailable",
+    "iOS10 physical device L1/L2/L3",
+    "image-specific production QA and generation",
+    "public remote candidate push approval",
+    "draft PR and authoritative CI"
+  ],
+  "protected": "main, asset-refresh branch, 103 PENDING records, Ruleset unchanged",
+  "streaming": "server-side root cause unverified; local committed checkpoint enables restart",
+  "fixed": [
+    "8 independent-review findings",
+    "two-condition marks 16",
+    "SW hash and scope",
+    "speech and image hint leak"
+  ],
+  "externalWriteBlocked": "auto-review rejected git push to public GitHub; no workaround attempted",
+  "protectedReadback": "main619a03f / asset bf2ffcc unchanged; no remote content-redesign branch"
+}

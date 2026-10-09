@@ -1,0 +1,2458 @@
+{
+  "version": "1.0",
+  "source_branch": "origin/asset-refresh-20261009",
+  "original_manifest_baseline_commit": "8ed8487dcc6585e51ba0385be2554793aec71904",
+  "count": 103,
+  "style": "5〜6歳用の明るい日本の絵本、自然物は教育用の正確な輪郭と形態、白〜暖白の背景、やわらかな水彩と明瞭な線、単体主題、均一な余白、フォトリアルや文字や擬人化した植物昆虫は避ける",
+  "policy": {
+    "original_ledger": "read only; PENDING is not evidence of generation",
+    "month_assets": "month identity must be exact HTML label, not an AI-drawn numeral; seasonal decorations are forbidden",
+    "insect_anatomy": "six legs attached to thorax; two antennae; do not invent legs or wings",
+    "botanical_exception": "ヒガンバナ/ウメ/ソシンロウバイ/ソメイヨシノの花時には一般ルールの葉同時描写を適用しない",
+    "risk": "species-detail checks are release-blocking; red-green distinction alone is insufficient",
+    "outputs": "new files under assets/generated; preserve old assets and existing paths until integration QA"
+  },
+  "evidence": [
+    {
+      "id": "R5",
+      "url": "https://www.kogumakai.co.jp/column/shimizu/shimizu101.html",
+      "supports": "花と葉の教育上の識別要件（既存調査）"
+    },
+    {
+      "id": "V1",
+      "url": "https://www.midori-hanabunka.jp/midori?term=m5532",
+      "supports": "公園財団のアヤメ科識別：ハナショウブ黄色基部・アヤメ網目"
+    },
+    {
+      "id": "V2",
+      "url": "https://cutting-edge-research.toyaku.ac.jp/series/4255/",
+      "supports": "東京薬科大学：ヒガンバナの花と葉は同時に現れない"
+    },
+    {
+      "id": "V3",
+      "url": "https://insects.jp/kon-tentounanahosi.htm",
+      "supports": "専門家昆虫図鑑のナナホシテントウ種同定用写真"
+    },
+    {
+      "id": "V4",
+      "url": "https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/43_15_yamaguchi.html",
+      "supports": "柏餅は地域差あり。本仕様は柏葉の型を選ぶだけで全国の形を断定しない"
+    }
+  ],
+  "records": [
+    {
+      "image_id": "assets/sakura.svg",
+      "theme_id": "sakura",
+      "name": "サクラ（ソメイヨシノ）",
+      "output_path": "assets/generated/sakura.jpg",
+      "required_features": [
+        "淡い桃白色の5枚花弁、各花弁先端の切れ込み、長い花柄で枝に房状につくソメイヨシノの花",
+        "花の枝を主役とし葉はほぼない"
+      ],
+      "forbidden_features": [
+        "丸い切れ込みなしの梅花、花と大量の新葉を同時に描く"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/tulip.svg",
+      "theme_id": "tulip",
+      "name": "チューリップ",
+      "output_path": "assets/generated/tulip.jpg",
+      "required_features": [
+        "直立する茎の先にカップ形の花、滑らかな縁の幅広い披針形葉",
+        "一株の全体"
+      ],
+      "forbidden_features": [
+        "バラ状の多重花弁、細かく裂けた葉"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/nanohana.svg",
+      "theme_id": "nanohana",
+      "name": "ナノハナ",
+      "output_path": "assets/generated/nanohana.jpg",
+      "required_features": [
+        "小さな黄色い4枚花弁が十字形、茎先の花房、下部の緑の葉"
+      ],
+      "forbidden_features": [
+        "5枚花弁、ヒマワリ状の巨大一輪"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/tanpopo.svg",
+      "theme_id": "tanpopo",
+      "name": "セイヨウタンポポ",
+      "output_path": "assets/generated/tanpopo.jpg",
+      "required_features": [
+        "黄色い細い舌状花の頭花、地面近くの切れ込みのあるロゼット葉、葉のない花茎",
+        "外総苞片が反り返る"
+      ],
+      "forbidden_features": [
+        "葉を花茎につける、花と綿毛が同じ頭花に混在"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/fuji.svg",
+      "theme_id": "fuji",
+      "name": "フジ",
+      "output_path": "assets/generated/fuji.jpg",
+      "required_features": [
+        "紫色の蝶形の小花が長い房となって垂れる、奇数羽状複葉、木質のつる"
+      ],
+      "forbidden_features": [
+        "上向きの花穂、ブドウの果実"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/tsutsuji.svg",
+      "theme_id": "tsutsuji",
+      "name": "ツツジ類",
+      "output_path": "assets/generated/tsutsuji.jpg",
+      "required_features": [
+        "桃色の漏斗状5裂花、突き出る雄しべ、小さな楕円形の葉の低木枝"
+      ],
+      "forbidden_features": [
+        "チューリップ形、アジサイの球状花序"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/nemophila.svg",
+      "theme_id": "nemophila",
+      "name": "ネモフィラ",
+      "output_path": "assets/generated/nemophila.jpg",
+      "required_features": [
+        "中心の白い淡青色の5裂杯形花、低い細い茎、切れ込む小葉"
+      ],
+      "forbidden_features": [
+        "青い巨大な花だけ、木質の枝"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/iris.svg",
+      "theme_id": "iris",
+      "name": "ハナショウブ",
+      "output_path": "assets/generated/iris.jpg",
+      "required_features": [
+        "紫色のハナショウブ、垂れる外花被の基部に黄色い筋、直立する剣状葉と花茎"
+      ],
+      "forbidden_features": [
+        "白い筋だけのカキツバタ、網目模様のアヤメ、黄色いキショウブ、菖蒲湯のショウブと同一視"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/lotus.svg",
+      "theme_id": "lotus",
+      "name": "ハス",
+      "output_path": "assets/generated/lotus.jpg",
+      "required_features": [
+        "桃色の多花弁のハス花が水面上に立ち上がる、切れ込みのない丸い葉、葉中央に葉柄"
+      ],
+      "forbidden_features": [
+        "水面に浮く睡蓮の花、V字に切れ込む葉"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/hydrangea.svg",
+      "theme_id": "hydrangea",
+      "name": "アジサイ",
+      "output_path": "assets/generated/hydrangea.jpg",
+      "required_features": [
+        "小花がまとまった青紫の球状花序、対生する大きな卵形の鋸歯葉"
+      ],
+      "forbidden_features": [
+        "一輪だけの巨大な花、葉なしの花球"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/sunflower.svg",
+      "theme_id": "sunflower",
+      "name": "ヒマワリ",
+      "output_path": "assets/generated/sunflower.jpg",
+      "required_features": [
+        "大きな茶褐色の中心、黄色い舌状花、太い茎、ざらつく大きな心形葉"
+      ],
+      "forbidden_features": [
+        "中心が黄色一色、ヒナギクの小葉"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/morning.svg",
+      "theme_id": "morning",
+      "name": "アサガオ",
+      "output_path": "assets/generated/morning.jpg",
+      "required_features": [
+        "漏斗形の青紫の花、つる、3裂する葉、支柱に巻きつく茎"
+      ],
+      "forbidden_features": [
+        "巻きひげ、ヒルガオの矢じり葉"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/cosmos.svg",
+      "theme_id": "cosmos",
+      "name": "コスモス",
+      "output_path": "assets/generated/cosmos.jpg",
+      "required_features": [
+        "桃色の8枚程度の舌状花、黄色い中心、非常に細かく分かれる羽状葉"
+      ],
+      "forbidden_features": [
+        "広い単葉、バラのような花"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/spiderlily.svg",
+      "theme_id": "spiderlily",
+      "name": "ヒガンバナ",
+      "output_path": "assets/generated/spiderlily.jpg",
+      "required_features": [
+        "葉のない直立花茎、赤い反り返った細い花被、外へ長く突き出す雄しべ、散形花序"
+      ],
+      "forbidden_features": [
+        "花期に根元の緑葉を茂らせる、ユリ形の一輪花"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/osmanthus.svg",
+      "theme_id": "osmanthus",
+      "name": "キンモクセイ",
+      "output_path": "assets/generated/osmanthus.jpg",
+      "required_features": [
+        "枝の葉腋に集まる小さい橙色4裂花、光沢のある楕円形の対生葉"
+      ],
+      "forbidden_features": [
+        "大きな橙色の単独花、桜形の花"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/ginkgo.svg",
+      "theme_id": "ginkgo",
+      "name": "イチョウの黄葉",
+      "output_path": "assets/generated/ginkgo.jpg",
+      "required_features": [
+        "黄色い扇形の葉、先端中央の浅い切れ込み、平行に広がる葉脈",
+        "短い枝と葉"
+      ],
+      "forbidden_features": [
+        "カエデ形、網状葉脈"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/maple.svg",
+      "theme_id": "maple",
+      "name": "モミジの紅葉",
+      "output_path": "assets/generated/maple.jpg",
+      "required_features": [
+        "赤橙色の掌状に5〜7裂する葉、鋸歯の縁、葉と短い枝"
+      ],
+      "forbidden_features": [
+        "イチョウの扇形葉、色だけで識別する抽象画"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/plum.svg",
+      "theme_id": "plum",
+      "name": "ウメの花",
+      "output_path": "assets/generated/plum.jpg",
+      "required_features": [
+        "丸い切れ込みのない5枚花弁の桃白色花、短い花柄で枝につく、葉はない"
+      ],
+      "forbidden_features": [
+        "長い花柄の房状の桜、花弁先の切れ込み"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/sasanqua.svg",
+      "theme_id": "sasanqua",
+      "name": "サザンカ",
+      "output_path": "assets/generated/sasanqua.jpg",
+      "required_features": [
+        "桃色の開いた花と黄色い雄しべ、小さめの濃緑楕円葉、地面にばらばらの花弁を少量"
+      ],
+      "forbidden_features": [
+        "花が丸ごと落ちるツバキだけの描写、巨大で粗い葉"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/wintersweet.svg",
+      "theme_id": "wintersweet",
+      "name": "ソシンロウバイ",
+      "output_path": "assets/generated/wintersweet.jpg",
+      "required_features": [
+        "半透明のろう質の淡黄色の花被、花中央も黄色、冬の葉のない枝"
+      ],
+      "forbidden_features": [
+        "中央が紫褐色の一般ロウバイ、5枚だけの梅形花"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/strawberry.svg",
+      "theme_id": "strawberry",
+      "name": "イチゴ（露地の旬）",
+      "output_path": "assets/generated/strawberry.jpg",
+      "required_features": [
+        "赤い果実、表面の小さな粒、緑の萼、三小葉の葉を添える"
+      ],
+      "forbidden_features": [
+        "木に実る、粒のない表面"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/bamboo.svg",
+      "theme_id": "bamboo",
+      "name": "タケノコ",
+      "output_path": "assets/generated/bamboo.jpg",
+      "required_features": [
+        "茶色い皮に包まれた円錐形のタケノコと淡色の切断面"
+      ],
+      "forbidden_features": [
+        "竹の成木のみ、トウモロコシの粒"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/clam.svg",
+      "theme_id": "clam",
+      "name": "アサリ",
+      "output_path": "assets/generated/clam.jpg",
+      "required_features": [
+        "小さな楕円の二枚貝、灰褐色の模様、放射状と同心円の細かい筋、閉じた殻と開いた殻1つ"
+      ],
+      "forbidden_features": [
+        "ホタテの扇形貝、サザエの巻貝"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/cucumber.svg",
+      "theme_id": "cucumber",
+      "name": "キュウリ",
+      "output_path": "assets/generated/cucumber.jpg",
+      "required_features": [
+        "濃緑で細長く小さないぼのあるキュウリ、薄い輪切りの淡緑断面と小さい種"
+      ],
+      "forbidden_features": [
+        "ナス形、白いダイコン断面"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/tomato.svg",
+      "theme_id": "tomato",
+      "name": "トマト",
+      "output_path": "assets/generated/tomato.jpg",
+      "required_features": [
+        "丸い赤い果実、緑の星形萼、切断面の小さな種室"
+      ],
+      "forbidden_features": [
+        "柿の大きな四裂萼、イチゴの表面粒"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/watermelon.svg",
+      "theme_id": "watermelon",
+      "name": "スイカ",
+      "output_path": "assets/generated/watermelon.jpg",
+      "required_features": [
+        "丸い緑皮に暗緑縦模様、赤い三角の切片、白い皮の内側と黒い種"
+      ],
+      "forbidden_features": [
+        "断面に種がない、メロンの網目皮"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/aji.svg",
+      "theme_id": "aji",
+      "name": "アジ",
+      "output_path": "assets/generated/aji.jpg",
+      "required_features": [
+        "マアジの側面、やや背の高い銀色の体、尾の前の側線にぜいご、黄色みの尾"
+      ],
+      "forbidden_features": [
+        "極端に細長いサンマ、焼き魚で形不明"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/sweetpotato.svg",
+      "theme_id": "sweetpotato",
+      "name": "サツマイモ",
+      "output_path": "assets/generated/sweetpotato.jpg",
+      "required_features": [
+        "赤紫の皮、細長い紡錘形のサツマイモ、黄色い切断面"
+      ],
+      "forbidden_features": [
+        "ジャガイモ形の丸い塊、白いダイコン"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/persimmon.svg",
+      "theme_id": "persimmon",
+      "name": "カキ",
+      "output_path": "assets/generated/persimmon.jpg",
+      "required_features": [
+        "橙色の丸いカキ、大きな緑褐色の4裂萼"
+      ],
+      "forbidden_features": [
+        "トマトの細い星形萼、ミカン皮の粒"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/sanma.svg",
+      "theme_id": "sanma",
+      "name": "サンマ",
+      "output_path": "assets/generated/sanma.jpg",
+      "required_features": [
+        "細長い銀色の体、青灰色の背、細い尖る口と二叉尾、全身側面"
+      ],
+      "forbidden_features": [
+        "丸い体のアジ、ウナギ、頭尾欠損"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/chestnut.svg",
+      "theme_id": "chestnut",
+      "name": "クリ",
+      "output_path": "assets/generated/chestnut.jpg",
+      "required_features": [
+        "茶色で光沢のあるクリの実、淡色の底、針状のとげが密生する割れたイガ"
+      ],
+      "forbidden_features": [
+        "ドングリの帽子、丸いツルツルのイガ"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/cabbage.svg",
+      "theme_id": "cabbage",
+      "name": "ハクサイ",
+      "output_path": "assets/generated/cabbage.jpg",
+      "required_features": [
+        "ハクサイの縦長の結球、白い太い葉脈としわのある淡緑葉、縦半分の切断面"
+      ],
+      "forbidden_features": [
+        "丸いキャベツ",
+        "識別名をファイル名cabbageから誤解しない"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/spinach.svg",
+      "theme_id": "spinach",
+      "name": "ホウレンソウ",
+      "output_path": "assets/generated/spinach.jpg",
+      "required_features": [
+        "ホウレンソウの束、濃緑の葉、赤桃色の根元、葉柄"
+      ],
+      "forbidden_features": [
+        "レタス結球、白い太いハクサイ葉脈"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/radish.svg",
+      "theme_id": "radish",
+      "name": "ダイコン",
+      "output_path": "assets/generated/radish.jpg",
+      "required_features": [
+        "長い白いダイコン、細い先端、切れ込みのある緑葉を根元につける"
+      ],
+      "forbidden_features": [
+        "丸いカブ、ニンジンの橙色"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/broadbean.svg",
+      "theme_id": "broadbean",
+      "name": "ソラマメ",
+      "output_path": "assets/generated/broadbean.jpg",
+      "required_features": [
+        "太い緑のさやを開き、2〜3個の大きな平たいソラマメ",
+        "一粒の黒いへそ"
+      ],
+      "forbidden_features": [
+        "小粒のグリーンピース、枝豆の毛だらけの小さなさや"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/corn.svg",
+      "theme_id": "corn",
+      "name": "トウモロコシ",
+      "output_path": "assets/generated/corn.jpg",
+      "required_features": [
+        "規則的に並んだ黄色い粒の穂、緑の皮を半分むき、先端にひげ"
+      ],
+      "forbidden_features": [
+        "粒がランダム、タケノコ形"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/edamame.svg",
+      "theme_id": "edamame",
+      "name": "エダマメ",
+      "output_path": "assets/generated/edamame.jpg",
+      "required_features": [
+        "細かい毛のある緑の短いさや、2〜3粒のふくらみ、開いたさやの緑豆"
+      ],
+      "forbidden_features": [
+        "大きなソラマメ、熟した茶色い大豆だけ"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/mikan.svg",
+      "theme_id": "mikan",
+      "name": "温州ミカン",
+      "output_path": "assets/generated/mikan.jpg",
+      "required_features": [
+        "やや扁平な橙色の温州ミカン、皮の細かな凹凸、むいた房を添える"
+      ],
+      "forbidden_features": [
+        "柿の大きな萼、オレンジの巨大球"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/butterfly.svg",
+      "theme_id": "butterfly",
+      "name": "モンシロチョウ（成虫）",
+      "output_path": "assets/generated/butterfly.jpg",
+      "required_features": [
+        "白い4枚翅、前翅先の黒い部分と黒斑、6脚、2本の先端がふくらむ触角"
+      ],
+      "forbidden_features": [
+        "5枚以上の翅、8脚、黄色いアゲハ模様"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/swallowtail.svg",
+      "theme_id": "swallowtail",
+      "name": "ナミアゲハ（成虫）",
+      "output_path": "assets/generated/swallowtail.jpg",
+      "required_features": [
+        "淡黄色と黒の縞、4枚翅、後翅の尾状突起と青橙の小斑、6脚、2触角"
+      ],
+      "forbidden_features": [
+        "透明トンボ翅、尾状突起なしのモンシロチョウ"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/cicada.svg",
+      "theme_id": "cicada",
+      "name": "アブラゼミ（成虫）",
+      "output_path": "assets/generated/cicada.jpg",
+      "required_features": [
+        "アブラゼミの茶色い不透明な翅、幅のある頭、大きな複眼、6脚、短い触角",
+        "全身側面斜め"
+      ],
+      "forbidden_features": [
+        "完全透明のミンミンゼミ翅、8脚、蛾の長い触角"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/beetle.svg",
+      "theme_id": "beetle",
+      "name": "カブトムシ（成虫・雄）",
+      "output_path": "assets/generated/beetle.jpg",
+      "required_features": [
+        "日本の雄カブトムシ、茶褐色の丸い体、大きな分岐した頭角と小さい胸角、6脚"
+      ],
+      "forbidden_features": [
+        "クワガタの左右大顎、角が複数頭から生える"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/chafer.svg",
+      "theme_id": "chafer",
+      "name": "カナブン（成虫）",
+      "output_path": "assets/generated/chafer.jpg",
+      "required_features": [
+        "カナブンの金緑色の幅広く平たい甲、角ばった頭、6脚、短い触角"
+      ],
+      "forbidden_features": [
+        "カブトムシの角、テントウムシの丸く小さい体"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/firefly.svg",
+      "theme_id": "firefly",
+      "name": "ゲンジボタル（成虫）",
+      "output_path": "assets/generated/firefly.jpg",
+      "required_features": [
+        "ゲンジボタルの黒い細長い翅鞘、赤い前胸に中央の黒い筋、6脚、糸状触角、腹部末端に弱い黄緑の光"
+      ],
+      "forbidden_features": [
+        "全身が光る、蝶の翅、テントウムシ形"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/dragonfly.svg",
+      "theme_id": "dragonfly",
+      "name": "アキアカネ（成虫）",
+      "output_path": "assets/generated/dragonfly.jpg",
+      "required_features": [
+        "赤い腹のアキアカネ、4枚の透明な翅、大きな複眼、6脚、細い腹",
+        "翅を左右に広げる"
+      ],
+      "forbidden_features": [
+        "蝶の模様翅、翅が2枚、腹部から脚"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/cricket.svg",
+      "theme_id": "cricket",
+      "name": "エンマコオロギ（成虫）",
+      "output_path": "assets/generated/cricket.jpg",
+      "required_features": [
+        "エンマコオロギの黒褐色の体、非常に長い触角、大きく曲がった後脚、6脚、背の翅"
+      ],
+      "forbidden_features": [
+        "緑のバッタ、短い触角、8脚"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/ladybird.svg",
+      "theme_id": "ladybird",
+      "name": "ナナホシテントウ（成虫）",
+      "output_path": "assets/generated/ladybird.jpg",
+      "required_features": [
+        "ナナホシテントウの赤橙の左右翅鞘、黒斑7つ（左右3つずつと付け根中央1つ）、黒い頭、6脚"
+      ],
+      "forbidden_features": [
+        "斑点6個8個、左右各7個、長い蝶の触角"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/stag.svg",
+      "theme_id": "stag",
+      "name": "コクワガタ（成虫・雄）",
+      "output_path": "assets/generated/stag.jpg",
+      "required_features": [
+        "雄コクワガタの黒褐色で細長めの体、左右の細長い大顎に内側の歯、6脚"
+      ],
+      "forbidden_features": [
+        "カブトムシの中央頭角、巨大なミヤマクワガタ頭の突起"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/newyear.svg",
+      "theme_id": "newyear",
+      "name": "正月",
+      "output_path": "assets/generated/newyear.jpg",
+      "required_features": [
+        "正月の小さな家庭の場面、左右の門松と中央の鏡餅、静かな祝いの雰囲気"
+      ],
+      "forbidden_features": [
+        "ひな人形、こいのぼり、クリスマスツリー、文字入りカレンダー"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/setsubun.svg",
+      "theme_id": "setsubun",
+      "name": "節分（立春の前日）",
+      "output_path": "assets/generated/setsubun.jpg",
+      "required_features": [
+        "鬼のお面と枡に入った炒り大豆、子どもが豆まきする小さな場面"
+      ],
+      "forbidden_features": [
+        "生の枝豆、ひな人形、福文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/hina.svg",
+      "theme_id": "hina",
+      "name": "ひな祭り（新暦）",
+      "output_path": "assets/generated/hina.jpg",
+      "required_features": [
+        "内裏びな一対が赤い段上に座る、金屏風、左右のぼんぼりと菱餅"
+      ],
+      "forbidden_features": [
+        "端午のかぶと、こいのぼり、鳥居で主題が隠れる"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/children.svg",
+      "theme_id": "children",
+      "name": "こどもの日",
+      "output_path": "assets/generated/children.jpg",
+      "required_features": [
+        "空を泳ぐこいのぼり3匹と小さなかぶと、風にたなびく吹き流し"
+      ],
+      "forbidden_features": [
+        "七夕短冊、ひな人形、クリスマス装飾"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/tanabata.svg",
+      "theme_id": "tanabata",
+      "name": "七夕（新暦）",
+      "output_path": "assets/generated/tanabata.jpg",
+      "required_features": [
+        "葉のある笹の枝、無地の細長い短冊と折り紙の輪飾りが吊られる"
+      ],
+      "forbidden_features": [
+        "竹の太い幹だけ、文字の願い事、こいのぼり"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/moonview.svg",
+      "theme_id": "moonview",
+      "name": "十五夜のお月見",
+      "output_path": "assets/generated/moonview.jpg",
+      "required_features": [
+        "丸い月、三方に積まれた白い団子、穂のあるススキ",
+        "3つを見やすく"
+      ],
+      "forbidden_features": [
+        "七夕の笹、団子串、文字入り暦"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/shichigosan.svg",
+      "theme_id": "shichigosan",
+      "name": "七五三",
+      "output_path": "assets/generated/shichigosan.jpg",
+      "required_features": [
+        "神社参道の晴れ着の子ども2人と細長い飴袋、鳥居は背景で主題を遮らない"
+      ],
+      "forbidden_features": [
+        "年齢を絵だけで断定、文字入り袋、卒業帽"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/solstice.svg",
+      "theme_id": "solstice",
+      "name": "冬至",
+      "output_path": "assets/generated/solstice.jpg",
+      "required_features": [
+        "丸いユズが数個浮く清潔な浴槽と脇のカボチャ",
+        "人物なし"
+      ],
+      "forbidden_features": [
+        "ミカン、スイカ、柑橘が過密、文字入り看板"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/lastday.svg",
+      "theme_id": "lastday",
+      "name": "大晦日",
+      "output_path": "assets/generated/lastday.jpg",
+      "required_features": [
+        "家庭の年末の場面としてそば椀と寺の鐘の小さな組合せ"
+      ],
+      "forbidden_features": [
+        "正月の門松や鏡餅だけ、カレンダー文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/kadomatsu.svg",
+      "theme_id": "kadomatsu",
+      "name": "門松",
+      "output_path": "assets/generated/kadomatsu.jpg",
+      "required_features": [
+        "竹3本を斜めに切った束、松の針葉とわらの土台",
+        "左右対の一方を大きく"
+      ],
+      "forbidden_features": [
+        "笹に短冊、クリスマスのモミ、竹の平切りのみ"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/kagamimochi.svg",
+      "theme_id": "kagamimochi",
+      "name": "鏡餅",
+      "output_path": "assets/generated/kagamimochi.jpg",
+      "required_features": [
+        "大小2段の白い丸餅、上に小さな橙色のダイダイ、三方に置く"
+      ],
+      "forbidden_features": [
+        "3段以上の団子塔、ミカンだけ、サンタ帽"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/osechi.svg",
+      "theme_id": "osechi",
+      "name": "おせち料理",
+      "output_path": "assets/generated/osechi.jpg",
+      "required_features": [
+        "ふたの開いた日本の重箱、黒豆、紅白かまぼこ、伊達巻、昆布巻き、えびを別区画"
+      ],
+      "forbidden_features": [
+        "寿司だけ、洋風ケーキ、品名文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/zoni.svg",
+      "theme_id": "zoni",
+      "name": "雑煮",
+      "output_path": "assets/generated/zoni.jpg",
+      "required_features": [
+        "椀に餅と青菜・根菜、澄んだ汁の一例、餅を見やすく"
+      ],
+      "forbidden_features": [
+        "餅なし、ラーメン、全国一律の具形を断定"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/nanakusa.svg",
+      "theme_id": "nanakusa",
+      "name": "七草がゆ",
+      "output_path": "assets/generated/nanakusa.jpg",
+      "required_features": [
+        "白い粥に緑の刻んだ菜、小さなカブとダイコンを脇に添える"
+      ],
+      "forbidden_features": [
+        "七種の厳密同定ができない架空草、白い団子のみ"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/beans.svg",
+      "theme_id": "beans",
+      "name": "福豆",
+      "output_path": "assets/generated/beans.jpg",
+      "required_features": [
+        "木の枡に茶淡色の炒り大豆、外に数粒"
+      ],
+      "forbidden_features": [
+        "緑の枝豆、生のさや、文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/arare.svg",
+      "theme_id": "arare",
+      "name": "ひなあられ",
+      "output_path": "assets/generated/arare.jpg",
+      "required_features": [
+        "白桃緑黄の小粒のひなあられを小皿に盛る"
+      ],
+      "forbidden_features": [
+        "大きな月見団子、串団子"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/kashiwa.svg",
+      "theme_id": "kashiwa",
+      "name": "柏餅",
+      "output_path": "assets/generated/kashiwa.jpg",
+      "required_features": [
+        "白い半月形の餅を、大きく波状に切れ込む柏の葉が包む"
+      ],
+      "forbidden_features": [
+        "桜の細長い鋸歯葉、ちまきの笹の細長い葉",
+        "柏葉で包む型を採用し地域差を否定しない"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/chimaki.svg",
+      "theme_id": "chimaki",
+      "name": "ちまき（端午の節句）",
+      "output_path": "assets/generated/chimaki.jpg",
+      "required_features": [
+        "細長い円錐の餅を笹葉で巻いてひもで結んだ和菓子のちまき、一本を部分的にむく"
+      ],
+      "forbidden_features": [
+        "中華ちまきの三角米飯、柏の大葉"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/somen.svg",
+      "theme_id": "somen",
+      "name": "七夕のそうめん",
+      "output_path": "assets/generated/somen.jpg",
+      "required_features": [
+        "白く極細の麺を器に盛る、細い箸と小さなつゆ椀",
+        "七夕装飾は入れない"
+      ],
+      "forbidden_features": [
+        "太いウドン、茶色いそば、文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/dango.svg",
+      "theme_id": "dango",
+      "name": "月見団子",
+      "output_path": "assets/generated/dango.jpg",
+      "required_features": [
+        "白い丸い団子が三方の上にピラミッド状に積まれる"
+      ],
+      "forbidden_features": [
+        "串に刺す、緑桃白の花見団子のみ"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/candy.svg",
+      "theme_id": "candy",
+      "name": "千歳飴",
+      "output_path": "assets/generated/candy.jpg",
+      "required_features": [
+        "細長い紅白の棒飴を数本、無地の細長い袋を横に置く"
+      ],
+      "forbidden_features": [
+        "丸い飴、文字で千歳飴と書く"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/soba.svg",
+      "theme_id": "soba",
+      "name": "年越しそば",
+      "output_path": "assets/generated/soba.jpg",
+      "required_features": [
+        "茶灰色の細いそば麺が汁のある椀に入る、箸、ねぎ少量"
+      ],
+      "forbidden_features": [
+        "真っ白なそうめん、黄色い中華麺、文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/snow.svg",
+      "theme_id": "snow",
+      "name": "雪",
+      "output_path": "assets/generated/snow.jpg",
+      "required_features": [
+        "雪が舞い地面と裸枝に積もる小さな自然場面、粒は白"
+      ],
+      "forbidden_features": [
+        "雨と雪を同時に描く、霜だけの草"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/frost.svg",
+      "theme_id": "frost",
+      "name": "霜",
+      "output_path": "assets/generated/frost.jpg",
+      "required_features": [
+        "草の葉と地表に細かい白い氷結晶が付く接写、葉の輪郭を残す"
+      ],
+      "forbidden_features": [
+        "厚い積雪、宙を舞う雪、露の丸い液滴"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/rainy.svg",
+      "theme_id": "rainy",
+      "name": "梅雨（関東など）",
+      "output_path": "assets/generated/rainy.jpg",
+      "required_features": [
+        "灰雲の下で雨粒が落ち、水たまりと無地の傘",
+        "雨の自然場面"
+      ],
+      "forbidden_features": [
+        "雪、紅葉、季節名で正答を示す"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/leaves.svg",
+      "theme_id": "leaves",
+      "name": "紅葉",
+      "output_path": "assets/generated/leaves.jpg",
+      "required_features": [
+        "落葉広葉樹の赤橙黄の葉が枝と地面に見える小さな自然場面"
+      ],
+      "forbidden_features": [
+        "松の針葉が真っ赤、桜花、季節文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/hanami.svg",
+      "theme_id": "hanami",
+      "name": "桜の花見",
+      "output_path": "assets/generated/hanami.jpg",
+      "required_features": [
+        "咲いた桜の下で家族が敷物に座る小さな花見場面、桜の花を識別可能に"
+      ],
+      "forbidden_features": [
+        "梅や桃だけ、宴会の酒を主役、文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/fireworks.svg",
+      "theme_id": "fireworks",
+      "name": "花火",
+      "output_path": "assets/generated/fireworks.jpg",
+      "required_features": [
+        "夜の空に放射状の打ち上げ花火2〜3発、下に小さい川岸の輪郭"
+      ],
+      "forbidden_features": [
+        "爆発火災、昼の太陽、文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/windbell.svg",
+      "theme_id": "windbell",
+      "name": "風鈴",
+      "output_path": "assets/generated/windbell.jpg",
+      "required_features": [
+        "透明のガラスの釣鐘形風鈴、内側の舌とひも、下に無地の短冊1枚"
+      ],
+      "forbidden_features": [
+        "七夕の笹、寺の大きな鐘、文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/yukata.svg",
+      "theme_id": "yukata",
+      "name": "浴衣",
+      "output_path": "assets/generated/yukata.jpg",
+      "required_features": [
+        "子どもが着た軽い浴衣、単純な帯、素足に下駄、着物は本人から見て左前身頃が右前身頃の上"
+      ],
+      "forbidden_features": [
+        "洋服、厚い振袖、襟の逆合わせ、文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/ice.svg",
+      "theme_id": "ice",
+      "name": "かき氷",
+      "output_path": "assets/generated/ice.jpg",
+      "required_features": [
+        "器に山盛りの細かい削り氷、赤いシロップ、スプーン"
+      ],
+      "forbidden_features": [
+        "アイスクリームの滑らかな球、文字旗"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/kite.svg",
+      "theme_id": "kite",
+      "name": "凧揚げ（正月遊び）",
+      "output_path": "assets/generated/kite.jpg",
+      "required_features": [
+        "ひもでつながる菱形の凧と地上の子ども、ひも連続、凧の尾"
+      ],
+      "forbidden_features": [
+        "こいのぼり、切れたひも、文字凧"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/top.svg",
+      "theme_id": "top",
+      "name": "こま回し（正月遊び）",
+      "output_path": "assets/generated/top.jpg",
+      "required_features": [
+        "木製のこま、中央の軸、円形の胴、回すひもを横に添える"
+      ],
+      "forbidden_features": [
+        "ベイブレード風機械、文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/battledore.svg",
+      "theme_id": "battledore",
+      "name": "羽根つき（正月遊び）",
+      "output_path": "assets/generated/battledore.jpg",
+      "required_features": [
+        "平らな木製羽子板と黒い小玉に数枚の白い羽がついた羽根",
+        "打つ小さな子ども"
+      ],
+      "forbidden_features": [
+        "テニスラケット、バドミントンラケット、文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/acorn.svg",
+      "theme_id": "acorn",
+      "name": "ドングリ",
+      "output_path": "assets/generated/acorn.jpg",
+      "required_features": [
+        "茶色の楕円ドングリと鱗状の帽子（殻斗）、帽子の有無2個"
+      ],
+      "forbidden_features": [
+        "クリのイガ、クルミ殻、ドングリ自体から葉"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/pinecone.svg",
+      "theme_id": "pinecone",
+      "name": "アカマツの球果",
+      "output_path": "assets/generated/pinecone.jpg",
+      "required_features": [
+        "成熟した茶色のアカマツ球果、開いた木質の鱗片が規則的に重なる、短い針葉を脇に添える"
+      ],
+      "forbidden_features": [
+        "赤い果実、トウモロコシ、モミの長い垂れる球果"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/month1.svg",
+      "theme_id": "month1",
+      "name": "1月",
+      "output_path": "assets/generated/month1.jpg",
+      "required_features": [
+        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 1 を正確に表示"
+      ],
+      "forbidden_features": [
+        "画像だけで月を判定させる",
+        "季節の花や行事を挿入して月の正答を誘導",
+        "AIの数字・文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "decorative_with_html_month_label",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/month2.svg",
+      "theme_id": "month2",
+      "name": "2月",
+      "output_path": "assets/generated/month2.jpg",
+      "required_features": [
+        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 2 を正確に表示"
+      ],
+      "forbidden_features": [
+        "画像だけで月を判定させる",
+        "季節の花や行事を挿入して月の正答を誘導",
+        "AIの数字・文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "decorative_with_html_month_label",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/month3.svg",
+      "theme_id": "month3",
+      "name": "3月",
+      "output_path": "assets/generated/month3.jpg",
+      "required_features": [
+        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 3 を正確に表示"
+      ],
+      "forbidden_features": [
+        "画像だけで月を判定させる",
+        "季節の花や行事を挿入して月の正答を誘導",
+        "AIの数字・文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "decorative_with_html_month_label",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/month4.svg",
+      "theme_id": "month4",
+      "name": "4月",
+      "output_path": "assets/generated/month4.jpg",
+      "required_features": [
+        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 4 を正確に表示"
+      ],
+      "forbidden_features": [
+        "画像だけで月を判定させる",
+        "季節の花や行事を挿入して月の正答を誘導",
+        "AIの数字・文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "decorative_with_html_month_label",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/month5.svg",
+      "theme_id": "month5",
+      "name": "5月",
+      "output_path": "assets/generated/month5.jpg",
+      "required_features": [
+        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 5 を正確に表示"
+      ],
+      "forbidden_features": [
+        "画像だけで月を判定させる",
+        "季節の花や行事を挿入して月の正答を誘導",
+        "AIの数字・文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "decorative_with_html_month_label",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/month6.svg",
+      "theme_id": "month6",
+      "name": "6月",
+      "output_path": "assets/generated/month6.jpg",
+      "required_features": [
+        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 6 を正確に表示"
+      ],
+      "forbidden_features": [
+        "画像だけで月を判定させる",
+        "季節の花や行事を挿入して月の正答を誘導",
+        "AIの数字・文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "decorative_with_html_month_label",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/month7.svg",
+      "theme_id": "month7",
+      "name": "7月",
+      "output_path": "assets/generated/month7.jpg",
+      "required_features": [
+        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 7 を正確に表示"
+      ],
+      "forbidden_features": [
+        "画像だけで月を判定させる",
+        "季節の花や行事を挿入して月の正答を誘導",
+        "AIの数字・文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "decorative_with_html_month_label",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/month8.svg",
+      "theme_id": "month8",
+      "name": "8月",
+      "output_path": "assets/generated/month8.jpg",
+      "required_features": [
+        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 8 を正確に表示"
+      ],
+      "forbidden_features": [
+        "画像だけで月を判定させる",
+        "季節の花や行事を挿入して月の正答を誘導",
+        "AIの数字・文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "decorative_with_html_month_label",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/month9.svg",
+      "theme_id": "month9",
+      "name": "9月",
+      "output_path": "assets/generated/month9.jpg",
+      "required_features": [
+        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 9 を正確に表示"
+      ],
+      "forbidden_features": [
+        "画像だけで月を判定させる",
+        "季節の花や行事を挿入して月の正答を誘導",
+        "AIの数字・文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "decorative_with_html_month_label",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/month10.svg",
+      "theme_id": "month10",
+      "name": "10月",
+      "output_path": "assets/generated/month10.jpg",
+      "required_features": [
+        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 10 を正確に表示"
+      ],
+      "forbidden_features": [
+        "画像だけで月を判定させる",
+        "季節の花や行事を挿入して月の正答を誘導",
+        "AIの数字・文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "decorative_with_html_month_label",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/month11.svg",
+      "theme_id": "month11",
+      "name": "11月",
+      "output_path": "assets/generated/month11.jpg",
+      "required_features": [
+        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 11 を正確に表示"
+      ],
+      "forbidden_features": [
+        "画像だけで月を判定させる",
+        "季節の花や行事を挿入して月の正答を誘導",
+        "AIの数字・文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "decorative_with_html_month_label",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/month12.svg",
+      "theme_id": "month12",
+      "name": "12月",
+      "output_path": "assets/generated/month12.jpg",
+      "required_features": [
+        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 12 を正確に表示"
+      ],
+      "forbidden_features": [
+        "画像だけで月を判定させる",
+        "季節の花や行事を挿入して月の正答を誘導",
+        "AIの数字・文字"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "decorative_with_html_month_label",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/spring.svg",
+      "theme_id": "spring",
+      "name": "はる",
+      "output_path": "assets/generated/spring.jpg",
+      "required_features": [
+        "桜の木と黄色いタンポポが咲く明るい自然場面"
+      ],
+      "forbidden_features": [
+        "紅葉、雪、名称文字、季節を背景単色だけで表す"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/summer.svg",
+      "theme_id": "summer",
+      "name": "なつ",
+      "output_path": "assets/generated/summer.jpg",
+      "required_features": [
+        "葉の茂る木とヒマワリが咲く明るい自然場面"
+      ],
+      "forbidden_features": [
+        "紅葉、雪、名称文字、季節を背景単色だけで表す"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/autumn.svg",
+      "theme_id": "autumn",
+      "name": "あき",
+      "output_path": "assets/generated/autumn.jpg",
+      "required_features": [
+        "赤橙のモミジと黄色いイチョウ、落ちたドングリの自然場面"
+      ],
+      "forbidden_features": [
+        "桜花、雪、名称文字、季節を背景単色だけで表す"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/winter.svg",
+      "theme_id": "winter",
+      "name": "ふゆ",
+      "output_path": "assets/generated/winter.jpg",
+      "required_features": [
+        "落葉した木、雪が少し積もる地面、白い息の小さい人物の自然場面"
+      ],
+      "forbidden_features": [
+        "満開の桜、ヒマワリ、名称文字、季節を背景単色だけで表す"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "subject_or_scene",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/icon.svg",
+      "theme_id": null,
+      "name": "assets/icon.svg",
+      "output_path": "assets/generated/icon.png",
+      "required_features": [
+        "中央ににこやかな子どもの冒険家、周囲に桜花・ヒマワリ・モミジ葉・雪の結晶の四季を小さく配置、丸い正方形に収まるアイコン"
+      ],
+      "forbidden_features": [
+        "文字",
+        "四季のどれか一つだけを大きく強調",
+        "小さすぎる細部"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "icon_only",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/icon-512.png",
+      "theme_id": null,
+      "name": "assets/icon-512.png",
+      "output_path": "assets/generated/icon-512.png",
+      "required_features": [
+        "中央ににこやかな子どもの冒険家、周囲に桜花・ヒマワリ・モミジ葉・雪の結晶の四季を小さく配置、丸い正方形に収まるアイコン"
+      ],
+      "forbidden_features": [
+        "文字",
+        "四季のどれか一つだけを大きく強調",
+        "小さすぎる細部"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "icon_only",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    },
+    {
+      "image_id": "assets/icon-192.png",
+      "theme_id": null,
+      "name": "assets/icon-192.png",
+      "output_path": "assets/generated/icon-192.png",
+      "required_features": [
+        "中央ににこやかな子どもの冒険家、周囲に桜花・ヒマワリ・モミジ葉・雪の結晶の四季を小さく配置、丸い正方形に収まるアイコン"
+      ],
+      "forbidden_features": [
+        "文字",
+        "四季のどれか一つだけを大きく強調",
+        "小さすぎる細部"
+      ],
+      "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
+      "assessment_use": "icon_only",
+      "qa_checks": [
+        "同定できる必須特徴を目視確認",
+        "禁止特徴なし",
+        "小画面120pxで形状を識別",
+        "正答名称・季節を示す文字なし",
+        "上下左右に約10%の余白、主題を切らない",
+        "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
+      ],
+      "ledger_status": "original PENDING unchanged"
+    }
+  ]
+}

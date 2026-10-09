@@ -1,0 +1,11 @@
+{
+  "main": "619a03f51e70d2d6699b14cad44ff79022c6f0c9",
+  "productionBranch": "asset-refresh-20261009",
+  "productionSha": "bf2ffcc2cc07a2919ae745b22c5f0dc218f11b9b",
+  "manifestSha256": "b84cbf476cab95a8c22ce7c4032f097270f1c7ea430e072cb6a47c8c99995443",
+  "records": 103,
+  "pending": 103,
+  "ruleset": 24796067,
+  "keyAndSchema": "unchanged",
+  "oldQuestions": "all retained byte-for-byte in baseline; metadata retirement only; no changed answer"
+}

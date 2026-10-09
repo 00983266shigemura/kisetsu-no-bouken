@@ -1,0 +1,27 @@
+{
+  "mission": "教材仕様→問題UI→画像照合→生成→QA公開",
+  "mode": "checkpointed sequential image generation, one image per subject",
+  "batchSize": 4,
+  "retryPolicy": "failed QA target only; reuse verified assets",
+  "toolOutput": "only summary and paths; large data stays in tool orchestration/files",
+  "review": "independent educational/spec and implementation reviewers",
+  "perAsset": [
+    "id",
+    "prompt",
+    "sourcePath",
+    "sha256",
+    "dimensions",
+    "generationStatus",
+    "visualQA",
+    "independentQA"
+  ],
+  "protected": [
+    "origin/main",
+    "origin/asset-refresh-20261009",
+    "103-record original manifest",
+    "Ruleset",
+    "localStorage key/schema"
+  ],
+  "releaseGate": "V3 physical iOS10 is UNVERIFIED and blocks release unless explicit exemption",
+  "continuation": "read CHECKPOINT and manifest; never restart passed assets"
+}

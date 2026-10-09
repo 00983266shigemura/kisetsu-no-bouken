@@ -1,0 +1,2358 @@
+{
+  "baseline": {
+    "themes": 100,
+    "contentThemes": 84,
+    "questions": 240,
+    "types": {
+      "name": 82,
+      "season": 96,
+      "month": 8,
+      "match": 42,
+      "order": 12
+    }
+  },
+  "candidate": {
+    "totalQuestions": 335,
+    "activeQuestions": 312,
+    "retiredQuestionIds": [
+      "season-tanpopo",
+      "season-iris",
+      "season-sunflower",
+      "season-morning",
+      "season-maple",
+      "season-plum",
+      "season-sasanqua",
+      "season-cucumber",
+      "season-tomato",
+      "season-cabbage",
+      "season-spinach",
+      "season-radish",
+      "season-mikan",
+      "season-butterfly",
+      "season-swallowtail",
+      "season-cicada",
+      "season-dragonfly",
+      "season-cricket",
+      "season-ladybird",
+      "season-stag",
+      "season-frost",
+      "season-rainy",
+      "season-leaves"
+    ],
+    "newTypes": {
+      "odd": 32,
+      "multi": 32,
+      "event": 11,
+      "clue": 4,
+      "marks": 16
+    }
+  },
+  "themeMatrix": [
+    {
+      "id": "sakura",
+      "name": "サクラ（ソメイヨシノ）",
+      "label": "さくら",
+      "category": "花",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        3,
+        4
+      ],
+      "explanation": "はるに えだいっぱいの はなが さくよ。",
+      "difficulty": 1,
+      "sources": [
+        "park",
+        "plant-spring"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "tulip",
+      "name": "チューリップ",
+      "label": "ちゅーりっぷ",
+      "category": "花",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        3,
+        4
+      ],
+      "explanation": "はるの はな。コップのような はなと ながい はっぱだよ。",
+      "difficulty": 1,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "nanohana",
+      "name": "ナノハナ",
+      "label": "なのはな",
+      "category": "花",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        3,
+        4
+      ],
+      "explanation": "はるに ちいさな きいろい はなが たくさん さくよ。",
+      "difficulty": 1,
+      "sources": [
+        "park",
+        "plant-spring"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "tanpopo",
+      "name": "セイヨウタンポポ",
+      "label": "たんぽぽ",
+      "category": "花",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "はるの はなの なかま。なつや あきにも さくよ。",
+      "difficulty": 1,
+      "sources": [
+        "plant-spring",
+        "koguma"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう この なかから ひとつ。",
+      "teachingSeason": "spring",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "fuji",
+      "name": "フジ",
+      "label": "ふじ",
+      "category": "花",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        4,
+        5
+      ],
+      "explanation": "はるに むらさきいろの はなが ふさになって たれるよ。",
+      "difficulty": 2,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "tsutsuji",
+      "name": "ツツジ類",
+      "label": "つつじ",
+      "category": "花",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        4,
+        5
+      ],
+      "explanation": "はるに えださきで はなが ひらくよ。",
+      "difficulty": 2,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "nemophila",
+      "name": "ネモフィラ",
+      "label": "ねもふぃら",
+      "category": "花",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        4,
+        5
+      ],
+      "explanation": "はるに あおい はなが ひらくよ。",
+      "difficulty": 2,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "iris",
+      "name": "ハナショウブ",
+      "label": "はなしょうぶ",
+      "category": "花",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "months": [
+        5,
+        6
+      ],
+      "explanation": "はるの おわりから なつの はじめに さくよ。",
+      "difficulty": 3,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう この なかから ひとつ。",
+      "teachingSeason": "spring",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "lotus",
+      "name": "ハス",
+      "label": "はす",
+      "category": "花",
+      "seasons": [
+        "summer"
+      ],
+      "months": [
+        6,
+        7
+      ],
+      "explanation": "なつに みずべで さくよ。まるい はっぱも みてね。",
+      "difficulty": 2,
+      "sources": [
+        "park",
+        "plant-summer"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "hydrangea",
+      "name": "アジサイ",
+      "label": "あじさい",
+      "category": "花",
+      "seasons": [
+        "summer"
+      ],
+      "months": [
+        6,
+        7
+      ],
+      "explanation": "なつの はじめに ちいさな はなが あつまって さくよ。",
+      "difficulty": 1,
+      "sources": [
+        "park",
+        "plant-summer"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "sunflower",
+      "name": "ヒマワリ",
+      "label": "ひまわり",
+      "category": "花",
+      "seasons": [
+        "summer",
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "なつを だいひょうする はな。あきにも さくことが あるよ。",
+      "difficulty": 1,
+      "sources": [
+        "plant-summer",
+        "koguma"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう この なかから ひとつ。",
+      "teachingSeason": "summer",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "morning",
+      "name": "アサガオ",
+      "label": "あさがお",
+      "category": "花",
+      "seasons": [
+        "summer",
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "なつから あきに さくよ。つるが のびるよ。",
+      "difficulty": 1,
+      "sources": [
+        "plant-summer"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう この なかから ひとつ。",
+      "teachingSeason": "summer",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "cosmos",
+      "name": "コスモス",
+      "label": "こすもす",
+      "category": "花",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        9,
+        10,
+        11
+      ],
+      "explanation": "あきを だいひょうする はな。はっぱは ほそいよ。",
+      "difficulty": 1,
+      "sources": [
+        "park",
+        "koguma"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "spiderlily",
+      "name": "ヒガンバナ",
+      "label": "ひがんばな",
+      "category": "花",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        9,
+        10
+      ],
+      "explanation": "あきに ほそい はなびらの はなが さくよ。",
+      "difficulty": 3,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "osmanthus",
+      "name": "キンモクセイ",
+      "label": "きんもくせい",
+      "category": "花",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        9,
+        10
+      ],
+      "explanation": "あきに ちいさな オレンジいろの はなが さくよ。",
+      "difficulty": 2,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "ginkgo",
+      "name": "イチョウの黄葉",
+      "label": "いちょうの は",
+      "category": "樹木・木の実",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        10,
+        11
+      ],
+      "explanation": "あきに はっぱが きいろくなるよ。おうぎの かたちだね。",
+      "difficulty": 1,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はが いろづく きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "maple",
+      "name": "モミジの紅葉",
+      "label": "もみじの は",
+      "category": "樹木・木の実",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "months": [
+        10,
+        11,
+        12
+      ],
+      "explanation": "あきから ふゆの はじめに はっぱが いろづくよ。",
+      "difficulty": 1,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はが いろづく きせつを えらぼう この なかから ひとつ。",
+      "teachingSeason": "autumn",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "plum",
+      "name": "ウメの花",
+      "label": "うめの はな",
+      "category": "花",
+      "seasons": [
+        "winter",
+        "spring"
+      ],
+      "months": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "ふゆから はるの はじめに さくよ。はなびらは まるいね。",
+      "difficulty": 2,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう この なかから ひとつ。",
+      "teachingSeason": "winter",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "sasanqua",
+      "name": "サザンカ",
+      "label": "さざんか",
+      "category": "花",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "explanation": "あきから ふゆに さくよ。はなびらが いちまいずつ ちるよ。",
+      "difficulty": 3,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう この なかから ひとつ。",
+      "teachingSeason": "autumn",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "wintersweet",
+      "name": "ソシンロウバイ",
+      "label": "ろうばい",
+      "category": "花",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "explanation": "ふゆに きいろい はなが さくよ。",
+      "difficulty": 3,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はなが さく きせつを えらぼう",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "strawberry",
+      "name": "イチゴ（露地の旬）",
+      "label": "いちご",
+      "category": "食べ物",
+      "seasons": [
+        "spring"
+      ],
+      "months": [],
+      "explanation": "そとで そだつ いちごの しゅんは はる。ハウスでは ふゆにも とれるよ。",
+      "difficulty": 1,
+      "sources": [
+        "food"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "そとで そだつ いちごの しゅんは？",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "bamboo",
+      "name": "タケノコ",
+      "label": "たけのこ",
+      "category": "食べ物",
+      "seasons": [
+        "spring"
+      ],
+      "months": [],
+      "explanation": "はるの たべもの。おおきくなると たけに なるよ。",
+      "difficulty": 1,
+      "sources": [
+        "food"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "clam",
+      "name": "アサリ",
+      "label": "あさり",
+      "category": "食べ物",
+      "seasons": [
+        "spring"
+      ],
+      "months": [],
+      "explanation": "はるの しゅんの たべものの ひとつだよ。",
+      "difficulty": 2,
+      "sources": [
+        "food"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "cucumber",
+      "name": "キュウリ",
+      "label": "きゅうり",
+      "category": "食べ物",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "months": [],
+      "explanation": "はるや なつが しゅん。ながい みが なるよ。",
+      "difficulty": 1,
+      "sources": [
+        "food",
+        "ja-cucumber"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう。この なかから ひとつ。",
+      "teachingSeason": "summer",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "tomato",
+      "name": "トマト",
+      "label": "とまと",
+      "category": "食べ物",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "months": [],
+      "explanation": "はるや なつが しゅん。なつの やさいとしても したしまれるよ。",
+      "difficulty": 1,
+      "sources": [
+        "food",
+        "ja-tomato"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう。この なかから ひとつ。",
+      "teachingSeason": "summer",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "watermelon",
+      "name": "スイカ",
+      "label": "すいか",
+      "category": "食べ物",
+      "seasons": [
+        "summer"
+      ],
+      "months": [],
+      "explanation": "なつが しゅん。きると なかに たねが あるよ。",
+      "difficulty": 1,
+      "sources": [
+        "food",
+        "edamame"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "aji",
+      "name": "アジ",
+      "label": "あじ",
+      "category": "食べ物",
+      "seasons": [
+        "summer"
+      ],
+      "months": [],
+      "explanation": "なつの しゅんの さかなの ひとつだよ。",
+      "difficulty": 3,
+      "sources": [
+        "food"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "sweetpotato",
+      "name": "サツマイモ",
+      "label": "さつまいも",
+      "category": "食べ物",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "あきに とれる たべものの ひとつだよ。",
+      "difficulty": 1,
+      "sources": [
+        "food"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "persimmon",
+      "name": "カキ",
+      "label": "かき",
+      "category": "食べ物",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "あきの しゅんの くだものの ひとつだよ。",
+      "difficulty": 1,
+      "sources": [
+        "food"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "sanma",
+      "name": "サンマ",
+      "label": "さんま",
+      "category": "食べ物",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "あきの しゅんの さかなの ひとつだよ。",
+      "difficulty": 3,
+      "sources": [
+        "food"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "chestnut",
+      "name": "クリ",
+      "label": "くり",
+      "category": "樹木・木の実",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "あきに みが なるよ。そとがわに とげの ある いがが あるよ。",
+      "difficulty": 1,
+      "sources": [
+        "food"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "cabbage",
+      "name": "ハクサイ",
+      "label": "はくさい",
+      "category": "食べ物",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "months": [],
+      "explanation": "あきから ふゆが しゅんの やさいだよ。",
+      "difficulty": 1,
+      "sources": [
+        "winterfood",
+        "ja-cabbage"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう。この なかから ひとつ。",
+      "teachingSeason": "winter",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "spinach",
+      "name": "ホウレンソウ",
+      "label": "ほうれんそう",
+      "category": "食べ物",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "months": [],
+      "explanation": "あきから ふゆが しゅんの やさいだよ。",
+      "difficulty": 2,
+      "sources": [
+        "winterfood",
+        "ja-spinach"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう。この なかから ひとつ。",
+      "teachingSeason": "winter",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "radish",
+      "name": "ダイコン",
+      "label": "だいこん",
+      "category": "食べ物",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "months": [],
+      "explanation": "あきから ふゆが しゅんの やさいだよ。",
+      "difficulty": 1,
+      "sources": [
+        "winterfood",
+        "ja-radish"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう。この なかから ひとつ。",
+      "teachingSeason": "winter",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "broadbean",
+      "name": "ソラマメ",
+      "label": "そらまめ",
+      "category": "食べ物",
+      "seasons": [
+        "spring"
+      ],
+      "months": [],
+      "explanation": "はるが しゅん。おおきな さやに まめが はいっているよ。",
+      "difficulty": 2,
+      "sources": [
+        "soramame"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "corn",
+      "name": "トウモロコシ",
+      "label": "とうもろこし",
+      "category": "食べ物",
+      "seasons": [
+        "summer"
+      ],
+      "months": [
+        8
+      ],
+      "explanation": "なつの たべもの。つぶが ならんでいるね。",
+      "difficulty": 1,
+      "sources": [
+        "corn"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "edamame",
+      "name": "エダマメ",
+      "label": "えだまめ",
+      "category": "食べ物",
+      "seasons": [
+        "summer"
+      ],
+      "months": [],
+      "explanation": "なつが しゅん。さやの なかに まめが はいっているよ。",
+      "difficulty": 2,
+      "sources": [
+        "edamame"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "mikan",
+      "name": "温州ミカン",
+      "label": "みかん",
+      "category": "食べ物",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "months": [],
+      "explanation": "あきから ふゆが しゅん。かわを むいて たべるよ。",
+      "difficulty": 1,
+      "sources": [
+        "mikan"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "しゅんの きせつを えらぼう この なかから ひとつ。",
+      "teachingSeason": "autumn",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "butterfly",
+      "name": "モンシロチョウ（成虫）",
+      "label": "もんしろちょう",
+      "category": "生き物",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "はるから あきに とぶよ。しろい はねに くろい もようが あるよ。",
+      "difficulty": 1,
+      "sources": [
+        "insects"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おとなの むしが みられるのは？ この なかから ひとつ。",
+      "teachingSeason": "spring",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "swallowtail",
+      "name": "ナミアゲハ（成虫）",
+      "label": "あげはちょう",
+      "category": "生き物",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "はるから あきに とぶよ。はねに くろい しまもようが あるよ。",
+      "difficulty": 2,
+      "sources": [
+        "insects"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おとなの むしが みられるのは？ この なかから ひとつ。",
+      "teachingSeason": "spring",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "cicada",
+      "name": "アブラゼミ（成虫）",
+      "label": "せみ",
+      "category": "生き物",
+      "seasons": [
+        "summer",
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "なつから あきに みられるよ。きに とまるよ。",
+      "difficulty": 1,
+      "sources": [
+        "insects"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おとなの むしが みられるのは？ この なかから ひとつ。",
+      "teachingSeason": "summer",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "beetle",
+      "name": "カブトムシ（成虫・雄）",
+      "label": "かぶとむし",
+      "category": "生き物",
+      "seasons": [
+        "summer"
+      ],
+      "months": [],
+      "explanation": "なつに せいちゅうが みられるよ。おすには つのが あるよ。",
+      "difficulty": 1,
+      "sources": [
+        "insects"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おとなの むしが みられるのは？",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "chafer",
+      "name": "カナブン（成虫）",
+      "label": "かなぶん",
+      "category": "生き物",
+      "seasons": [
+        "summer"
+      ],
+      "months": [],
+      "explanation": "なつに せいちゅうが みられるよ。",
+      "difficulty": 3,
+      "sources": [
+        "insects"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おとなの むしが みられるのは？",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "firefly",
+      "name": "ゲンジボタル（成虫）",
+      "label": "ほたる",
+      "category": "生き物",
+      "seasons": [
+        "summer"
+      ],
+      "months": [],
+      "explanation": "なつの はじめに ひかる すがたが みられるよ。",
+      "difficulty": 2,
+      "sources": [
+        "insects"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おとなの むしが みられるのは？",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "dragonfly",
+      "name": "アキアカネ（成虫）",
+      "label": "あきあかね",
+      "category": "生き物",
+      "seasons": [
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "months": [],
+      "explanation": "なつに せいちゅうになるよ。あきの あかとんぼとして したしまれるよ。",
+      "difficulty": 2,
+      "sources": [
+        "insects"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おとなの むしが みられるのは？ この なかから ひとつ。",
+      "teachingSeason": "summer",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "cricket",
+      "name": "エンマコオロギ（成虫）",
+      "label": "こおろぎ",
+      "category": "生き物",
+      "seasons": [
+        "summer",
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "なつから あきに せいちゅうが みられるよ。",
+      "difficulty": 2,
+      "sources": [
+        "insects"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おとなの むしが みられるのは？ この なかから ひとつ。",
+      "teachingSeason": "summer",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "ladybird",
+      "name": "ナナホシテントウ（成虫）",
+      "label": "ななほしてんとう",
+      "category": "生き物",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "はるから あきに みられるよ。くろい てんが ななつ あるよ。",
+      "difficulty": 2,
+      "sources": [
+        "insects"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おとなの むしが みられるのは？ この なかから ひとつ。",
+      "teachingSeason": "spring",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "stag",
+      "name": "コクワガタ（成虫・雄）",
+      "label": "くわがたむし",
+      "category": "生き物",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "はるから あきに みられるよ。おすには おおきな あごが あるよ。",
+      "difficulty": 2,
+      "sources": [
+        "insects"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おとなの むしが みられるのは？ この なかから ひとつ。",
+      "teachingSeason": "spring",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "newyear",
+      "name": "正月",
+      "label": "おしょうがつ",
+      "category": "行事",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        1
+      ],
+      "explanation": "1がつ。あたらしい としを おいわいするよ。",
+      "difficulty": 1,
+      "sources": [
+        "newyear"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": true,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "quizMonth": 1,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "setsubun",
+      "name": "節分（立春の前日）",
+      "label": "せつぶん",
+      "category": "行事",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        2
+      ],
+      "explanation": "2がつに まめまきを するよ。ひづけは としで かわるよ。",
+      "difficulty": 1,
+      "sources": [
+        "gyoji",
+        "nao-setsubun"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": true,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "quizMonth": 2,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "hina",
+      "name": "ひな祭り（新暦）",
+      "label": "ひなまつり",
+      "category": "行事",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        3
+      ],
+      "explanation": "3がつ3か。ひなにんぎょうを かざって おいわいするよ。",
+      "difficulty": 1,
+      "sources": [
+        "sekku"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": true,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "quizMonth": 3,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "children",
+      "name": "こどもの日",
+      "label": "こどものひ",
+      "category": "行事",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        5
+      ],
+      "explanation": "5がつ5か。こどもの せいちょうを おいわいするよ。",
+      "difficulty": 1,
+      "sources": [
+        "gyoji",
+        "sekku"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": true,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "quizMonth": 5,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "tanabata",
+      "name": "七夕（新暦）",
+      "label": "たなばた",
+      "category": "行事",
+      "seasons": [
+        "summer"
+      ],
+      "months": [
+        7,
+        8
+      ],
+      "explanation": "しんれきでは 7がつ7か。8がつに おいわいする ちいきも あるよ。",
+      "difficulty": 1,
+      "sources": [
+        "sekku"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": true,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "quizMonth": 7,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "moonview",
+      "name": "十五夜のお月見",
+      "label": "おつきみ",
+      "category": "行事",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        9,
+        10
+      ],
+      "explanation": "あきの つきを たのしむよ。9がつか 10がつに なるよ。",
+      "difficulty": 1,
+      "sources": [
+        "moon",
+        "gyoji"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "shichigosan",
+      "name": "七五三",
+      "label": "しちごさん",
+      "category": "行事",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        11
+      ],
+      "explanation": "11がつ15かが めやす。おまいりの ひは おうちで きめるよ。",
+      "difficulty": 1,
+      "sources": [
+        "753",
+        "753-range"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": true,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "quizMonth": 11,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "solstice",
+      "name": "冬至",
+      "label": "とうじ",
+      "category": "行事",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        12
+      ],
+      "explanation": "ふゆに ひるが いちばん みじかくなる ころだよ。",
+      "difficulty": 2,
+      "sources": [
+        "gyoji",
+        "nao-solstice"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": true,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "quizMonth": 12,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "lastday",
+      "name": "大晦日",
+      "label": "おおみそか",
+      "category": "行事",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        12
+      ],
+      "explanation": "12がつ31にち。1ねんの さいごの ひだよ。",
+      "difficulty": 2,
+      "sources": [
+        "gyoji"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": true,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "quizMonth": 12,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "kadomatsu",
+      "name": "門松",
+      "label": "かどまつ",
+      "category": "行事の道具",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        12,
+        1
+      ],
+      "explanation": "おしょうがつの かざり。たけや まつを つかうよ。",
+      "difficulty": 2,
+      "sources": [
+        "newyear"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "kagamimochi",
+      "name": "鏡餅",
+      "label": "かがみもち",
+      "category": "行事食",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        12,
+        1
+      ],
+      "explanation": "おしょうがつに かざる おもちだよ。",
+      "difficulty": 1,
+      "sources": [
+        "newyear"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "この ぎょうじしょくの きせつは？",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "osechi",
+      "name": "おせち料理",
+      "label": "おせち",
+      "category": "行事食",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        1
+      ],
+      "explanation": "おしょうがつの おいわいの りょうりだよ。",
+      "difficulty": 2,
+      "sources": [
+        "gyoji",
+        "newyear"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "この ぎょうじしょくの きせつは？",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "zoni",
+      "name": "雑煮",
+      "label": "おぞうに",
+      "category": "行事食",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        1
+      ],
+      "explanation": "おしょうがつに たべる おもちの はいった しるものだよ。",
+      "difficulty": 2,
+      "sources": [
+        "gyoji"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "この ぎょうじしょくの きせつは？",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "nanakusa",
+      "name": "七草がゆ",
+      "label": "ななくさがゆ",
+      "category": "行事食",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        1
+      ],
+      "explanation": "1がつ7かに たべる くさの はいった おかゆだよ。",
+      "difficulty": 3,
+      "sources": [
+        "sekku",
+        "washoku"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "この ぎょうじしょくの きせつは？",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "beans",
+      "name": "福豆",
+      "label": "ふくまめ",
+      "category": "行事食",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        2
+      ],
+      "explanation": "せつぶんに まく まめだよ。",
+      "difficulty": 2,
+      "sources": [
+        "gyoji"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "この ぎょうじしょくの きせつは？",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "arare",
+      "name": "ひなあられ",
+      "label": "ひなあられ",
+      "category": "行事食",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        3
+      ],
+      "explanation": "ひなまつりの おかしだよ。",
+      "difficulty": 2,
+      "sources": [
+        "gyoji"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "この ぎょうじしょくの きせつは？",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "kashiwa",
+      "name": "柏餅",
+      "label": "かしわもち",
+      "category": "行事食",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        5
+      ],
+      "explanation": "こどものひに たべるよ。かしわの はで つつむよ。",
+      "difficulty": 1,
+      "sources": [
+        "gyoji"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "この ぎょうじしょくの きせつは？",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "chimaki",
+      "name": "ちまき（端午の節句）",
+      "label": "ちまき",
+      "category": "行事食",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        5
+      ],
+      "explanation": "たんごの せっくに たべるよ。はっぱで つつんであるね。",
+      "difficulty": 3,
+      "sources": [
+        "washoku"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "この ぎょうじしょくの きせつは？",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "somen",
+      "name": "七夕のそうめん",
+      "label": "そうめん",
+      "category": "行事食",
+      "seasons": [
+        "summer"
+      ],
+      "months": [
+        7,
+        8
+      ],
+      "explanation": "たなばたに そうめんを たべる ならわしが あるよ。",
+      "difficulty": 2,
+      "sources": [
+        "washoku"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "この ぎょうじしょくの きせつは？",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "dango",
+      "name": "月見団子",
+      "label": "つきみだんご",
+      "category": "行事食",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        9,
+        10
+      ],
+      "explanation": "おつきみに おそなえする おだんごだよ。",
+      "difficulty": 1,
+      "sources": [
+        "gyoji",
+        "moon"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "この ぎょうじしょくの きせつは？",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "candy",
+      "name": "千歳飴",
+      "label": "ちとせあめ",
+      "category": "行事食",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        11
+      ],
+      "explanation": "しちごさんで もらう ながい あめだよ。",
+      "difficulty": 2,
+      "sources": [
+        "gyoji"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "この ぎょうじしょくの きせつは？",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "soba",
+      "name": "年越しそば",
+      "label": "としこしそば",
+      "category": "行事食",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        12
+      ],
+      "explanation": "おおみそかに たべる そばだよ。",
+      "difficulty": 2,
+      "sources": [
+        "gyoji"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "この ぎょうじしょくの きせつは？",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "snow",
+      "name": "雪",
+      "label": "ゆき",
+      "category": "自然",
+      "seasons": [
+        "winter"
+      ],
+      "months": [],
+      "explanation": "さむい ふゆに よく ふるよ。ばしょにより ふりかたは ちがうよ。",
+      "difficulty": 1,
+      "sources": [
+        "weather"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "frost",
+      "name": "霜",
+      "label": "しも",
+      "category": "自然",
+      "seasons": [
+        "autumn",
+        "winter",
+        "spring"
+      ],
+      "months": [],
+      "explanation": "さむい あさに みられる こおり。はるにも みられるよ。",
+      "difficulty": 3,
+      "sources": [
+        "frost"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう この なかから ひとつ。",
+      "teachingSeason": "autumn",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "rainy",
+      "name": "梅雨（関東など）",
+      "label": "つゆ",
+      "category": "自然",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "months": [],
+      "explanation": "あめや くもりの ひが つづく ころ。ばしょで じきが ちがうよ。",
+      "difficulty": 2,
+      "sources": [
+        "weather"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう この なかから ひとつ。",
+      "teachingSeason": "spring",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "leaves",
+      "name": "紅葉",
+      "label": "こうよう",
+      "category": "自然",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "months": [
+        10,
+        11,
+        12
+      ],
+      "explanation": "あきに はっぱが いろづくよ。ふゆの はじめまで みられることも あるよ。",
+      "difficulty": 2,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "はが いろづく きせつを えらぼう この なかから ひとつ。",
+      "teachingSeason": "autumn",
+      "curriculumRole": "context"
+    },
+    {
+      "id": "hanami",
+      "name": "桜の花見",
+      "label": "おはなみ",
+      "category": "暮らし・遊び",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        3,
+        4
+      ],
+      "explanation": "はるに さくらの はなを みて たのしむよ。",
+      "difficulty": 1,
+      "sources": [
+        "park"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "fireworks",
+      "name": "花火",
+      "label": "はなび",
+      "category": "暮らし・遊び",
+      "seasons": [
+        "summer"
+      ],
+      "months": [],
+      "explanation": "なつの よるの おたのしみ。ほかの きせつにも あがるよ。",
+      "difficulty": 1,
+      "sources": [
+        "summerlife"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "windbell",
+      "name": "風鈴",
+      "label": "ふうりん",
+      "category": "暮らし・遊び",
+      "seasons": [
+        "summer"
+      ],
+      "months": [],
+      "explanation": "なつに すずしげな おとを たのしむよ。",
+      "difficulty": 2,
+      "sources": [
+        "summerlife"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "yukata",
+      "name": "浴衣",
+      "label": "ゆかた",
+      "category": "暮らし・遊び",
+      "seasons": [
+        "summer"
+      ],
+      "months": [],
+      "explanation": "なつの おまつりなどで きるよ。",
+      "difficulty": 2,
+      "sources": [
+        "summerlife"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "ice",
+      "name": "かき氷",
+      "label": "かきごおり",
+      "category": "暮らし・遊び",
+      "seasons": [
+        "summer"
+      ],
+      "months": [],
+      "explanation": "なつに したしまれる つめたい たべものだよ。",
+      "difficulty": 1,
+      "sources": [
+        "summerlife"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "kite",
+      "name": "凧揚げ（正月遊び）",
+      "label": "たこあげ",
+      "category": "暮らし・遊び",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        1
+      ],
+      "explanation": "おしょうがつの あそび。ほかの きせつにも あそべるよ。",
+      "difficulty": 1,
+      "sources": [
+        "newyearplay"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おしょうがつは どの きせつ？",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "top",
+      "name": "こま回し（正月遊び）",
+      "label": "こままわし",
+      "category": "暮らし・遊び",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        1
+      ],
+      "explanation": "おしょうがつの あそび。ほかの きせつにも あそべるよ。",
+      "difficulty": 1,
+      "sources": [
+        "newyearplay"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おしょうがつは どの きせつ？",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "battledore",
+      "name": "羽根つき（正月遊び）",
+      "label": "はねつき",
+      "category": "暮らし・遊び",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        1
+      ],
+      "explanation": "おしょうがつの あそび。はごいたで はねを うつよ。",
+      "difficulty": 2,
+      "sources": [
+        "newyearplay"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "おしょうがつは どの きせつ？",
+      "teachingSeason": "winter",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "acorn",
+      "name": "ドングリ",
+      "label": "どんぐり",
+      "category": "樹木・木の実",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "あきに みのる きのみだよ。ぼうしの ような ものが ついているね。",
+      "difficulty": 1,
+      "sources": [
+        "acorn"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "pinecone",
+      "name": "アカマツの球果",
+      "label": "まつぼっくり",
+      "category": "樹木・木の実",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [],
+      "explanation": "あきに じゅくすよ。おちたものは ほかの きせつにも あるよ。",
+      "difficulty": 2,
+      "sources": [
+        "pine"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonScope": "学習上の代表例。排他的な生息・流通期間ではない。",
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "core"
+    },
+    {
+      "id": "month1",
+      "name": "1月",
+      "label": "1がつ",
+      "category": "月と順序",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        1
+      ],
+      "explanation": "1がつは ふゆの なかまだよ。",
+      "difficulty": 2,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "winter",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "month2",
+      "name": "2月",
+      "label": "2がつ",
+      "category": "月と順序",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        2
+      ],
+      "explanation": "2がつは ふゆの なかまだよ。",
+      "difficulty": 2,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "winter",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "month3",
+      "name": "3月",
+      "label": "3がつ",
+      "category": "月と順序",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        3
+      ],
+      "explanation": "3がつは はるの なかまだよ。",
+      "difficulty": 2,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "month4",
+      "name": "4月",
+      "label": "4がつ",
+      "category": "月と順序",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        4
+      ],
+      "explanation": "4がつは はるの なかまだよ。",
+      "difficulty": 2,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "month5",
+      "name": "5月",
+      "label": "5がつ",
+      "category": "月と順序",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        5
+      ],
+      "explanation": "5がつは はるの なかまだよ。",
+      "difficulty": 2,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "month6",
+      "name": "6月",
+      "label": "6がつ",
+      "category": "月と順序",
+      "seasons": [
+        "summer"
+      ],
+      "months": [
+        6
+      ],
+      "explanation": "6がつは なつの なかまだよ。",
+      "difficulty": 2,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "month7",
+      "name": "7月",
+      "label": "7がつ",
+      "category": "月と順序",
+      "seasons": [
+        "summer"
+      ],
+      "months": [
+        7
+      ],
+      "explanation": "7がつは なつの なかまだよ。",
+      "difficulty": 2,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "month8",
+      "name": "8月",
+      "label": "8がつ",
+      "category": "月と順序",
+      "seasons": [
+        "summer"
+      ],
+      "months": [
+        8
+      ],
+      "explanation": "8がつは なつの なかまだよ。",
+      "difficulty": 2,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "month9",
+      "name": "9月",
+      "label": "9がつ",
+      "category": "月と順序",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        9
+      ],
+      "explanation": "9がつは あきの なかまだよ。",
+      "difficulty": 2,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "month10",
+      "name": "10月",
+      "label": "10がつ",
+      "category": "月と順序",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        10
+      ],
+      "explanation": "10がつは あきの なかまだよ。",
+      "difficulty": 2,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "month11",
+      "name": "11月",
+      "label": "11がつ",
+      "category": "月と順序",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        11
+      ],
+      "explanation": "11がつは あきの なかまだよ。",
+      "difficulty": 2,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "month12",
+      "name": "12月",
+      "label": "12がつ",
+      "category": "月と順序",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        12
+      ],
+      "explanation": "12がつは ふゆの なかまだよ。",
+      "difficulty": 2,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "winter",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "spring",
+      "name": "はる",
+      "label": "はる",
+      "category": "四季と順序",
+      "seasons": [
+        "spring"
+      ],
+      "months": [
+        3,
+        4,
+        5
+      ],
+      "explanation": "3・4・5がつが はるだよ。",
+      "difficulty": 1,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "spring",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "summer",
+      "name": "なつ",
+      "label": "なつ",
+      "category": "四季と順序",
+      "seasons": [
+        "summer"
+      ],
+      "months": [
+        6,
+        7,
+        8
+      ],
+      "explanation": "6・7・8がつが なつだよ。",
+      "difficulty": 1,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "summer",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "autumn",
+      "name": "あき",
+      "label": "あき",
+      "category": "四季と順序",
+      "seasons": [
+        "autumn"
+      ],
+      "months": [
+        9,
+        10,
+        11
+      ],
+      "explanation": "9・10・11がつが あきだよ。",
+      "difficulty": 1,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "autumn",
+      "curriculumRole": "calendar"
+    },
+    {
+      "id": "winter",
+      "name": "ふゆ",
+      "label": "ふゆ",
+      "category": "四季と順序",
+      "seasons": [
+        "winter"
+      ],
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "explanation": "12・1・2がつが ふゆだよ。",
+      "difficulty": 1,
+      "sources": [
+        "jma-time"
+      ],
+      "verification": "source-checked",
+      "monthQuiz": false,
+      "seasonPrompt": "かんけいする きせつを えらぼう",
+      "teachingSeason": "winter",
+      "curriculumRole": "calendar"
+    }
+  ]
+}
