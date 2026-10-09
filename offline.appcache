@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# build 5b56330656607a22
+CACHE:
+./
+./index.html
+./icon.svg
+./manifest.webmanifest
+./sw.js
+NETWORK:
+*
