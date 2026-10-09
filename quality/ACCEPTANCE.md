@@ -19,7 +19,7 @@
 | A06 | 現代ブラウザー・模擬検証 V2 | クイズ・スタンプ・復習・SW更新・AppCache状態遷移試験 | quality/evidence/v2.json | UNVERIFIED |
 | A07 | iOS 10.3.3実機 V3、L1/L2/L3 | 初回全キャッシュ、終了→機内モード再起動、画像・問題・進捗、旧→新更新、再オフライン起動、失敗時旧版保持 | quality/evidence/v3.json | UNVERIFIED |
 | A08 | スタンプ・復習・localStorageキー/形式/保存データ保持 | 基準データを使った旧版→新版読込と保存比較 | quality/evidence/storage-regression.json | UNVERIFIED |
-| A09 | CI安全化・main保護強制力 | 読取専用CI、PR必須・必須checkと実行元、直接更新/失敗CIの拒否、bypassなし、正常PRマージ確認 | Actions run、quality/evidence/protection.json | UNVERIFIED |
+| A09 | CI安全化・main保護強制力 | 読取専用CI、PR必須・必須 app-ci-build（GitHub Actions実行元固定）、直接更新/失敗CIの拒否、bypassなし、正常PRマージ確認 | Actions run、quality/evidence/protection.json | UNVERIFIED |
 | A10 | 決定的ビルドと自己参照なしのrelease ID | 正本パス+内容hashを整列、依存固定、生成物を除外し独立2回バイト比較 | quality/evidence/reproducibility.json, release.json | UNVERIFIED |
 | A11 | 公開URLと対象リリースID一致 | 正式デプロイ後release.jsonと全資産hash/MIME/画像実デコード照合 | quality/evidence/public-readback.json | UNVERIFIED |
 | A12 | 公開後の実動作と新旧混在なし | ブラウザーでクイズ・スタンプ・復習・保存・更新回帰 | quality/evidence/public-browser.json | UNVERIFIED |
@@ -33,7 +33,7 @@ V3のみはユーザーの明示的例外承認があれば未検証を明示し
 
 CI専用PRは安全化のため先行マージ可能。アプリの配信ファイルは変更しない。
 保護設定候補 KISETSU-RULESET-20261009-01 は明示承認後のみwrite。
-main限定、active、PR必須、必須buildチェックのGitHub Actions実行元固定、force push/削除禁止、管理者bypassなし。
+main限定、active、PR必須、必須チェック app-ci-build（GitHub Actions、integration_id=15368）の実行元固定、force push/削除禁止、管理者bypassなし。
 未承認・強制力未検証なら本番更新と画像大量生成を停止。安全なコード準備と検証は継続可能。
 既存制作ブランチはCI安全化後に非破壊merge。103レコード・ID・status・基準コミットを比較。
 新しい指摘は既存契約の欠陥修正か新規変更要求かを識別し、影響範囲を査読してから対応する。
