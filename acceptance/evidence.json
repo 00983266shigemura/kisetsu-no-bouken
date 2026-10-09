@@ -1,11 +1,11 @@
 {
-  "schema_version": 1,
-  "contract_id": "KISETSU-RELEASE-V1",
-  "notes": "Initial UNVERIFIED is intentional. This repository is already public; this registry gates FUTURE gated releases, not retroactive deletion of existing public deployment.",
+  "schema_version": 2,
+  "contract_id": "KISETSU-RELEASE-V2",
+  "notes": "All gates initially UNVERIFIED. A real postdeploy HTTP receipt is mandatory; production PASS cannot be asserted by a predeploy JSON alone.",
   "gates": {
     "EDU_240": {
       "status": "UNVERIFIED",
-      "source_sha": null,
+      "subject_digest": null,
       "proof_url": null,
       "evidence_type": "human",
       "assessor": null,
@@ -13,7 +13,7 @@
     },
     "ART_103": {
       "status": "UNVERIFIED",
-      "source_sha": null,
+      "subject_digest": null,
       "proof_url": null,
       "evidence_type": "human",
       "assessor": null,
@@ -21,7 +21,7 @@
     },
     "LEGACY_IOS10": {
       "status": "UNVERIFIED",
-      "source_sha": null,
+      "subject_digest": null,
       "proof_url": null,
       "evidence_type": "human",
       "assessor": null,
@@ -29,7 +29,7 @@
     },
     "OFFLINE_IOS10": {
       "status": "UNVERIFIED",
-      "source_sha": null,
+      "subject_digest": null,
       "proof_url": null,
       "evidence_type": "human",
       "assessor": null,
@@ -37,15 +37,7 @@
     },
     "GAMEPLAY": {
       "status": "UNVERIFIED",
-      "source_sha": null,
-      "proof_url": null,
-      "evidence_type": "machine",
-      "assessor": null,
-      "checked_at": null
-    },
-    "PUBLICATION": {
-      "status": "UNVERIFIED",
-      "source_sha": null,
+      "subject_digest": null,
       "proof_url": null,
       "evidence_type": "machine",
       "assessor": null,
@@ -53,9 +45,17 @@
     },
     "CONTENT_RIGHTS": {
       "status": "UNVERIFIED",
-      "source_sha": null,
+      "subject_digest": null,
       "proof_url": null,
       "evidence_type": "human",
+      "assessor": null,
+      "checked_at": null
+    },
+    "PUBLICATION": {
+      "status": "UNVERIFIED",
+      "subject_digest": null,
+      "proof_url": null,
+      "evidence_type": "machine",
       "assessor": null,
       "checked_at": null
     }

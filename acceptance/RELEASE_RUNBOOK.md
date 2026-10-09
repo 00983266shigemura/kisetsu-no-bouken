@@ -1,24 +1,27 @@
-# APP-GATE v2 — release contract, proof and rollback
+# APP-GATE v2: release and rollback instructions
 
 ## State
-This branch prepares quality controls only. Current GitHub Pages main/root deployment remains unchanged until protection, evidence and production end-to-end verification are complete.
-The existence of an Actions test passing does **not** establish iOS 10 physical-device compatibility, human content recognition, rights clearance, or full release readiness.
+This PR remains a **draft** while main/root GitHub Pages deployment is active. Do not merge until main protection is measured and production migration is safe. Preserve main SHA 8ed8487dcc6585e51ba0385be2554793aec71904 and existing asset-refresh branch.
 
-## Gate policy
-- Required gates: EDU_240, ART_103, LEGACY_IOS10, OFFLINE_IOS10, GAMEPLAY, PUBLICATION, CONTENT_RIGHTS.
-- All mandatory evidence defaults to UNVERIFIED and **must** stay UNVERIFIED until independently verified. No PASS by inference.
-- Each PASS contains a concrete HTTPS proof URL, assessor, verified timestamp, and 40-character SHA of the approved source.
-- The release script requires evidence SHA == workflow GITHUB_SHA (strict initial policy); documentation-only revisions currently require new evidence. Future relaxation requires an auditable impacted-component fingerprint.
-- Human evidence cannot be authenticated by static JSON alone. A trusted reviewer and original dated records remain necessary. The script verifies completeness and SHA binding, not the truth of real-world observations.
+## Evidence contract (v2)
+- Source fingerprint: SHA-256 digest of source.html, build.js, test.js, acceptance/contract.json, and scripts/check-acceptance.cjs, with path separators. `acceptance/evidence.json` is EXCLUDED to prevent unresolvable self-reference.
+- Mandatory PREDEPLOY: EDU_240, ART_103, LEGACY_IOS10, OFFLINE_IOS10, GAMEPLAY, CONTENT_RIGHTS.
+- Mandatory POSTDEPLOY: PUBLICATION; a publicly read back `release.json` stamped with GitHub SHA and source fingerprint plus verified HTTP and MIME. Postdeploy receipt is a separate Actions artifact. A postdeploy check can never be required before deployment.
+- PASS requires full subject digest, valid HTTPS evidence URL, assessor, and timestamp. UNVERIFIED/FAIL blocks the relevant phase. Required N/A is forbidden.
+- A signed URL is not independent attestation. Manual evidence needs trustworthy dated capture and reviewer judgment. Static code checks cannot prove an actual iOS10 physical-device test or accuracy of 103 drawings.
+- Evidence on a source-edit must be re-verified; evidence-only changes do not invalidate the source fingerprint.
 
-## Safe migration order
-1. Review app-quality PR and verify BOTH build and acceptance checks pass.
-2. Turn on branch ruleset on main: require PR and both checks; disallow force pushes/deletion and bypass; admin is not exempt. Verify by readback and a blocked test merge.
-3. Only after PR protections are operational, merge build-read-only and acceptance controls; confirm existing live Pages main/root still serves the last known-good site.
-4. Set up Pages -> Build and deployment -> Source: GitHub Actions. Run gated-pages only after ALL required evidence PASS for exact deploy SHA; capture public HTTP and physical offline checks. If step cannot be fulfilled, do not switch Pages source.
-5. Preserve old source and live artifact for rollback. Do not delete existing branch or asset-refresh branch.
+## Safe migration
+1. Verify build + app-quality PR jobs; keep this PR DRAFT until protection configured.
+2. Admin must create an ACTIVE branch ruleset for `main`: pull request required, unique mandatory job checks `legacy-build` and `acceptance-contract`, no bypass, no force push, no deletion. Test blocked merge in a safe test branch, verify settings readback; do not require a human reviewer for a solo project.
+3. Merge after protection is active and PR checks PASS. At this point the build job no longer writes to main, but main/root source may still be active. Confirm old public app is intact.
+4. Once genuine physical-device and human content QA is complete, enter verified PASS evidence for all six predeploy gates, bound to source digest.
+5. Configure GitHub Pages publication source to `GitHub Actions`, with `github-pages` environment restricted to main. Run `gated-pages` from main; verify that predeploy gate, deployment and postdeploy receipt are PASS.
+6. Do NOT claim full release completion until postdeployment evidence and, when environment changes affect legacy offline behavior, a physical-device postdeploy spot check are actually complete.
+7. If required device or rights verification is not available, preserve the current live site and stop new release; do not infer PASS.
 
-## Limits
-- GitHub connector cannot create repository rulesets or modify Pages publication source. Such GitHub settings require an admin UI step.
-- This branch does NOT assert the seven gates are already passing.
-- Existing Pages branch/root will still publish any main mutation until the settings migration. Do not merge content changes until gate protection and deployment path are verified.
+## Limited tooling
+Connected GitHub app has repository content/PR actions but no ruleset mutation, repository creation or Pages publication-setting mutation tools. These settings require UI administration. A pilot shared capability remains in `standards/app-quality/`; cross-repository promotion is not yet guaranteed.
+
+## Rollback
+Preserve last-known-good artifact and prior Pages setting before any migration. Revert bad PR changes through normal protected PR workflow; for an outage, recover last known-good release artifact and record incident + verification. Never delete original before recovery E2E.

@@ -1,12 +1,13 @@
 {
-  "schema_version": 1,
-  "contract_id": "KISETSU-RELEASE-V1",
+  "schema_version": 2,
+  "contract_id": "KISETSU-RELEASE-V2",
   "target": "kisetsu-no-bouken",
   "min_support": "iOS 10.3.3 Safari",
   "policy": {
     "unverified_blocks_release": true,
     "fail_blocks_release": true,
-    "evidence_sha_binding": true,
+    "evidence_content_digest_binding": true,
+    "postdeploy_receipt_required": true,
     "legacy_device_must_be_real": true,
     "existing_publication_remains_until_release_passes": true
   },
@@ -14,44 +15,51 @@
     {
       "id": "EDU_240",
       "required": true,
+      "phase": "predeploy",
       "evidence_type": "human",
-      "criterion": "All 240 questions: correct answers, seasonal context, plausible distractors, traceable sources; ambiguity adjudicated"
+      "criterion": "Audit 240 questions: answers, season, distractor logic, traceable sources and ambiguity"
     },
     {
       "id": "ART_103",
       "required": true,
+      "phase": "predeploy",
       "evidence_type": "human",
-      "criterion": "All 103 images/icons: content accuracy, subject recognizability, distinctness and license provenance"
+      "criterion": "Audit 103 images/icons: recognizability, subject correspondence, distinctness and provenance"
     },
     {
       "id": "LEGACY_IOS10",
       "required": true,
+      "phase": "predeploy",
       "evidence_type": "human",
-      "criterion": "Physical iOS 10.3.3 device: open, tap, gameplay, layout, local save, refresh and home-screen launch"
+      "criterion": "Physical iOS 10.3.3: start, tap, layout, gameplay, storage, home-screen restart"
     },
     {
       "id": "OFFLINE_IOS10",
       "required": true,
+      "phase": "predeploy",
       "evidence_type": "human",
-      "criterion": "Physical iOS 10.3.3 device: online priming, airplane-mode restart, images, scoring, persistence and update"
+      "criterion": "Physical iOS 10.3.3: initial online priming, airplane-mode restart, images, scoring, persistence"
     },
     {
       "id": "GAMEPLAY",
       "required": true,
+      "phase": "predeploy",
       "evidence_type": "machine",
-      "criterion": "Build, 100 themes, 240 questions, gameplay, stamping, reload and regression tests pass"
-    },
-    {
-      "id": "PUBLICATION",
-      "required": true,
-      "evidence_type": "machine",
-      "criterion": "Deployment artifact is the verified commit; public URL and offline headers read back and are checked"
+      "criterion": "Build, 100 themes, 240 questions, progress, reward and reload tests pass"
     },
     {
       "id": "CONTENT_RIGHTS",
       "required": true,
+      "phase": "predeploy",
       "evidence_type": "human",
-      "criterion": "Every distributed asset and sourced educational item has sufficient provenance and usage rights"
+      "criterion": "Asset rights and source provenance documented for every item"
+    },
+    {
+      "id": "PUBLICATION",
+      "required": true,
+      "phase": "postdeploy",
+      "evidence_type": "machine",
+      "criterion": "Exact GitHub SHA released, public HTTP 200, AppCache MIME and content hash verified from production"
     }
   ]
 }

@@ -1,4 +1,4 @@
-name: gated-pages (manual until GitHub Pages Actions source is configured)
+name: gated-pages (manual; never replace live main/root without evidence)
 on:
   workflow_dispatch:
 permissions:
@@ -8,29 +8,37 @@ concurrency:
   cancel-in-progress: false
 jobs:
   verify-artifact:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Verify evidence from this EXACT release commit
-        run: node scripts/check-acceptance.cjs --release
-      - name: Build and run regression
+      - name: Enforce predeployment proof and source fingerprint
+        run: node scripts/check-acceptance.cjs --predeploy
+      - name: Build and test exact source
         run: |
           npm install --no-save --ignore-scripts typescript@5.9.3
           node build.js
           node test.js
           git diff --exit-code -- index.html sw.js offline.appcache
-      - name: Prepare minimal static root
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Package build and immutable release metadata
+        shell: bash
         run: |
           mkdir -p public-out
           cp index.html offline.appcache sw.js icon.svg manifest.webmanifest .nojekyll public-out/
+          DIGEST=$(node scripts/check-acceptance.cjs --digest)
+          printf '{"commit":"%s","subject_digest":"%s"}
+' "$GITHUB_SHA" "$DIGEST" > public-out/release.json
       - uses: actions/upload-pages-artifact@v4
         with:
           path: public-out
   deploy:
     needs: verify-artifact
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment: github-pages
     permissions:
@@ -39,3 +47,34 @@ jobs:
       id-token: write
     steps:
       - uses: actions/deploy-pages@v4
+  verify-live:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Postdeploy production fingerprint and AppCache MIME
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE=https://00983266shigemura.github.io/kisetsu-no-bouken
+          for i in $(seq 1 18); do
+            curl -fsSL --max-time 15 "$BASE/release.json" -o /tmp/release.json || true
+            if [ -s /tmp/release.json ] && grep -q "$GITHUB_SHA" /tmp/release.json; then break; fi
+            sleep 10
+          done
+          test -s /tmp/release.json
+          DIGEST=$(node scripts/check-acceptance.cjs --digest)
+          EXPECTED_SHA="$GITHUB_SHA" EXPECTED_DIGEST="$DIGEST" node -e 'const a=require("/tmp/release.json");if(a.commit!==process.env.EXPECTED_SHA||a.subject_digest!==process.env.EXPECTED_DIGEST)process.exit(1)'
+          curl -fsSL --max-time 20 "$BASE/" -o /tmp/index.html
+          grep -q 'きせつのぼうけん' /tmp/index.html
+          curl -fsSL --max-time 20 -D /tmp/appcache.headers -o /tmp/offline.appcache "$BASE/offline.appcache"
+          grep -qi '^content-type: *text/cache-manifest' /tmp/appcache.headers
+          grep -q '^CACHE MANIFEST' /tmp/offline.appcache
+          printf '{"commit":"%s","subject_digest":"%s","public_http":200,"appcache_mime":"text/cache-manifest","status":"POSTDEPLOY_AUTOMATED_PASS"}
+' "$GITHUB_SHA" "$DIGEST" > release-receipt.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: production-release-receipt
+          path: release-receipt.json
