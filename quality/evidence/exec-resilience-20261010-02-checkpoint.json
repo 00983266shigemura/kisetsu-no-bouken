@@ -4,7 +4,7 @@
   "scope": "Safe workflow/QA/recovery implementation without app content, asset, or release changes",
   "baseline_main_sha": "928dcb943342cf735a18be681ff4bec3e4b12686",
   "branch": "ops/exec-resilience-20261010-02",
-  "state": "IMPLEMENTED_ON_ISOLATED_BRANCH_PENDING_REAL_CI",
+  "state": "IMPLEMENTED_PRODUCTION_E2E_PASS_WITH_EXPLICIT_LIMITATIONS",
   "completed_units": [
     "Source/ruleset/workflow baseline inspected",
     "Official GitHub Actions/ref/security docs inspected",
@@ -15,16 +15,15 @@
     "Pre-merge DOM regression in required CI",
     "Post-merge hash readback on main push",
     "Event/scheduled bounded recovery controller saved/readback",
-    "Rollback and authority contract stored"
+    "Rollback and authority contract stored",
+    "PR #10 CI-protected merge and actual main job readback",
+    "PR #11 repaired observed transient checkpoint readback and recovery handling",
+    "PR #12 controlled real failure injection, auto-rerun, same run ID second-attempt success",
+    "Main release and production SHA/readback independently PASS",
+    "Google Drive IMPROVEMENT_LEDGER, CHANGE_LOG, EVAL_CASES E114-E117, EVAL_RUNS readback confirmed"
   ],
-  "remaining_units": [
-    "Open PR and observe actual required CI",
-    "Repair failed tests and re-run",
-    "Independent regression review and safe merge",
-    "Observe post-merge durable worker/readback, public checker, recovery-controller",
-    "Update Control Plane change log/eval/ledger with exact results"
-  ],
-  "replay_id": "CP-EXEC-20261010-02-INIT",
+  "remaining_units": [],
+  "replay_id": "CP-EXEC-20261010-02-FINAL-READBACK",
   "protection": [
     "Keep main and prior PRs protected",
     "No app content or images changed",
@@ -34,7 +33,46 @@
   ],
   "evidence_pointers": [
     "https://github.com/00983266shigemura/kisetsu-no-bouken/pull/9",
-    "https://github.com/00983266shigemura/kisetsu-no-bouken/tree/ops/exec-resilience-20261010-02"
+    "https://github.com/00983266shigemura/kisetsu-no-bouken/tree/ops/exec-resilience-20261010-02",
+    "https://github.com/00983266shigemura/kisetsu-no-bouken/pull/10",
+    "https://github.com/00983266shigemura/kisetsu-no-bouken/pull/11",
+    "https://github.com/00983266shigemura/kisetsu-no-bouken/pull/12",
+    "https://github.com/00983266shigemura/kisetsu-no-bouken/actions/runs/38053381502",
+    "https://github.com/00983266shigemura/kisetsu-no-bouken/actions/runs/38053381535",
+    "https://github.com/00983266shigemura/kisetsu-no-bouken/actions/runs/38053381509"
   ],
-  "last_verified_sha": "56bf6528800133fffced6156e5263bbc56b01fb3"
+  "last_verified_sha": "01e5c74c786269d41c121d60623b3b4f5a95bbbc",
+  "checkpoint_schema_version": 2,
+  "implementation_baseline_sha": "01e5c74c786269d41c121d60623b3b4f5a95bbbc",
+  "external_boundaries_not_claimed_complete": [
+    "Root cause of ChatGPT client/response transport interruption cannot be established from exposed logs; separate issue CP-021",
+    "Deliberately defective public Pages release was not deployed; real bad-release rollback untested (CP-021)",
+    "Simultaneous real GitHub state writers not fault-injected; version/fence synthetic negative tests and serialized worker E2E passed",
+    "Physical iOS 10.3.3 device behavior remains UNVERIFIED under existing approved provisional-publication exception",
+    "No independent AI decision-making after ChatGPT disconnection promised"
+  ],
+  "production_evidence": {
+    "implementation_prs": [
+      10,
+      11,
+      12
+    ],
+    "verified_main_sha": "01e5c74c786269d41c121d60623b3b4f5a95bbbc",
+    "release_id": "27b3196a14d01944c3480cafbd22cb9ad122baab9b6237a400e3fa3e63c0e341",
+    "required_main_ci_run": 38053381507,
+    "pages_deploy_run": 38053381523,
+    "production_readback_run": 38053381502,
+    "durable_execution_run": 38053381535,
+    "verified_state_branch": "ops-execution-state",
+    "verified_state_phase": "VERIFIED",
+    "verified_state_version": 2,
+    "verified_state_payload_sha256": "4c913fd6d77a1608ee9787a2612ea62901a744440eed7d3d7c172a1a1d361adb",
+    "recovery_selftest_run": 38053381509,
+    "recovery_controller_run": 38053389863,
+    "recovery_selftest_observed_attempt": 2,
+    "control_plane_sheet": "ChatGPT_OS_ControlPlane_v2",
+    "control_plane_change_log_key": "CP-EXECUTION-RESILIENCE-20261010-02",
+    "verification_reference_time": "2026-10-10T12:49:52Z"
+  },
+  "readback_authority": "Re-read live GitHub main, per-commit Actions, ops-execution-state and Google Drive Control Plane for newer state; this file is a verified historical checkpoint, not an automatically updated runtime pointer."
 }
