@@ -4,6 +4,7 @@ on:
     workflows:
       - Durable execution unit
       - Verify published app and iOS 10 offline support
+      - Recovery E2E self-test
     types: [completed]
   schedule:
     - cron: '17 * * * *'
@@ -31,7 +32,7 @@ jobs:
           if [ "$GITHUB_EVENT_NAME" = "workflow_run" ]; then
             ids=$(jq -r '.workflow_run.id' "$GITHUB_EVENT_PATH")
           else
-            ids=$(gh api "repos/$repo/actions/runs?per_page=30" --jq '.workflow_runs[] | select(.name == "Durable execution unit" or .name == "Verify published app and iOS 10 offline support") | .id')
+            ids=$(gh api "repos/$repo/actions/runs?per_page=30" --jq '.workflow_runs[] | select(.name == "Durable execution unit" or .name == "Verify published app and iOS 10 offline support" or .name == "Recovery E2E self-test") | .id')
           fi
           now=$(date -u +%s)
           for id in $ids; do
@@ -57,7 +58,7 @@ jobs:
                   continue
                 fi
               fi
-            elif [ "$name" != "Verify published app and iOS 10 offline support" ]; then
+            elif [ "$name" != "Verify published app and iOS 10 offline support" ] && [ "$name" != "Recovery E2E self-test" ]; then
               continue
             fi
             echo "Rerun once (safe/idempotent): $name / $id"
