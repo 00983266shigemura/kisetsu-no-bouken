@@ -12,6 +12,7 @@ jobs:
     timeout-minutes: 10
     concurrency:
       group: cp-verify-public
+      queue: max
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
