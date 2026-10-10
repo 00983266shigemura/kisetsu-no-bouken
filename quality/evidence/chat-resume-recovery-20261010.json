@@ -1,6 +1,5 @@
 {
   "checkpoint_id": "KISETSU-CHAT-RESUME-20261010-01",
-  "recorded_at_jst": "2026-10-10T12:00:00+09:00",
   "kind": "RECOVERY_AND_BLOCKERS_ONLY_NOT_RELEASE",
   "repository": "00983266shigemura/kisetsu-no-bouken",
   "branch": "chat-resume-20261010-01",
@@ -60,7 +59,8 @@
     "release_gate": "BLOCKED",
     "real_ios10_L3": "UNVERIFIED",
     "public_image_integration": "NOT_STARTED",
-    "new_generated_image_count": 0
+    "new_generated_image_count": 0,
+    "recovery_ledger_entry_count": 110
   },
   "safety": {
     "no_rewrite_existing_branches": true,
@@ -74,5 +74,8 @@
     "Reconcile all 110 image IDs and conflicting stag source; complete visual QA and image integration",
     "Run standalone browser tests and physical iOS 10.3.3 L1-L3 before release"
   ],
-  "next_action": "Resume from this checkpoint, do not recreate any found image, fetch latest branch SHA and preserved originals before any write"
+  "next_action": "Resume from this checkpoint, do not recreate any found image, fetch latest branch SHA and preserved originals before any write",
+  "recorded_at_utc": "2026-10-10T02:34:52.246Z",
+  "recovery_ledger": "asset-production/recovery-ledger-110.json",
+  "recovery_ledger_verified_at_head": "e8966efc66832a7424dd8e7738453cb94183f167"
 }
