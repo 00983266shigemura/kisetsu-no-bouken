@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "audit_id": "KISETSU-CHAT-RELEASE-GATE-20261010-01",
+  "audit_date": "2026-10-10",
+  "status": "FORMAL_RELEASE_BLOCKED",
+  "public_release_performed": false,
+  "user_request": "Execute full public release without any user physical-device operation",
+  "repository": "00983266shigemura/kisetsu-no-bouken",
+  "candidate": {
+    "pr": 8,
+    "state": "DRAFT",
+    "branch": "work-completion-20261010-01",
+    "commit_sha": "696ae43cb631dffe7a1703439e6d0436e94bf3a4",
+    "release_id": "ca540d74f2a049459484b912c5bf459601dfbc41cbc125b40cd21f90d78ceb8b",
+    "themes": 103,
+    "question_dictionary": 352,
+    "active_questions": 329,
+    "question_types": 12,
+    "images": 110
+  },
+  "verified": {
+    "github_required_checks": [
+      {
+        "context": "app-ci-build",
+        "app": "github-actions",
+        "conclusion": "success",
+        "sha": "696ae43cb631dffe7a1703439e6d0436e94bf3a4",
+        "count": 2
+      }
+    ],
+    "ruleset": {
+      "id": 24796067,
+      "enforcement": "active",
+      "target": "main",
+      "require_pr": true,
+      "require_app_ci_build": true,
+      "required_ci_integration_id": 15368,
+      "no_bypass": true
+    },
+    "candidate_zip": {
+      "name": "kisetsu-final-candidate-chat-handoff-20261010.zip",
+      "library_file_id": "file_00000000678081f68bc7c8f49f30a5d2",
+      "sha256": "de3cd76d1356997582cd71053bfdc3ea7798502c47f9d71edaab15e63bef0206",
+      "manifest_entries": 62,
+      "sha256_size_pass": 62,
+      "crc": "PASS"
+    },
+    "physical_device_kit": {
+      "name": "kisetsu-ios10-device-test-kit-20261010.zip",
+      "library_file_id": "file_000000006de081f6873a2a7704912f52",
+      "sha256": "ad31764d3670b4e5bd476b51be8bdf8f0763056f587679c630ca139cc9452b9e",
+      "members_sha256_pass": 14,
+      "crc": "PASS"
+    },
+    "distributed_files": {
+      "status": "SIX_OF_SIX_GIT_BLOB_MATCH_ARCHIVE_AND_KIT",
+      "filenames": [
+        "index.html",
+        "offline.appcache",
+        "sw.js",
+        "release.json",
+        "icon.svg",
+        "manifest.webmanifest"
+      ]
+    },
+    "browser_qa": {
+      "reported_checks": 36,
+      "report_release_id": "ca540d74f2a049459484b912c5bf459601dfbc41cbc125b40cd21f90d78ceb8b",
+      "source": "local Chromium Playwright with actual HTTP origin; not iOS 10.3.3",
+      "status": "PASS_IN_CAPTURED_EVIDENCE"
+    }
+  },
+  "release_contract": {
+    "source": "quality/ACCEPTANCE.md and content-design/release-contract-addendum.md",
+    "v3_required": "A07 physical iOS 10.3.3 real device L1 L2 L3 + old to new AppCache update and storage survival",
+    "v3_status": "UNVERIFIED",
+    "v3_waiver": "Explicit V3-only exception approval required for provisional public release. Generic release instruction cannot be interpreted as an exception per release-contract-addendum.md",
+    "postrelease_gates": [
+      "A11",
+      "A12"
+    ]
+  },
+  "device_cloud_check": {
+    "browserstack_offline_minimum_ios": "iOS 15",
+    "browserstack_source": "https://www.browserstack.com/docs/live/network/network-simulation/offline-mode/offline-mode-ios",
+    "saucelabs_real_device_documented_minimum_ios": "iOS 13",
+    "saucelabs_source": "https://docs.saucelabs.com/mobile-apps/supported-devices/index.html",
+    "aws_device_farm_appium_minimum_ios": "iOS 15",
+    "aws_source": "https://docs.aws.amazon.com/devicefarm/latest/developerguide/appium-endpoint-support.html",
+    "result": "No currently connected, verified iOS 10.3.3 physical-device test service; cloud substitutes cannot establish V3 PASS"
+  },
+  "safe_actions": "No merge of PR #8; no main update; PR #6 preserved; no changes to user storage; preserve existing device kit and QA archives",
+  "next_gate": "A07 real iOS10.3.3 evidence on same exact candidate and update path OR user's explicit V3-only provisional publication exception; then reconfirm candidate SHA, exact CI, publicity safety, PR checks and execute merge/deployment and post-public readback.",
+  "review_note": "candidate-independent-review.json is tagged to earlier releaseId e8fe...; later independent offline code review and real-browser QA do reference final ca540... . Do not use the older full review alone as final build evidence."
+}
