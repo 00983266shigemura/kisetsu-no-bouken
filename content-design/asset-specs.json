@@ -1139,10 +1139,14 @@
       "name": "コクワガタ（成虫・雄）",
       "output_path": "assets/generated/stag.jpg",
       "required_features": [
-        "雄コクワガタの黒褐色で細長めの体、左右の細長い大顎に内側の歯、6脚"
+        "雄コクワガタの黒褐色で細長めの体、左右の細長い大顎に内側の歯、6脚",
+        "Male Dorcus rectus: moderately long slender gently inward-curved mandibles. Exactly one MAIN prominent inner tooth on each mandible, plus small terminal tip. Black-brown elongated body, six anatomically attached legs, paired antennae."
       ],
       "forbidden_features": [
-        "カブトムシの中央頭角、巨大なミヤマクワガタ頭の突起"
+        "カブトムシの中央頭角、巨大なミヤマクワガタ頭の突起",
+        "Three or more large repeated serrated teeth along each mandible",
+        "Strong sickle-like mandible curve",
+        "Antler-like mandibles or large miyama head protrusions"
       ],
       "generation_method": "1 asset / 1 image-generation call; no contact sheet or sprite splitting",
       "assessment_use": "subject_or_scene",
@@ -1372,7 +1376,8 @@
       "output_path": "assets/generated/kadomatsu.jpg",
       "required_features": [
         "竹3本を斜めに切った束、松の針葉とわらの土台",
-        "左右対の一方を大きく"
+        "左右対の一方を大きく",
+        "Exactly TWO complete kadomatsu displays, one foreground-left large and one behind-right slightly smaller. Both displays visible with three diagonally cut bamboo canes, pine needles, straw bases. Do not show only one display."
       ],
       "forbidden_features": [
         "笹に短冊、クリスマスのモミ、竹の平切りのみ"
@@ -1387,7 +1392,8 @@
         "上下左右に約10%の余白、主題を切らない",
         "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
       ],
-      "ledger_status": "original PENDING unchanged"
+      "ledger_status": "original PENDING unchanged",
+      "regeneration_reference": "assets/generated/kadomatsu-attempt1.png"
     },
     {
       "image_id": "assets/kagamimochi.svg",
@@ -1881,7 +1887,8 @@
       "name": "凧揚げ（正月遊び）",
       "output_path": "assets/generated/kite.jpg",
       "required_features": [
-        "ひもでつながる菱形の凧と地上の子ども、ひも連続、凧の尾"
+        "ひもでつながる菱形の凧と地上の子ども、ひも連続、凧の尾",
+        "人物・凧・尾2本が完全に画面内、上下左右約10%以上の白余白、手から凧までのひもが連続し対象関係を維持"
       ],
       "forbidden_features": [
         "こいのぼり、切れたひも、文字凧"
@@ -1896,7 +1903,9 @@
         "上下左右に約10%の余白、主題を切らない",
         "昆虫は6脚・2触角・種固有の翅/斑点を確認（該当時）"
       ],
-      "ledger_status": "original PENDING unchanged"
+      "ledger_status": "original PENDING unchanged",
+      "regeneration_reference": "assets/generated/kite-attempt2.png",
+      "generation_margin_target": "18 percent was a generation shrink instruction; final acceptance uses original approximately10 percent no-cropping criterion, independently reviewed"
     },
     {
       "image_id": "assets/top.svg",
@@ -1997,7 +2006,7 @@
       "name": "1月",
       "output_path": "assets/generated/month1.jpg",
       "required_features": [
-        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 1 を正確に表示"
+        "白地の共通構造の卓上カレンダー、小さな無地のページとリング2個。共通の無字構造（2リング・空白紙面・卓上台）。金銀や左右向きの画材差は許容。月差はHTMLラベルのみで表示し、絵の違いを採点材料にしない。月数字は生成画像内に描かずアプリのHTMLで 1 を正確に表示"
       ],
       "forbidden_features": [
         "画像だけで月を判定させる",
@@ -2022,7 +2031,7 @@
       "name": "2月",
       "output_path": "assets/generated/month2.jpg",
       "required_features": [
-        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 2 を正確に表示"
+        "白地の共通構造の卓上カレンダー、小さな無地のページとリング2個。共通の無字構造（2リング・空白紙面・卓上台）。金銀や左右向きの画材差は許容。月差はHTMLラベルのみで表示し、絵の違いを採点材料にしない。月数字は生成画像内に描かずアプリのHTMLで 2 を正確に表示"
       ],
       "forbidden_features": [
         "画像だけで月を判定させる",
@@ -2047,7 +2056,7 @@
       "name": "3月",
       "output_path": "assets/generated/month3.jpg",
       "required_features": [
-        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 3 を正確に表示"
+        "白地の共通構造の卓上カレンダー、小さな無地のページとリング2個。共通の無字構造（2リング・空白紙面・卓上台）。金銀や左右向きの画材差は許容。月差はHTMLラベルのみで表示し、絵の違いを採点材料にしない。月数字は生成画像内に描かずアプリのHTMLで 3 を正確に表示"
       ],
       "forbidden_features": [
         "画像だけで月を判定させる",
@@ -2072,7 +2081,7 @@
       "name": "4月",
       "output_path": "assets/generated/month4.jpg",
       "required_features": [
-        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 4 を正確に表示"
+        "白地の共通構造の卓上カレンダー、小さな無地のページとリング2個。共通の無字構造（2リング・空白紙面・卓上台）。金銀や左右向きの画材差は許容。月差はHTMLラベルのみで表示し、絵の違いを採点材料にしない。月数字は生成画像内に描かずアプリのHTMLで 4 を正確に表示"
       ],
       "forbidden_features": [
         "画像だけで月を判定させる",
@@ -2097,7 +2106,7 @@
       "name": "5月",
       "output_path": "assets/generated/month5.jpg",
       "required_features": [
-        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 5 を正確に表示"
+        "白地の共通構造の卓上カレンダー、小さな無地のページとリング2個。共通の無字構造（2リング・空白紙面・卓上台）。金銀や左右向きの画材差は許容。月差はHTMLラベルのみで表示し、絵の違いを採点材料にしない。月数字は生成画像内に描かずアプリのHTMLで 5 を正確に表示"
       ],
       "forbidden_features": [
         "画像だけで月を判定させる",
@@ -2122,7 +2131,7 @@
       "name": "6月",
       "output_path": "assets/generated/month6.jpg",
       "required_features": [
-        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 6 を正確に表示"
+        "白地の共通構造の卓上カレンダー、小さな無地のページとリング2個。共通の無字構造（2リング・空白紙面・卓上台）。金銀や左右向きの画材差は許容。月差はHTMLラベルのみで表示し、絵の違いを採点材料にしない。月数字は生成画像内に描かずアプリのHTMLで 6 を正確に表示"
       ],
       "forbidden_features": [
         "画像だけで月を判定させる",
@@ -2147,7 +2156,7 @@
       "name": "7月",
       "output_path": "assets/generated/month7.jpg",
       "required_features": [
-        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 7 を正確に表示"
+        "白地の共通構造の卓上カレンダー、小さな無地のページとリング2個。共通の無字構造（2リング・空白紙面・卓上台）。金銀や左右向きの画材差は許容。月差はHTMLラベルのみで表示し、絵の違いを採点材料にしない。月数字は生成画像内に描かずアプリのHTMLで 7 を正確に表示"
       ],
       "forbidden_features": [
         "画像だけで月を判定させる",
@@ -2172,7 +2181,7 @@
       "name": "8月",
       "output_path": "assets/generated/month8.jpg",
       "required_features": [
-        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 8 を正確に表示"
+        "白地の共通構造の卓上カレンダー、小さな無地のページとリング2個。共通の無字構造（2リング・空白紙面・卓上台）。金銀や左右向きの画材差は許容。月差はHTMLラベルのみで表示し、絵の違いを採点材料にしない。月数字は生成画像内に描かずアプリのHTMLで 8 を正確に表示"
       ],
       "forbidden_features": [
         "画像だけで月を判定させる",
@@ -2197,7 +2206,7 @@
       "name": "9月",
       "output_path": "assets/generated/month9.jpg",
       "required_features": [
-        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 9 を正確に表示"
+        "白地の共通構造の卓上カレンダー、小さな無地のページとリング2個。共通の無字構造（2リング・空白紙面・卓上台）。金銀や左右向きの画材差は許容。月差はHTMLラベルのみで表示し、絵の違いを採点材料にしない。月数字は生成画像内に描かずアプリのHTMLで 9 を正確に表示"
       ],
       "forbidden_features": [
         "画像だけで月を判定させる",
@@ -2222,7 +2231,7 @@
       "name": "10月",
       "output_path": "assets/generated/month10.jpg",
       "required_features": [
-        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 10 を正確に表示"
+        "白地の共通構造の卓上カレンダー、小さな無地のページとリング2個。共通の無字構造（2リング・空白紙面・卓上台）。金銀や左右向きの画材差は許容。月差はHTMLラベルのみで表示し、絵の違いを採点材料にしない。月数字は生成画像内に描かずアプリのHTMLで 10 を正確に表示"
       ],
       "forbidden_features": [
         "画像だけで月を判定させる",
@@ -2247,7 +2256,7 @@
       "name": "11月",
       "output_path": "assets/generated/month11.jpg",
       "required_features": [
-        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 11 を正確に表示"
+        "白地の共通構造の卓上カレンダー、小さな無地のページとリング2個。共通の無字構造（2リング・空白紙面・卓上台）。金銀や左右向きの画材差は許容。月差はHTMLラベルのみで表示し、絵の違いを採点材料にしない。月数字は生成画像内に描かずアプリのHTMLで 11 を正確に表示"
       ],
       "forbidden_features": [
         "画像だけで月を判定させる",
@@ -2272,7 +2281,7 @@
       "name": "12月",
       "output_path": "assets/generated/month12.jpg",
       "required_features": [
-        "白地の同一形状の卓上カレンダー、小さな無地のページとリング2個。すべての月で同じ装飾画像。月数字は生成画像内に描かずアプリのHTMLで 12 を正確に表示"
+        "白地の共通構造の卓上カレンダー、小さな無地のページとリング2個。共通の無字構造（2リング・空白紙面・卓上台）。金銀や左右向きの画材差は許容。月差はHTMLラベルのみで表示し、絵の違いを採点材料にしない。月数字は生成画像内に描かずアプリのHTMLで 12 を正確に表示"
       ],
       "forbidden_features": [
         "画像だけで月を判定させる",

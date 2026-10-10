@@ -37,8 +37,20 @@ def jpgbytes(path):
   if 'A' in im.getbands() or im.mode=='P':
    rgba=im.convert('RGBA');rgb=Image.new('RGB',rgba.size,'white');rgb.paste(rgba,mask=rgba.getchannel('A'));im=rgb
   else:im=im.convert('RGB')
-  im.thumbnail((640,640),Image.Resampling.LANCZOS)
-  out=io.BytesIO();im.save(out,format='JPEG',quality=88,subsampling=0,optimize=False,progressive=False)
+  im.thumbnail((512,512),Image.Resampling.LANCZOS)
+  # Work-approved costume JPEG uses optimized Huffman coding; all other images use
+  # the original deterministic non-optimized encoding. Only accept this exception
+  # against the recovered Work source PNG and provenanced final JPEG hash.
+  costume=(path.stem=='halloween-costume')
+  if costume:
+   provenance=readjson(ROOT/'asset-production/costume-provenance.json')
+   original=next((r for r in provenance.get('files',[]) if r.get('path')=='assets/generated/halloween-costume.png'),None)
+   approved=next((r for r in provenance.get('files',[]) if r.get('path')=='assets/generated/halloween-costume.jpg'),None)
+   if not original or not approved or original['sha256']!=sha(path.read_bytes()):
+    raise ValueError('costume recovered PNG does not match Work approved provenance')
+  out=io.BytesIO();im.save(out,format='JPEG',quality=80,subsampling=2,optimize=costume,progressive=False)
+  if costume and sha(out.getvalue())!=approved['sha256']:
+   raise ValueError('costume jpeg does not match Work independent reviewed byte hash')
   b=out.getvalue()
  with Image.open(io.BytesIO(b)) as check:check.load();size=list(check.size)
  return b,size
@@ -102,7 +114,7 @@ def main():
  # Every theme/option path must resolve in resulting map, without external image dependencies.
  contentmatch=re.search(r'window\.__CONTENT__=(.*?);</script>',src);content=json.loads(contentmatch[1]);needed=[t['image'] for t in content['themes']]+[o['image'] for q in content['questions'] for o in q['options'] if o.get('image')]
  if any(k not in embedded for k in needed):raise ValueError('unmapped content image paths: '+str(sorted(set(needed)-set(embedded))))
- summary={'ready':not args.prepare,'assets':110,'jpegTotalBytes':sum(len(b) for b in jpgs.values()),'protectedBaselineSha256':baselineHash,'pngQA':str(PNGQA.relative_to(ROOT)),'jpegQA':str(JPEGQA.relative_to(ROOT)),'records':out}
+ summary={'ready':not args.prepare,'assets':110,'jpegTotalBytes':sum(len(b) for b in jpgs.values()),'encoding':{'format':'JPEG','maxDimension':512,'quality':80,'subsampling':2},'protectedBaselineSha256':baselineHash,'pngQA':str(PNGQA.relative_to(ROOT)),'jpegQA':str(JPEGQA.relative_to(ROOT)),'records':out}
  if args.check:print(json.dumps({k:v for k,v in summary.items() if k!='records'},ensure_ascii=False,indent=2));return 0
  if args.prepare:
   for path,b in jpgs.items():atomic(ROOT/path,b)

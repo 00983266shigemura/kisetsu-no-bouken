@@ -1,10 +1,11 @@
 CACHE MANIFEST
-# build 5791f8862a5b4d2d
+# release ca540d74f2a049459484b912c5bf459601dfbc41cbc125b40cd21f90d78ceb8b
 CACHE:
 ./
 ./index.html
 ./icon.svg
 ./manifest.webmanifest
 ./sw.js
+./release.json
 NETWORK:
 *

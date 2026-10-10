@@ -1,0 +1,74 @@
+{
+  "reviewType": "independent-final-candidate-read-only",
+  "releaseId": "e8feef9f49feb2c816988d116c3f95a281f38a320b1b405b499f4781583b766e",
+  "candidateSourceSha256": "f54eee96129956fcf93bc784f13b512cc6212f7cc8a42d683e7e277a780dc9ce",
+  "implementationVerdict": "NO_CRITICAL_CODE_FINDING_IN_REVIEWED_SCOPE",
+  "formalPublication": "BLOCKED",
+  "changes": "Only this parent-directory review report created; runtime/source/Git unchanged",
+  "checks": [
+    {
+      "gate": "A01",
+      "status": "PASS",
+      "evidence": "Independent comparison: baseline snapshot equals actual git 8ed8487 source dictionary. Old240 every existing field equal and relative order preserved; 103 themes,352 dictionary,329 active,12 types."
+    },
+    {
+      "gate": "A02/A03-local",
+      "status": "PASS",
+      "evidence": "110 inline JPEG decode and all110 local PNG/JPEG pairs match candidate manifest SHA; restore-assets.py --check succeeds with manifest SHA c61dfdee761419ffed2bd14c691701b70cd1cbe1fefdff182bc56c35dd620468. Remote save/readback is separate."
+    },
+    {
+      "gate": "A05-syntax",
+      "status": "PASS",
+      "evidence": "Node bundled Acorn8.17.0 ecmaVersion5 parses all3 generated index scripts; independent grammar parser, not TS target flag."
+    },
+    {
+      "gate": "A06-scoring",
+      "status": "PASS",
+      "evidence": "Independent VM engine check for all352 correct answers, scalar wrong rejection, order reverse rejection, multi/marks/pairing reverse acceptance and missing/extra/duplicate rejection."
+    },
+    {
+      "gate": "A06-challenge-speech",
+      "status": "PASS_CODE_REVIEW_AND_VM",
+      "evidence": "All352 questionSpeech challenge results equal prompt exactly; pick/submit skip feedback audio during challenge; visible image names and immediate correctness are suppressed. Browser speech implementation not tested."
+    },
+    {
+      "gate": "A08",
+      "status": "PASS_TEST_LOG_AND_CODE_REVIEW",
+      "evidence": "Reviewed legacy snapshot initialization over exact240 ID map, retired inclusion/new exclusion, immutable stored snapshot, optional field invalid-save blocking, separate active2type mastery. Existing final tests include original compiled old app answer/save to new readback, new learner no legacy proliferation, all original progress fields deepEqual, invalid bytes preservation. Parent node-test/npm-test logs PASS. Independent new execution not claimed for migration test suite."
+    },
+    {
+      "gate": "A10",
+      "status": "PASS_INDEPENDENT_ID_AND_EXISTING_BUILD_LOG",
+      "evidence": "Independent Python canonical6 sorted path/SHA pairs JSON+LF matches full releaseID. Reviewed compiler lock enforcement,4outputs,2clean builds,garbage/source mutation controls in verifier; npm-test log PASS. index/SW/AppCache release identifiers and release.json cache inclusion agree."
+    },
+    {
+      "gate": "A13",
+      "status": "PASS_LIMITED_SCAN_AND_CONTENT_REVIEW",
+      "evidence": "All52 git indexed files present; no tracked unstaged changes. Secret-token/private-key scans yield0 matches. Reviewed staged artifact metadata/content and provenance; no family-specific personal data found. All226 assets-local PNG/JPEG and110 inline JPEG decode; EXIF/extra metadata empty. Generated source data public educational content. This is scope-specific review, not proof every potential future file is safe."
+    }
+  ],
+  "cacheReview": {
+    "status": "CODE_REVIEW_PASS_RUNTIME_UNVERIFIED",
+    "scope": "SW install caches complete inline-runtime file list, cache namespace scoped, other-scope deletion excluded, release cached. AppCache revision/file list consistent. Existing VM test verifies activation other-scope protection.",
+    "remaining": [
+      "Full real-browser SW install/update/failed-download preservation and no mixed version exercise",
+      "AppCache cached/noupdate/updateready/error transitions with failure preservation",
+      "Physical iOS10 L1/L2/L3"
+    ]
+  },
+  "remainingGates": {
+    "A04": "Image visual correctness covered by separate independent image reviewers; this code review does not replace those records",
+    "A07": "UNVERIFIED physical iOS10.3.3; formal publication blocked",
+    "A09": "Protection force/requiredCI evidence and final remote CI must be bound to final candidate",
+    "A11": "NOT RUN final public readback",
+    "A12": "NOT RUN final public browser regression",
+    "A14": "Local exact restoration PASS; GitHub final commit readback and originalPNG remote-byte evidence remain separate"
+  },
+  "criticalFindings": [],
+  "limitations": [
+    "No real browser or physical device use in this review",
+    "A06 VM and code checks do not replace required real-browser visual/tap/offline/update checks",
+    "Local source restoration does not prove original PNG archival persistence or remote final commit readback",
+    "Historical TEST_RESULTS.md and content design checkpoint prose describe earlier snapshots; do not present them as latest release PASS evidence"
+  ]
+}

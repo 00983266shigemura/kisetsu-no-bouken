@@ -1,0 +1,75 @@
+{
+  "review_scope": "Only two newly generated leaves; all six actual views directly inspected. PASS is human-style visual assessment, not inferred from aggregate or prior status.",
+  "records": [
+    {
+      "theme_id": "tanpopo-leaf",
+      "path": "assets/generated/tanpopo-leaf.png",
+      "sha256": "1a42052007f442622dfe581bfafada57f7311a1a4665ff1d17623602b0343ba5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent new_leaves_qa agent; direct view_image inspection",
+      "observations": [
+        "原寸PNGを目視：単独の細長い葉、一本の中央主脈、左右の深い切れ込みと基部へ向く裂片を確認。網状の側脈を備え、平行脈ではない。",
+        "実120×120px見本を目視：鋸歯状の深い切れ込みを持つ細長い輪郭が保持され、コスモスの細裂葉と区別できる。",
+        "花・綿毛・他葉・花茎・芽・文字なし。下端は葉の基部。白背景、全輪郭が画面内、中心配置で左右および上下の対向余白はおおむね均一。"
+      ],
+      "nonblocking_notes": [
+        "水彩の緑の濃淡と明瞭な輪郭は既定の教材用画風に適合。"
+      ],
+      "sources": [
+        "https://plants.ces.ncsu.edu/plants/taraxacum-officinale/"
+      ],
+      "provenance": {
+        "generation_raw_path": "/workspace/scratch/4589eefa35d5/generated_images/exec-47677c3d-122a-41a6-9c0b-4e650d989d06.png",
+        "raw_sha256": "1a42052007f442622dfe581bfafada57f7311a1a4665ff1d17623602b0343ba5",
+        "copied_reference_images": false,
+        "reviewed_original_path": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/tanpopo-leaf.png",
+        "reviewed_120px_path": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/jpeg-staging/tanpopo-leaf-120px.png",
+        "reviewed_120px_sha256": "e5657a4c5ee8c94d2ba79b4db1dc88af980d26ab85d240d2b04a8859fc605f5f",
+        "generation_journal": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/generation-journal.json"
+      }
+    },
+    {
+      "theme_id": "cosmos-leaf",
+      "path": "assets/generated/cosmos-leaf.png",
+      "sha256": "f0b5df0918b2607ea0886a91b0d9f99af681e77c368e5c1c3ca094dfebd196f3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent new_leaves_qa agent; direct view_image inspection",
+      "observations": [
+        "原寸PNGを目視：中央葉軸から左右の一次分裂軸が伸び、その軸がさらに細長い線形の裂片へ分裂する一葉の構造。広い単葉や二本の触角状構造ではない。",
+        "実120×120px見本を目視：細い裂片間の白い空隙と二段階の分裂が残り、羽毛状・細裂した葉として識別可能。",
+        "花・つぼみ・他植物・文字なし。下端は一葉の短い基部。白背景、全先端が画面内、中心配置で対向余白はおおむね均一。"
+      ],
+      "nonblocking_notes": [
+        "水彩の緑の濃淡と明瞭な輪郭は既定の教材用画風に適合。",
+        "原寸では裂片幅を読み取りやすく描いているが、細い線形裂片と二回分裂を確認できる。上余白はやや狭いが葉先の切断なし。"
+      ],
+      "sources": [
+        "https://plants.ces.ncsu.edu/plants/cosmos-bipinnatus/",
+        "https://www.nparks.gov.sg/florafaunaweb/flora/3/6/3683"
+      ],
+      "provenance": {
+        "generation_raw_path": "/workspace/scratch/4589eefa35d5/generated_images/exec-60f8e13d-0d83-4b0f-864e-aa7a43c9ecca.png",
+        "raw_sha256": "f0b5df0918b2607ea0886a91b0d9f99af681e77c368e5c1c3ca094dfebd196f3",
+        "copied_reference_images": false,
+        "reviewed_original_path": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/cosmos-leaf.png",
+        "reviewed_120px_path": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/jpeg-staging/cosmos-leaf-120px.png",
+        "reviewed_120px_sha256": "60139ac8c7397b23e79ac38068efd34a0bda03d26952a954bd7be48806131f1a",
+        "generation_journal": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/generation-journal.json"
+      }
+    }
+  ]
+}

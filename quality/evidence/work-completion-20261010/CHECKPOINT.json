@@ -1,0 +1,21 @@
+{
+  "releaseId": "ca540d74f2a049459484b912c5bf459601dfbc41cbc125b40cd21f90d78ceb8b",
+  "sourceBranch": "chat-resume-20261010-01",
+  "sourceHead": "c42d833c37151f8a4a2927daebfdde098d12bdce",
+  "candidateBranch": "work-completion-20261010-01",
+  "imageAssets": 110,
+  "imagesQA": "110 PNG and 110 JPEG exact SHA independently verified",
+  "compiler": "typescript 5.9.3",
+  "build": "PASS",
+  "nodeTest": "PASS",
+  "isolatedNpmTest": "PASS",
+  "protectedBaseline": "dab2598aa1e0caeef6ea54110599ebf42ee76b1bde74338f4496c2b461723f0d",
+  "existing108": "UNCHANGED",
+  "remoteCI": "PENDING",
+  "realBrowser": "IN_PROGRESS",
+  "iOS10.3.3V3": "UNVERIFIED; formal publication blocked",
+  "formalPublication": "NOT_STARTED",
+  "pr6": "preserved Draft; this final candidate includes content redesign and will supersede its implementation scope without modifying it",
+  "realBrowserQA": "PASS:36 checks, automatic SW registration, offline reload",
+  "physicalIOS10": "UNVERIFIED"
+}

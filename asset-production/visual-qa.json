@@ -1,0 +1,1958 @@
+{
+  "reviewer": "independent asset_specs agent; author of subject specifications, not generator",
+  "scope": "Generated assets individually inspected; listed records only",
+  "method": "Full-size view_image plus contact sheets containing exact 120px thumbnails; source images unchanged",
+  "reviewed_at_utc": "2026-10-09T15:35:43.465838+00:00",
+  "records": [
+    {
+      "theme_id": "sakura",
+      "path": "assets/generated/sakura.png",
+      "sha256": "6627b7600c9e80e018964e65aa12ab76e96aa9db0ef5ecb70417b32ab26ff8e7",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "5枚花弁と切れ込み、花柄と枝の関係が確認できる。成熟葉なし。",
+        "120pxでは花弁の細部は弱くなるが、桜の花枝として判別可能。花と葉の対応の葉側には使わない。"
+      ],
+      "nonblocking_notes": [
+        "画像周辺の余白が約10%未満の箇所はあるが主題の識別特徴の切断なし。最終UIで枠との余白を確認。"
+      ]
+    },
+    {
+      "theme_id": "tulip",
+      "path": "assets/generated/tulip.png",
+      "sha256": "b964038c99ff8068c28808a2f6bb23e8c999c351ff771d62c04d6ef0ab347e18",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "杯形花、滑らかな披針形葉、直立茎を確認。球根と根も自然。",
+        "120pxでも花と葉の輪郭が明瞭。"
+      ],
+      "nonblocking_notes": [
+        "画像周辺の余白が約10%未満の箇所はあるが主題の識別特徴の切断なし。最終UIで枠との余白を確認。"
+      ]
+    },
+    {
+      "theme_id": "nanohana",
+      "path": "assets/generated/nanohana.png",
+      "sha256": "c29676ec5ecd80b46e7fe4536fc2b758990b45ca494de1a2aef6e1d259822410",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "主な正面花で4花弁、枝先の黄色花房、下位葉を確認。",
+        "120pxでは個々の花弁数は見えにくいが、ナノハナの全体像は明瞭。"
+      ],
+      "nonblocking_notes": [
+        "画像周辺の余白が約10%未満の箇所はあるが主題の識別特徴の切断なし。最終UIで枠との余白を確認。"
+      ]
+    },
+    {
+      "theme_id": "tanpopo",
+      "path": "assets/generated/tanpopo.png",
+      "sha256": "0c0bc2792ed06be22c65942272240789c6c81501c8b607d8b0e94b0713be038f",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "葉は根元のロゼット、花茎は無葉、黄色頭花と外総苞片の反り返りを確認。綿毛は別花茎で矛盾なし。",
+        "120pxでも切れ込む葉、黄色頭花、綿毛が判別可能。"
+      ],
+      "nonblocking_notes": [
+        "画像周辺の余白が約10%未満の箇所はあるが主題の識別特徴の切断なし。最終UIで枠との余白を確認。"
+      ]
+    },
+    {
+      "theme_id": "fuji",
+      "path": "assets/generated/fuji.png",
+      "sha256": "16ba9ba432351dff362732861f89acb90b142e3826c41fa8b4762eaaf0a9e8d6",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "長く垂れる紫の蝶形花房、羽状複葉、木質つるを確認。",
+        "原寸と実120pxで確認。細部の同定は原寸、120pxでは全体輪郭の識別を確認。"
+      ],
+      "nonblocking_notes": [
+        "余白の統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "tsutsuji",
+      "path": "assets/generated/tsutsuji.png",
+      "sha256": "fbbb52cb2d3d70fd01f142d47f205ed5dd5bd736749cb17fb92abe2f604cbd5c",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "漏斗状5裂花と長い雄しべ、楕円葉を確認。",
+        "原寸と実120pxで確認。細部の同定は原寸、120pxでは全体輪郭の識別を確認。"
+      ],
+      "nonblocking_notes": [
+        "余白の統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "nemophila",
+      "path": "assets/generated/nemophila.png",
+      "sha256": "7eff0592fb3e62139cb52cd8fd1e64207c6c47fdf1035eed0ef1c196c4059b8e",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "白い中心の青い5裂花、切れ込む葉を確認。",
+        "原寸と実120pxで確認。細部の同定は原寸、120pxでは全体輪郭の識別を確認。"
+      ],
+      "nonblocking_notes": [
+        "余白の統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "iris",
+      "path": "assets/generated/iris.png",
+      "sha256": "feca4723fec929708c2b96c7bcd4cc8ff000e96d43b412b3723e6e4a5bf383d2",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "外花被基部に明瞭な黄色の筋、剣状葉を確認。",
+        "原寸と実120pxで確認。細部の同定は原寸、120pxでは全体輪郭の識別を確認。"
+      ],
+      "nonblocking_notes": [
+        "余白の統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "lotus",
+      "path": "assets/generated/lotus.png",
+      "sha256": "94aaa289306fbc99df7b57a60635c3568923e35c97cc7209bc9d497ce96e022c",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "切れ込みのない丸い葉、中央葉柄、立ち上がる多花弁花を確認。",
+        "原寸と実120pxで確認。細部の同定は原寸、120pxでは全体輪郭の識別を確認。"
+      ],
+      "nonblocking_notes": [
+        "余白の統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "hydrangea",
+      "path": "assets/generated/hydrangea.png",
+      "sha256": "a606c7245f5f5779a3d275fb0b72b4fb1535184ff463424472d41d0b335c420d",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "球状花房、対生の鋸歯葉を確認。",
+        "原寸と実120pxで確認。細部の同定は原寸、120pxでは全体輪郭の識別を確認。"
+      ],
+      "nonblocking_notes": [
+        "余白の統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "sunflower",
+      "path": "assets/generated/sunflower.png",
+      "sha256": "9811e57f0d1d5b91edf2154ae9229d5d20e951870ad6dd041250c70ae08c90ef",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "茶色い大きな中心、黄色舌状花、心形鋸歯葉を確認。",
+        "原寸と実120pxで確認。細部の同定は原寸、120pxでは全体輪郭の識別を確認。"
+      ],
+      "nonblocking_notes": [
+        "余白の統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "morning",
+      "path": "assets/generated/morning.png",
+      "sha256": "215e545e0279d8ac303ef49db4e79105d89310cc8d89ec0553623841512c9984",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "漏斗形花、3裂葉、支柱に巻く茎を確認。巻きひげなし。",
+        "原寸と実120pxで確認。細部の同定は原寸、120pxでは全体輪郭の識別を確認。"
+      ],
+      "nonblocking_notes": [
+        "余白の統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "cosmos",
+      "path": "assets/generated/cosmos.png",
+      "sha256": "c76a3ad9fff162b32adad78a1581486805ed2ac2c5e0aa283ab609f8cffcf314",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "約8枚の舌状花、細かい羽状葉を確認。",
+        "原寸と実120pxで確認。細部の同定は原寸、120pxでは全体輪郭の識別を確認。"
+      ],
+      "nonblocking_notes": [
+        "余白の統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "spiderlily",
+      "path": "assets/generated/spiderlily.png",
+      "sha256": "1efcc135571f58e49ea6ac23cb5bd4250e7c650a29a0c38d50b4ae803115e8ac",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "反り返る赤花被と長い雄しべ、葉なしの花茎を確認。",
+        "原寸と実120pxで確認。細部の同定は原寸、120pxでは全体輪郭の識別を確認。"
+      ],
+      "nonblocking_notes": [
+        "余白の統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "ginkgo",
+      "path": "assets/generated/ginkgo.png",
+      "sha256": "9ceec8fd4958d7e8d565c4eb8102882295e8de424bf6eeebbf716c4b30bce052",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "黄色扇形の葉、二叉状に広がる脈、先端の切れ込みを確認。120px輪郭明瞭。",
+        "原寸と実120px縮小画像を独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題の切断なし。余白統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "maple",
+      "path": "assets/generated/maple.png",
+      "sha256": "f8774605bc4f8ccf99b83f5506fd5ca4926e8347dca05d7fe8f71769be702743",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "5〜7裂の掌状葉、鋸歯、赤橙色の紅葉と枝を確認。120px輪郭明瞭。",
+        "原寸と実120px縮小画像を独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題の切断なし。余白統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "plum",
+      "path": "assets/generated/plum.png",
+      "sha256": "8c156121396a9e5c37852317305678e0ef90904881601f189ff7bacecd2549cb",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "短い花柄、丸い切れ込みなしの5花弁、花期の無葉枝。120pxでも桜の切れ込みや花房と区別可能。",
+        "原寸と実120px縮小画像を独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題の切断なし。余白統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "sasanqua",
+      "path": "assets/generated/sasanqua.png",
+      "sha256": "3fe880b9b6008a90ab82c456d5c63b082e807839f51ad2f5a47e959756a8e469",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "開いた桃色花、濃緑の小さい葉、個々の散った花弁。120pxは花が小さいが低木全体として識別可能。",
+        "原寸と実120px縮小画像を独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題の切断なし。余白統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "wintersweet",
+      "path": "assets/generated/wintersweet.png",
+      "sha256": "7de623dcba1e573042703efb8e829bc591dcddc97b56dee60725ada7b47eac87",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "ろう質の淡黄色花被、黄色い花中央、無葉枝。120pxで黄色い冬の花枝と識別可。",
+        "原寸と実120px縮小画像を独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題の切断なし。余白統一は最終UIで確認。"
+      ]
+    },
+    {
+      "theme_id": "strawberry",
+      "path": "assets/generated/strawberry.png",
+      "sha256": "95bffacfdaad91338ee3711bae2f4bf21c27827ccda06a64d0a29221c488f271",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "三小葉、緑の萼、果実表面の粒を確認。120pxで果実形と葉が識別可能。",
+        "原寸と実120px縮小画像を独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。最終UIで余白統一を確認。"
+      ]
+    },
+    {
+      "theme_id": "bamboo",
+      "path": "assets/generated/bamboo.png",
+      "sha256": "f983363423aa22e452949620ae024fff7da0ccb73fbac1af5195387f7279d4c8",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "皮が重なる円錐形、根元の根跡、淡色の切断面を確認。120pxでタケノコ形が明瞭。",
+        "原寸と実120px縮小画像を独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。最終UIで余白統一を確認。"
+      ]
+    },
+    {
+      "theme_id": "clam",
+      "path": "assets/generated/clam.png",
+      "sha256": "b1a8f69d88944fed9dd616b92be48e0fa3da588cc20043cf490e957ac1f14cb9",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "楕円二枚貝、細かな放射/同心筋と模様、閉殻と開殻を確認。120pxでホタテ/巻貝とは異なるアサリ形が明瞭。",
+        "原寸と実120px縮小画像を独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。最終UIで余白統一を確認。"
+      ]
+    },
+    {
+      "theme_id": "osmanthus",
+      "path": "assets/generated/osmanthus.png",
+      "sha256": "1406e274fd6221b104e3a02054acf3ccf0b6647cdaa67b72657a447e17b29221",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "再生成attempt3。見える3輪をそれぞれ数えて全て4裂花を確認。対生の楕円葉、葉腋の橙花も整合。120pxでも4弁花の輪郭と対象が識別可能。",
+        "原寸と実120px縮小画像を独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。最終UIで余白統一を確認。"
+      ],
+      "attempt": 3
+    },
+    {
+      "theme_id": "cucumber",
+      "path": "assets/generated/cucumber.png",
+      "sha256": "a999fb7525e7cffcc59392cb575a801628615ad21646a68d1a1c10f337f794e8",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "細長い濃緑の果実、小さないぼ、淡緑輪切り断面と種を確認。120pxでも形と断面が明瞭。",
+        "原寸と実120px縮小画像を独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。最終UIで余白統一を確認。"
+      ]
+    },
+    {
+      "theme_id": "tomato",
+      "path": "assets/generated/tomato.png",
+      "sha256": "065f654b1cc8956039deb3eff13c1ba51fc3d29ecbeb6de074ee4aebc8c62b46",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "丸い赤果実、星形萼、種室のある断面が明瞭。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "watermelon",
+      "path": "assets/generated/watermelon.png",
+      "sha256": "b22d647b95c44c376abf1db6bb7fbe61ea457320b6cb89cbb8da82c5229cfab5",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "丸い縞皮、赤肉の切片、白い内皮、黒い種が明瞭。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "aji",
+      "path": "assets/generated/aji.png",
+      "sha256": "0e93b8e990a6dddb27e4f47b6ff47932418ef147b11939586085eaaf3dfef6d5",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "全身側面、やや高い銀色体、二叉の黄尾、側線後部のぜいごを確認。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "sweetpotato",
+      "path": "assets/generated/sweetpotato.png",
+      "sha256": "9807bb87303abaf03fd7c236131a0ad06ee5a1dbbd7b9afe42d89ab0d9e70c52",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "赤紫の細長い紡錘形、黄色い断面を確認。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "persimmon",
+      "path": "assets/generated/persimmon.png",
+      "sha256": "82a86fe4701dfdc3cb3c40f491bb13e612cfa34ec0a57eb6077cf4547ec88ef7",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "橙色の果実、大きい四裂萼を確認。トマトの星形萼と混同しない。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "sanma",
+      "path": "assets/generated/sanma.png",
+      "sha256": "9af18155a584b98abcf3bd2f668e73808b1191f3f5a772cbc7bd1b1abe1aca41",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "細長い銀色体、青い背、尖る口、二叉尾を確認。120pxでもアジとは体型で区別。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "chestnut",
+      "path": "assets/generated/chestnut.png",
+      "sha256": "9d6f1be7aba096b40d7591fb8201054d7ca9e044baf0d4e0859040c4f03eee40",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "光沢ある茶色の実、淡色の底、密生する細いイガを確認。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "cabbage",
+      "path": "assets/generated/cabbage.png",
+      "sha256": "70ba2d8d7b7a7bb24ec235f6d0ad59964bee76fa00f0b47ac3a06760fde0822b",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "縦長結球、白い太い葉脈、しわの淡緑葉、縦切断面を確認。ハクサイでありキャベツ誤描写なし。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "spinach",
+      "path": "assets/generated/spinach.png",
+      "sha256": "1f5c259f2f1b4aeea435f7cc7eb21ea2f7ec1d9e148656ca461b5e0728c6bc4f",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "濃緑葉、長い葉柄、赤桃色の根元を確認。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "radish",
+      "path": "assets/generated/radish.png",
+      "sha256": "7e7a3e3d690364ba6ccb8b6a81b6243f03ac4e53253314a6d2f66fa567f1d26f",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "白い長根、細い根先、切れ込む葉を確認。120pxは根が淡色だが全体輪郭は識別可能。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "broadbean",
+      "path": "assets/generated/broadbean.png",
+      "sha256": "cb89f04f405b964cb19fef5d470c35961277ca51ce44557ac100b339b21f0f5c",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "太いさや、大きな平たい豆、黒いへそを確認。エダマメの毛のある小さなさやと異なる。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "corn",
+      "path": "assets/generated/corn.png",
+      "sha256": "3f42129e2078043c360e03bf84c5511905b37174bd0f53bd9747d38c398f5ffb",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "黄色粒の規則的な列、むいた緑皮、先端のひげを確認。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "edamame",
+      "path": "assets/generated/edamame.png",
+      "sha256": "3c95ee3bc56db4ecb2ebe21bcc031d87d5bc87472ca141104ed23a94bb1e04d8",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "短い緑さやの毛、2〜3粒のふくらみと緑豆を確認。ソラマメの黒いへそなし。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "mikan",
+      "path": "assets/generated/mikan.png",
+      "sha256": "4f8fcd64d9b473c84c712038880040703caf6f2da81b343235069af4aae46296",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "扁平な橙色果実、皮の細かな凹凸、むいた房を確認。",
+        "原寸と実120px縮小で独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "butterfly",
+      "path": "assets/generated/butterfly.png",
+      "sha256": "39897a6bee0aebb34adb805da4e33faa35b0c2fbcf9a255933c04353655b37f6",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "visible_leg_count": 2,
+      "biological_leg_count": 6,
+      "anatomy_note": "可視脚数と実脚数を区別。遮蔽は欠脚と判定しない。脚数学習画像としては使用不可（全6脚視認できない場合）。",
+      "observations": [
+        "白4翅、前翅先黒斑/黒点、棍棒状触角2本。背面で脚2本が明瞭、残りは翅/胸部の下に遮蔽し総脚数を視覚だけで断定できない。過剰脚・腹部から生える脚なし。",
+        "原寸と実120px縮小で独立視覚確認。種固有の全体形は120pxで保持。"
+      ],
+      "nonblocking_notes": [
+        "余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "swallowtail",
+      "path": "assets/generated/swallowtail.png",
+      "sha256": "af541ae0dcfda50545aa32a5b75c7563e34e41a6ecc3bb2abd1e53c2ecea8905",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "visible_leg_count": 4,
+      "biological_leg_count": 6,
+      "anatomy_note": "可視脚数と実脚数を区別。遮蔽は欠脚と判定しない。脚数学習画像としては使用不可（全6脚視認できない場合）。",
+      "observations": [
+        "黄黒4翅、後翅尾状突起/青橙斑、触角2本。明瞭脚4本、残りは翅の下。描かれた脚の位置に矛盾なし。",
+        "原寸と実120px縮小で独立視覚確認。種固有の全体形は120pxで保持。"
+      ],
+      "nonblocking_notes": [
+        "余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "cicada",
+      "path": "assets/generated/cicada.png",
+      "sha256": "e302839f559fe898e722b8a2b86e1c37fdf9bd623988df73fa129b125ded749c",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "visible_leg_count": 4,
+      "biological_leg_count": 6,
+      "anatomy_note": "可視脚数と実脚数を区別。遮蔽は欠脚と判定しない。脚数学習画像としては使用不可（全6脚視認できない場合）。",
+      "observations": [
+        "茶色の不透明翅、幅広い頭/大複眼、短い触角（遠側は頭で遮蔽）。斜側面で4脚が明瞭、遠側2脚は遮蔽。種の特徴整合。",
+        "原寸と実120px縮小で独立視覚確認。種固有の全体形は120pxで保持。"
+      ],
+      "nonblocking_notes": [
+        "余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "beetle",
+      "path": "assets/generated/beetle.png",
+      "sha256": "23e7c175ea4ef902a6ad28d9128a55ffeeb2fb39a6a1fb2c2211ecd2bfb7b800",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "visible_leg_count": 4,
+      "biological_leg_count": 6,
+      "anatomy_note": "可視脚数と実脚数を区別。遮蔽は欠脚と判定しない。脚数学習画像としては使用不可（全6脚視認できない場合）。",
+      "observations": [
+        "分岐した大頭角、小胸角、褐色の丸甲。触角2本。斜側面で4脚が明瞭、残りは遠側遮蔽。クワガタ大顎の誤描写なし。",
+        "原寸と実120px縮小で独立視覚確認。種固有の全体形は120pxで保持。"
+      ],
+      "nonblocking_notes": [
+        "余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "theme_id": "chafer",
+      "path": "assets/generated/chafer.png",
+      "sha256": "86531f29f33a3703aaaa28e99b32dc92bb4004042e94a7c9b3f8a03aba338e1e",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "visible_leg_count": 6,
+      "biological_leg_count": 6,
+      "anatomy_note": "可視脚数と実脚数を区別。遮蔽は欠脚と判定しない。脚数学習画像としては使用不可（全6脚視認できない場合）。",
+      "observations": [
+        "金緑の平たい幅広い甲、角ばる頭、6脚と2触角を全て視認。",
+        "原寸と実120px縮小で独立視覚確認。種固有の全体形は120pxで保持。"
+      ],
+      "nonblocking_notes": [
+        "余白統一は最終UI確認。"
+      ]
+    },
+    {
+      "path": "assets/generated/firefly.png",
+      "sha256": "2f7f6a546f1f872fbaa1dc3cbde6bcc3fd907986df87b2968c3e1dd3648146ca",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "黒い細長い翅鞘、赤い前胸中央の黒い筋、末端だけの弱い黄緑発光を確認。全身発光・蝶翅・丸いテントウ形なし。",
+        "原寸で6脚と2触角を追跡可能。120pxでも赤い前胸と細長い黒体・発光末端が識別可能。文字なし。触角先端の余白は約10%未満だが切断なし。"
+      ],
+      "anatomy_note": "6脚・2触角を原寸で確認。120pxでは脚数評価には使わない。",
+      "reviewer": "independent-qa-recovery-a"
+    },
+    {
+      "path": "assets/generated/dragonfly.png",
+      "sha256": "9688f90dd4c5b322ff327b2ebbd642061b48d57fa03236d40cfa2b32a0338624",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "4枚の左右に開いた透明翅、大きな複眼、細い赤い腹を確認。蝶模様翅・2翅・腹部起点の脚なし。",
+        "原寸で3対の脚を追跡でき、中脚の一部は透明翅に重なる。120pxで4翅と赤い細腹を識別可能。文字なし。翅端の余白が狭いが切断なし。"
+      ],
+      "anatomy_note": "6脚・短い2触角を原寸で確認。中脚は翅との重なりがあり、脚数を問う教材用途には使わない。",
+      "reviewer": "independent-qa-recovery-a"
+    },
+    {
+      "path": "assets/generated/cricket.png",
+      "sha256": "10082da2dbbd4257cef0a792a66e363619b35e5feb974e271bd5688dbd8c6b3e",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "黒褐色の体、体長以上の長い2触角、背の翅、大きく曲がる後脚2本を確認。緑のバッタ形・短触角・明白な8脚描画なし。",
+        "原寸では前脚2本・中脚1本・後脚2本が見える。残る中脚は体の奥側に遮蔽される構図で、脚欠損と断定しない。120pxで長い触角と大きい後脚のコオロギ形を識別可能。文字なし。"
+      ],
+      "anatomy_note": "可視5脚、奥側中脚は遮蔽され直接確認できない。6脚の全数確認済みとは扱わず、脚数を問う教材用途には使わない。",
+      "reviewer": "independent-qa-recovery-a"
+    },
+    {
+      "path": "assets/generated/ladybird.png",
+      "sha256": "3be503ff0670a130db959a89c320dca9793f126b31c882e2ab5bd7eb3ebdb13d",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "赤橙の左右翅鞘に左右3斑ずつと付け根中央の1斑（縫合線で左右にまたがる）で計7斑を確認。黒い頭と前胸、短い2触角、6脚を確認。",
+        "120pxでも七つの斑点配置とテントウムシ形を識別可能。斑点6個・8個・左右各7個・蝶の長触角なし。文字なし。"
+      ],
+      "anatomy_note": "6脚と2触角を原寸で確認。中央斑は縫合線で分かれて見えるが左右を合わせて1斑。120pxで脚数を問う用途には使わない。",
+      "reviewer": "independent-qa-recovery-a"
+    },
+    {
+      "path": "assets/generated/newyear.png",
+      "sha256": "d12a2c1410e5b055c58b070a90e9e879748964ce029748799e3fb8a9a6fc243c",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "家庭の4人が晴れ着で座り、左右の門松と中央の鏡餅を明確に確認。静かな祝いの場面として成立。",
+        "120pxで左右の竹の門松と中央の橙を載せた鏡餅が識別可能。ひな人形・こいのぼり・クリスマスツリー・文字カレンダーなし。文字なし。左右装飾の余白は狭いが主題切断なし。"
+      ],
+      "anatomy_note": "非昆虫。該当なし。",
+      "reviewer": "independent-qa-recovery-a"
+    },
+    {
+      "path": "assets/generated/setsubun.png",
+      "sha256": "9fa672311b61cb1ed686ce2abc39a3dd4f8f6ed43b8c9f2ac5d7ec17f47ebc5a",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "鬼のお面、枡入りの茶黄の大豆、豆をまく子どもを確認。手前のお面と豆の枡も大きく示され、豆まきの場面として成立。",
+        "120pxで鬼面・枡・投げられた豆と子どもの動作が識別可能。生枝豆・ひな人形・福文字なし。文字なし。"
+      ],
+      "anatomy_note": "非昆虫。該当なし。",
+      "reviewer": "independent-qa-recovery-a"
+    },
+    {
+      "path": "assets/generated/hina.png",
+      "sha256": "41ff3241e351acdc05451809df8b3a28542faf96e9970e3e4b9a45ae58499836",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "赤い段上に内裏びな一対、金屏風、左右のぼんぼり、桃白緑の菱餅を確認。端午のかぶと・こいのぼり・遮蔽する鳥居なし。",
+        "120pxで内裏びな一対・金屏風・ぼんぼり・菱餅が識別可能。文字なし。左右ぼんぼりの余白は狭いが切断なし。"
+      ],
+      "anatomy_note": "非昆虫。該当なし。",
+      "reviewer": "independent-qa-recovery-a"
+    },
+    {
+      "theme_id": "children",
+      "path": "assets/generated/children.png",
+      "sha256": "94e95ed614f765232c4b601b51117f902e5328dbf2b621c61fb8b9ed8998d2f6",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "こいのぼりは黒・赤・青の3匹。吹き流しと小さなかぶとがあり、必須構成を確認。",
+        "原寸・実120pxとも魚形、3匹の配置、吹き流し、かぶとが識別可能。禁止の他行事装飾、文字なし。主題切断なし。"
+      ],
+      "nonblocking_notes": [
+        "外縁の余白が約10%未満の箇所はあるが、対象固有の特徴と主題の切断なし。最終UIで枠との余白を確認。"
+      ],
+      "reviewer": "independent qa_recovery_b; not generator"
+    },
+    {
+      "theme_id": "tanabata",
+      "path": "assets/generated/tanabata.png",
+      "sha256": "6d372f083794c6e92e700cea21a9d00b89e8e79daf28a9b17840833b90318236",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "葉のある笹枝に無地の細長い短冊4枚と折り紙の輪飾りが吊られ、必須特徴を確認。",
+        "原寸で短冊に文字なし。実120pxでも笹と短冊・輪飾りの全体形を識別可能。こいのぼりなし、主題切断なし。"
+      ],
+      "nonblocking_notes": [
+        "外縁の余白が約10%未満の箇所はあるが、対象固有の特徴と主題の切断なし。最終UIで枠との余白を確認。"
+      ],
+      "reviewer": "independent qa_recovery_b; not generator"
+    },
+    {
+      "theme_id": "moonview",
+      "path": "assets/generated/moonview.png",
+      "sha256": "1c1dbc4d80287c67cd39c721e79ece9114537453867799e40673f167d4b371b1",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "丸い月、穂のあるススキ、三方に積まれた白い団子の3要素が大きく分離して見える。",
+        "原寸・実120pxで全3要素を識別可能。団子串、七夕笹、文字なし。主題切断なし。"
+      ],
+      "nonblocking_notes": [
+        "外縁の余白が約10%未満の箇所はあるが、対象固有の特徴と主題の切断なし。最終UIで枠との余白を確認。"
+      ],
+      "reviewer": "independent qa_recovery_b; not generator"
+    },
+    {
+      "theme_id": "shichigosan",
+      "path": "assets/generated/shichigosan.png",
+      "sha256": "10d12d9947ec79b50817a3ba4b1a885c6ec8368af756a7d0446dfcf71e2c1107",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "神社の鳥居を背景に晴れ着の子ども2人が立ち、無文字の細長い飴袋を各自持つ。",
+        "原寸で袋は鶴・花等の絵柄のみで文字なし。実120pxでも晴れ着2人・長い袋・鳥居を識別可能。年齢の数値表示、卒業帽なし。全身切断なし。"
+      ],
+      "nonblocking_notes": [
+        "外縁の余白が約10%未満の箇所はあるが、対象固有の特徴と主題の切断なし。最終UIで枠との余白を確認。"
+      ],
+      "reviewer": "independent qa_recovery_b; not generator"
+    },
+    {
+      "theme_id": "solstice",
+      "path": "assets/generated/solstice.png",
+      "sha256": "a3b06feac718d4e763aa561b993fa03b6257d43cba536581c5fe23c4cc79164e",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "清潔な木製浴槽に粗い黄色い果皮の丸いユズ4個が浮き、脇に緑皮のカボチャと切片がある。人物なし。",
+        "実120pxでユズ湯とカボチャを識別可能。ミカンの滑らかな橙皮、スイカ、過密柑橘、文字看板なし。主題切断なし。"
+      ],
+      "nonblocking_notes": [
+        "外縁の余白が約10%未満の箇所はあるが、対象固有の特徴と主題の切断なし。最終UIで枠との余白を確認。"
+      ],
+      "reviewer": "independent qa_recovery_b; not generator"
+    },
+    {
+      "theme_id": "lastday",
+      "path": "assets/generated/lastday.png",
+      "sha256": "ffd866479dbb913a405f18536d0c14e59b4330c4537a72958b5bfe260d69bbaf",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "前景にそば椀、背後に寺の鐘と鐘撞き堂を確認。茶褐色の細い麺、天ぷら・かまぼこ・ねぎでそば椀として読める。",
+        "実120pxでも麺椀と鐘の組合せが明瞭。門松・鏡餅・カレンダー文字なし。主題切断なし。"
+      ],
+      "nonblocking_notes": [
+        "外縁の余白が約10%未満の箇所はあるが、対象固有の特徴と主題の切断なし。最終UIで枠との余白を確認。"
+      ],
+      "reviewer": "independent qa_recovery_b; not generator"
+    },
+    {
+      "theme_id": "kadomatsu",
+      "path": "assets/generated/kadomatsu-attempt1.png",
+      "sha256": "dce2ba626e18f2bc70d18d3941e62b6800506a76995c0c44eb22bd8bd7f84274",
+      "result": "FAIL",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "FAIL",
+      "observations": [
+        "斜めに切った竹3本の束、松の針葉、わら台座と縄を原寸で確認。竹の平切りのみ、短冊、モミ、文字なし。",
+        "実120pxでも竹3本・松・わら台座の門松形が明瞭。主題切断なし。",
+        "必須「左右対の一方を大きく」に対して門松は1基のみで、左右対の第2基がない。必須構成不足としてFAIL。"
+      ],
+      "nonblocking_notes": [
+        "外縁の余白が約10%未満の箇所はあるが、対象固有の特徴と主題の切断なし。最終UIで枠との余白を確認。"
+      ],
+      "blocking_issues": [
+        "左右対の第2基が未描写（spec必須構成）"
+      ],
+      "reviewer": "independent qa_recovery_b; not generator"
+    },
+    {
+      "theme_id": "kadomatsu",
+      "path": "assets/generated/kadomatsu.png",
+      "sha256": "a94aa06a9914bdc2cb27c30c6c7d692b9bc90de60fd13f058ba930f9018bfd7a",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "required_features": "PASS",
+      "forbidden_features": "NONE",
+      "subject_cropping": "NONE",
+      "observations": [
+        "門松は完全な2基。左手前大・右奥小で、両基それぞれ斜め切り竹3本、松の針葉、わらと縄の土台が確認できる。",
+        "笹短冊・モミ・平切り竹のみの禁止表現なし。120pxでも2基と竹束を識別。",
+        "原寸で文字・数字・透かし・正答名の漏洩なし、同定特徴の切断なし。"
+      ],
+      "nonblocking_notes": [
+        "一部の外縁余白は約10%未満だが、主題と同定特徴は全体が画像内に収まり切断なし。UIで枠との余白を確認。"
+      ]
+    },
+    {
+      "theme_id": "kagamimochi",
+      "path": "assets/generated/kagamimochi.png",
+      "sha256": "979fb8446410627e3efcefeb41d473248910808f758a203450bce3891718d2e8",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "required_features": "PASS",
+      "forbidden_features": "NONE",
+      "subject_cropping": "NONE",
+      "observations": [
+        "大小2段の白い丸餅、橙色のダイダイと葉、三方を確認。",
+        "3段以上・ミカンのみ・サンタ帽なし。120pxで2段餅と橙と台座が明瞭。",
+        "原寸で文字・数字・透かし・正答名の漏洩なし、同定特徴の切断なし。"
+      ],
+      "nonblocking_notes": [
+        "一部の外縁余白は約10%未満だが、主題と同定特徴は全体が画像内に収まり切断なし。UIで枠との余白を確認。"
+      ]
+    },
+    {
+      "theme_id": "osechi",
+      "path": "assets/generated/osechi.png",
+      "sha256": "64d565fdd245f0556cf098625bc3d2b7bb18a231725c4e70717793c47c15c857",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "required_features": "PASS",
+      "forbidden_features": "NONE",
+      "subject_cropping": "NONE",
+      "observations": [
+        "ふたを外した重箱の別区画に黒豆、紅白かまぼこ、伊達巻、昆布巻き、えびを確認。",
+        "寿司のみ・ケーキ・品名文字なし。120pxでも重箱と5区画の食材群を識別。",
+        "原寸で文字・数字・透かし・正答名の漏洩なし、同定特徴の切断なし。"
+      ],
+      "nonblocking_notes": [
+        "一部の外縁余白は約10%未満だが、主題と同定特徴は全体が画像内に収まり切断なし。UIで枠との余白を確認。"
+      ]
+    },
+    {
+      "theme_id": "zoni",
+      "path": "assets/generated/zoni.png",
+      "sha256": "4417f455b00cfefe388156f3e42669e11426f4748a12d5eb395d8a9f8ccf95aa",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "required_features": "PASS",
+      "forbidden_features": "NONE",
+      "subject_cropping": "NONE",
+      "observations": [
+        "椀の澄んだ汁に大きな焼き餅、青菜、ニンジンとダイコン、シイタケを確認。",
+        "餅なし・ラーメン等なし。一例の雑煮として120pxでも餅が明瞭。",
+        "原寸で文字・数字・透かし・正答名の漏洩なし、同定特徴の切断なし。"
+      ],
+      "nonblocking_notes": [
+        "一部の外縁余白は約10%未満だが、主題と同定特徴は全体が画像内に収まり切断なし。UIで枠との余白を確認。"
+      ]
+    },
+    {
+      "theme_id": "nanakusa",
+      "path": "assets/generated/nanakusa.png",
+      "sha256": "b68fa7f5b83cd196033676ab6bee64017ace6b20be4f88842fc58c6047fdd547",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "required_features": "PASS",
+      "forbidden_features": "NONE",
+      "subject_cropping": "NONE",
+      "observations": [
+        "白い米粒の粥に刻んだ緑の菜、脇に丸いカブと細長いダイコンを確認。",
+        "架空の七種の草を断定する描写、白団子のみの描写なし。120pxでも粥と添えた根菜の区別ができる。",
+        "原寸で文字・数字・透かし・正答名の漏洩なし、同定特徴の切断なし。"
+      ],
+      "nonblocking_notes": [
+        "一部の外縁余白は約10%未満だが、主題と同定特徴は全体が画像内に収まり切断なし。UIで枠との余白を確認。"
+      ]
+    },
+    {
+      "theme_id": "beans",
+      "path": "assets/generated/beans.png",
+      "sha256": "c7e2849aab3719fe34ef971a5a27da43d7fbbc7a822cd2d396ce0ed53c332dd9",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "required_features": "PASS",
+      "forbidden_features": "NONE",
+      "subject_cropping": "NONE",
+      "observations": [
+        "木の枡に淡茶色の炒り大豆、外側に5粒を確認。",
+        "枝豆・生のさや・文字なし。120pxでも枡と炒り豆の組合せを識別。",
+        "原寸で文字・数字・透かし・正答名の漏洩なし、同定特徴の切断なし。"
+      ],
+      "nonblocking_notes": []
+    },
+    {
+      "theme_id": "arare",
+      "path": "assets/generated/arare.png",
+      "sha256": "dd60f8954f90c923cd27cf7b76db796d6b7ebe7de3a016c84e2191b6f9467801",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "required_features": "PASS",
+      "forbidden_features": "NONE",
+      "subject_cropping": "NONE",
+      "observations": [
+        "小皿の白・桃・緑・黄の小粒、不規則で米菓らしい粒状表面を確認。",
+        "大きい滑らかな月見団子や串団子なし。120pxで四色の小粒米菓と皿を識別。",
+        "原寸で文字・数字・透かし・正答名の漏洩なし、同定特徴の切断なし。"
+      ],
+      "nonblocking_notes": [
+        "一部の外縁余白は約10%未満だが、主題と同定特徴は全体が画像内に収まり切断なし。UIで枠との余白を確認。"
+      ]
+    },
+    {
+      "theme_id": "kashiwa",
+      "path": "assets/generated/kashiwa.png",
+      "sha256": "592bed7511491837b2ad616b8652259316e3fbe2e2a1968ca17f21516e4a6c08",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "required_features": "PASS",
+      "forbidden_features": "NONE",
+      "subject_cropping": "NONE",
+      "observations": [
+        "白い餅を包む幅広く大きな波状の切れ込みの柏葉を確認。葉脈も自然。",
+        "桜の細長い鋸歯葉、ちまきの笹葉なし。120pxでも大きく丸い裂片の柏葉と白餅を識別。",
+        "原寸で文字・数字・透かし・正答名の漏洩なし、同定特徴の切断なし。"
+      ],
+      "nonblocking_notes": [
+        "一部の外縁余白は約10%未満だが、主題と同定特徴は全体が画像内に収まり切断なし。UIで枠との余白を確認。",
+        "葉に覆われた餅の正確な半月輪郭は部分的に隠れるが、白餅と柏葉の組合せは明瞭。"
+      ]
+    },
+    {
+      "review_id": "stag-regeneration-qa",
+      "reviewed_at_utc": "2026-10-09T23:03:30.783518+00:00",
+      "scope": "Exactly one replacement asset, original size and actual 120x120 thumbnail. No shared visual QA ledger, code or spec changes.",
+      "path": "assets/generated/stag.png",
+      "absolute_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/assets/generated/stag.png",
+      "sha256": "eca02480c6f1df31a92d83614cf7dec5828723af234b90f7710475f66948bf6b",
+      "target": "コクワガタ（成虫・雄） / Dorcus rectus",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": [
+        "Regeneration removes the conspicuous serial large inner teeth that caused the prior strict species failure.",
+        "Jaws remain developed and relatively long; length alone is not rejected, per prior museum source noting developed jaws in larger males.",
+        "120px rendering preserves the principal tooth pair and generic stag beetle silhouette.",
+        "Visual species fidelity passes the established mandible/body criteria; this is not specimen-level taxonomic certification."
+      ],
+      "reference_basis": {
+        "previous_review": "asset-production/stag-species-review.json",
+        "primary_morphology_source": "https://chigamu.jp/data/download/200/197/004.pdf",
+        "source_description": "茅ヶ崎市博物館研究紀要 (2025), printed p35: male Dorcus rectus has one pair of inner tooth projections.",
+        "no_new_queries": true
+      },
+      "limitations": [
+        "Original image and one actual 120px rendering only.",
+        "No invented quantitative jaw length or exact tooth-position threshold.",
+        "No whole-asset collection inspected in this review."
+      ],
+      "details": {
+        "readability_120px": {
+          "result": "PASS",
+          "thumbnail_dimensions": [
+            120,
+            120
+          ],
+          "observed": "Paired jaws, one principal tooth per jaw, elongated beetle body and six legs remain legible. Antennae are visible but fine terminal segmentation is not resolvable at this size. Name distinction from cicada/chafer is clear."
+        },
+        "text_or_answer_leak": {
+          "result": "PASS",
+          "observed": "No lettering, labels, species name, seasonal cue, answer marker or human-readable inscription."
+        },
+        "species_features": {
+          "result": "PASS",
+          "dominant_inner_teeth": "Exactly one conspicuous inward main tooth per mandible; one paired set.",
+          "mandible_curve": "Main stems are slender with gradual curve and inward tips, without the previous broad semicircular saw-tooth silhouette.",
+          "second_major_tooth_series": "Absent. Tiny inner-edge details are not comparable to the main tooth and do not form a second prominent tooth series.",
+          "body": "Black brown elongated body, distinct head/pronotum/paired elongated elytra.",
+          "legs": 6,
+          "antennae": 2,
+          "forbidden_horns_or_head_processes": "No central rhinoceros horn or large Miyama-like head crown processes."
+        }
+      }
+    },
+    {
+      "path": "assets/generated/chimaki.png",
+      "sha256": "b5e790d5f920ad6cccce3a357d9dad6a2a104459ca1af1fc18b0955fe35bf186",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": "細長い円錐状の笹巻き2本、ひもの結束、1本を部分的にむいた白い餅を確認。三角米飯や柏葉なし。120pxでも笹巻きと露出した餅を識別でき、切断・文字なし。",
+      "nonblocking_notes": "上端・右端の余白は約10%未満だが笹葉を含む全体が収まり、同定特徴の切断はない。"
+    },
+    {
+      "path": "assets/generated/somen.png",
+      "sha256": "b6b01f012afeed321a5264166f47084cc7b84a9535aa8c006e4b838b2bc92245",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": "白い極細麺がガラス器に盛られ、小さなつゆ椀と細い箸が揃う。太いうどん・茶色いそば・七夕装飾なし。120pxでも細麺、つゆ椀、箸を確認でき、切断・文字なし。",
+      "nonblocking_notes": "つゆ椀の右端余白は約10%未満だが器は切れず、必要構成を保つ。"
+    },
+    {
+      "path": "assets/generated/dango.png",
+      "sha256": "a12dea2f377d09435cf322d492fbbec974e18a5f4415fa1d1bea557161cec68b",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": "白い丸団子が三方上でピラミッド状に積まれる。串や花見団子色なし。120pxでも白い団子の段積みと三方が明瞭で、切断・文字なし。",
+      "nonblocking_notes": "紙の左右端余白は約10%未満だが団子・三方は完全に収まる。"
+    },
+    {
+      "path": "assets/generated/candy.png",
+      "sha256": "9af18a61df83a9351e358e0031cb4a7acfe755773459041a53092a09ec4a9c11",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": "細長い紅白の棒飴4本と隣の無地の細長い袋を確認。丸飴・名称文字なし。120pxでも棒状の飴と袋が分離して識別可能で、切断なし。",
+      "nonblocking_notes": "上端の袋余白は約10%未満だが袋と全ての棒飴は完全に収まる。"
+    },
+    {
+      "path": "assets/generated/soba.png",
+      "sha256": "2523e263a4e99713e94ec92b2abfdc7214a32178b576f1b407bccecd2f720030",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": "茶灰色の細いそば麺が汁椀に入り、少量のねぎと箸が揃う。白いそうめん・黄色い中華麺なし。120pxでも茶色い細麺、汁椀と箸を識別でき、切断・文字なし。",
+      "nonblocking_notes": "箸の左右余白は約10%未満だが端部は切れていない。"
+    },
+    {
+      "path": "assets/generated/snow.png",
+      "sha256": "b860622d6bb296852fbc91da381153048f2efed1a2bd845596ef61018ee0d710",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": "裸枝と地面に白い積雪、手前に舞う白い雪粒を確認。雨や霜だけの草になっていない。120pxでも枝と地面への積雪が明瞭で、主題切断・文字なし。",
+      "nonblocking_notes": "裸枝の上端と場面左右の余白は約10%未満だが積雪の同定特徴は切れていない。"
+    },
+    {
+      "path": "assets/generated/frost.png",
+      "sha256": "63cc27ce9aa18640d8392e2431c202b72c64df299662dfa5e2ae849066c1b865",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": "草の葉縁・葉面と地表に白い細かな氷結晶が付き、緑の葉輪郭が残る。厚い積雪・降雪・丸い液滴なし。120pxでも葉を縁取る霜と雪場面の違いを識別でき、切断・文字なし。",
+      "nonblocking_notes": "左右の地表余白は約10%未満だが葉と結晶の主題は切れていない。"
+    },
+    {
+      "path": "assets/generated/rainy.png",
+      "sha256": "3a1e56f80c36fb2217e423a97d46f9ce98953d03a6ccfa9c0f9a375fb0ab14dd",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "PASS",
+      "observations": "灰雲から雨粒が降り、無地の青い傘、水たまりと波紋が揃う。雪・紅葉・季節名文字なし。120pxでも雲・雨・傘・水たまりを識別でき、切断なし。",
+      "nonblocking_notes": "雲・地表・植物の左右余白は約10%未満だが傘を含め全体は切れていない。"
+    },
+    {
+      "path": "assets/generated/leaves.png",
+      "sha256": "33fb70782c9a3865678e11170580c2907474ccca344104c446864a55cb1f08ca",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "葉・枝・地面の主題切断なし。",
+      "nonblocking_notes": "外周の余白は一部10%未満だが主題は完全。",
+      "details": {
+        "species_features": "赤橙黄の掌状のカエデ葉。枝上と地面の落葉を確認。松針葉・桜花なし。",
+        "readability_120px": "樹冠と地面の落葉が120pxでも識別できる。"
+      }
+    },
+    {
+      "path": "assets/generated/hanami.png",
+      "sha256": "fb0d724b1cb3e35098088fc12680c982057c74f0b52ca354e51785a66c41cd0e",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "人物・花・敷物の切断なし。",
+      "nonblocking_notes": "外周の余白は一部10%未満。花弁細部は原寸で確認。",
+      "details": {
+        "species_features": "長い花柄に淡桃色の五弁花、花弁先端の切れ込みがあり桜と判断。桜の下に家族4人が敷物に座る。酒の主役化なし。",
+        "readability_120px": "桜樹冠、家族、敷物が120pxでも識別できる。"
+      }
+    },
+    {
+      "path": "assets/generated/fireworks.png",
+      "sha256": "fac189cfb352498b89b7673f929f5d0a4481bbc7fe327dad1f8905b94a9673e8",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "花火と川岸の主題切断なし。",
+      "nonblocking_notes": "外周余白は一部10%未満だが主題は完全。",
+      "details": {
+        "species_features": "夜空に放射状の花火3発、下方に川と両岸。火災や昼の太陽なし。",
+        "readability_120px": "夜空の3発と川面が120pxで明瞭。"
+      }
+    },
+    {
+      "path": "assets/generated/windbell.png",
+      "sha256": "37e7733ac93f828791265eaf9af1b4ad6023a299c574d3303b2ee46ac53bf7ca",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "釣鐘・舌・短冊は切断なし。上の吊りひもは上辺外へ続く。",
+      "nonblocking_notes": "上辺の吊りひもは画面外へ続く構図。器具本体は完全で識別を妨げない。",
+      "details": {
+        "species_features": "透明ガラスの釣鐘形、内側の球状の舌、連続したひも、無地短冊1枚。笹・寺鐘なし。",
+        "readability_120px": "120pxで釣鐘形と短冊を識別。ガラスの舌も確認できる。"
+      }
+    },
+    {
+      "path": "assets/generated/yukata.png",
+      "sha256": "9a5ea0b0a27d033edce48c8476d519a977aa5bdee4c508baa117c91d4d143375",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "頭・袖・足先の切断なし。",
+      "nonblocking_notes": "上下余白は10%未満だが全身は完全。襟合わせは原寸で検証。",
+      "details": {
+        "species_features": "子どもの軽い浴衣、単純な帯、素足と木製下駄。本人の左前身頃が右前身頃の上に重なる正しい襟合わせ。厚い振袖・洋服なし。",
+        "readability_120px": "120pxでも帯、浴衣の全身、下駄の組合せを識別できる。"
+      }
+    },
+    {
+      "path": "assets/generated/ice.png",
+      "sha256": "5435686968e38ed38ed17b54ba37ea8f98d0828342e01171198bff1bdeee8c99",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "器・氷・スプーンの切断なし。",
+      "nonblocking_notes": "右側スプーンと上部の余白は10%未満。",
+      "details": {
+        "species_features": "器に山盛りの粒状の細かい削り氷、赤いシロップ、スプーン。滑らかなアイス球・文字旗なし。",
+        "readability_120px": "120pxで粗い氷の山、赤いシロップ、器とスプーンが識別できる。"
+      }
+    },
+    {
+      "path": "assets/generated/kite-attempt1.png",
+      "sha256": "75167830f18c1c2b64b1e95e154d341dbc89d66a5fe93dfa26ae82b2c53299af",
+      "result": "FAIL",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "右側の尾先端が画像右辺に接し先端が切断されている。主題を切らない条件に不適合。",
+      "nonblocking_notes": "凧と子どもの上下余白も10%未満。尾先端の切断は非阻害扱いにしない。",
+      "details": {
+        "species_features": "菱形の凧、地上の子ども、手から凧まで連続したひも、赤い尾を確認。こいのぼり・文字凧なし。",
+        "readability_120px": "120pxで子どもと菱形の凧の関係が分かり、細い連続ひもも確認できる。"
+      }
+    },
+    {
+      "path": "assets/generated/top.png",
+      "sha256": "c4784ab2d60b2564367a8f7f526f45390c4f3b585cb8fd81a9e91a3de1933528",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "こま・軸・ひもの切断なし。",
+      "nonblocking_notes": "なし。",
+      "details": {
+        "species_features": "木製の円形胴、中央の軸と尖った接地点、横の回すひも。機械型の意匠なし。",
+        "readability_120px": "120pxで木製こまの中央軸・胴と横のひもを識別できる。"
+      }
+    },
+    {
+      "path": "assets/generated/kite-attempt2.png",
+      "sha256": "d81555b020ca818776fd667cbe031a4ef296a15f715514ef4941f23ff8d00b8b",
+      "result": "FAIL",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸1254×1254でview_image確認、実120×120px縮小をcontactsheetで確認。",
+        "固定対象一覧とSHA256再照合一致。",
+        "主題の切断なし。数字・文字・名称・季節文字による漏洩なし。",
+        "尾2本の終端を両方確認。切断問題は解消。",
+        "明示された上・右12%以上の余白は未達。上端約8.6%、右端約6.6%。",
+        "査読後rootが同一bytesをkite-attempt2.pngに退避。退避sha再照合一致。"
+      ],
+      "nonblocking_notes": [],
+      "details": {
+        "species_features": "赤白の菱形凧、巻き取り具を持つ子ども、手から凧へ連続するひも、完全に画面内に収まる尾2本。",
+        "readability_120px": "菱形凧と子ども、尾2本は識別可能。細いひもは120pxでは低コントラストだが原寸で連続を確認。"
+      }
+    },
+    {
+      "path": "assets/generated/battledore.png",
+      "sha256": "ac67929be11b668b45ef9babf955a3f12478034db3b5f8a0e5fe30d5d2554bcb",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸1254×1254でview_image確認、実120×120px縮小をcontactsheetで確認。",
+        "固定対象一覧とSHA256再照合一致。",
+        "主題の切断なし。数字・文字・名称・季節文字による漏洩なし。"
+      ],
+      "nonblocking_notes": [
+        "上の羽根と下の履物の余白約3–4%は10%目安より狭いが完全inside。"
+      ],
+      "details": {
+        "species_features": "平らな木製羽子板を持ち打つ子ども、黒い小玉と複数の白い羽。網のラケットなし。",
+        "readability_120px": "木板と空中の羽根、打つ子どもを識別可能。"
+      }
+    },
+    {
+      "path": "assets/generated/acorn.png",
+      "sha256": "8bcc0740e23e894b4fc6d822c9a51b691becaeeb6ae007adc9e17accbfb343dd",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸1254×1254でview_image確認、実120×120px縮小をcontactsheetで確認。",
+        "固定対象一覧とSHA256再照合一致。",
+        "主題の切断なし。数字・文字・名称・季節文字による漏洩なし。"
+      ],
+      "nonblocking_notes": [
+        "左右余白約9%で10%目安に近い。"
+      ],
+      "details": {
+        "species_features": "茶色の楕円果実2個。左は鱗状の殻斗あり、右は殻斗なし。イガ/クルミ殻/果実から葉なし。",
+        "readability_120px": "2個の楕円果実と殻斗の有無が識別可能。"
+      }
+    },
+    {
+      "path": "assets/generated/pinecone.png",
+      "sha256": "862ab016cc1f17be84f7a8fb900c8d2ed455185068324453af77ff989361c455",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸1254×1254でview_image確認、実120×120px縮小をcontactsheetで確認。",
+        "固定対象一覧とSHA256再照合一致。",
+        "主題の切断なし。数字・文字・名称・季節文字による漏洩なし。"
+      ],
+      "nonblocking_notes": [
+        "左右余白約4–7%は10%目安より狭いが針葉/球果とも完全inside。種の絵だけでの厳密同定には限界があるが要求特徴は成立。"
+      ],
+      "details": {
+        "species_features": "成熟した茶色の球果、開いた木質鱗片の規則的重なり、脇の針葉。赤果実/トウモロコシ/垂れる長いモミ球果なし。",
+        "readability_120px": "開いた鱗片を持つ球果と針葉を識別可能。"
+      }
+    },
+    {
+      "path": "assets/generated/month1.png",
+      "sha256": "0396cbb4e41c63a7b4ddf051869d51a8bd05f48cf2a9a3b70a1ad88bb2c38694",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸1254×1254でview_image確認、実120×120px縮小をcontactsheetで確認。",
+        "固定対象一覧とSHA256再照合一致。",
+        "主題の切断なし。数字・文字・名称・季節文字による漏洩なし。",
+        "rootが反映済みと通知した改定仕様で評価。同一shaを再照合。無字紙面・2リング・三角台の共通構造、金銀と左右差は許容。"
+      ],
+      "nonblocking_notes": [
+        "左右約5–12%の余白、切断なし。"
+      ],
+      "details": {
+        "species_features": "白/生成りの無字紙面、リング2個、三角台の卓上カレンダー。数字・行事・季節花なし。",
+        "readability_120px": "卓上カレンダーと空白紙面、2リングを識別可能。"
+      }
+    },
+    {
+      "path": "assets/generated/month2.png",
+      "sha256": "03e1379bd4ffa8c258c0433a45f1ad01efc1af22d0274b3b5a44b2fa74b14eb8",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸1254×1254でview_image確認、実120×120px縮小をcontactsheetで確認。",
+        "固定対象一覧とSHA256再照合一致。",
+        "主題の切断なし。数字・文字・名称・季節文字による漏洩なし。",
+        "rootが反映済みと通知した改定仕様で評価。同一shaを再照合。無字紙面・2リング・三角台の共通構造、金銀と左右差は許容。"
+      ],
+      "nonblocking_notes": [
+        "左右約5–12%の余白、切断なし。"
+      ],
+      "details": {
+        "species_features": "白/生成りの無字紙面、リング2個、三角台の卓上カレンダー。数字・行事・季節花なし。",
+        "readability_120px": "卓上カレンダーと空白紙面、2リングを識別可能。"
+      }
+    },
+    {
+      "path": "assets/generated/month3.png",
+      "sha256": "b8d3ac4f9a21dec58f8e54c3c2f15008537d171c95914e2ff20642b4f4d1abe5",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸1254×1254でview_image確認、実120×120px縮小をcontactsheetで確認。",
+        "固定対象一覧とSHA256再照合一致。",
+        "主題の切断なし。数字・文字・名称・季節文字による漏洩なし。",
+        "rootが反映済みと通知した改定仕様で評価。同一shaを再照合。無字紙面・2リング・三角台の共通構造、金銀と左右差は許容。"
+      ],
+      "nonblocking_notes": [
+        "左右約5–12%の余白、切断なし。"
+      ],
+      "details": {
+        "species_features": "白/生成りの無字紙面、リング2個、三角台の卓上カレンダー。数字・行事・季節花なし。",
+        "readability_120px": "卓上カレンダーと空白紙面、2リングを識別可能。"
+      }
+    },
+    {
+      "path": "assets/generated/month4.png",
+      "sha256": "aeea5eb385307ac46fe40896ff7d8c04d7398af900bd2721609a814cd62e9dfc",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸1254×1254でview_image確認、実120×120px縮小をcontactsheetで確認。",
+        "固定対象一覧とSHA256再照合一致。",
+        "主題の切断なし。数字・文字・名称・季節文字による漏洩なし。",
+        "rootが反映済みと通知した改定仕様で評価。同一shaを再照合。無字紙面・2リング・三角台の共通構造、金銀と左右差は許容。"
+      ],
+      "nonblocking_notes": [
+        "左右約5–12%の余白、切断なし。"
+      ],
+      "details": {
+        "species_features": "白/生成りの無字紙面、リング2個、三角台の卓上カレンダー。数字・行事・季節花なし。",
+        "readability_120px": "卓上カレンダーと空白紙面、2リングを識別可能。"
+      }
+    },
+    {
+      "path": "assets/generated/kite.png",
+      "sha256": "8ff2dc59c2ce8731ad459beb00ae7a1ff4bf812bfcc8344dc6510ea7b653a510",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸と実120px縮小を目視確認。菱形の凧・子ども・凧の尾2本・手から凧まで連続するひもを確認。尾先と足を含め全主題が画像内。文字やこいのぼりなし。",
+        "改定後必須条件（四辺約10%以上白余白・人物/凧/全尾が完全inside・対象関係維持）を満たす。概ね左21%、上17%、右13%、下16%の白余白があり、最小約13%。"
+      ],
+      "nonblocking_notes": [
+        "履歴：旧生成縮小目標の四辺18%以上条件では上/右/下が未達のためFAILと判定した。画像はその時点から同一SHA。",
+        "独立設計レビュー承認：18%はroot追加の生成縮小目標でユーザー要求ではないという提示前提に基づき、original品質基準の約10%以上完全insideへ戻す変更は妥当。教材可読性、切断、ひもの連続、答え漏洩に品質問題なし。"
+      ]
+    },
+    {
+      "path": "assets/generated/month5.png",
+      "sha256": "022e14b56b6032e7b0b469ccc70598fff0bae38318edebc856821ffdce834313",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸で空白紙面・リング2個・卓上台を確認。季節装飾、数字、文字なし。全主題が画像内。実120pxで卓上カレンダー構造を識別。"
+      ],
+      "nonblocking_notes": [
+        "月数字はHTML表示として評価対象外。金銀・左右方向の画材差は承認済み仕様内。",
+        "左右余白は一部約7〜10%だが切断なし。一般の約10%余白要件として非阻害。"
+      ]
+    },
+    {
+      "path": "assets/generated/month6.png",
+      "sha256": "0b0562a9e59aff8047a107abf2e38fa2e2659e372ebb9163934bb36a4866fdff",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸で空白紙面・リング2個・卓上台を確認。季節装飾、数字、文字なし。全主題が画像内。実120pxで卓上カレンダー構造を識別。"
+      ],
+      "nonblocking_notes": [
+        "月数字はHTML表示として評価対象外。金銀・左右方向の画材差は承認済み仕様内。",
+        "左右余白は一部約7〜10%だが切断なし。一般の約10%余白要件として非阻害。"
+      ]
+    },
+    {
+      "path": "assets/generated/month7.png",
+      "sha256": "90c5443ee7e0ecf12a1c4c40d5a9789055bd054a62a799119e2db468747c9090",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸で空白紙面・リング2個・卓上台を確認。季節装飾、数字、文字なし。全主題が画像内。実120pxで卓上カレンダー構造を識別。"
+      ],
+      "nonblocking_notes": [
+        "月数字はHTML表示として評価対象外。金銀・左右方向の画材差は承認済み仕様内。",
+        "左右余白は一部約7〜10%だが切断なし。一般の約10%余白要件として非阻害。"
+      ]
+    },
+    {
+      "path": "assets/generated/month8.png",
+      "sha256": "d0efb400712c6352b81270384163d6cbc8ca082c6a0b22bfd096525c1f17afa4",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸で空白紙面・リング2個・卓上台を確認。季節装飾、数字、文字なし。全主題が画像内。実120pxで卓上カレンダー構造を識別。"
+      ],
+      "nonblocking_notes": [
+        "月数字はHTML表示として評価対象外。金銀・左右方向の画材差は承認済み仕様内。",
+        "左右余白は一部約7〜10%だが切断なし。一般の約10%余白要件として非阻害。"
+      ]
+    },
+    {
+      "path": "assets/generated/month9.png",
+      "sha256": "d0e85220785778acfc0f46db376b226710c272eddcfaf861a6b7d2f76c971cb1",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸で空白紙面・リング2個・卓上台を確認。季節装飾、数字、文字なし。全主題が画像内。実120pxで卓上カレンダー構造を識別。"
+      ],
+      "nonblocking_notes": [
+        "月数字はHTML表示として評価対象外。金銀・左右方向の画材差は承認済み仕様内。",
+        "左右余白は一部約7〜10%だが切断なし。一般の約10%余白要件として非阻害。"
+      ]
+    },
+    {
+      "path": "assets/generated/month10.png",
+      "sha256": "e525fac4fc5a7bc575bf6d78aae6d73a531d2f2962259ba3fae8cebb2498450c",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸で空白紙面・リング2個・卓上台を確認。季節装飾、数字、文字なし。全主題が画像内。実120pxで卓上カレンダー構造を識別。"
+      ],
+      "nonblocking_notes": [
+        "月数字はHTML表示として評価対象外。金銀・左右方向の画材差は承認済み仕様内。",
+        "左右余白は一部約7〜10%だが切断なし。一般の約10%余白要件として非阻害。"
+      ]
+    },
+    {
+      "path": "assets/generated/month11.png",
+      "sha256": "63d3982382c84522fa041d6dd761aaed97ebe322501070d69825736e3f876b3c",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸で空白紙面・リング2個・卓上台を確認。季節装飾、数字、文字なし。全主題が画像内。実120pxで卓上カレンダー構造を識別。"
+      ],
+      "nonblocking_notes": [
+        "月数字はHTML表示として評価対象外。金銀・左右方向の画材差は承認済み仕様内。",
+        "左右余白は一部約7〜10%だが切断なし。一般の約10%余白要件として非阻害。"
+      ]
+    },
+    {
+      "path": "assets/generated/month12.png",
+      "sha256": "7021210b5f670ab846e46d1c4a4619843ba35d233bde7fab47122bce80f4b48a",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "無地の白い紙面、金色の2リング、卓上台を確認。月数字・行事・季節モチーフなし。120pxでも卓上カレンダーの構造が判別でき、主題切断なし。"
+      ],
+      "nonblocking_notes": []
+    },
+    {
+      "path": "assets/generated/spring.png",
+      "sha256": "fbab5ad7cf81e0c24df5b1dea9652ad5a8f2a4a4620dfb8f4046f0fccf9e1133",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "満開の桜の木と黄色いタンポポ、緑の地面を確認。紅葉・雪・名称文字なし。120pxで桜の木と黄色い花の自然場面を判別でき、主題切断なし。"
+      ],
+      "nonblocking_notes": [
+        "外周余白は場所により約10%より狭いが、枝葉・花・地面は画面内に収まり切断はない。"
+      ]
+    },
+    {
+      "path": "assets/generated/summer.png",
+      "sha256": "d287242ddb82dfc1c1538e72c2bedd439a0ffc4e8d18b99203472301c70a35f7",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "緑の葉が茂る木と黄色い花弁・褐色中心のヒマワリを確認。紅葉・雪・名称文字なし。120pxでも木とヒマワリを判別でき、主題切断なし。"
+      ],
+      "nonblocking_notes": [
+        "外周余白は場所により約10%より狭いが、枝葉・花・地面は画面内に収まり切断はない。"
+      ]
+    },
+    {
+      "path": "assets/generated/autumn.png",
+      "sha256": "2a791a7d9e64c6fb44d61cf01d613853f1ffd0f25985d527c4a1a7e96adfa6bc",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "赤橙の掌状モミジ、黄色い扇形イチョウ、地面の落葉とドングリを確認。桜花・雪・名称文字なし。120pxでも葉形とドングリを判別でき、主題切断なし。"
+      ],
+      "nonblocking_notes": [
+        "外周余白は場所により約10%より狭いが、枝葉・花・地面は画面内に収まり切断はない。"
+      ]
+    },
+    {
+      "path": "assets/generated/winter.png",
+      "sha256": "c2fae630b8abed2157ac2b38d442eb9a0248dadfa3651d346db5b388789e5b32",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "落葉した木、地面と枝の雪、防寒着の小さい人物と白い息を確認。桜・ヒマワリ・名称文字なし。120pxで冬の場面を判別でき、主題切断なし。"
+      ],
+      "nonblocking_notes": [
+        "外周余白は場所により約10%より狭いが、枝葉・花・地面は画面内に収まり切断はない。",
+        "120pxでは白い息は淡いが、落葉樹・雪・防寒着の人物で場面は明確。"
+      ]
+    },
+    {
+      "path": "assets/generated/icon.png",
+      "sha256": "fb4a85815fef873c85f5391c30f94428044a0c98bd66371c954fb63330e1191f",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "中央の笑顔の子どもの冒険家と、周囲の桜花・ヒマワリ・モミジ葉・雪の結晶を確認。四季モチーフが適切に分散し文字なし。120pxでも人物と四季モチーフを判別でき、主題切断なし。"
+      ],
+      "nonblocking_notes": []
+    },
+    {
+      "path": "assets/generated/icon-512.png",
+      "sha256": "a56382f359ded5ec2aebe660a473500d4cc02212d25b7f9e137677bb77bf20f8",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "中央の笑顔の子どもの冒険家と、周囲の桜花・ヒマワリ・モミジ葉・雪の結晶を確認。四季モチーフが適切に分散し文字なし。120pxでも人物と四季モチーフを判別でき、主題切断なし。"
+      ],
+      "nonblocking_notes": []
+    },
+    {
+      "path": "assets/generated/icon-192.png",
+      "sha256": "706f9d035498699cc6850e7ce728d18cdd779b3640d0a0a22c9b5600ea88c26a",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "中央の笑顔の子どもの冒険家と、周囲の桜花・ヒマワリ・モミジ葉・雪の結晶を確認。四季モチーフが適切に分散し文字なし。120pxでも人物と四季モチーフを判別でき、主題切断なし。"
+      ],
+      "nonblocking_notes": []
+    },
+    {
+      "path": "assets/generated/icicle.png",
+      "sha256": "6c861e0cb5b38472e50dc242a0c07a00751653d0ecaadee13e97286ba290660b",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸で屋根の軒下から下へ垂れる透明な細長い氷5本を確認。各先端は下向きに尖り、長さに明瞭な差がある。",
+        "鍾乳石・木の根・上向き氷柱・雪だけの表現はない。",
+        "120×120pxの実寸表示で軒下の複数のつららを識別できる。",
+        "白背景。文字・記号ラベル・回答語の描き込みなし。すべての氷の先端が画面内。屋根上の雪は上端に達するが、主題のつららは切れていない。"
+      ]
+    },
+    {
+      "path": "assets/generated/halloween-pumpkin.png",
+      "sha256": "c7e8281852f92a62bed12e1d5eefd5ce1fca5f62980baee8c637d95dc8918216",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸で橙色の丸いカボチャ、緑褐色の柄、三角形の切り抜き目と鼻、笑顔の切り抜き口を確認。ジャック・オー・ランタンとして明瞭。",
+        "口は標準的な笑顔形状。怖すぎる表情、血・暴力、食用カボチャだけの表現はない。",
+        "120×120pxの実寸表示で橙色の輪郭・柄・三角の目・笑顔の口を識別できる。",
+        "白背景。文字・記号ラベル・回答語の描き込みなし。柄と本体の全体が画面内に収まる。"
+      ]
+    },
+    {
+      "path": "assets/generated/tulip-leaf.png",
+      "sha256": "327e2cdc9eefa3d27c32dee3b0ed9330acdc8a226c05cd6951a436c398a22d7e",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸1254×1254：単独一枚の幅広い披針形、尖端、短い鞘状基部を確認。",
+        "葉脈は葉の長軸に沿う平行構造。縁は滑らかな全縁で、鋸歯・タンポポ状裂片なし。",
+        "緑〜青緑の水彩濃淡とやや厚い葉の描写。花・球根・花芽なし。",
+        "120×120px実縮小で全縁の長葉、短い基部、縦方向の葉脈が残り、ヒマワリ葉との対応学習に使用可能。",
+        "白背景。文字・名称・季節の記号・花等の答え漏洩なし。葉先・基部ともフレーム内。",
+        "Work原花2件と4thumbの実120px比較：白背景・水彩・輪郭の統一を確認。"
+      ],
+      "nonblocking_notes": [
+        "葉単独では植物種の一意な同定はできないが、本教材の指定形態と葉の比較には適合。"
+      ],
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/tulip-leaf.png",
+      "provenance_sha_match": true
+    },
+    {
+      "path": "assets/generated/sunflower-leaf.png",
+      "sha256": "991add05966bf484fff0f0090fc857a3296bb9e4f4b76b85282af7b629cb0383",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "原寸1254×1254：単独一枚の心形〜広卵形の葉、尖端、長い葉柄を確認。",
+        "粗い鋸歯、葉の基部から分かれる主要脈と網状の細脈を確認。",
+        "緑の不均一な水彩面と凹凸により少しざらつく質感。花・種・細分した葉・全縁の長葉なし。",
+        "120×120px実縮小でも心形の輪郭、鋸歯、分岐葉脈、長い葉柄が判別でき、チューリップ葉との対応学習に使用可能。",
+        "白背景。文字・名称・季節の記号・花等の答え漏洩なし。葉先・葉柄末端ともフレーム内。",
+        "Work原花2件と4thumbの実120px比較：白背景・水彩・輪郭の統一を確認。"
+      ],
+      "nonblocking_notes": [
+        "葉単独では植物種の一意な同定はできないが、本教材の指定形態と葉の比較には適合。"
+      ],
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/sunflower-leaf.png",
+      "provenance_sha_match": true
+    },
+    {
+      "theme_id": "halloween-costume",
+      "path": "assets/generated/halloween-costume.png",
+      "sha256": "6101c0100007e70ed699115a579dd78d282aa033f0df20c3ad3033875b40f99b",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "Work independent costume_final_qa",
+      "evidence": "costume-independent-qa.json",
+      "source_qa_sha256": "97f6609b86870c0cbd489b43667a0c874f297b41419b2c1b906258582d2d378e"
+    },
+    {
+      "theme_id": "tanpopo-leaf",
+      "path": "assets/generated/tanpopo-leaf.png",
+      "sha256": "1a42052007f442622dfe581bfafada57f7311a1a4665ff1d17623602b0343ba5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent new_leaves_qa agent; direct view_image inspection",
+      "observations": [
+        "原寸PNGを目視：単独の細長い葉、一本の中央主脈、左右の深い切れ込みと基部へ向く裂片を確認。網状の側脈を備え、平行脈ではない。",
+        "実120×120px見本を目視：鋸歯状の深い切れ込みを持つ細長い輪郭が保持され、コスモスの細裂葉と区別できる。",
+        "花・綿毛・他葉・花茎・芽・文字なし。下端は葉の基部。白背景、全輪郭が画面内、中心配置で左右および上下の対向余白はおおむね均一。"
+      ],
+      "nonblocking_notes": [
+        "水彩の緑の濃淡と明瞭な輪郭は既定の教材用画風に適合。"
+      ],
+      "sources": [
+        "https://plants.ces.ncsu.edu/plants/taraxacum-officinale/"
+      ],
+      "provenance": {
+        "generation_raw_path": "/workspace/scratch/4589eefa35d5/generated_images/exec-47677c3d-122a-41a6-9c0b-4e650d989d06.png",
+        "raw_sha256": "1a42052007f442622dfe581bfafada57f7311a1a4665ff1d17623602b0343ba5",
+        "copied_reference_images": false,
+        "reviewed_original_path": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/tanpopo-leaf.png",
+        "reviewed_120px_path": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/jpeg-staging/tanpopo-leaf-120px.png",
+        "reviewed_120px_sha256": "e5657a4c5ee8c94d2ba79b4db1dc88af980d26ab85d240d2b04a8859fc605f5f",
+        "generation_journal": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/generation-journal.json"
+      },
+      "evidence": "asset-production/independent-visual-qa.json",
+      "source_qa_sha256": "f51a58559bd1191afe0b50d8e03e5688f8beaa87381da4191f2db667b6654919"
+    },
+    {
+      "theme_id": "cosmos-leaf",
+      "path": "assets/generated/cosmos-leaf.png",
+      "sha256": "f0b5df0918b2607ea0886a91b0d9f99af681e77c368e5c1c3ca094dfebd196f3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent new_leaves_qa agent; direct view_image inspection",
+      "observations": [
+        "原寸PNGを目視：中央葉軸から左右の一次分裂軸が伸び、その軸がさらに細長い線形の裂片へ分裂する一葉の構造。広い単葉や二本の触角状構造ではない。",
+        "実120×120px見本を目視：細い裂片間の白い空隙と二段階の分裂が残り、羽毛状・細裂した葉として識別可能。",
+        "花・つぼみ・他植物・文字なし。下端は一葉の短い基部。白背景、全先端が画面内、中心配置で対向余白はおおむね均一。"
+      ],
+      "nonblocking_notes": [
+        "水彩の緑の濃淡と明瞭な輪郭は既定の教材用画風に適合。",
+        "原寸では裂片幅を読み取りやすく描いているが、細い線形裂片と二回分裂を確認できる。上余白はやや狭いが葉先の切断なし。"
+      ],
+      "sources": [
+        "https://plants.ces.ncsu.edu/plants/cosmos-bipinnatus/",
+        "https://www.nparks.gov.sg/florafaunaweb/flora/3/6/3683"
+      ],
+      "provenance": {
+        "generation_raw_path": "/workspace/scratch/4589eefa35d5/generated_images/exec-60f8e13d-0d83-4b0f-864e-aa7a43c9ecca.png",
+        "raw_sha256": "f0b5df0918b2607ea0886a91b0d9f99af681e77c368e5c1c3ca094dfebd196f3",
+        "copied_reference_images": false,
+        "reviewed_original_path": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/cosmos-leaf.png",
+        "reviewed_120px_path": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/jpeg-staging/cosmos-leaf-120px.png",
+        "reviewed_120px_sha256": "60139ac8c7397b23e79ac38068efd34a0bda03d26952a954bd7be48806131f1a",
+        "generation_journal": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/generation-journal.json"
+      },
+      "evidence": "asset-production/independent-visual-qa.json",
+      "source_qa_sha256": "f51a58559bd1191afe0b50d8e03e5688f8beaa87381da4191f2db667b6654919"
+    }
+  ],
+  "failedAttempts": [
+    {
+      "theme_id": "osmanthus",
+      "path": "assets/generated/osmanthus-attempt1.png",
+      "sha256": "181557cb124cf35e6ae08c306fa5f206f7919b3b3f2d697ba5a7577d3731d11f",
+      "result": "FAIL",
+      "species_features": "FAIL",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "主要な正面花（上中央、左中段）に5裂以上が複数混在。必須の4裂花に反する。",
+        "原寸と実120px縮小画像を独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題の切断なし。余白統一は最終UIで確認。"
+      ],
+      "required_fix": "全開花の正確な4裂化。5/6裂禁止。再生成・再QA必須。"
+    },
+    {
+      "theme_id": "osmanthus",
+      "path": "assets/generated/osmanthus-attempt2.png",
+      "sha256": "b7092fd9e2c567291f1544adf7a8b92f654ef3819867bf411a6e1c9062fd6642",
+      "result": "FAIL",
+      "species_features": "FAIL",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "再生成attempt2でも中段左花房の下側の正面花、中央右花房等に明確な5裂花が混在。4裂要件を満たさない。",
+        "原寸と実120px縮小画像を独立視覚確認。"
+      ],
+      "nonblocking_notes": [
+        "主題切断なし。最終UIで余白統一を確認。"
+      ],
+      "attempt": 2,
+      "required_fix": "過密花房を避け、可視の全開花を十字形の正確な4裂にする。再生成・再QA必須。"
+    },
+    {
+      "path": "assets/generated/stag-attempt1.png",
+      "sha256": "a636cf82c8897703eadc35dadd74176502bcf71b7ffac063901b1ad46ab6e8eb",
+      "result": "FAIL",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "FAIL",
+      "observations": [
+        "黒褐色の細長い体、左右の大顎に内側の歯、6脚、2触角を確認。中央頭角・ミヤマ型の巨大頭突起なし。",
+        "120pxでも大顎とクワガタの形を識別可能。文字なし。大顎は長く複数の歯が強調されており、コクワガタとしての厳密な種同定はこの画像だけでは保証できない。",
+        "Fixed species Dorcus rectus specialist review: multiple main inner teeth, regenerate; generic stag learning was compatible."
+      ],
+      "anatomy_note": "6脚と2触角を原寸で確認。脚数教材用途は120pxでは不可。大顎形態の種特異性は追加監修対象。",
+      "reviewer": "independent-qa-recovery-a"
+    },
+    {
+      "theme_id": "kadomatsu",
+      "path": "assets/generated/kadomatsu-attempt1.png",
+      "sha256": "dce2ba626e18f2bc70d18d3941e62b6800506a76995c0c44eb22bd8bd7f84274",
+      "result": "FAIL",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "species_features": "FAIL",
+      "observations": [
+        "斜めに切った竹3本の束、松の針葉、わら台座と縄を原寸で確認。竹の平切りのみ、短冊、モミ、文字なし。",
+        "実120pxでも竹3本・松・わら台座の門松形が明瞭。主題切断なし。",
+        "必須「左右対の一方を大きく」に対して門松は1基のみで、左右対の第2基がない。必須構成不足としてFAIL。"
+      ],
+      "nonblocking_notes": [
+        "外縁の余白が約10%未満の箇所はあるが、対象固有の特徴と主題の切断なし。最終UIで枠との余白を確認。"
+      ],
+      "blocking_issues": [
+        "左右対の第2基が未描写（spec必須構成）"
+      ],
+      "reviewer": "independent qa_recovery_b; not generator"
+    }
+  ]
+}

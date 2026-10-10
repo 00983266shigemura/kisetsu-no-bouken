@@ -14,3 +14,21 @@
 sceneは実物風の一枚絵の誤り探しを完全再現する形式ではなく、6枚の独立した絵を場面に沿って並べた構造化練習。各カードの位置とIDで選択対象を一意化し、生成画像の位置ずれを採点に持ち込まない。pairingは左列の花→右列の葉を2組選び、花と葉のID対の集合を採点する。列内の位置をランダム化し、同じ行だけで答えが決まらないようにする。
 
 花と葉の対応形式の根拠はこぐま会の公開解説。葉の個別形態の正確性は生成結果の個別視覚QAを別途必須とする。画像生成前には形態仕様、生成後には実画像の形態・縮小識別・類似対象間の区別を検証する。教材一般の形式裏付けだけで生成画像の植物学的正確性を保証した扱いにしない。
+
+## 旧実績と現在の習熟
+
+旧v1記録の初回読込時だけ、基準旧240問のIDとそのstreak>=2から獲得済みテーマをoptionalな `legacyEarnedThemeIds` に保存する。新規記録は空配列で開始する。保存キーとversion:1、他の既存フィールドは保持する。旧退役問も履歴実績へ含め、追加112問は含めない。保存済み配列はその後の誤答や再読込で再計算しない。
+
+図鑑の☆「まえの がんばり」は更新時点の旧実績、✦は現行active問題の異なる2種類でそれぞれstreak>=2の習熟。現在の習熟やメダル獲得条件へ旧実績を加算しない。獲得済みスタンプとメダルは維持する。親画面に基準の違いを説明する。optional fieldが不正な記録は警告し、その読込中の自動保存と以後の保存を停止して元データを上書きしない。
+
+移行検証は旧1問習熟、旧退役問、新問除外、誤答後の実績不変、旧コンパイル済みアプリと旧教材での回答・保存後の新版readback、新規記録の旧実績非増殖、元全フィールドのdeepEqual、不正fieldの元保存bytes保持を対象とする。この追加修正の実装者によるテスト成功は独立最終査読や物理iOS10 Gateの代替ではない。
+
+## A10 決定的release.json
+
+アプリ版の正本は `build.js`、`source.html`、`icon.svg`、`manifest.webmanifest`、`package.json`、`package-lock.json` の6パス。相対パスを辞書順に整列し、各内容bytesのSHA256を取得する。`JSON.stringify([[path,sha256],...]) + LF` のUTF8 bytesのSHA256 full64hexをreleaseIdとする。生成されたindex/SW/AppCache/release.json、Git commit、日時、画像制作台帳やテスト資料はID入力から除外する。制作資料・公開root内の他ファイルは別の保存/公開安全性Gateで検証する。新しい外部runtime入力を追加する場合は正本・hash・cacheの範囲を再査読する。
+
+release.jsonは正本6件、実使用TypeScriptのバージョンとlock integrity、配信index/SW/AppCache/icon/manifestのhash・bytesを記録する。自身のhashを自身へ含めない。packageの完全固定version、lock root、lock installed version、require(typescript).versionの一致とintegrity存在をbuildと独立verifierで強制する。
+
+生成indexにfullIDのmetaを注入し、scope別SW cache名にID先頭16桁、AppCache revisionにfullIDを使用する。release.jsonも両方のcache対象に含め、オフライン配信中の版を識別できるようにする。release.jsonを含む生成4ファイルは同時にGit追跡・配信する。IDやcache追加は新JS APIやv1保存schemaを変更しない。実更新・失敗時旧版保持はV2/V3で別途確認する。
+
+独立verifierは別定義の正本一覧からhash/ID/output宣言を再計算し、独立2build一致、生成物garbageの排除・上書き、正本1byte変更によるID変更を検証する。最終110画像すべてのJPEG inline化と全テーマ/選択肢画像のmap解決を必須とし、旧generated path例外を削除する。統合前103件でこのguardが失敗する状態をPASS扱いしない。画像生成/QA原画と候補Git保存readback、原PNGのremote-byte保存証拠をrelease.jsonで代替しない。

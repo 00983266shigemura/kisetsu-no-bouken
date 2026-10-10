@@ -1,0 +1,3640 @@
+{
+  "review": "independent read-only exact-byte/data/restore audit",
+  "assets": {
+    "sourceMap": 110,
+    "records": [
+      {
+        "id": "assets/sakura.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/tulip.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/nanohana.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/tanpopo.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/fuji.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/tsutsuji.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/nemophila.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/iris.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/lotus.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/hydrangea.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/sunflower.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/morning.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/cosmos.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/spiderlily.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/osmanthus.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/ginkgo.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/maple.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/plum.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/sasanqua.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/wintersweet.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/strawberry.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/bamboo.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/clam.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/cucumber.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/tomato.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/watermelon.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/aji.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/sweetpotato.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/persimmon.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/sanma.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/chestnut.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/cabbage.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/spinach.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/radish.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/broadbean.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/corn.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/edamame.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/mikan.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/butterfly.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/swallowtail.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/cicada.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/beetle.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/chafer.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/firefly.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/dragonfly.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/cricket.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/ladybird.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/stag.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/newyear.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/setsubun.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/hina.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/children.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/tanabata.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/moonview.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/shichigosan.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/solstice.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/lastday.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/kadomatsu.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/kagamimochi.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/osechi.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/zoni.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/nanakusa.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/beans.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/arare.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/kashiwa.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/chimaki.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/somen.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/dango.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/candy.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/soba.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/snow.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/frost.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/rainy.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/leaves.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/hanami.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/fireworks.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/windbell.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/yukata.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/ice.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/kite.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/top.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/battledore.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/acorn.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/pinecone.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/month1.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/month2.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/month3.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/month4.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/month5.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/month6.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/month7.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/month8.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/month9.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/month10.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/month11.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/month12.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/spring.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/summer.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/autumn.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/winter.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/icon.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/icon-512.png",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/icon-192.png",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/icicle.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/halloween-pumpkin.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/halloween-costume.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/tulip-leaf.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/sunflower-leaf.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/tanpopo-leaf.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      },
+      {
+        "id": "assets/cosmos-leaf.svg",
+        "embedAndDiskSHA": true,
+        "jpegBytes": true,
+        "pngSHA": true,
+        "pngQAExactPASS": true,
+        "jpegQAExactPASS": true,
+        "manifestQACopyExact": true,
+        "pngdecode": {
+          "format": "PNG",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        "jpegdecode": {
+          "format": "JPEG",
+          "size": [
+            512,
+            512
+          ]
+        },
+        "jpegSizeMatch": true
+      }
+    ],
+    "pngQARecords": 113,
+    "jpegQARecords": 110,
+    "manifestSourceSHAExact": true,
+    "failures": [],
+    "recordCount": 110,
+    "pngQAExplanation": "113 total visual QA records include retained historical paths. Each of the 110 current originals has exactly one SHA/path-matched PASS; no fabricated count normalization."
+  },
+  "existing108": {
+    "protectedFileCount": 222,
+    "mismatches": []
+  },
+  "protectedLatestGit": [
+    {
+      "path": ".github/workflows/build.yml",
+      "HEADExact": true
+    },
+    {
+      "path": ".github/workflows/verify-public.yml",
+      "HEADExact": true
+    },
+    {
+      "path": "quality/ACCEPTANCE.md",
+      "HEADExact": true
+    },
+    {
+      "path": "quality/evidence/chat-108-assets-checkpoint-20261010.json",
+      "HEADExact": true
+    },
+    {
+      "path": "quality/evidence/chat-leaf-progress-20261010.json",
+      "HEADExact": true
+    },
+    {
+      "path": "quality/evidence/chat-resume-recovery-20261010.json",
+      "HEADExact": true
+    },
+    {
+      "path": "quality/evidence/ci-safety.json",
+      "HEADExact": true
+    },
+    {
+      "path": "quality/evidence/work-completion-handoff-20261010.json",
+      "HEADExact": true
+    },
+    {
+      "path": "quality/evidence/work-handoff-readback-20261010.json",
+      "HEADExact": true
+    },
+    {
+      "path": "quality/rulesets/main.json",
+      "HEADExact": true
+    },
+    {
+      "path": "asset-production/manifest-baseline.json",
+      "HEADExact": true,
+      "WorkExact": true
+    }
+  ],
+  "data": {
+    "WorkChatWholeContentDeepEqual": {
+      "Work": true,
+      "Chat108": true
+    },
+    "legacy240ExistingWholeFieldsDifferences": [],
+    "legacyQuestionAdditions": [
+      {
+        "id": "season-tanpopo",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-iris",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-sunflower",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-morning",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-maple",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-plum",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-sasanqua",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-cucumber",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-tomato",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-cabbage",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-spinach",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-radish",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-mikan",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-butterfly",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-swallowtail",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-cicada",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-dragonfly",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-cricket",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-ladybird",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-stag",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-frost",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-rainy",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      },
+      {
+        "id": "season-leaves",
+        "added": [
+          "retired",
+          "retirementReason"
+        ]
+      }
+    ],
+    "old100Themes": [
+      {
+        "id": "sakura",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "tulip",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "nanohana",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "tanpopo",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "fuji",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "tsutsuji",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "nemophila",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "iris",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "lotus",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "hydrangea",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "sunflower",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "morning",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "cosmos",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "spiderlily",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "osmanthus",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "ginkgo",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "maple",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "plum",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "sasanqua",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "wintersweet",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "strawberry",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "bamboo",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "clam",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "cucumber",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "tomato",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "watermelon",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "aji",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "sweetpotato",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "persimmon",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "sanma",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "chestnut",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "cabbage",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "spinach",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "radish",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "broadbean",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "corn",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "edamame",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "mikan",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "butterfly",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "swallowtail",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "cicada",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "beetle",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "chafer",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "firefly",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "dragonfly",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "cricket",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "ladybird",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "stag",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "newyear",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "setsubun",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "hina",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "children",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "tanabata",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "moonview",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "shichigosan",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "solstice",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "lastday",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "kadomatsu",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "kagamimochi",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "osechi",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "zoni",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "nanakusa",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "beans",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "arare",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "kashiwa",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "chimaki",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "somen",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "dango",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "candy",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "soba",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "snow",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "frost",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "rainy",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "leaves",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "hanami",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "fireworks",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "windbell",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "yukata",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "ice",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "kite",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "top",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "battledore",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "acorn",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "pinecone",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "month1",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "month2",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "month3",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "month4",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "month5",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "month6",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "month7",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "month8",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "month9",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "month10",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "month11",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "month12",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "spring",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "summer",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "autumn",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      },
+      {
+        "id": "winter",
+        "fields": [
+          "curriculumRole"
+        ],
+        "legacyFieldsExact": true
+      }
+    ],
+    "authorizedAdditionsSource": [
+      "content-design/release-contract-addendum.md A01",
+      "content-design/SPEC.md lines64,83",
+      "content-design/REVIEW.md legacy all-field audit"
+    ],
+    "themes": 103,
+    "dictionaryQuestions": 352,
+    "activeQuestions": 329,
+    "formats": {
+      "name": 85,
+      "season": 99,
+      "month": 8,
+      "match": 42,
+      "order": 12,
+      "odd": 32,
+      "multi": 32,
+      "event": 12,
+      "clue": 4,
+      "marks": 16,
+      "scene": 4,
+      "pairing": 6
+    },
+    "legacy240WholeObjectsDeepEqual": false,
+    "legacy240DifferenceExplanation": "Whole objects differ for 23 retired questions only by added retired/retirementReason metadata. Every original field is deepEqual. This is explicitly authorized by release-contract-addendum.md A01; candidate whole content exactly matches Work and Chat108."
+  },
+  "restore": {
+    "checkExit": 0,
+    "checkOutput": "{\"manifestSha256\": \"c61dfdee761419ffed2bd14c691701b70cd1cbe1fefdff182bc56c35dd620468\", \"checked\": 110, \"restored\": 0, \"exactHashMatch\": true, \"sourceChanged\": false, \"originalPNGRestored\": false}",
+    "isolatedRestoreExit": 0,
+    "output": "{\"manifestSha256\": \"c61dfdee761419ffed2bd14c691701b70cd1cbe1fefdff182bc56c35dd620468\", \"checked\": 110, \"restored\": 110, \"exactHashMatch\": true, \"sourceChanged\": false, \"originalPNGRestored\": false}",
+    "restoredCount": 110,
+    "hashOrDecodeFailures": []
+  },
+  "gitPackaging": {
+    "stagedPaths": [
+      "asset-production/candidate-manifest.json",
+      "asset-production/costume-independent-qa.json",
+      "asset-production/costume-provenance.json",
+      "asset-production/independent-jpeg-qa.json",
+      "asset-production/independent-visual-qa.json",
+      "asset-production/jpeg-qa.json",
+      "asset-production/new-leaves-generation-journal.json",
+      "asset-production/visual-qa.json",
+      "build.js",
+      "content-design/asset-specs.json",
+      "content-design/release-contract-addendum.md",
+      "icon.svg",
+      "index.html",
+      "offline.appcache",
+      "release.json",
+      "scripts/integrate-assets.py",
+      "scripts/restore-assets.py",
+      "scripts/verify-build.js",
+      "source.html",
+      "sw.js",
+      "test.js"
+    ],
+    "trackedOriginalPNGs": [],
+    "stagedOriginalPNGs": [],
+    "jpegRecovery": "All110 final JPEGs recovered byte-exact and decoded from committed source map by restore-assets.py. Original PNGs cannot be recreated from JPEG; preserved Work/Chat/new-leaf archives are necessary.",
+    "pngExclusionAppropriate": true
+  },
+  "allTechnicalChecksPass": true,
+  "limitations": "This does not independently re-review all visual content or certify device/browser release gates."
+}

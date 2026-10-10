@@ -1,6 +1,16 @@
 /* Build iOS 10 version from source.html: npm install --no-save typescript@5.9.3 */
 'use strict';
 var fs=require('fs'),ts=require('typescript'),crypto=require('crypto');
+var canonicalPaths=['build.js','source.html','icon.svg','manifest.webmanifest','package.json','package-lock.json'].sort();
+var hash=function(bytes){return crypto.createHash('sha256').update(bytes).digest('hex')};
+var canonicalSources=canonicalPaths.map(function(path){var bytes=fs.readFileSync(path);return {path:path,sha256:hash(bytes),bytes:bytes.length}});
+var packageData=JSON.parse(fs.readFileSync('package.json','utf8'));
+var lockData=JSON.parse(fs.readFileSync('package-lock.json','utf8'));
+var compilerVersion=packageData.devDependencies.typescript;
+var lockedCompiler=lockData.packages&&lockData.packages['node_modules/typescript'];
+if(!/^\d+\.\d+\.\d+$/.test(compilerVersion)||!lockedCompiler||!lockedCompiler.integrity||lockedCompiler.version!==compilerVersion||lockData.packages[''].devDependencies.typescript!==compilerVersion||ts.version!==compilerVersion)throw Error('Actual TypeScript compiler does not match exact package/lock versions and integrity');
+var identityBytes=JSON.stringify(canonicalSources.map(function(r){return [r.path,r.sha256]}))+'\n';
+var releaseId=hash(identityBytes);
 var html=fs.readFileSync('source.html','utf8');
 var scripts=[...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)];
 if(scripts.length!==3)throw Error('Expected 3 inline scripts, found '+scripts.length);
@@ -34,9 +44,13 @@ html=html.replace('<meta name="theme-color"','<meta name="apple-mobile-web-app-c
 html=html.replace(scripts[1][0],'<script>'+poly+'\n'+compile(scripts[1][2])+'</script>');
 html=html.replace(scripts[2][0],'<script>'+compile(app)+'</script>');
 html=html.replace('きせつのぼうけん · 1.0','きせつのぼうけん · iOS 10対応');
+html=html.replace('<meta name="theme-color"','<meta name="kisetsu-release-id" content="'+releaseId+'"><meta name="theme-color"');
 fs.writeFileSync('index.html',html);
-var sw="const PREFIX='kisetsu-adventure-'+self.registration.scope+'-';const CACHE=PREFIX+'"+crypto.createHash('sha256').update(html).digest('hex').slice(0,16)+"';const FILES=['./','./index.html','./manifest.webmanifest','./icon.svg','./sw.js'];self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.indexOf(PREFIX)===0&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;const u=new URL(e.request.url);if(u.origin!==self.location.origin||u.pathname.indexOf(new URL(self.registration.scope).pathname)!==0)return;e.respondWith(caches.match(e.request,{ignoreSearch:true}).then(r=>r||fetch(e.request)))});self.addEventListener('message',e=>{if(e.data&&e.data.type==='CACHE_STATUS')caches.open(CACHE).then(c=>c.match('./index.html')).then(r=>{if(e.ports&&e.ports[0])e.ports[0].postMessage({ready:!!r})});if(e.data&&e.data.type==='ACTIVATE')self.skipWaiting()});";
+var sw="const PREFIX='kisetsu-adventure-'+self.registration.scope+'-';const CACHE=PREFIX+'"+releaseId.slice(0,16)+"';const FILES=['./','./index.html','./manifest.webmanifest','./icon.svg','./sw.js','./release.json'];self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.indexOf(PREFIX)===0&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;const u=new URL(e.request.url);if(u.origin!==self.location.origin||u.pathname.indexOf(new URL(self.registration.scope).pathname)!==0)return;e.respondWith(caches.match(e.request,{ignoreSearch:true}).then(r=>r||fetch(e.request)))});self.addEventListener('message',e=>{if(e.data&&e.data.type==='CACHE_STATUS')caches.open(CACHE).then(c=>c.match('./index.html')).then(r=>{if(e.ports&&e.ports[0])e.ports[0].postMessage({ready:!!r})});if(e.data&&e.data.type==='ACTIVATE')self.skipWaiting()});";
 fs.writeFileSync('sw.js',sw);
-var rev=crypto.createHash('sha256').update(html).digest('hex').slice(0,16);
-fs.writeFileSync('offline.appcache','CACHE MANIFEST\n# build '+rev+'\nCACHE:\n./\n./index.html\n./icon.svg\n./manifest.webmanifest\n./sw.js\nNETWORK:\n*\n');
-console.log('ES5 website generated, length '+html.length+' rev '+rev);
+fs.writeFileSync('offline.appcache','CACHE MANIFEST\n# release '+releaseId+'\nCACHE:\n./\n./index.html\n./icon.svg\n./manifest.webmanifest\n./sw.js\n./release.json\nNETWORK:\n*\n');
+var deployedPaths=['index.html','sw.js','offline.appcache','icon.svg','manifest.webmanifest'].sort();
+var deployedFiles=deployedPaths.map(function(path){var bytes=fs.readFileSync(path);return {path:path,sha256:hash(bytes),bytes:bytes.length}});
+var release={schemaVersion:1,releaseId:releaseId,algorithm:'SHA256',identityEncoding:'UTF8 JSON array of sorted [path,sha256] pairs followed by LF',canonicalSources:canonicalSources,compiler:{name:'typescript',version:ts.version,lockIntegrity:lockedCompiler.integrity},deployedFiles:deployedFiles,selfHashExcluded:true};
+fs.writeFileSync('release.json',JSON.stringify(release,null,2)+'\n');
+console.log('ES5 website generated, length '+html.length+' release '+releaseId);
