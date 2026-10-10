@@ -1,0 +1,58 @@
+{
+  "checkpoint_id": "KISETSU-CHAT-PARTIAL-20261010-03",
+  "supersedes_progress": "quality/evidence/work-handoff-readback-20261010.json",
+  "base_head": "48314bd77869223a0721a5aad0a0a1a05032a959",
+  "work_library_zip_file_id": "file_00000000894881f58f86002ae3780164",
+  "work_zip_sha256": "4bf99248b85ab5b8252ec9eef85de98051a68616bcf95e5193f84af56db79b70",
+  "verified_at": "2026-10-10",
+  "stats": {
+    "work_png_exact_sha_and_qa": 105,
+    "work_jpeg_exact_sha_and_qa": 95,
+    "chat_derived_jpeg_10_prepared": true,
+    "chat_leaf_png_generated_not_independently_qa": 2,
+    "total_original_png_present_locally": 107,
+    "total_jpeg_present_locally": 107,
+    "remaining": 3
+  },
+  "chat_new_png": [
+    {
+      "id": "tulip-leaf",
+      "sha256": "327e2cdc9eefa3d27c32dee3b0ed9330acdc8a226c05cd6951a436c398a22d7e",
+      "gen_id": "1fe7fe0d-aae3-4b24-9619-bf4d6cbc7282",
+      "qa": "PENDING_INDEPENDENT"
+    },
+    {
+      "id": "sunflower-leaf",
+      "sha256": "991add05966bf484fff0f0090fc857a3296bb9e4f4b76b85282af7b629cb0383",
+      "gen_id": "5ba92088-bb2b-47a6-9ff8-0fbbb9109ff1",
+      "qa": "PENDING_INDEPENDENT"
+    }
+  ],
+  "remaining": [
+    {
+      "id": "halloween-costume",
+      "reason": "Work started but no returned image in archive or visible Library; no regeneration authorized"
+    },
+    {
+      "id": "tanpopo-leaf",
+      "reason": "not created, image generation returned unrelated image and was discarded"
+    },
+    {
+      "id": "cosmos-leaf",
+      "reason": "not created, image generation returned unrelated image and was discarded"
+    }
+  ],
+  "evidence": {
+    "old_240_question_field_signature": "64bit FNV-1a over 65505 UTF16 units; main and Work both 368619028be21152; non-cryptographic supplemental check",
+    "new_dictionary": 352,
+    "active": 329,
+    "types": 12,
+    "work_code_git_base_files": "11/11 file git blob SHA equal original GitHub 12461c24717f7efc0fa5a68197735e2ba60b9d74",
+    "local_build": "BLOCKED compiler TypeScript5.9.3 absent; browser local URL navigation admin denied",
+    "local_package_sha256": "addc04d260ca578f5c5d968045ccb66c0cdcdab6a998df7c86e7290ecb0b54c2",
+    "local_package": "kisetsu-chat-continuation-20261010.zip"
+  },
+  "release_ready": false,
+  "no_main_or_work_branch_write": true,
+  "v3_ios10": "UNVERIFIED"
+}
