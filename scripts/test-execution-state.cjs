@@ -21,4 +21,11 @@ assert.throws(()=>S.transition(block,'RESTART',{attempt:2,expectedVersion:2,expe
 assert.throws(()=>S.initial('../bad',sha,1,now),/invalid identifier/);
 assert.throws(()=>S.initial(id,'wrong',1,now),/invalid identifier/);
 assert.equal(S.digest('abc'),'ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad');
-console.log('PASS: execution checkpoint integrity, version CAS, fencing, replay and fault injection');
+(async()=>{
+ let n=0;
+ const expected={head:'new',state:complete};
+ const got=await S.waitForReadback(async()=>{n++;return n<3?{head:'stale',state:s}:expected},'new',complete,{delays:[0,0,0,0]});
+ assert.strictEqual(got,expected);assert.equal(n,3);
+ await assert.rejects(S.waitForReadback(async()=>({head:'stale',state:s}),'new',complete,{delays:[0,0]}),/CHECKPOINT_READBACK_MISMATCH/);
+ console.log('PASS: execution checkpoint integrity, fencing, idempotency, fault injection and eventual readback');
+})().catch(e=>{console.error(e.stack);process.exitCode=1});

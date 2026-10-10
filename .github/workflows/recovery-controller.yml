@@ -52,7 +52,7 @@ jobs:
               path="ops/checkpoints/release_${sha}.json"
               if gh api "repos/$repo/contents/$path?ref=ops-execution-state" --jq '.content' >/tmp/ops-state-base64 2>/dev/null; then
                 phase=$(base64 -d </tmp/ops-state-base64 | jq -r '.payload.phase // ""')
-                if [ "$phase" = BLOCKED ] || [ "$phase" = VERIFIED ]; then
+                if [ "$phase" = BLOCKED ]; then
                   echo "No auto rerun for $id: $phase"
                   continue
                 fi

@@ -54,4 +54,15 @@ function recover(s,verifyArtifact){
  if(s.phase==='VERIFIED')assert(verifyArtifact(s.evidence),'EVIDENCE_NOT_FOUND');
  return s;
 }
-module.exports={SHA,safeId,digest,validate,initial,transition,wire,unwrap,recover};
+async function waitForReadback(read,head,state,config={}) {
+ const delays=config.delays||[0,400,800,1600,3200,6400];
+ let last='UNKNOWN';
+ for(const delay of delays){
+  if(delay)await new Promise(resolve=>setTimeout(resolve,delay));
+  const snapshot=await read();
+  if(snapshot.head===head&&snapshot.state&&wire(snapshot.state)===wire(state))return snapshot;
+  last='observed_head='+snapshot.head+' expected_head='+head+' observed_version='+(snapshot.state?.version||'none');
+ }
+ throw Error('CHECKPOINT_READBACK_MISMATCH '+last);
+}
+module.exports={SHA,safeId,digest,validate,initial,transition,wire,unwrap,recover,waitForReadback};

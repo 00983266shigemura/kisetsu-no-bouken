@@ -30,8 +30,7 @@ async function save(next,previous){
  const commit=await api('POST','/git/commits',{message:'Checkpoint '+job+' v'+next.version,tree:tree.sha,parents:[previous.head]});
  // Non-fast-forward rejection is the Git branch-level compare-and-swap; do not force.
  await api('PATCH','/git/refs/heads/'+branch,{sha:commit.sha,force:false});
- const check=await snapshot();
- if(check.head!==commit.sha||S.wire(check.state)!==S.wire(next))throw Error('CHECKPOINT_READBACK_MISMATCH');
+ const check=await S.waitForReadback(snapshot,commit.sha,next);
  console.log('CHECKPOINT_READBACK_OK version='+next.version+' fence='+next.fence+' phase='+next.phase);
  return check;
 }
