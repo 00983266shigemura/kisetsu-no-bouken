@@ -4,13 +4,21 @@
     "job_id": "release_01e5c74c786269d41c121d60623b3b4f5a95bbbc",
     "input_sha": "01e5c74c786269d41c121d60623b3b4f5a95bbbc",
     "replay_id": "release_01e5c74c786269d41c121d60623b3b4f5a95bbbc:01e5c74c786269d41c121d60623b3b4f5a95bbbc",
-    "version": 1,
+    "version": 2,
     "fence": 1,
-    "phase": "RUNNING",
+    "phase": "VERIFIED",
     "attempt": 1,
-    "completed_units": [],
-    "evidence": null,
-    "updated_at": "2026-10-10T12:49:44.201Z"
+    "completed_units": [
+      "npm_test",
+      "independent_build",
+      "dom_season_labels"
+    ],
+    "evidence": {
+      "release_id": "27b3196a14d01944c3480cafbd22cb9ad122baab9b6237a400e3fa3e63c0e341",
+      "commit_sha": "01e5c74c786269d41c121d60623b3b4f5a95bbbc",
+      "run_id": "38053381535"
+    },
+    "updated_at": "2026-10-10T12:49:50.177Z"
   },
-  "payload_sha256": "1b3422d33aa4315f2151b291b955b54f911e1a0fe70892e29c743b68bea9e611"
+  "payload_sha256": "4c913fd6d77a1608ee9787a2612ea62901a744440eed7d3d7c172a1a1d361adb"
 }
