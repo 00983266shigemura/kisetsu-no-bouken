@@ -1,5 +1,9 @@
 name: Recovery E2E self-test
 on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/recovery-fault-e2e.yml
   workflow_dispatch:
 permissions:
   contents: read
