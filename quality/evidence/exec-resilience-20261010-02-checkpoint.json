@@ -1,0 +1,34 @@
+{
+  "candidate_id": "CP-EXECUTION-RESILIENCE-20261010-02",
+  "owner": "10|アプリ開発 / きせつのぼうけん",
+  "scope": "Safe workflow/QA/recovery implementation without app content, asset, or release changes",
+  "baseline_main_sha": "928dcb943342cf735a18be681ff4bec3e4b12686",
+  "branch": "ops/exec-resilience-20261010-02",
+  "state": "INITIALIZED",
+  "completed_units": [
+    "Source/ruleset/workflow baseline inspected",
+    "Official GitHub Actions/ref/security docs inspected",
+    "Isolated branch created"
+  ],
+  "remaining_units": [
+    "CI visual regression gate",
+    "Checkpoint state manager and fault injection tests",
+    "Independent execution/recovery controller workflows",
+    "Post-release readback wiring",
+    "PR CI and readback",
+    "Merge only if QA and safety gates pass",
+    "Production smoke checks",
+    "Control Plane ledger and evaluations readback"
+  ],
+  "replay_id": "CP-EXEC-20261010-02-INIT",
+  "protection": [
+    "Keep main and prior PRs protected",
+    "No app content or images changed",
+    "No modification of Page publishing source",
+    "No auto-merge before CI",
+    "No secrets in public logs/checkpoints"
+  ],
+  "evidence_pointers": [
+    "https://github.com/00983266shigemura/kisetsu-no-bouken/pull/9"
+  ]
+}
