@@ -1,0 +1,65 @@
+name: Recovery Controller
+on:
+  workflow_run:
+    workflows:
+      - Durable execution unit
+      - Verify published app and iOS 10 offline support
+    types: [completed]
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+permissions:
+  actions: write
+  contents: read
+jobs:
+  recover:
+    if: github.repository == '00983266shigemura/kisetsu-no-bouken'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    concurrency:
+      group: cp-recovery-controller
+      queue: max
+      cancel-in-progress: false
+    steps:
+      - name: Reconcile recent safe failed runs, with one permitted rerun
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          repo="$GITHUB_REPOSITORY"
+          if [ "$GITHUB_EVENT_NAME" = "workflow_run" ]; then
+            ids=$(jq -r '.workflow_run.id' "$GITHUB_EVENT_PATH")
+          else
+            ids=$(gh api "repos/$repo/actions/runs?per_page=30" --jq '.workflow_runs[] | select(.name == "Durable execution unit" or .name == "Verify published app and iOS 10 offline support") | .id')
+          fi
+          now=$(date -u +%s)
+          for id in $ids; do
+            run=$(gh api "repos/$repo/actions/runs/$id")
+            name=$(jq -r '.name' <<<"$run")
+            status=$(jq -r '.status' <<<"$run")
+            conclusion=$(jq -r '.conclusion' <<<"$run")
+            attempt=$(jq -r '.run_attempt' <<<"$run")
+            branch=$(jq -r '.head_branch' <<<"$run")
+            sha=$(jq -r '.head_sha' <<<"$run")
+            origin=$(jq -r '.head_repository.full_name // .repository.full_name // ""' <<<"$run")
+            created=$(jq -r '.created_at' <<<"$run")
+            then_sec=$(date -u -d "$created" +%s)
+            if [ "$branch" != main ] || [ "$origin" != "$repo" ] || [ "$status" != completed ] || [ "$conclusion" != failure ] || [ "$attempt" -ge 2 ] || [ $((now - then_sec)) -ge 86400 ]; then
+              continue
+            fi
+            if [ "$name" = "Durable execution unit" ]; then
+              path="ops/checkpoints/release_${sha}.json"
+              if gh api "repos/$repo/contents/$path?ref=ops-execution-state" --jq '.content' >/tmp/ops-state-base64 2>/dev/null; then
+                phase=$(base64 -d </tmp/ops-state-base64 | jq -r '.payload.phase // ""')
+                if [ "$phase" = BLOCKED ] || [ "$phase" = VERIFIED ]; then
+                  echo "No auto rerun for $id: $phase"
+                  continue
+                fi
+              fi
+            elif [ "$name" != "Verify published app and iOS 10 offline support" ]; then
+              continue
+            fi
+            echo "Rerun once (safe/idempotent): $name / $id"
+            gh api --method POST "repos/$repo/actions/runs/$id/rerun-failed-jobs" >/dev/null
+          done

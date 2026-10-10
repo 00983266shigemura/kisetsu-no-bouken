@@ -1,0 +1,31 @@
+name: Durable execution unit
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  durable:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: cp-durable-state-writer
+      queue: max
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.20.0"
+      - name: Install locked build dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Inject and verify state conflicts
+        run: node scripts/test-execution-state.cjs
+      - name: Execute deterministic verification with durable atomic checkpoints
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/durable-unit.cjs

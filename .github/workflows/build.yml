@@ -19,5 +19,9 @@ jobs:
           node-version: "22.20.0"
       - name: Install locked build dependencies
         run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Verify checkpoint state/replay fault injection
+        run: node scripts/test-execution-state.cjs
+      - name: Verify rendered seasonal DOM labels
+        run: node scripts/verify-season-dom.cjs
       - name: Verify isolated builds, regression and committed outputs
         run: npm test
