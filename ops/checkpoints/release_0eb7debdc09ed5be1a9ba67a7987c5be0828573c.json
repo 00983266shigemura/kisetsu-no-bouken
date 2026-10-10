@@ -1,0 +1,16 @@
+{
+  "payload": {
+    "schema": 1,
+    "job_id": "release_0eb7debdc09ed5be1a9ba67a7987c5be0828573c",
+    "input_sha": "0eb7debdc09ed5be1a9ba67a7987c5be0828573c",
+    "replay_id": "release_0eb7debdc09ed5be1a9ba67a7987c5be0828573c:0eb7debdc09ed5be1a9ba67a7987c5be0828573c",
+    "version": 1,
+    "fence": 1,
+    "phase": "RUNNING",
+    "attempt": 1,
+    "completed_units": [],
+    "evidence": null,
+    "updated_at": "2026-10-10T12:45:35.070Z"
+  },
+  "payload_sha256": "beacc08cd5926a318b1ab445378fbdb88a69bd7a1c60fa12a01b0dca048ef05f"
+}
