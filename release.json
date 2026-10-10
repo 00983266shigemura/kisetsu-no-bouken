@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "releaseId": "ca540d74f2a049459484b912c5bf459601dfbc41cbc125b40cd21f90d78ceb8b",
+  "releaseId": "27b3196a14d01944c3480cafbd22cb9ad122baab9b6237a400e3fa3e63c0e341",
   "algorithm": "SHA256",
   "identityEncoding": "UTF8 JSON array of sorted [path,sha256] pairs followed by LF",
   "canonicalSources": [
@@ -31,8 +31,8 @@
     },
     {
       "path": "source.html",
-      "sha256": "959ff37d6c8363b44b0fdab9acb3ae21d5e04244b9f1b1a5fc6ea90b950afdab",
-      "bytes": 6087839
+      "sha256": "d1470154d215e970b77cac2e088d6bcaa8db26d20b1a6dc34d8a7ad053c50da8",
+      "bytes": 6087829
     }
   ],
   "compiler": {
@@ -48,8 +48,8 @@
     },
     {
       "path": "index.html",
-      "sha256": "c8d63ccbb55955477e48239c9899a4107f65e73990f9907c3d046a4f540e65b8",
-      "bytes": 6117188
+      "sha256": "1a7fd71a5ff276734d31b44966c6f9c5b494a95a73b7346d2f30330d83c05130",
+      "bytes": 6117162
     },
     {
       "path": "manifest.webmanifest",
@@ -58,12 +58,12 @@
     },
     {
       "path": "offline.appcache",
-      "sha256": "efdebba1aa181122f5952182f063fe28c7705fb3cdc83aab34844cbe74e48ad6",
+      "sha256": "f7b93ec75b02e8439c7ebce0f576159d589df78ecdee6a4bd66f0fea25891525",
       "bytes": 181
     },
     {
       "path": "sw.js",
-      "sha256": "1cee758a8862463d4c3ab7eb1e43fd252fdc9758a471539c5654014ab8a43ce0",
+      "sha256": "bbd754003debe423a2d28415de213cb51b425dcff00cd5567fb68c0557cf0bbf",
       "bytes": 1069
     }
   ],
