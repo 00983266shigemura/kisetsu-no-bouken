@@ -1,0 +1,299 @@
+{
+  "origin": "HTTP localhost real URL; not public GitHub origin",
+  "runtime": "Chromium153 Playwright",
+  "seeding": "Isolated context: real localStorage sessions seeded for each format. Answers via UI clicks only.",
+  "checks": [
+    {
+      "home": true,
+      "horizontalOverflow": false
+    },
+    {
+      "flow": [
+        {
+          "type": "name",
+          "good": true,
+          "feedback": "✓ わかったね！\n\nとまと\n\nはるや なつが しゅん。なつの やさいとしても したしまれるよ。\n\n♪つぎへ →"
+        },
+        {
+          "type": "season",
+          "good": false,
+          "feedback": "いっしょに おぼえよう\n\nはる\n\nはるの はな。コップのような はなと ながい はっぱだよ。\n\n♪つぎへ →"
+        },
+        {
+          "type": "season",
+          "good": true,
+          "feedback": "✓ わかったね！\n\nはる\n\nはるに えだいっぱいの はなが さくよ。\n\n♪つぎへ →"
+        },
+        {
+          "type": "season",
+          "good": true,
+          "feedback": "✓ わかったね！\n\nはる\n\nはるに ちいさな きいろい はなが たくさん さくよ。\n\n♪つぎへ →"
+        },
+        {
+          "type": "season",
+          "good": true,
+          "feedback": "✓ わかったね！\n\nはる\n\nはるに さくらの はなを みて たのしむよ。\n\n♪たからものを みる"
+        }
+      ],
+      "reward": true,
+      "persistence": true
+    },
+    {
+      "review": true
+    },
+    {
+      "encyclopediaThemes": 103,
+      "decodedImages": 104,
+      "allDecoded": true
+    },
+    {
+      "detail": true
+    },
+    {
+      "parentsSettingsPersist": true
+    },
+    {
+      "format": "name",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "feedback": "✓ わかったね！\n\nさくら\n\nはるに えだいっぱいの はなが さくよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "name",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "feedback": "いっしょに おぼえよう\n\nさくら\n\nはるに えだいっぱいの はなが さくよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "season",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "feedback": "✓ わかったね！\n\nはる\n\nはるに えだいっぱいの はなが さくよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "season",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "feedback": "いっしょに おぼえよう\n\nはる\n\nはるに えだいっぱいの はなが さくよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "month",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "feedback": "✓ わかったね！\n\n1がつ\n\n1がつ。あたらしい としを おいわいするよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "month",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "feedback": "いっしょに おぼえよう\n\n1がつ\n\n1がつ。あたらしい としを おいわいするよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "match",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "feedback": "✓ わかったね！\n\nちまき\n\nはるに えだいっぱいの はなが さくよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "match",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "feedback": "いっしょに おぼえよう\n\nちまき\n\nはるに えだいっぱいの はなが さくよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "order",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "feedback": "✓ わかったね！\n\nおしょうがつ → ひなまつり → たなばた\n\nおしょうがつ → ひなまつり → たなばた の じゅんばんだよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "order",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "feedback": "いっしょに おぼえよう\n\nおしょうがつ → ひなまつり → たなばた\n\nおしょうがつ → ひなまつり → たなばた の じゅんばんだよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "odd",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "feedback": "✓ わかったね！\n\nあじさい\n\nほかの 3つは はるの なかま。あじさいは なつの なかまだよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "odd",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "feedback": "いっしょに おぼえよう\n\nあじさい\n\nほかの 3つは はるの なかま。あじさいは なつの なかまだよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "multi",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "feedback": "✓ わかったね！\n\nさくら・ちゅーりっぷ\n\nさくらと ちゅーりっぷは はるの なかまだよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "multi",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "feedback": "いっしょに おぼえよう\n\nさくら・ちゅーりっぷ\n\nさくらと ちゅーりっぷは はるの なかまだよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "event",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "feedback": "✓ わかったね！\n\nかどまつ\n\nかどまつは おしょうがつに かんけいするよ。おしょうがつの かざり。たけや まつを つかうよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "event",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "feedback": "いっしょに おぼえよう\n\nかどまつ\n\nかどまつは おしょうがつに かんけいするよ。おしょうがつの かざり。たけや まつを つかうよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "clue",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "feedback": "✓ わかったね！\n\nさくら\n\nはるに えだいっぱいの はなが さくよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "clue",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "feedback": "いっしょに おぼえよう\n\nさくら\n\nはるに えだいっぱいの はなが さくよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "marks",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "feedback": "✓ わかったね！\n\nさくら○ → ちゅーりっぷ○ → はす×\n\nさくらと ちゅーりっぷは ○。はすは ×。こすもすには しるしを つけないよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "marks",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "feedback": "いっしょに おぼえよう\n\nさくら○ → ちゅーりっぷ○ → はす×\n\nさくらと ちゅーりっぷは ○。はすは ×。こすもすには しるしを つけないよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "scene",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "feedback": "✓ わかったね！\n\nかがみもち\n\nかがみもちは おしょうがつの もの。ほかは はるの だいひょうだよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "scene",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "feedback": "いっしょに おぼえよう\n\nかがみもち\n\nかがみもちは おしょうがつの もの。ほかは はるの だいひょうだよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "pairing",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "feedback": "✓ わかったね！\n\nちゅーりっぷ ↔ ちゅーりっぷの はっぱ → ひまわり ↔ ひまわりの はっぱ\n\nちゅーりっぷの はなは ちゅーりっぷの はっぱ。ひまわりの はなは ひまわりの はっぱと つながるよ。\n\n♪たからものを みる"
+    },
+    {
+      "format": "pairing",
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "feedback": "いっしょに おぼえよう\n\nちゅーりっぷ ↔ ちゅーりっぷの はっぱ → ひまわり ↔ ひまわりの はっぱ\n\nちゅーりっぷの はなは ちゅーりっぷの はっぱ。ひまわりの はなは ひまわりの はっぱと つながるよ。\n\n♪たからものを みる"
+    },
+    {
+      "desktopOverflow": false
+    },
+    {
+      "appAutomaticSWRegistration": {
+        "scope": "http://127.0.0.1:35385/",
+        "registrations": 1
+      }
+    },
+    {
+      "serviceWorker": {
+        "controlled": true,
+        "caches": [
+          "kisetsu-adventure-http://127.0.0.1:35385/-ca540d74f2a04945"
+        ],
+        "registrations": [
+          "http://127.0.0.1:35385/"
+        ]
+      },
+      "offlineReload": true
+    },
+    {
+      "offlineImages": true
+    },
+    {
+      "all110ActualBrowserImageElements": {
+        "count": 110,
+        "allDecoded": true
+      }
+    },
+    {
+      "realServiceWorkerUpdate": {
+        "origin": "http://127.0.0.1:34259/",
+        "productionUntouched": true,
+        "tempcopy": "/workspace/scratch/4589eefa35d5/final-run-20261010/browser-qa/sw-tempcopy",
+        "before": [
+          "kisetsu-adventure-http://127.0.0.1:34259/-ca540d74f2a04945",
+          "kisetsu-adventure-OTHER-SCOPE-preserve"
+        ],
+        "failedInstall": {
+          "activeUnchanged": true,
+          "caches": [
+            "kisetsu-adventure-http://127.0.0.1:34259/-ca540d74f2a04945",
+            "kisetsu-adventure-OTHER-SCOPE-preserve",
+            "kisetsu-adventure-http://127.0.0.1:34259/-FAIL-TEST"
+          ]
+        },
+        "successfulUpdate": {
+          "activeState": "activated",
+          "caches": [
+            "kisetsu-adventure-OTHER-SCOPE-preserve",
+            "kisetsu-adventure-http://127.0.0.1:34259/-SUCCESS-TEST"
+          ]
+        },
+        "pass": true
+      }
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "AppCache unsupported in Chromium153",
+    "Physical iOS10 untested",
+    "Japanese speech synthesis voice unavailable in headless runtime"
+  ],
+  "pass": true,
+  "release": "ca540d74f2a049459484b912c5bf459601dfbc41cbc125b40cd21f90d78ceb8b",
+  "visualQA": {
+    "inspected": [
+      "mobile-home.png",
+      "format-pairing.png",
+      "reward.png"
+    ],
+    "JapaneseFontRuntime": "NotoSansJP Merged Regular and ExtraBold /tmp/fonts; production unchanged",
+    "findings": "No horizontal overflow, clipped controls, broken images. 360px home title and treasure caption wrap."
+  },
+  "automaticSW": "Application auto registration in a new isolated context, no QA register call. ready and controlled verified, followed by offline complete reload and encyclopedia image decode."
+}

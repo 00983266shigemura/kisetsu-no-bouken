@@ -1,0 +1,20 @@
+{
+  "authorized": "WORK_START_MESSAGE.txt; user instruction 2026-10-10 16:39 JST",
+  "existing_108": "preserved; no regeneration",
+  "jobs": [
+    {
+      "theme_id": "tanpopo-leaf",
+      "status": "GENERATED_QA_PENDING",
+      "utc": "2026-10-10T07:44:02.245481+00:00",
+      "raw_path": "/workspace/scratch/4589eefa35d5/generated_images/exec-47677c3d-122a-41a6-9c0b-4e650d989d06.png",
+      "sha256": "1a42052007f442622dfe581bfafada57f7311a1a4665ff1d17623602b0343ba5"
+    },
+    {
+      "theme_id": "cosmos-leaf",
+      "status": "GENERATED_QA_PENDING",
+      "utc": "2026-10-10T07:45:06.621445+00:00",
+      "raw_path": "/workspace/scratch/4589eefa35d5/generated_images/exec-60f8e13d-0d83-4b0f-864e-aa7a43c9ecca.png",
+      "sha256": "f0b5df0918b2607ea0886a91b0d9f99af681e77c368e5c1c3ca094dfebd196f3"
+    }
+  ]
+}

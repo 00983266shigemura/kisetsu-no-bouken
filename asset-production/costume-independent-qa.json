@@ -1,0 +1,105 @@
+{
+  "image_id": "assets/halloween-costume.svg",
+  "theme_id": "halloween-costume",
+  "result": "PASS",
+  "reviewer": "independent costume_final_qa",
+  "reviewed_utc": "2026-10-10T06:14:48.402003+00:00",
+  "records_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/content-design/asset-specs.json",
+  "records_sha256": "f427d1370348fecf3a71b4fd57b78f2104980a4c142b8e89a55c16f010223318",
+  "record_location": "additionalRecords[theme_id=halloween-costume]",
+  "files": [
+    {
+      "path": "assets/generated/halloween-costume.png",
+      "bytes": 1427836,
+      "sha256": "6101c0100007e70ed699115a579dd78d282aa033f0df20c3ad3033875b40f99b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "actual_format": "PNG",
+      "actual_mode": "RGB",
+      "provenance_sha256_match": true,
+      "dimensions_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "assets/generated/halloween-costume.jpg",
+      "bytes": 20922,
+      "sha256": "f80d478f7fce53647a44da8fe3b9151be5c512fc91ab0bf32f7b7ea1dd1d0bb3",
+      "dimensions": [
+        512,
+        512
+      ],
+      "actual_format": "JPEG",
+      "actual_mode": "RGB",
+      "provenance_sha256_match": true,
+      "dimensions_match": true,
+      "bytes_match": true
+    }
+  ],
+  "inspection": {
+    "original_png": "view_image detail=original; 1254x1254",
+    "delivery_jpeg": "view_image detail=original; 512x512",
+    "actual_120px": "view_image detail=original; 240x120 QA sheet containing two actual 120x120 thumbnails"
+  },
+  "readability_120px": {
+    "result": "PASS",
+    "observations": "PNG/JPEG双方を実120pxで確認。黒い尖った三角帽子、黒マント、小さな子どもの全身、明るい顔、手持ちの無地袋が判別可能。仮装の意味が維持される。"
+  },
+  "text_or_answer_leak": {
+    "result": "PASS",
+    "present": false,
+    "observations": "文字・数字・答えラベル・ロゴを原寸と実120pxで認めない。"
+  },
+  "required_features": [
+    {
+      "feature": "小さな子どもが魔女の黒い三角帽子とマント",
+      "result": "PASS",
+      "observations": "子どもの体格。黒い尖ったつば付き魔女帽子と黒い肩から下がるマントを明瞭に描写。"
+    },
+    {
+      "feature": "無地の小袋を持つ",
+      "result": "PASS",
+      "observations": "右手に淡い生成り色の手提げ小袋。装飾・文字なし。"
+    },
+    {
+      "feature": "明るい楽しそうな顔",
+      "result": "PASS",
+      "observations": "目を開き、口を開けて笑い、片手を上げた友好的な表情。"
+    }
+  ],
+  "forbidden_features": {
+    "result": "PASS",
+    "observations": "卒業帽、サンタ服、怖い怪物、文字はいずれも認めない。"
+  },
+  "background_and_framing": {
+    "result": "PASS",
+    "observations": "白背景。帽子の先端から両靴まで全身が切れずに収まる。上端の余白は約10%、下端は約8%。左右は縦長の人物に応じて広め。主題は中央で、袋と手にも十分な余白があり概ね10%の安全余白を確保。"
+  },
+  "watercolor_style": {
+    "result": "PASS",
+    "observations": "Work原iconと最終costumeを、それぞれ実120pxの2thumbシートで並べて確認。双方に白背景、明るく親しみやすい子どもの顔、暖かい肌色、水彩の淡い色調と紙/絵具の質感が共通する。costumeの黒い帽子とマントは題材に応じた強い明暗だが、服・顔・袋の水彩タッチとまとまりはWorkiconと整合する。",
+    "comparison_reference_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/assets/generated/icon.png",
+    "comparison_reference_sha256": "fb4a85815fef873c85f5391c30f94428044a0c98bd66371c954fb63330e1191f",
+    "comparison_sheet_path": "/workspace/scratch/4589eefa35d5/costume-handoff-20261010/costume-style-qa-120px.png",
+    "comparison_display": "Two actual 120x120 thumbnails in 240x120 sheet; view_image detail=original; no original-size reference display",
+    "compared_utc": "2026-10-10T06:15:34.226245+00:00"
+  },
+  "compression_qa": {
+    "result": "PASS",
+    "observations": "JPEG512pxを原寸および実120pxで確認。輪郭、顔、黒い帽子とマント、袋の視認性に支障となるブロックノイズ・色崩れ・輪郭の欠落を認めない。"
+  },
+  "provenance": {
+    "result": "PASS",
+    "raw_sha256_matches_delivered_png": true,
+    "files_match_recorded_sha256": true,
+    "excluded_attempt": "halloween-costume-attempt1.png",
+    "excluded_attempt_sha256_match": true,
+    "excluded_attempt_used_for_acceptance": false,
+    "observations": "最初のattempt1は査読採用に使っていない。最終PNGと派生JPEGのみを評価。"
+  },
+  "limitations": [
+    "余白の百分率は視覚的概算。",
+    "Workiconとのスタイル比較は指示に従い実120pxのみで実施。"
+  ]
+}

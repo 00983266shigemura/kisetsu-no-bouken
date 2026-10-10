@@ -1,0 +1,74 @@
+{
+  "checkpoint_id": "KISETSU-108-ASSET-QA-20261010-04",
+  "app": "きせつのぼうけん",
+  "status": "PARTIAL_HOLD_RELEASE",
+  "source_of_truth": "GitHub branch / Library native ZIP",
+  "source_branch_sha": "b402237ff0397de2019e9bff016b0874ec7bf9eb",
+  "main_sha_at_check": "619a03f51e70d2d6699b14cad44ff79022c6f0c9",
+  "pr6_draft_head": "12461c24717f7efc0fa5a68197735e2ba60b9d74",
+  "source_archives": [
+    {
+      "name": "kisetsu-work-handoff-20261010.zip",
+      "library_file_id": null,
+      "note": "Actual file_id file_00000000894881f58f86002ae3780164; do not infer Library ID"
+    },
+    {
+      "name": "kisetsu-costume-handoff-20261010.zip",
+      "file_id": "file_000000003b0881f69b780bb540b88b9e",
+      "bytes": 7457524
+    },
+    {
+      "name": "kisetsu-work-support-20261010.zip",
+      "file_id": "file_00000000cb8081fdad6d56d3e516b380",
+      "bytes": 4841998
+    }
+  ],
+  "latest_library_checkpoint": {
+    "name": "kisetsu-chat-108-qa-checkpoint-20261010.zip",
+    "path": "/10｜アプリ開発/kisetsu-chat-108-qa-checkpoint-20261010.zip",
+    "library_file_id": "libfile_df254ee79e8c8191b42f78c1057d3620",
+    "file_id": "file_00000000e8ec81fab41872c31c2f3f1c",
+    "size_bytes": 8508697,
+    "sha256": "1b73e115098eac89c51f1056a818baa7fc625f4d72c02c78e59f40ea209a556f",
+    "members": 139,
+    "hashed_members": 138,
+    "library_readback": "PASS: whole ZIP SHA matched; all manifest members matched and CRC passed"
+  },
+  "asset_status": {
+    "required": 110,
+    "approved_png_plus_jpeg_QA": 108,
+    "missing": [
+      "tanpopo-leaf",
+      "cosmos-leaf"
+    ],
+    "costume_provenance": "Work approved independently; source PNG 6101c010... and delivered JPEG f80d478f... verified",
+    "compilation": "Node22 TypeScript5.9.3 offline valid; node build.js PASS on non-final 108 source",
+    "recompression_special_case": "Work costume JPEG encoded quality80 optimize=true, differs from 107 JPEGs optimize=false; code patch in checkpoint ZIP checks both approved source and approved output SHA; no unauthorized overwrites"
+  },
+  "tests": {
+    "work_bundle_member_sha": "298/298 PASS",
+    "costume_bundle_member_sha": "12/12 PASS",
+    "support_member_sha": "10/10 PASS",
+    "non_synthetic_108_qa": "108/110 exact hash-to-QA; 2 missing so full test EXPECTED FAIL",
+    "synthetic_110_harness": "PASS npm test, deterministic builds, ES5, 352 quiz and legacy240; MUST NOT be treated as final QA",
+    "browser_synthetic_DOM": "Chromium about:blank set_content navigation and images PASS; actual origin local HTTP blocked by administrator",
+    "ios10_device_L1_L2_L3": "UNVERIFIED",
+    "final_pr_ci": "NOT_RUN",
+    "public_release": "NOT_STARTED"
+  },
+  "safety": {
+    "no_changes_to_main": true,
+    "no_change_to_draft_pr6": true,
+    "no_unauthorized_regeneration": true,
+    "no_placeholder_as_final": true,
+    "no_original_png_loss": true
+  },
+  "next_steps": [
+    "Generate by image tool only two correct original leaf images with required botanic morphology. Earlier attempts returned incorrect costume results; do not adopt",
+    "Independent full and 120px PNG QA and exact JPEG QA; update archived ledger",
+    "Apply recovered Work code and costume JPEG deterministic exception from stored ZIP, integrate all110 into source, rebuild",
+    "GitHub isolated branch candidate commit, readback and full app-ci-build on actual assets",
+    "Actual browser at target URL, iOS 10.3.3 L1/L2/L3 physical, history and offline update",
+    "Only then merge/release and public readback"
+  ]
+}

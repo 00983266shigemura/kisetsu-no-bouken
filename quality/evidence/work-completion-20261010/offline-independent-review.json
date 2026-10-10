@@ -1,0 +1,196 @@
+{
+  "reviewType": "independent-generated-runtime-offline-branch-test",
+  "releaseId": "ca540d74f2a049459484b912c5bf459601dfbc41cbc125b40cd21f90d78ceb8b",
+  "indexSha256": "c8d63ccbb55955477e48239c9899a4107f65e73990f9907c3d046a4f540e65b8",
+  "sourceSha256": "959ff37d6c8363b44b0fdab9acb3ae21d5e04244b9f1b1a5fc6ea90b950afdab",
+  "parser": {
+    "name": "Node bundled Acorn",
+    "version": "8.17.0",
+    "ecmaVersion": 5,
+    "scripts": 3,
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "testedActualGeneratedFunctions": [
+    "offline",
+    "legacyOffline"
+  ],
+  "cases": [
+    {
+      "name": "standalone-file:",
+      "protocol": "file:",
+      "serviceWorker": true,
+      "secureContext": true,
+      "storageOK": true,
+      "registerCalls": 0,
+      "cacheChecks": 0,
+      "cacheEvents": [],
+      "statusCalls": [
+        {
+          "text": "✓ このファイルだけで オフラインでも あそべるよ",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "name": "standalone-data:",
+      "protocol": "data:",
+      "serviceWorker": true,
+      "secureContext": true,
+      "storageOK": true,
+      "registerCalls": 0,
+      "cacheChecks": 0,
+      "cacheEvents": [],
+      "statusCalls": [
+        {
+          "text": "✓ このファイルだけで オフラインでも あそべるよ",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "name": "standalone-blob:",
+      "protocol": "blob:",
+      "serviceWorker": true,
+      "secureContext": true,
+      "storageOK": true,
+      "registerCalls": 0,
+      "cacheChecks": 0,
+      "cacheEvents": [],
+      "statusCalls": [
+        {
+          "text": "✓ このファイルだけで オフラインでも あそべるよ",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "name": "secure-web-https:",
+      "protocol": "https:",
+      "serviceWorker": true,
+      "secureContext": true,
+      "storageOK": true,
+      "registerCalls": 1,
+      "cacheChecks": 1,
+      "cacheEvents": [],
+      "statusCalls": []
+    },
+    {
+      "name": "secure-web-http:",
+      "protocol": "http:",
+      "serviceWorker": true,
+      "secureContext": true,
+      "storageOK": true,
+      "registerCalls": 1,
+      "cacheChecks": 1,
+      "cacheEvents": [],
+      "statusCalls": []
+    },
+    {
+      "name": "ios10-https-noSW",
+      "protocol": "https:",
+      "serviceWorker": false,
+      "storageOK": true,
+      "registerCalls": 0,
+      "cacheChecks": 0,
+      "cacheEvents": [
+        "cached",
+        "noupdate",
+        "updateready",
+        "error"
+      ],
+      "statusCalls": [
+        {
+          "text": "✓ オフラインでも あそべるよ",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "name": "ios10-appcache-downloading",
+      "protocol": "https:",
+      "serviceWorker": false,
+      "storageOK": true,
+      "registerCalls": 0,
+      "cacheChecks": 0,
+      "cacheEvents": [
+        "cached",
+        "noupdate",
+        "updateready",
+        "error"
+      ],
+      "statusCalls": [
+        {
+          "text": "オフラインの じゅんびちゅう…",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "name": "insecure-web",
+      "protocol": "http:",
+      "serviceWorker": true,
+      "secureContext": false,
+      "storageOK": true,
+      "registerCalls": 0,
+      "cacheChecks": 0,
+      "cacheEvents": [],
+      "statusCalls": [
+        {
+          "text": "HTTPSがひつようです。",
+          "warn": true
+        }
+      ]
+    },
+    {
+      "name": "storage-warning-preserved-file:-true",
+      "protocol": "file:",
+      "serviceWorker": true,
+      "secureContext": true,
+      "storageOK": false,
+      "registerCalls": 0,
+      "cacheChecks": 0,
+      "cacheEvents": [],
+      "statusCalls": []
+    },
+    {
+      "name": "storage-warning-preserved-https:-true",
+      "protocol": "https:",
+      "serviceWorker": true,
+      "secureContext": true,
+      "storageOK": false,
+      "registerCalls": 0,
+      "cacheChecks": 0,
+      "cacheEvents": [],
+      "statusCalls": []
+    },
+    {
+      "name": "storage-warning-preserved-https:-false",
+      "protocol": "https:",
+      "serviceWorker": false,
+      "storageOK": false,
+      "registerCalls": 0,
+      "cacheChecks": 0,
+      "cacheEvents": [],
+      "statusCalls": []
+    },
+    {
+      "name": "storage-warning-preserved-http:-true",
+      "protocol": "http:",
+      "serviceWorker": true,
+      "secureContext": false,
+      "storageOK": false,
+      "registerCalls": 0,
+      "cacheChecks": 0,
+      "cacheEvents": [],
+      "statusCalls": []
+    }
+  ],
+  "warningPreservation": "storageOK=false returns without any status call; existing warning text is therefore unchanged. No persistence APIs are called by these tested functions.",
+  "limitations": [
+    "Function isolation VM test, not browser SW persistence test",
+    "Storage can fail after asynchronous registration begins; later cacheStatus failure text may replace prior warning. This test verifies initial storage failure guard only.",
+    "Physical iOS10 and real-browser offline/update/failed-download remain UNVERIFIED"
+  ],
+  "runtimeOrGitModified": false
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "KISETSU-WORK-HANDOFF-20261010-05",
+  "status": "HANDOFF_VERIFIED_NOT_RELEASED",
+  "app": "きせつのぼうけん",
+  "branch": "chat-resume-20261010-01",
+  "head_before_checkpoint": "5e037cfdf028f4f85420f06d4a89026101c320c0",
+  "at_utc": "2026-10-10",
+  "reason_for_stop": "two remaining AI-generated botanical image IDs require independently generated single-subject PNGs; image generation in Chat repeatedly produced one two-species plate, violating original one-ID-per-call requirement",
+  "missing_png": [
+    "assets/generated/tanpopo-leaf.png",
+    "assets/generated/cosmos-leaf.png"
+  ],
+  "protected_source": "existing 108 original PNG + 108 JPEG are QA hash matched",
+  "locally_measured": {
+    "specs": 110,
+    "png_present_exact_qa": 108,
+    "jpg_present_exact_qa": 108,
+    "node_typescript": "5.9.3",
+    "node_build_js": "PASS",
+    "node_test_js": "EXPECTED FAIL: Final release requires all110 inline images",
+    "final_release": "BLOCKED",
+    "physical_ios10_v3": "UNVERIFIED"
+  },
+  "authoritative_library": {
+    "file_name": "kisetsu-work-final-handoff-20261010.zip",
+    "path": "/10｜アプリ開発/kisetsu-work-final-handoff-20261010.zip",
+    "file_id": "file_00000000fb0c81fa90a237204d6c4935",
+    "library_file_id": "libfile_7cf06c8d60fc819193e163daa6916a20",
+    "bytes": 1658970,
+    "sha256": "14075508741db1fef4db071d1eb047cf1390b2e3fc8fd18c664de07d3e9919fa",
+    "verified": "Library save then materialize, entire ZIP SHA256 equals, seven payload file SHA256 and size match, ZIP CRC PASS"
+  },
+  "required_library_sources": [
+    "kisetsu-work-handoff-20261010.zip",
+    "kisetsu-costume-handoff-20261010.zip",
+    "kisetsu-work-support-20261010.zip",
+    "kisetsu-chat-108-qa-checkpoint-20261010.zip"
+  ],
+  "readme": "README_WORK_START.md",
+  "start_message": "WORK_START_MESSAGE.txt",
+  "approval_gates": "main and PR6 unchanged. No deployment without A01-A14 all applicable PASS and iOS10 real device V3 unless explicit V3-only exception approved",
+  "delegate": "Work mode GUI + file and repository operations are needed to complete two separate AI image requests, independent visual QA and binary GitHub integration. Work invocation not available in this Chat."
+}

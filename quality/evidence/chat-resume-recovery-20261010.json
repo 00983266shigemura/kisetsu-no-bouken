@@ -1,0 +1,81 @@
+{
+  "checkpoint_id": "KISETSU-CHAT-RESUME-20261010-01",
+  "kind": "RECOVERY_AND_BLOCKERS_ONLY_NOT_RELEASE",
+  "repository": "00983266shigemura/kisetsu-no-bouken",
+  "branch": "chat-resume-20261010-01",
+  "starting_sha": "12461c24717f7efc0fa5a68197735e2ba60b9d74",
+  "original_heads": {
+    "main": "619a03f51e70d2d6699b14cad44ff79022c6f0c9",
+    "content-redesign-20261010": "12461c24717f7efc0fa5a68197735e2ba60b9d74",
+    "asset-refresh-20261009": "bf2ffcc2cc07a2919ae745b22c5f0dc218f11b9b"
+  },
+  "recovery_branches": [
+    "recovery-main-20261010-01",
+    "recovery-content-20261010-01",
+    "recovery-assets-20261010-01"
+  ],
+  "work_recovery": {
+    "source": "ChatGPT Library, verified readback materialization in isolated Chat runtime",
+    "original_archive": "kisetsu-originals-archive-index-20261009.json",
+    "archive_chunks": 11,
+    "chunk_hash_matches": 11,
+    "original_png_records": 85,
+    "original_unique_image_ids": 84,
+    "failed_attempt_png_records": 5,
+    "all_png_hash_and_decode_valid": 90,
+    "id_classification": {
+      "FOUND_VERIFIED": 83,
+      "CONFLICT": 1,
+      "INACCESSIBLE_WORK_ONLY": 24,
+      "RECOVERABLE": 2
+    },
+    "conflict": [
+      {
+        "theme_id": "stag",
+        "sha256": [
+          "a636cf82c8897703eadc35dadd74176502bcf71b7ffac063901b1ad46ab6e8eb",
+          "eca02480c6f1df31a92d83614cf7dec5828723af234b90f7710475f66948bf6b"
+        ]
+      }
+    ],
+    "library_additional_png_metadata": 106,
+    "standalone_byte_access": "BLOCKED: raw-byte materialization not authorized",
+    "qa_evidence": "43 matching PASS records in a recovered historical visual-QA snapshot; 95 newer PASS is a Work report, not verified by this snapshot",
+    "local_bundle_sha256": "451c61026a12aeb0396d6e961895c6cb05a4867384fcc6be875eca3b03ede7a4",
+    "local_ledger_sha256": "ffb7c83fcd7472387e9ff2893fc9bb2be569599f58f1a5047341c5fd6b4b9567",
+    "persistent_library_sources": "11 existing ZIP files + archive index; preserve originals, do not delete"
+  },
+  "app": {
+    "dictionary": 352,
+    "active": 329,
+    "themes": 103,
+    "question_types": 12,
+    "old_questions_protected": 240,
+    "last_passed_ci": {
+      "run_id": 37957939314,
+      "head_sha": "12461c24717f7efc0fa5a68197735e2ba60b9d74"
+    },
+    "ruleset_id": 24796067,
+    "release_gate": "BLOCKED",
+    "real_ios10_L3": "UNVERIFIED",
+    "public_image_integration": "NOT_STARTED",
+    "new_generated_image_count": 0,
+    "recovery_ledger_entry_count": 110
+  },
+  "safety": {
+    "no_rewrite_existing_branches": true,
+    "no_main_write": true,
+    "no_replace_unverified_ids": true,
+    "no_regeneration": true,
+    "no_original_delete": true
+  },
+  "blocking_next_steps": [
+    "Recover individual Library image bytes (not only preview), or regain authorized Work export",
+    "Reconcile all 110 image IDs and conflicting stag source; complete visual QA and image integration",
+    "Run standalone browser tests and physical iOS 10.3.3 L1-L3 before release"
+  ],
+  "next_action": "Resume from this checkpoint, do not recreate any found image, fetch latest branch SHA and preserved originals before any write",
+  "recorded_at_utc": "2026-10-10T02:34:52.246Z",
+  "recovery_ledger": "asset-production/recovery-ledger-110.json",
+  "recovery_ledger_verified_at_head": "e8966efc66832a7424dd8e7738453cb94183f167"
+}

@@ -1,0 +1,3 @@
+PASS: 103 themes, 352 questions, 41 sources, 110 local images, ES5 polyfills
+PASS: legacy240 achievement migration, immutable history, old-code rollback save, malformed-record preservation
+PASS: quiz, scoring, reward, review, dialog, localStorage reload and legacy offline fallback

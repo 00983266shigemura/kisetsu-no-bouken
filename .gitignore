@@ -1,1 +1,6 @@
 node_modules/
+assets/generated/*.png
+scripts/__pycache__/
+asset-production/.integration-transaction.json
+asset-production/.progress.lock
+asset-production/.jobs.lock

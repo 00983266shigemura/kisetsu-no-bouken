@@ -1,0 +1,1501 @@
+{
+  "scope": "38 current encoded JPEG exact bytes; earlier versions retained",
+  "records": [
+    {
+      "path": "assets/generated/sakura.jpg",
+      "sha256": "42e68a3fab13fec9d0e4648268936ac93d6bb520e2400c08ad493c648778ee3f",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/tulip.jpg",
+      "sha256": "f6233ea4276d5025612f489ffe4701056a1a94aca042e1982015e7c07a4933eb",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/nanohana.jpg",
+      "sha256": "c8c0026c4f67e5adc097877f4adac915572e6b9fdb7a72bd567652fed771b001",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/tanpopo.jpg",
+      "sha256": "0208760075ca638f5c1575aa55d6d2b661e46f5c648fc0b7285b339bac103358",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/fuji.jpg",
+      "sha256": "1f06b25eda8adcb940df18940be9c7261e613696f56c39c4193c46975304a921",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/tsutsuji.jpg",
+      "sha256": "45f88773b7bf9b6d550d2ca2544ffbb3bb065eba4e2d18ecd248dbe200b04714",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/nemophila.jpg",
+      "sha256": "cf984e8cabf3d108bbd371242500bd89172cb6c6e573dcd7ab43f8d33e4577b5",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/iris.jpg",
+      "sha256": "f8ddc7132c5ddd46f593e647aedb419bbae294e9b05887a3e6f80dfb7c92a0ae",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/lotus.jpg",
+      "sha256": "f7173a9f0c37b83d5db978f10570983f665459db0830817b308420f81e99e809",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/hydrangea.jpg",
+      "sha256": "001ee1622a3b3891fa71e030a6d1c5ca346c5f59e6c8632be9bf68e556dc6eb3",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/sunflower.jpg",
+      "sha256": "f6c13b7028a1842fd7b7da2be3a1a3e2115b1ad1cd8a18cbe1d16716d9582c2e",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/morning.jpg",
+      "sha256": "0cced0f2e23b6057a0239e01616ff41528d2e84af31e161afd6bc061926ed915",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/cosmos.jpg",
+      "sha256": "8543012b7be2c826351db48868351c6fa5e202236fba36b4b472e41d7d8f82fd",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/spiderlily.jpg",
+      "sha256": "4043e8f2569623103f71c4a9841dc040c0ebaa38e45214390a19f205a3ba9f86",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/osmanthus.jpg",
+      "sha256": "02de0579a6751a5b02df10a5c795e09ef6447ab680367848f188304b2c9e3bc2",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/ginkgo.jpg",
+      "sha256": "4ea6e9028c17f4c73296b760ee8179e5a2b82c45620d8ce0e2baf4fcfebaa465",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/maple.jpg",
+      "sha256": "66f4b9fb7914570d5788f3b7c82e4f3cefaee49cbaec3f4de213d782d094585e",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/plum.jpg",
+      "sha256": "86c0012c1a692f9a9205e596c15f8a67b37b703ee82252b48b3a1d8bf751b7c3",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/sasanqua.jpg",
+      "sha256": "19474b2566aee467058898928d575e66cbaef3adb267270911998efcf1a002ec",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/wintersweet.jpg",
+      "sha256": "80b8662d4e69615e61d4cde37521c6ecdc0778757ed41562e3d9abe0ff63bee2",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/strawberry.jpg",
+      "sha256": "9602100f95a9b526466dcd0a0728ec06749f2515d40912d61d50c6146bb250cc",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/bamboo.jpg",
+      "sha256": "3d4f0e69bc45ae2f5a6fcfc9c2af1935af4b5796207de95350f67bf1e974865c",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/clam.jpg",
+      "sha256": "cc642407c765b6cc97a3786302eb178afa41fb67c66400367138ab06ece864a4",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/cucumber.jpg",
+      "sha256": "e73942d3a833702860f8db2bf0ff121e27764092fd35ec6517f01a6dd714220d",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/tomato.jpg",
+      "sha256": "a59165b0e2d90a30b41182e666465bc046a7d96fc121f024c54e54a698967ff5",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/watermelon.jpg",
+      "sha256": "24bfa54cab1479218fbbb2b9f569198b904f73ed90be1bfc46b20dc29a960ce1",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/aji.jpg",
+      "sha256": "0517c172af23f05f86a56f9cdd452b370ab2a3e1231af386223ef1292e12a78a",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/sweetpotato.jpg",
+      "sha256": "00a8d2514daccf6e7b65803648e19c3040d0bcf466c4e809eb2871936741a3e1",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/persimmon.jpg",
+      "sha256": "391dd00570eb9e89d0f7128c970b5ea9ed22572dc55871e2119dc56b8216f687",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/sanma.jpg",
+      "sha256": "f71e18d1240f290b457dd99ee976510702c9a8ce6868725489009a506530ff76",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/chestnut.jpg",
+      "sha256": "1adce26e3682016963343258dec34f6ec17495b0e584c40a001dd594947cedb4",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/cabbage.jpg",
+      "sha256": "ba86f833a8754b7d5f221fc1020091ec2922428d76ba2f3caecc6a1aceecb865",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/spinach.jpg",
+      "sha256": "3061382be483d4ab9b50c5674e0922222719bfc429dd201a40714fa16c35df86",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/radish.jpg",
+      "sha256": "4f347730b474c6b308f23c667b2ceb8fc525b73d3bb475317fce6dcb08004d19",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/broadbean.jpg",
+      "sha256": "dda31a6378701e77c1e4a18f2bd23581546aca80ec1a905afe38ec4c3fbcfa36",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/corn.jpg",
+      "sha256": "b9d4cc414acef6b7577790a5454af4f757f65c63a66b16ce9f569c8644d24567",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/edamame.jpg",
+      "sha256": "bf3ebe7afdbd798459aedb7db4e28546695f6e10fe65e2a42922b00bf43645e5",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/mikan.jpg",
+      "sha256": "e90980bfe829260f2b222e3d40c5d1881a5b2280e9b868054fe7f3683a225e49",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "新圧縮JPEG全38点から作成した実120px縮小を全件目視。識別輪郭・色・花葉関係が保持、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/butterfly.jpg",
+      "sha256": "353c3ff04b41775dc5de8f58fdd7dd915e8c12bf3b9d0d50e731897703c0e550",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで白い翅と黒斑・胴体が識別可能。淡色部の境界も残り、欠落・文字なし。"
+    },
+    {
+      "path": "assets/generated/swallowtail.jpg",
+      "sha256": "5ac72ebe4fe39e21224b9b4b8f8fa12414edfdc64b948e97a0cec54407854932",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで黄黒の翅模様と尾状突起が明瞭。色の混濁・切断・文字なし。"
+    },
+    {
+      "path": "assets/generated/cicada.jpg",
+      "sha256": "e9624740b2571ac030e6dde29a2edad83931fa9fd48e766541796542c3b3c3d9",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで茶色い翅と広い頭、脚の輪郭が保持。主題の欠落・文字なし。"
+    },
+    {
+      "path": "assets/generated/beetle.jpg",
+      "sha256": "ce6f57d23b3e5e4e8ebd6d41b71d8aa45ad555ff832d3615f884bbec3758175e",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで分岐角と茶褐色の丸い体が明瞭。脚の輪郭も残り、欠落・文字なし。"
+    },
+    {
+      "path": "assets/generated/chafer.jpg",
+      "sha256": "0301db154eee7ec204c665de6ed67ce21901b5a2b7fdd26e8acc9b406acacd56",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで金緑色の甲と幅広い体が明瞭。圧縮による色崩れ・欠落・文字なし。"
+    },
+    {
+      "path": "assets/generated/firefly.jpg",
+      "sha256": "71d27b691021174f1cde4a8e2cf2e9d4dae3ffdf58aa51d02cb0229c65e03cd0",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで黒い細長い体、赤い前胸と末端の黄色が識別可能。文字・欠落なし。"
+    },
+    {
+      "path": "assets/generated/dragonfly.jpg",
+      "sha256": "7a0038caf7f0d38d669bb3f66323e3f186f4093eb63b33b97e0976845cb160b6",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで4枚の翅と赤い細い腹が識別可能。淡い翅の輪郭も残り、文字・欠落なし。"
+    },
+    {
+      "path": "assets/generated/cricket.jpg",
+      "sha256": "2ec868fbeb1c46a3574795ec0f16df6710b4cb5cb2c21397c657325f28a31cba",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで長い触角、大きな後脚と黒褐色の体が保持。主題の切断・文字なし。"
+    },
+    {
+      "path": "assets/generated/ladybird.jpg",
+      "sha256": "966260822769037f27e6dd4478df65f30bd259c56be6b3432f3d797f5bbe0819",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで赤橙色の翅鞘と黒斑の配置が明瞭。色の混濁・欠落・文字なし。"
+    },
+    {
+      "path": "assets/generated/stag.jpg",
+      "sha256": "4c73cbaf7232a928d8c4ea1d3d4c7537a0cd907aba83f8a8c392e78df3888996",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで左右の大顎と内歯、細長い黒褐色の体が識別可能。欠落・文字なし。"
+    },
+    {
+      "path": "assets/generated/newyear.jpg",
+      "sha256": "f18b07955edb1cc86586e75f93a8821069d01dc0b67d2f3302b1801ff2bfcf2e",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで左右の門松と中央の鏡餅が識別可能。祝いの場面が保持され、文字・欠落なし。"
+    },
+    {
+      "path": "assets/generated/setsubun.jpg",
+      "sha256": "b8d1e87b34c2943048db36b3ecf8d4aa796efa8dcab391d298d5f02efa2fdf16",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで鬼、豆まきする子ども、枡と豆が識別可能。文字・主題欠落なし。"
+    },
+    {
+      "path": "assets/generated/hina.jpg",
+      "sha256": "ee23cc0e11b000a163170c1be3edd16fe8b08b0683fa62689986a12e29d22235",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで人形一対、金屏風、赤い段とぼんぼりが明瞭。文字・欠落なし。"
+    },
+    {
+      "path": "assets/generated/children.jpg",
+      "sha256": "6f1ab3597bc62d2bdb9d344e16279d4c695a3bc60eed9ac67c964f4344edc04f",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで3匹のこいのぼり、吹き流しとかぶとが明瞭。色混濁・文字・欠落なし。"
+    },
+    {
+      "path": "assets/generated/tanabata.jpg",
+      "sha256": "7d3d93451551a0f4691aad5e7ec2759adb22f05fac5baf220b9e1e9648e9335f",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで笹葉と無地の短冊、輪飾りが識別可能。画像内文字・主題欠落なし。"
+    },
+    {
+      "path": "assets/generated/moonview.jpg",
+      "sha256": "2a7d5f606ef94d998137e9067e3b7fa90a4821c46da0d0be94e11b8f24d24b22",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで月、白い団子、ススキがそれぞれ明瞭。淡色の境界も残り、文字・欠落なし。"
+    },
+    {
+      "path": "assets/generated/shichigosan.jpg",
+      "sha256": "62d612c1c82d6913ab0aa441d55efcd3d86900121545ada5daacfc435f48f952",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで晴れ着の子ども2人、飴袋と背景鳥居が識別可能。袋に文字なし、主題欠落なし。"
+    },
+    {
+      "path": "assets/generated/solstice.jpg",
+      "sha256": "4d2691b2475f58d850e10e7b652b91e43c28c700ef34ec7ed456ef734f0fbc58",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで浴槽の黄色い柑橘とかぼちゃが識別可能。色の混濁・文字・欠落なし。"
+    },
+    {
+      "path": "assets/generated/lastday.jpg",
+      "sha256": "e140ec0e04fef2933e022237bb486cada62bc168892e90ab9a82cc3a78f07296",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxでそば椀と寺の鐘が識別可能。細部を含む主題輪郭が保持され、文字・欠落なし。"
+    },
+    {
+      "path": "assets/generated/kadomatsu.jpg",
+      "sha256": "17bd0362f0050e1191976de06d5c857c67b3dea4475121722bac58a86d75e592",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで大小2基の門松、斜め切りの竹と松の緑が明瞭。文字・主題欠落なし。"
+    },
+    {
+      "path": "assets/generated/kagamimochi.jpg",
+      "sha256": "cc47c7e89ac544dc5bce021b018db3cc1faedb54dce69e82eb8c2f82dd438719",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで大小2段の白い餅、橙色の実と三方が識別可能。白色部の輪郭が保持、文字・欠落なし。"
+    },
+    {
+      "path": "assets/generated/osechi.jpg",
+      "sha256": "2d051b9f0c2921d295dfd3305aee518e6512289ba05f991b68567f8b9f9b6d1e",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで重箱の区画と黒豆、紅白かまぼこ、伊達巻、えびの色形が保持。文字・欠落なし。"
+    },
+    {
+      "path": "assets/generated/zoni.jpg",
+      "sha256": "a30b25a74cd6098afbcf8fc529dc8dbec27573f051b9a74026c8afc84a72a420",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで椀の餅と青菜、根菜が識別可能。色・輪郭の崩れ、文字・欠落なし。"
+    },
+    {
+      "path": "assets/generated/nanakusa.jpg",
+      "sha256": "59156f99681c58334f4522dfffc9a185d6097bb4023fd852976a2734d03cccb9",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで白い粥の緑の菜、脇のカブとダイコンが識別可能。文字・主題欠落なし。"
+    },
+    {
+      "path": "assets/generated/beans.jpg",
+      "sha256": "43df1df3f09f78c1719b1816cdaab333f76b44f028562a89fb8b1d7903646f3a",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで枡と淡茶色の粒、外の数粒が明瞭。圧縮で潰れる文字状模様・主題欠落なし。"
+    },
+    {
+      "path": "assets/generated/arare.jpg",
+      "sha256": "8766855301a9950499e25fa59e4f48b2b2fafd150389d2edda439ca482569049",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで白桃緑黄の小粒と小皿が識別可能。色差が保持され、文字・欠落なし。"
+    },
+    {
+      "path": "assets/generated/kashiwa.jpg",
+      "sha256": "b2772e2a2aa0d7a7ebdb305e6a5459fe947e5b5fd55510487195a51bbfdae893",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実120pxで白い半月形の餅と波状に切れ込む緑の葉が明瞭。文字・主題欠落なし。"
+    },
+    {
+      "path": "assets/generated/chimaki.jpg",
+      "sha256": "37a742cbc891c79ebbb302fb97496a10af765165a5851ca0777f496fb4e27e71",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実JPEG120pxで笹葉の円錐巻き2本、結束ひも、むいた白い餅が明瞭。PNG/spec必須特徴保持、三角米飯・柏葉・文字なし。"
+    },
+    {
+      "path": "assets/generated/somen.jpg",
+      "sha256": "025b9f95196dea26d9c5445b501abd633110856243b3c7e735ca30d7572d4b24",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実JPEG120pxで白い細麺、ガラス器、小つゆ椀、細箸が判別可能。原寸でも極細麺の線が残り、太い麺・茶麺・七夕装飾・文字なし。"
+    },
+    {
+      "path": "assets/generated/dango.jpg",
+      "sha256": "88b60a0f10141069474b1bf242a73427ec3c279b24226e04a6850635785b482b",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実JPEG120pxで白丸団子のピラミッドと三方が明瞭。PNG/spec構成保持、串・花見色・文字なし。"
+    },
+    {
+      "path": "assets/generated/candy.jpg",
+      "sha256": "7ed50a9971dee80855765764be8fab5264886232cf789d0dd9c4af7b38df4703",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実JPEG120pxで紅白棒飴4本と無地の細長い袋が分離して読める。原寸で袋も無地と確認。丸飴・文字なし。"
+    },
+    {
+      "path": "assets/generated/soba.jpg",
+      "sha256": "799cf626c1a81a81382eca8134a9fb57afe526acf3508037d4d08498b601d8e5",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実JPEG120pxで茶灰色細麺、汁椀、ねぎと箸が明瞭。PNG/spec特徴保持、白いそうめん・黄色い中華麺・文字なし。"
+    },
+    {
+      "path": "assets/generated/snow.jpg",
+      "sha256": "a15776b307065778ded41aed2874023cc63dc50f3c4423a3b38cab1a0f4bcae8",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実JPEG120pxで裸枝と地面の積雪が明瞭。原寸で白い降雪粒も確認。PNG/spec特徴保持、雨・霜だけの草・文字なし。"
+    },
+    {
+      "path": "assets/generated/frost.jpg",
+      "sha256": "576751dc398d838fc6316d481c8661847af1fa07d56ecabe99d9afe72a028fdb",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実JPEG120pxで緑の葉輪郭と白い霜の縁取りを判別。原寸で地表と葉面の細かな氷結晶保持を確認。厚い積雪・舞う雪・丸露・文字なし。"
+    },
+    {
+      "path": "assets/generated/rainy.jpg",
+      "sha256": "4337eba3fb3a561036bc3e79a43472b063716a9173d7e6f3154e43d652dbd137",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": "実JPEG120pxで灰雲、降る雨粒、青い無地傘、水たまりが明瞭。PNG/spec特徴保持、雪・紅葉・季節名文字なし。"
+    },
+    {
+      "path": "assets/generated/leaves.jpg",
+      "sha256": "7398d02ff2f940d19807e99efe904054c37041e29dfe3d5fbb783f9c898c2393",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実120px縮小で赤橙黄の掌状の広葉、枝、地面の落葉が識別可能。原寸でも松針葉や桜花なし。",
+        "主題切断なし。外周余白は一部約10%未満だが識別を妨げない。",
+        "JPEG原寸と実120px縮小を独立目視。画像内に正答名称、季節文字、その他文字の漏洩なし。"
+      ]
+    },
+    {
+      "path": "assets/generated/hanami.jpg",
+      "sha256": "54af6374e89ef6ba19e8ceb8c30c6016f69404ae3fce39adefac3f080ca5687f",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実120px縮小で桜の樹冠、家族4人、敷物と弁当が識別可能。原寸で淡桃色の五弁花、花柄と花弁先端の切れ込みを確認。酒を主役にする表現なし。",
+        "主題切断なし。外周余白は一部約10%未満。",
+        "JPEG原寸と実120px縮小を独立目視。画像内に正答名称、季節文字、その他文字の漏洩なし。"
+      ]
+    },
+    {
+      "path": "assets/generated/fireworks.jpg",
+      "sha256": "9b6ae2417afa5b33388b4c5513d68594593fc34fb4c885b13d5752b92774a20d",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実120px縮小で夜空の放射状の花火3発と川面、川岸が明瞭。原寸でも火災や昼の太陽なし。",
+        "主題切断なし。外周余白は一部約10%未満。",
+        "JPEG原寸と実120px縮小を独立目視。画像内に正答名称、季節文字、その他文字の漏洩なし。"
+      ]
+    },
+    {
+      "path": "assets/generated/windbell.jpg",
+      "sha256": "55ac0887e3fb23d4471feb16ddc99fdacc5de212f471b5732832da9ad0799947",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実120px縮小で透明ガラスの釣鐘形本体、内側の舌、ひも、無地短冊1枚を識別可能。原寸でも笹や寺鐘なし。",
+        "吊りひもは上辺外へ続く。器具本体、舌、短冊の切断なし。",
+        "JPEG原寸と実120px縮小を独立目視。画像内に正答名称、季節文字、その他文字の漏洩なし。"
+      ]
+    },
+    {
+      "path": "assets/generated/yukata.jpg",
+      "sha256": "7a0a9ff2d0523edb94b87b2a950007f49fa885290c8ec94eaf4a019447828092",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実120px縮小で子どもの浴衣、単純な帯、素足と下駄の全身が識別可能。原寸で本人左前身頃が右前身頃の上に重なる襟合わせを確認。厚い振袖や洋服なし。",
+        "頭、袖、下駄の切断なし。上下余白は約10%未満。",
+        "JPEG原寸と実120px縮小を独立目視。画像内に正答名称、季節文字、その他文字の漏洩なし。"
+      ]
+    },
+    {
+      "path": "assets/generated/ice.jpg",
+      "sha256": "95fe61721188b86a126b48c375e0f427a3fd72fbd1a34b5953cf54c32460429f",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実120px縮小で山盛りの粒状の削り氷、赤いシロップ、器とスプーンが明瞭。原寸でも滑らかなアイス球や文字旗なし。",
+        "器、氷、スプーンの切断なし。右側等の余白は一部約10%未満。",
+        "JPEG原寸と実120px縮小を独立目視。画像内に正答名称、季節文字、その他文字の漏洩なし。"
+      ]
+    },
+    {
+      "path": "assets/generated/top.jpg",
+      "sha256": "b0d83ff6a015f824dc7cf9496720a16444d919c43a1d14fec17f607e0ee83c2a",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実120px縮小で木製こまの円形胴、中央軸、横の回すひもが識別可能。原寸で木目と尖った接地点を確認。機械型の意匠なし。",
+        "こま、軸、ひもの切断なし。",
+        "JPEG原寸と実120px縮小を独立目視。画像内に正答名称、季節文字、その他文字の漏洩なし。"
+      ]
+    },
+    {
+      "path": "assets/generated/kite.jpg",
+      "sha256": "71e74fee142ec5ae30d3d13ecd3a12c71081ce9ac36ee12a9639106bc81565c1",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで菱形凧・子ども・二本の赤い尾・手から凧までのひもを識別。JPEG原寸でひもの連続と全主題の完全insideを確認。",
+        "PNG原QAの対象関係と四辺余白は圧縮後も保持。文字やこいのぼりなし。"
+      ]
+    },
+    {
+      "path": "assets/generated/battledore.jpg",
+      "sha256": "c6867002d6c82e2a2724422538db188fa4c6692642ed02727bb50bc4202e4361",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで木製羽子板、打つ子ども、空中の羽根を識別。JPEG原寸で黒い小玉と複数の白い羽、木板輪郭を確認。",
+        "PNG原QAの形態を圧縮後も保持。網のラケット・文字なし。原PNGに記録された狭い上下余白は同じだが主題切断なし。"
+      ]
+    },
+    {
+      "path": "assets/generated/acorn.jpg",
+      "sha256": "48e50b34a6dee3446e7cc1cbcc3a315e9d7cb0a2a61bd8a79edf69eda7c73da6",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで茶色楕円果実2個と鱗状殻斗の有無が明瞭。PNG原QAの特徴を圧縮で欠損せず保持。",
+        "イガ、クルミ殻、果実からの葉、文字なし。主題切断なし。"
+      ]
+    },
+    {
+      "path": "assets/generated/pinecone.jpg",
+      "sha256": "e1340b875e6a786d03d53e9fcfb2406eb5bfff8180dcc2d27366e1c48352ae65",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで成熟した茶色の球果、開いた鱗片の重なり、脇の針葉を識別。PNG原QAの特徴を圧縮後も保持。",
+        "赤い果実、トウモロコシ、長く垂れるモミ球果、文字なし。原PNGの狭い左右余白は同じだが切断なし。"
+      ]
+    },
+    {
+      "path": "assets/generated/month1.jpg",
+      "sha256": "8afb0c41ea43f49d23c40a510397c8dce07f7c92fadd7bd4379c2d20e1945910",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで白/生成りの無字紙面、二つのリング、三角の卓上台を識別。PNG原QAのカレンダー共通構造を圧縮後も保持。",
+        "数字・文字・季節の花・行事の装飾なし。金銀や左右向きの差は現行仕様で許容。全主題inside。"
+      ]
+    },
+    {
+      "path": "assets/generated/month2.jpg",
+      "sha256": "be26b93e6060551796d516992feaa4a64d9d957f68c1a39590bc8006029f4cc8",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで白/生成りの無字紙面、二つのリング、三角の卓上台を識別。PNG原QAのカレンダー共通構造を圧縮後も保持。",
+        "数字・文字・季節の花・行事の装飾なし。金銀や左右向きの差は現行仕様で許容。全主題inside。"
+      ]
+    },
+    {
+      "path": "assets/generated/month3.jpg",
+      "sha256": "02a1f87bf6a9124e1b54d96957c20b47225620a73b8cd6b7bba03a8b7b980b62",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで白/生成りの無字紙面、二つのリング、三角の卓上台を識別。PNG原QAのカレンダー共通構造を圧縮後も保持。",
+        "数字・文字・季節の花・行事の装飾なし。金銀や左右向きの差は現行仕様で許容。全主題inside。"
+      ]
+    },
+    {
+      "path": "assets/generated/month4.jpg",
+      "sha256": "00bf4445ea327563ed83385c265bd1b5a7076961a59c56b4f3ca7eee56612cdc",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで白/生成りの無字紙面、二つのリング、三角の卓上台を識別。PNG原QAのカレンダー共通構造を圧縮後も保持。",
+        "数字・文字・季節の花・行事の装飾なし。金銀や左右向きの差は現行仕様で許容。全主題inside。"
+      ]
+    },
+    {
+      "path": "assets/generated/month5.jpg",
+      "sha256": "743d6fbb533a4a32839dddba2c2b46c5de8998c7bc7bca4cf751bb5f7c85b4b5",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで白/生成りの無字紙面、二つのリング、三角の卓上台を識別。PNG原QAのカレンダー共通構造を圧縮後も保持。",
+        "数字・文字・季節の花・行事の装飾なし。金銀や左右向きの差は現行仕様で許容。全主題inside。"
+      ]
+    },
+    {
+      "path": "assets/generated/month6.jpg",
+      "sha256": "a941bc16d89e6796fa407e438277e23578c9901231b1b0b2443ac95b08ef3fe9",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで白/生成りの無字紙面、二つのリング、三角の卓上台を識別。PNG原QAのカレンダー共通構造を圧縮後も保持。",
+        "数字・文字・季節の花・行事の装飾なし。金銀や左右向きの差は現行仕様で許容。全主題inside。"
+      ]
+    },
+    {
+      "path": "assets/generated/month7.jpg",
+      "sha256": "a32564f65a1b65a000b9ad660d71da6c0b82fcaafb885cfb135972c5e7a3ec38",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで白/生成りの無字紙面、二つのリング、三角の卓上台を識別。PNG原QAのカレンダー共通構造を圧縮後も保持。",
+        "数字・文字・季節の花・行事の装飾なし。金銀や左右向きの差は現行仕様で許容。全主題inside。"
+      ]
+    },
+    {
+      "path": "assets/generated/month8.jpg",
+      "sha256": "758452c9bb604308bed47d2578419e008da93ca738088ab0e1c878e3082fdabd",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで白/生成りの無字紙面、二つのリング、三角の卓上台を識別。PNG原QAのカレンダー共通構造を圧縮後も保持。",
+        "数字・文字・季節の花・行事の装飾なし。金銀や左右向きの差は現行仕様で許容。全主題inside。"
+      ]
+    },
+    {
+      "path": "assets/generated/month9.jpg",
+      "sha256": "d49136f1e65b5f72cbb9bcd2f94978c8cad52b3523c542ecfec25d2e21d152ae",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで白/生成りの無字紙面、二つのリング、三角の卓上台を識別。PNG原QAのカレンダー共通構造を圧縮後も保持。",
+        "数字・文字・季節の花・行事の装飾なし。金銀や左右向きの差は現行仕様で許容。全主題inside。"
+      ]
+    },
+    {
+      "path": "assets/generated/month10.jpg",
+      "sha256": "cd16b5220bd6eea8e61fcd953fd086f9f50d49b3c3401bce3fa20b44be41fd71",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで白/生成りの無字紙面、二つのリング、三角の卓上台を識別。PNG原QAのカレンダー共通構造を圧縮後も保持。",
+        "数字・文字・季節の花・行事の装飾なし。金銀や左右向きの差は現行仕様で許容。全主題inside。"
+      ]
+    },
+    {
+      "path": "assets/generated/month11.jpg",
+      "sha256": "7bb600d1897910b354f749eb7e501d786c0a86044c1de39e3e35abd8e0372619",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "JPEG実120pxで白/生成りの無字紙面、二つのリング、三角の卓上台を識別。PNG原QAのカレンダー共通構造を圧縮後も保持。",
+        "数字・文字・季節の花・行事の装飾なし。金銀や左右向きの差は現行仕様で許容。全主題inside。"
+      ]
+    },
+    {
+      "path": "assets/generated/autumn.jpg",
+      "sha256": "cd57b903a622a233a81eccefe776a06b65598f0b58409c6ce3462726b22abf5f",
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/autumn.jpg",
+      "source_sha256": "2a791a7d9e64c6fb44d61cf01d613853f1ffd0f25985d527c4a1a7e96adfa6bc",
+      "jpeg_size": [
+        512,
+        512
+      ],
+      "jpeg_mode": "RGB",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実JPEG120pxで赤橙のモミジ、黄葉のイチョウ、下部のドングリを識別。葉の輪郭と果実の丸みが圧縮後も明瞭。",
+        "実JPEG120px目視で正答名称・季節を示す文字なし。主題切断・顕著なブロック状圧縮欠損なし。"
+      ],
+      "source_png_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/assets/generated/autumn.png"
+    },
+    {
+      "path": "assets/generated/halloween-pumpkin.jpg",
+      "sha256": "11c52a0d40ba555b586dc18e989c3ce90c7ff70e7bb3bef0286df8e42da93a2e",
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/halloween-pumpkin.jpg",
+      "source_sha256": "c7e8281852f92a62bed12e1d5eefd5ce1fca5f62980baee8c637d95dc8918216",
+      "jpeg_size": [
+        512,
+        512
+      ],
+      "jpeg_mode": "RGB",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実JPEG120pxで橙色の丸いカボチャ、柄、三角の切抜き目、笑う口を識別。輪郭や顔の穴に顕著な圧縮欠損なし。",
+        "実JPEG120px目視で正答名称・季節を示す文字なし。主題切断・顕著なブロック状圧縮欠損なし。"
+      ],
+      "source_png_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/assets/generated/halloween-pumpkin.png"
+    },
+    {
+      "path": "assets/generated/icicle.jpg",
+      "sha256": "0b1b31d8a2f135cf117cca554f06480930fdbb3d713d3942f36a9416fff05621",
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/icicle.jpg",
+      "source_sha256": "6c861e0cb5b38472e50dc242a0c07a00751653d0ecaadee13e97286ba290660b",
+      "jpeg_size": [
+        512,
+        512
+      ],
+      "jpeg_mode": "RGB",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実JPEG120pxで軒下から下向きに垂れる長短の細い氷と尖った先端を識別。淡色対象の細い輪郭も読める。",
+        "実JPEG120px目視で正答名称・季節を示す文字なし。主題切断・顕著なブロック状圧縮欠損なし。"
+      ],
+      "source_png_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/assets/generated/icicle.png"
+    },
+    {
+      "path": "assets/generated/icon-192.jpg",
+      "sha256": "a999c67afecd96c99392e2c4bd65db0ce61f40623452f8db5402f1ea41477ee2",
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/icon-192.jpg",
+      "source_sha256": "706f9d035498699cc6850e7ce728d18cdd779b3640d0a0a22c9b5600ea88c26a",
+      "jpeg_size": [
+        512,
+        512
+      ],
+      "jpeg_mode": "RGB",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実JPEG120pxで中央の冒険家、桜、ヒマワリ、モミジ、雪の結晶を識別。顔と主要モチーフの境界を保持。",
+        "実JPEG120px目視で正答名称・季節を示す文字なし。主題切断・顕著なブロック状圧縮欠損なし。"
+      ],
+      "source_png_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/assets/generated/icon-192.png"
+    },
+    {
+      "path": "assets/generated/icon-512.jpg",
+      "sha256": "ba2cdb04f57b7e95d11e2616f4b7511dcd7bd55f98230f08086431258429eb00",
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/icon-512.jpg",
+      "source_sha256": "a56382f359ded5ec2aebe660a473500d4cc02212d25b7f9e137677bb77bf20f8",
+      "jpeg_size": [
+        512,
+        512
+      ],
+      "jpeg_mode": "RGB",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実JPEG120pxで中央の冒険家、桜、ヒマワリ、モミジ、雪の結晶を識別。小さい四季モチーフにも顕著な圧縮崩れなし。",
+        "実JPEG120px目視で正答名称・季節を示す文字なし。主題切断・顕著なブロック状圧縮欠損なし。"
+      ],
+      "source_png_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/assets/generated/icon-512.png"
+    },
+    {
+      "path": "assets/generated/icon.jpg",
+      "sha256": "3ca44ee0a5b64a760236dbe46e514041feb62d8f1ba5a21179f48de179a66a8e",
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/icon.jpg",
+      "source_sha256": "fb4a85815fef873c85f5391c30f94428044a0c98bd66371c954fb63330e1191f",
+      "jpeg_size": [
+        512,
+        512
+      ],
+      "jpeg_mode": "RGB",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実JPEG120pxで中央の冒険家、桜、ヒマワリ、モミジ、雪の結晶を識別。顔と四季の主要輪郭を保持。",
+        "実JPEG120px目視で正答名称・季節を示す文字なし。主題切断・顕著なブロック状圧縮欠損なし。"
+      ],
+      "source_png_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/assets/generated/icon.png"
+    },
+    {
+      "path": "assets/generated/month12.jpg",
+      "sha256": "a68f2ce3a71fd37bc33a43f88190f64a4e49f6de1da27f9c34e7d7182bab6ccb",
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/month12.jpg",
+      "source_sha256": "7021210b5f670ab846e46d1c4a4619843ba35d233bde7fab47122bce80f4b48a",
+      "jpeg_size": [
+        512,
+        512
+      ],
+      "jpeg_mode": "RGB",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実JPEG120pxで空白紙面、2リング、卓上台を識別。生成数字・文字・季節装飾なし。月の特定はHTMLラベルに依存する仕様に一致。",
+        "実JPEG120px目視で正答名称・季節を示す文字なし。主題切断・顕著なブロック状圧縮欠損なし。"
+      ],
+      "source_png_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/assets/generated/month12.png"
+    },
+    {
+      "path": "assets/generated/spring.jpg",
+      "sha256": "c4a48ab7cfa3a24815b9e1defe129b1ba445985d78223ade1748c21238330de2",
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/spring.jpg",
+      "source_sha256": "fbab5ad7cf81e0c24df5b1dea9652ad5a8f2a4a4620dfb8f4046f0fccf9e1133",
+      "jpeg_size": [
+        512,
+        512
+      ],
+      "jpeg_mode": "RGB",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実JPEG120pxで桜の木と下部の黄色い花を識別。花冠のまとまりと木の輪郭を保持。",
+        "実JPEG120px目視で正答名称・季節を示す文字なし。主題切断・顕著なブロック状圧縮欠損なし。"
+      ],
+      "source_png_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/assets/generated/spring.png"
+    },
+    {
+      "path": "assets/generated/summer.jpg",
+      "sha256": "b9ed0cee5ce3196f0245ee94bc09d89c7ee6474f9836ed1b8ec92ef07fd77cec",
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/summer.jpg",
+      "source_sha256": "d287242ddb82dfc1c1538e72c2bedd439a0ffc4e8d18b99203472301c70a35f7",
+      "jpeg_size": [
+        512,
+        512
+      ],
+      "jpeg_mode": "RGB",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実JPEG120pxで葉の茂る木とヒマワリの大きな花を識別。緑の葉と黄色い花の境界を保持。",
+        "実JPEG120px目視で正答名称・季節を示す文字なし。主題切断・顕著なブロック状圧縮欠損なし。"
+      ],
+      "source_png_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/assets/generated/summer.png"
+    },
+    {
+      "path": "assets/generated/sunflower-leaf.jpg",
+      "sha256": "3c97d2fc6aa0fdc0ad609c200c2ceb992975577d00d66efd03461238c7be4908",
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/sunflower-leaf.jpg",
+      "source_sha256": "991add05966bf484fff0f0090fc857a3296bb9e4f4b76b85282af7b629cb0383",
+      "jpeg_size": [
+        512,
+        512
+      ],
+      "jpeg_mode": "RGB",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実JPEG120pxで一枚の幅広い心形〜卵形の葉、鋸歯、網状の葉脈、葉柄を識別。圧縮による輪郭欠損なし。植物学的正確性の最終判定は別担当の原PNG査読に依存。",
+        "実JPEG120px目視で正答名称・季節を示す文字なし。主題切断・顕著なブロック状圧縮欠損なし。"
+      ],
+      "source_png_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/sunflower-leaf.png"
+    },
+    {
+      "path": "assets/generated/tulip-leaf.jpg",
+      "sha256": "b497cb7bc1d0f253f6af7df2df971a0a16ac80005b866e2f90b42b51e02dfd9a",
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/tulip-leaf.jpg",
+      "source_sha256": "327e2cdc9eefa3d27c32dee3b0ed9330acdc8a226c05cd6951a436c398a22d7e",
+      "jpeg_size": [
+        512,
+        512
+      ],
+      "jpeg_mode": "RGB",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実JPEG120pxで一枚の細長い披針形の葉、なめらかな縁、縦走する葉脈を識別。葉先から基部まで主題を保持。植物学的正確性の最終判定は別担当の原PNG査読に依存。",
+        "実JPEG120px目視で正答名称・季節を示す文字なし。主題切断・顕著なブロック状圧縮欠損なし。"
+      ],
+      "source_png_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/tulip-leaf.png"
+    },
+    {
+      "path": "assets/generated/winter.jpg",
+      "sha256": "bdd971e822dbdd3871c15a3ad1af8586618f0de0b0108a660c8e24f90404e28b",
+      "actual_source_path": "/workspace/scratch/4589eefa35d5/chat-review-20261010/contents/delta/assets/generated/winter.jpg",
+      "source_sha256": "c2fae630b8abed2157ac2b38d442eb9a0248dadfa3651d346db5b388789e5b32",
+      "jpeg_size": [
+        512,
+        512
+      ],
+      "jpeg_mode": "RGB",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "observations": [
+        "実JPEG120pxで落葉した木、積雪した地面、小さい人物を識別。枝・人物・地面の輪郭が読める。",
+        "実JPEG120px目視で正答名称・季節を示す文字なし。主題切断・顕著なブロック状圧縮欠損なし。"
+      ],
+      "source_png_path": "/workspace/scratch/4589eefa35d5/kisetsu-no-bouken/assets/generated/winter.png"
+    },
+    {
+      "theme_id": "halloween-costume",
+      "path": "assets/generated/halloween-costume.jpg",
+      "sha256": "f80d478f7fce53647a44da8fe3b9151be5c512fc91ab0bf32f7b7ea1dd1d0bb3",
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "Work independent costume_final_qa",
+      "evidence": "costume-independent-qa.json",
+      "source_qa_sha256": "97f6609b86870c0cbd489b43667a0c874f297b41419b2c1b906258582d2d378e"
+    },
+    {
+      "theme_id": "tanpopo-leaf",
+      "path": "assets/generated/tanpopo-leaf.jpg",
+      "sha256": "4cde19cdb8f113bb1d7c0f450c3ef47dafe546b13dc53408ba9e098a5664c490",
+      "dimensions": [
+        512,
+        512
+      ],
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent new_leaves_qa agent; direct view_image inspection",
+      "observations": [
+        "実512×512JPEGを別に目視。原PNGの識別輪郭・主脈/分裂構造と水彩の色調を保持。圧縮による重大な欠落なし。",
+        "実120×120px見本を目視：鋸歯状の深い切れ込みを持つ細長い輪郭が保持され、コスモスの細裂葉と区別できる。",
+        "花・綿毛・他葉・花茎・芽・文字なし。下端は葉の基部。白背景、全輪郭が画面内、中心配置で左右および上下の対向余白はおおむね均一。"
+      ],
+      "nonblocking_notes": [
+        "水彩の緑の濃淡と明瞭な輪郭は既定の教材用画風に適合。"
+      ],
+      "source_png_sha256": "1a42052007f442622dfe581bfafada57f7311a1a4665ff1d17623602b0343ba5",
+      "provenance": {
+        "reviewed_jpeg_path": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/jpeg-staging/tanpopo-leaf.jpg",
+        "reviewed_120px_path": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/jpeg-staging/tanpopo-leaf-120px.png",
+        "reviewed_120px_sha256": "e5657a4c5ee8c94d2ba79b4db1dc88af980d26ab85d240d2b04a8859fc605f5f",
+        "sources": [
+          "https://plants.ces.ncsu.edu/plants/taraxacum-officinale/"
+        ]
+      },
+      "evidence": "asset-production/independent-jpeg-qa.json",
+      "source_qa_sha256": "2ec043f9d27465234b8e02f715222184026195b4b6ac0308ee7cf0827a850085"
+    },
+    {
+      "theme_id": "cosmos-leaf",
+      "path": "assets/generated/cosmos-leaf.jpg",
+      "sha256": "3f6f3817a1f793130d6dfd8112f3b889889b2e5c740a56c82138e0422d5b9586",
+      "dimensions": [
+        512,
+        512
+      ],
+      "result": "PASS",
+      "species_features": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent new_leaves_qa agent; direct view_image inspection",
+      "observations": [
+        "実512×512JPEGを別に目視。原PNGの識別輪郭・主脈/分裂構造と水彩の色調を保持。圧縮による重大な欠落なし。",
+        "実120×120px見本を目視：細い裂片間の白い空隙と二段階の分裂が残り、羽毛状・細裂した葉として識別可能。",
+        "花・つぼみ・他植物・文字なし。下端は一葉の短い基部。白背景、全先端が画面内、中心配置で対向余白はおおむね均一。"
+      ],
+      "nonblocking_notes": [
+        "水彩の緑の濃淡と明瞭な輪郭は既定の教材用画風に適合。",
+        "原寸では裂片幅を読み取りやすく描いているが、細い線形裂片と二回分裂を確認できる。上余白はやや狭いが葉先の切断なし。"
+      ],
+      "source_png_sha256": "f0b5df0918b2607ea0886a91b0d9f99af681e77c368e5c1c3ca094dfebd196f3",
+      "provenance": {
+        "reviewed_jpeg_path": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/jpeg-staging/cosmos-leaf.jpg",
+        "reviewed_120px_path": "/workspace/scratch/4589eefa35d5/final-run-20261010/new-leaves/jpeg-staging/cosmos-leaf-120px.png",
+        "reviewed_120px_sha256": "60139ac8c7397b23e79ac38068efd34a0bda03d26952a954bd7be48806131f1a",
+        "sources": [
+          "https://plants.ces.ncsu.edu/plants/cosmos-bipinnatus/",
+          "https://www.nparks.gov.sg/florafaunaweb/flora/3/6/3683"
+        ]
+      },
+      "evidence": "asset-production/independent-jpeg-qa.json",
+      "source_qa_sha256": "2ec043f9d27465234b8e02f715222184026195b4b6ac0308ee7cf0827a850085"
+    }
+  ],
+  "retainedVersions": [
+    {
+      "path": "assets/generated/sakura.jpg",
+      "sha256": "0473340b6558b20126773e96df5bb47d317ab9948858161435dc6548f24dc01c",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/tulip.jpg",
+      "sha256": "1521b59d9993ea7f772a88b8bd28001c55390ab3d706479d4577ab1366a3609b",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/nanohana.jpg",
+      "sha256": "49e25ea63964d06595a50c58c502f52937e334d4b5bf9a4d20ba2094079c2ab6",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/tanpopo.jpg",
+      "sha256": "0001dd46a35abc765421942beaafcbaa3b37a17926e6ba4c3791b56df1ab2a67",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/fuji.jpg",
+      "sha256": "51517ae97ea3db74d6c77a9e8a707661754cca8fd1e92a3cec4a4e27b65f813f",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/tsutsuji.jpg",
+      "sha256": "0cd70f8982fef8c0b556f4ef4d253cf1deb517a5535337394e7a9fa8a207649a",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/nemophila.jpg",
+      "sha256": "1ff7abc600abc21d5853717b150a9784efe86b20758eebc6bf00134887b4e6f3",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/iris.jpg",
+      "sha256": "54792d8e67310e3a859e1b49679710d907be8366a73a0b9d0397640974906b41",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/lotus.jpg",
+      "sha256": "f4c5e0666cd9784c16ec000e65f85969e8c294aaaae57d8323ea2072aafa7813",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/hydrangea.jpg",
+      "sha256": "c486cb3f8abeb059eb19af34c60e266924d3bb43630bd8de5c9f4053d3a80a71",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/sunflower.jpg",
+      "sha256": "203563cccf45259e2aa29b5f9dba47dc1f55984d9502ab7968e3fa7a7e670ed8",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/morning.jpg",
+      "sha256": "a2d5deb151da50812aeafe8775623d465e741e0642cc0be14d40493725d664bf",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/cosmos.jpg",
+      "sha256": "8d473018b4d008171576712108af56a679f5e0f88976b6fc87f4e912eefe65f7",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/spiderlily.jpg",
+      "sha256": "32afcc437db813662ebf3ebb48ffb3d5cecaf945f679c7af41d454a814617767",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/osmanthus.jpg",
+      "sha256": "ff2593e256e39c4f895e81f71c4a347041c7f30a2075978bb30349f593ca1fe9",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/ginkgo.jpg",
+      "sha256": "956be909e3cb3afa9c4789fe97849ecadf2ae7412d1a50584c6b44f73fa7a47c",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/maple.jpg",
+      "sha256": "aa7f2550128bb2804339c8a16425c70351010ff0585d1cb141d4e18440dd5356",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/plum.jpg",
+      "sha256": "335aa7abb88433560c455fee8705d44ec3d2b81ae03f2a8f16c350f7e3aff8a2",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/sasanqua.jpg",
+      "sha256": "e0e0ded48208a8016ca228081e608a84e0e72c33a9f5bc5b68a77a3729dcb369",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/wintersweet.jpg",
+      "sha256": "5b3def11bf06d315b3c3a4818609f611a55bc726ba7cac39099e3f3626391658",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/strawberry.jpg",
+      "sha256": "8ae828f22daa89a19b2cd474a4fb9c52a8c7ef515fcbb210e4a0b95927769c7f",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/bamboo.jpg",
+      "sha256": "4e2b7fdd69e28cc661c3a4c25f40468f5605d296a5db121713ac0e34e860dc5d",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/clam.jpg",
+      "sha256": "22bf59dba1f6e8456c990b15f48393f330529b8d52b73fe7d84de4fdaf3e20c5",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/cucumber.jpg",
+      "sha256": "85734adfaec0ffad809a12f2e94818fc96ea1a6fc68072d5f65b8fc077e97d47",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "実JPEGから120px縮小した画像を24点すべて目視。元PNGの対象輪郭、花/葉の配置、色調が保持され、識別の欠落や文字漏洩なし。PNG査読とは別の圧縮後画像査読。"
+    },
+    {
+      "path": "assets/generated/tomato.jpg",
+      "sha256": "107a1d635594d76110360867584268c702df26f3f2723eee61fb2433db9b602e",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "JPEG実体由来の実120px縮小を目視しPNGで確認した対象輪郭/色/配置が保持されていることを確認。圧縮での識別特徴の欠落、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/watermelon.jpg",
+      "sha256": "af308fec1d63d5d2022a18c98368054c215474929d4f3665fb5b36d02011e8c3",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "JPEG実体由来の実120px縮小を目視しPNGで確認した対象輪郭/色/配置が保持されていることを確認。圧縮での識別特徴の欠落、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/aji.jpg",
+      "sha256": "72c9fc7e3857b42ed965652f484a08d9d29da432649699cb502fa8dbaeccdc99",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "JPEG実体由来の実120px縮小を目視しPNGで確認した対象輪郭/色/配置が保持されていることを確認。圧縮での識別特徴の欠落、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/sweetpotato.jpg",
+      "sha256": "01e5ae86159c6cbdac807d5f389b657bf8fce74f4e4e0b1560e4ed68add417cc",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "JPEG実体由来の実120px縮小を目視しPNGで確認した対象輪郭/色/配置が保持されていることを確認。圧縮での識別特徴の欠落、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/persimmon.jpg",
+      "sha256": "e9a6cefb77654f33a6b665a529335ec93cba4f36163bedf9fb556d35175ef407",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "JPEG実体由来の実120px縮小を目視しPNGで確認した対象輪郭/色/配置が保持されていることを確認。圧縮での識別特徴の欠落、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/sanma.jpg",
+      "sha256": "c164f38c8b30c2cddf62a27cc27b3145785264c87f9855db0ddfa1e8de382a23",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "JPEG実体由来の実120px縮小を目視しPNGで確認した対象輪郭/色/配置が保持されていることを確認。圧縮での識別特徴の欠落、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/chestnut.jpg",
+      "sha256": "2f69bbe3adf15ad0f899b956412a12dac88601221c03817076485f3171e4f815",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "JPEG実体由来の実120px縮小を目視しPNGで確認した対象輪郭/色/配置が保持されていることを確認。圧縮での識別特徴の欠落、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/cabbage.jpg",
+      "sha256": "b13c75f323be0015c40e7da632840a7cf61bb036e3f5f9813bc06f6ad6c92aca",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "JPEG実体由来の実120px縮小を目視しPNGで確認した対象輪郭/色/配置が保持されていることを確認。圧縮での識別特徴の欠落、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/spinach.jpg",
+      "sha256": "540ad31b089951a3103dc8ca6be6f07854aea4c16e53ceafe22040796ab45497",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "JPEG実体由来の実120px縮小を目視しPNGで確認した対象輪郭/色/配置が保持されていることを確認。圧縮での識別特徴の欠落、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/radish.jpg",
+      "sha256": "5a9f1b6d26424235b50e8afa161b85fbbf3a284628648d56fc82180797cac447",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "JPEG実体由来の実120px縮小を目視しPNGで確認した対象輪郭/色/配置が保持されていることを確認。圧縮での識別特徴の欠落、文字漏洩なし。"
+    },
+    {
+      "path": "assets/generated/broadbean.jpg",
+      "sha256": "404e4e6bcd75c1bf62f02003b49af3770bfe049b45b05aff26c578e2597cb94b",
+      "result": "PASS",
+      "readability_120px": "PASS",
+      "text_or_answer_leak": "NONE",
+      "reviewer": "independent asset_specs agent",
+      "note": "JPEG実体由来の実120px縮小を目視しPNGで確認した対象輪郭/色/配置が保持されていることを確認。圧縮での識別特徴の欠落、文字漏洩なし。"
+    }
+  ]
+}

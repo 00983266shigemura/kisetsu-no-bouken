@@ -1,0 +1,17 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> kisetsu-no-bouken@1.0.0 test
+> node scripts/verify-build.js
+
+ES5 website generated, length 6060406 release ca540d74f2a049459484b912c5bf459601dfbc41cbc125b40cd21f90d78ceb8b
+ES5 website generated, length 6060406 release ca540d74f2a049459484b912c5bf459601dfbc41cbc125b40cd21f90d78ceb8b
+ES5 website generated, length 6060406 release ca540d74f2a049459484b912c5bf459601dfbc41cbc125b40cd21f90d78ceb8b
+ES5 website generated, length 6060448 release bab178bde748502fcaf1057ed135f0c4957293e8edc01c68e947bc4d94ce0d7d
+PASS: independent release hashes, actual locked compiler, generated-input exclusion and source-mutation controls
+PASS: 103 themes, 352 questions, 41 sources, 110 local images, ES5 polyfills
+PASS: legacy240 achievement migration, immutable history, old-code rollback save, malformed-record preservation
+PASS: quiz, scoring, reward, review, dialog, localStorage reload and legacy offline fallback
+PASS: 103 themes, 352 questions, 41 sources, 110 local images, ES5 polyfills
+PASS: legacy240 achievement migration, immutable history, old-code rollback save, malformed-record preservation
+PASS: quiz, scoring, reward, review, dialog, localStorage reload and legacy offline fallback
+PASS: final110 image coverage; clean independent builds match every committed generated output

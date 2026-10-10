@@ -1,0 +1,49 @@
+{
+  "image_id": "assets/halloween-costume.svg",
+  "theme_id": "halloween-costume",
+  "authorization": "User 2026-10-10 15:10 JST: 許可するのでやって、chat側に引き継いで。",
+  "preserved_prior_job": "halloween-costume-2026-10-09T23:31:41.520Z",
+  "previous_artifact": "Not found in available paths; not asserted ungenerated",
+  "new_attempt_started_utc": "2026-10-10T06:11:41.800710+00:00",
+  "status": "PASS_INDEPENDENT_QA",
+  "owner": "Work: costume only. Chat: integration and remaining two leaves",
+  "git_write": false,
+  "completedUtc": "2026-10-10T06:13:36.951151+00:00",
+  "method": "built-in image_gen; 1 initial generation + 1 framing edit",
+  "raw_generated_file": "/workspace/scratch/4589eefa35d5/generated_images/exec-d051fefb-1aa0-46f6-b1c5-209ed5d645bb.png",
+  "excluded_attempt": {
+    "path": "halloween-costume-attempt1.png",
+    "reason": "hat tip too close to edge; original preserved",
+    "sha256": "5031c1af69a6fd66fabc1ee48fbbde40a48aefc25aacd522294ee991aace5803"
+  },
+  "files": [
+    {
+      "path": "assets/generated/halloween-costume.png",
+      "bytes": 1427836,
+      "sha256": "6101c0100007e70ed699115a579dd78d282aa033f0df20c3ad3033875b40f99b",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "path": "assets/generated/halloween-costume.jpg",
+      "bytes": 20922,
+      "sha256": "f80d478f7fce53647a44da8fe3b9151be5c512fc91ab0bf32f7b7ea1dd1d0bb3",
+      "dimensions": [
+        512,
+        512
+      ]
+    }
+  ],
+  "jpegEncoding": {
+    "width": 512,
+    "height": 512,
+    "quality": 80,
+    "subsampling": 2,
+    "optimize": true,
+    "source": "Final raw PNG; derived JPEG is lossy; raw original preserved"
+  },
+  "independent_qa": "costume-independent-qa.json",
+  "old_job_record_unchanged": true
+}
