@@ -55,6 +55,10 @@ function verifyIdentity(dir) {
   assert(lock.packages['node_modules/typescript'].integrity);
   assert.deepStrictEqual(release.compiler, {name: 'typescript', version, lockIntegrity: lock.packages['node_modules/typescript'].integrity});
   const html = fs.readFileSync(path.join(dir, 'index.html'), 'utf8');
+  const originalSource = fs.readFileSync(path.join(dir, 'source.html'), 'utf8');
+assert(originalSource.includes("${[[3,4,5],[6,7,8],[9,10,11],[12,1,2]][i].join('・')}がつ"), 'Season labels must show only 3 calendar months');
+assert(!originalSource.includes("${i+1} · ${[[3,4,5]"), 'Season index must not be mistaken for a month');
+assert(html.includes("[[3, 4, 5], [6, 7, 8], [9, 10, 11], [12, 1, 2]][i].join"), 'Compiled season month array absent');
   const sw = fs.readFileSync(path.join(dir, 'sw.js'), 'utf8');
   const appcache = fs.readFileSync(path.join(dir, 'offline.appcache'), 'utf8');
   assert(html.includes('<meta name="kisetsu-release-id" content="' + expectedId + '">'));
