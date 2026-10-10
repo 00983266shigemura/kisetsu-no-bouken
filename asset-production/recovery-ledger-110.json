@@ -1,0 +1,2219 @@
+{
+  "schema": "1.0",
+  "scope": "W0 G2 preserved evidence only; not an acceptance PASS",
+  "created_at_utc": "2026-10-10T02:34:18.236Z",
+  "source_archive_index": "ChatGPT Library kisetsu-originals-archive-index-20261009.json",
+  "verified_archive_chunks": 11,
+  "verified_archive_png_records": 90,
+  "old_manifest_103_unchanged": true,
+  "baseline_sha": "12461c24717f7efc0fa5a68197735e2ba60b9d74",
+  "counts": {
+    "FOUND_VERIFIED": 83,
+    "CONFLICT": 1,
+    "INACCESSIBLE_WORK_ONLY": 24,
+    "RECOVERABLE": 2
+  },
+  "notes": [
+    "All 11 archives retrieved and SHA-256 matched archived index; indexed PNG member hashes and image decoding passed",
+    "85 generated-original PNG records map to 84 image IDs, stag has two different hashes and must not auto-select",
+    "106 standalone PNG assets in Project Library, but raw-byte retrieval is unauthorized in this Chat; no regenerated or overwritten IDs",
+    "Quality PASS for 43 historical recovered evidence records is distinct from full independent QA and Work's reported 95 PASSES",
+    "No binary image integration and no final release"
+  ],
+  "entries": [
+    {
+      "ordinal": 1,
+      "image_id": "assets/sakura.svg",
+      "theme_id": "sakura",
+      "name": "サクラ（ソメイヨシノ）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/sakura.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/sakura.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "6627b7600c9e80e018964e65aa12ab76e96aa9db0ef5ecb70417b32ab26ff8e7",
+          "bytes": 1708098,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-01.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 2,
+      "image_id": "assets/tulip.svg",
+      "theme_id": "tulip",
+      "name": "チューリップ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/tulip.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/tulip.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "b964038c99ff8068c28808a2f6bb23e8c999c351ff771d62c04d6ef0ab347e18",
+          "bytes": 1535072,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-01.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 3,
+      "image_id": "assets/nanohana.svg",
+      "theme_id": "nanohana",
+      "name": "ナノハナ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/nanohana.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/nanohana.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "c29676ec5ecd80b46e7fe4536fc2b758990b45ca494de1a2aef6e1d259822410",
+          "bytes": 1771132,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-01.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 4,
+      "image_id": "assets/tanpopo.svg",
+      "theme_id": "tanpopo",
+      "name": "セイヨウタンポポ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/tanpopo.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/tanpopo.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "0c0bc2792ed06be22c65942272240789c6c81501c8b607d8b0e94b0713be038f",
+          "bytes": 2073576,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-01.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 5,
+      "image_id": "assets/fuji.svg",
+      "theme_id": "fuji",
+      "name": "フジ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/fuji.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/fuji.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "16ba9ba432351dff362732861f89acb90b142e3826c41fa8b4762eaaf0a9e8d6",
+          "bytes": 2145200,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-01.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 6,
+      "image_id": "assets/tsutsuji.svg",
+      "theme_id": "tsutsuji",
+      "name": "ツツジ類",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/tsutsuji.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/tsutsuji.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "fbbb52cb2d3d70fd01f142d47f205ed5dd5bd736749cb17fb92abe2f604cbd5c",
+          "bytes": 2027163,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-01.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 7,
+      "image_id": "assets/nemophila.svg",
+      "theme_id": "nemophila",
+      "name": "ネモフィラ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/nemophila.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/nemophila.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "7eff0592fb3e62139cb52cd8fd1e64207c6c47fdf1035eed0ef1c196c4059b8e",
+          "bytes": 1968350,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-01.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 8,
+      "image_id": "assets/iris.svg",
+      "theme_id": "iris",
+      "name": "ハナショウブ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/iris.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/iris.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "feca4723fec929708c2b96c7bcd4cc8ff000e96d43b412b3723e6e4a5bf383d2",
+          "bytes": 1692294,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-01.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 9,
+      "image_id": "assets/lotus.svg",
+      "theme_id": "lotus",
+      "name": "ハス",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/lotus.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/lotus.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "94aaa289306fbc99df7b57a60635c3568923e35c97cc7209bc9d497ce96e022c",
+          "bytes": 1902219,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-01.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 10,
+      "image_id": "assets/hydrangea.svg",
+      "theme_id": "hydrangea",
+      "name": "アジサイ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/hydrangea.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/hydrangea.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "a606c7245f5f5779a3d275fb0b72b4fb1535184ff463424472d41d0b335c420d",
+          "bytes": 2291823,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-02.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 11,
+      "image_id": "assets/sunflower.svg",
+      "theme_id": "sunflower",
+      "name": "ヒマワリ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/sunflower.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/sunflower.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "9811e57f0d1d5b91edf2154ae9229d5d20e951870ad6dd041250c70ae08c90ef",
+          "bytes": 1865434,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-02.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 12,
+      "image_id": "assets/morning.svg",
+      "theme_id": "morning",
+      "name": "アサガオ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/morning.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/morning.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "215e545e0279d8ac303ef49db4e79105d89310cc8d89ec0553623841512c9984",
+          "bytes": 1972771,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-02.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 13,
+      "image_id": "assets/cosmos.svg",
+      "theme_id": "cosmos",
+      "name": "コスモス",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/cosmos.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/cosmos.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "c76a3ad9fff162b32adad78a1581486805ed2ac2c5e0aa283ab609f8cffcf314",
+          "bytes": 1804217,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-02.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 14,
+      "image_id": "assets/spiderlily.svg",
+      "theme_id": "spiderlily",
+      "name": "ヒガンバナ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/spiderlily.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/spiderlily.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "1efcc135571f58e49ea6ac23cb5bd4250e7c650a29a0c38d50b4ae803115e8ac",
+          "bytes": 1795697,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-02.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 15,
+      "image_id": "assets/osmanthus.svg",
+      "theme_id": "osmanthus",
+      "name": "キンモクセイ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/osmanthus.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/osmanthus.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "1406e274fd6221b104e3a02054acf3ccf0b6647cdaa67b72657a447e17b29221",
+          "bytes": 1671594,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-03.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 16,
+      "image_id": "assets/ginkgo.svg",
+      "theme_id": "ginkgo",
+      "name": "イチョウの黄葉",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/ginkgo.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/ginkgo.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "9ceec8fd4958d7e8d565c4eb8102882295e8de424bf6eeebbf716c4b30bce052",
+          "bytes": 1715938,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-02.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 17,
+      "image_id": "assets/maple.svg",
+      "theme_id": "maple",
+      "name": "モミジの紅葉",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/maple.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/maple.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "f8774605bc4f8ccf99b83f5506fd5ca4926e8347dca05d7fe8f71769be702743",
+          "bytes": 1792056,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-02.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 18,
+      "image_id": "assets/plum.svg",
+      "theme_id": "plum",
+      "name": "ウメの花",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/plum.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/plum.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "8c156121396a9e5c37852317305678e0ef90904881601f189ff7bacecd2549cb",
+          "bytes": 1695027,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-02.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 19,
+      "image_id": "assets/sasanqua.svg",
+      "theme_id": "sasanqua",
+      "name": "サザンカ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/sasanqua.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/sasanqua.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "3fe880b9b6008a90ab82c456d5c63b082e807839f51ad2f5a47e959756a8e469",
+          "bytes": 2583479,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-02.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 20,
+      "image_id": "assets/wintersweet.svg",
+      "theme_id": "wintersweet",
+      "name": "ソシンロウバイ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/wintersweet.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/wintersweet.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "7de623dcba1e573042703efb8e829bc591dcddc97b56dee60725ada7b47eac87",
+          "bytes": 1707319,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-03.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 21,
+      "image_id": "assets/strawberry.svg",
+      "theme_id": "strawberry",
+      "name": "イチゴ（露地の旬）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/strawberry.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/strawberry.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "95bffacfdaad91338ee3711bae2f4bf21c27827ccda06a64d0a29221c488f271",
+          "bytes": 1991183,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-03.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 22,
+      "image_id": "assets/bamboo.svg",
+      "theme_id": "bamboo",
+      "name": "タケノコ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/bamboo.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/bamboo.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "f983363423aa22e452949620ae024fff7da0ccb73fbac1af5195387f7279d4c8",
+          "bytes": 1735448,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-03.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 23,
+      "image_id": "assets/clam.svg",
+      "theme_id": "clam",
+      "name": "アサリ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/clam.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/clam.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "b1a8f69d88944fed9dd616b92be48e0fa3da588cc20043cf490e957ac1f14cb9",
+          "bytes": 1842658,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-03.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 24,
+      "image_id": "assets/cucumber.svg",
+      "theme_id": "cucumber",
+      "name": "キュウリ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/cucumber.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/cucumber.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "a999fb7525e7cffcc59392cb575a801628615ad21646a68d1a1c10f337f794e8",
+          "bytes": 1850321,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-03.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 25,
+      "image_id": "assets/tomato.svg",
+      "theme_id": "tomato",
+      "name": "トマト",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/tomato.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/tomato.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "065f654b1cc8956039deb3eff13c1ba51fc3d29ecbeb6de074ee4aebc8c62b46",
+          "bytes": 2149422,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-03.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 26,
+      "image_id": "assets/watermelon.svg",
+      "theme_id": "watermelon",
+      "name": "スイカ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/watermelon.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/watermelon.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "b22d647b95c44c376abf1db6bb7fbe61ea457320b6cb89cbb8da82c5229cfab5",
+          "bytes": 2227166,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-03.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 27,
+      "image_id": "assets/aji.svg",
+      "theme_id": "aji",
+      "name": "アジ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/aji.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/aji.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "0e93b8e990a6dddb27e4f47b6ff47932418ef147b11939586085eaaf3dfef6d5",
+          "bytes": 1491512,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-03.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 28,
+      "image_id": "assets/sweetpotato.svg",
+      "theme_id": "sweetpotato",
+      "name": "サツマイモ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/sweetpotato.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/sweetpotato.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "9807bb87303abaf03fd7c236131a0ad06ee5a1dbbd7b9afe42d89ab0d9e70c52",
+          "bytes": 1819989,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-03.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 29,
+      "image_id": "assets/persimmon.svg",
+      "theme_id": "persimmon",
+      "name": "カキ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/persimmon.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/persimmon.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "82a86fe4701dfdc3cb3c40f491bb13e612cfa34ec0a57eb6077cf4547ec88ef7",
+          "bytes": 1932257,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-04.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 30,
+      "image_id": "assets/sanma.svg",
+      "theme_id": "sanma",
+      "name": "サンマ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/sanma.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/sanma.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "9af18155a584b98abcf3bd2f668e73808b1191f3f5a772cbc7bd1b1abe1aca41",
+          "bytes": 1231156,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-04.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 31,
+      "image_id": "assets/chestnut.svg",
+      "theme_id": "chestnut",
+      "name": "クリ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/chestnut.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/chestnut.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "9d6f1be7aba096b40d7591fb8201054d7ca9e044baf0d4e0859040c4f03eee40",
+          "bytes": 2501392,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-04.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 32,
+      "image_id": "assets/cabbage.svg",
+      "theme_id": "cabbage",
+      "name": "ハクサイ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/cabbage.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/cabbage.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "70ba2d8d7b7a7bb24ec235f6d0ad59964bee76fa00f0b47ac3a06760fde0822b",
+          "bytes": 2278573,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-04.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 33,
+      "image_id": "assets/spinach.svg",
+      "theme_id": "spinach",
+      "name": "ホウレンソウ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/spinach.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/spinach.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "1f5c259f2f1b4aeea435f7cc7eb21ea2f7ec1d9e148656ca461b5e0728c6bc4f",
+          "bytes": 1971932,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-04.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 34,
+      "image_id": "assets/radish.svg",
+      "theme_id": "radish",
+      "name": "ダイコン",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/radish.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/radish.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "7e7a3e3d690364ba6ccb8b6a81b6243f03ac4e53253314a6d2f66fa567f1d26f",
+          "bytes": 1479694,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-04.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 35,
+      "image_id": "assets/broadbean.svg",
+      "theme_id": "broadbean",
+      "name": "ソラマメ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/broadbean.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/broadbean.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "cb89f04f405b964cb19fef5d470c35961277ca51ce44557ac100b339b21f0f5c",
+          "bytes": 1725889,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-04.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 36,
+      "image_id": "assets/corn.svg",
+      "theme_id": "corn",
+      "name": "トウモロコシ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/corn.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/corn.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "3f42129e2078043c360e03bf84c5511905b37174bd0f53bd9747d38c398f5ffb",
+          "bytes": 1679627,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-04.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 37,
+      "image_id": "assets/edamame.svg",
+      "theme_id": "edamame",
+      "name": "エダマメ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/edamame.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/edamame.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "3c95ee3bc56db4ecb2ebe21bcc031d87d5bc87472ca141104ed23a94bb1e04d8",
+          "bytes": 1878201,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-04.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 38,
+      "image_id": "assets/mikan.svg",
+      "theme_id": "mikan",
+      "name": "温州ミカン",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/mikan.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/mikan.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "4f8fcd64d9b473c84c712038880040703caf6f2da81b343235069af4aae46296",
+          "bytes": 2111359,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-04.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 39,
+      "image_id": "assets/butterfly.svg",
+      "theme_id": "butterfly",
+      "name": "モンシロチョウ（成虫）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/butterfly.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/butterfly.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "39897a6bee0aebb34adb805da4e33faa35b0c2fbcf9a255933c04353655b37f6",
+          "bytes": 1794208,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-05.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 40,
+      "image_id": "assets/swallowtail.svg",
+      "theme_id": "swallowtail",
+      "name": "ナミアゲハ（成虫）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/swallowtail.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/swallowtail.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "af541ae0dcfda50545aa32a5b75c7563e34e41a6ecc3bb2abd1e53c2ecea8905",
+          "bytes": 2024003,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-05.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 41,
+      "image_id": "assets/cicada.svg",
+      "theme_id": "cicada",
+      "name": "アブラゼミ（成虫）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/cicada.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/cicada.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "e302839f559fe898e722b8a2b86e1c37fdf9bd623988df73fa129b125ded749c",
+          "bytes": 1655419,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-05.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 42,
+      "image_id": "assets/beetle.svg",
+      "theme_id": "beetle",
+      "name": "カブトムシ（成虫・雄）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/beetle.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/beetle.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "23e7c175ea4ef902a6ad28d9128a55ffeeb2fb39a6a1fb2c2211ecd2bfb7b800",
+          "bytes": 1916333,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-05.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 43,
+      "image_id": "assets/chafer.svg",
+      "theme_id": "chafer",
+      "name": "カナブン（成虫）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/chafer.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/chafer.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "86531f29f33a3703aaaa28e99b32dc92bb4004042e94a7c9b3f8a03aba338e1e",
+          "bytes": 1901240,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-05.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 44,
+      "image_id": "assets/firefly.svg",
+      "theme_id": "firefly",
+      "name": "ゲンジボタル（成虫）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/firefly.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/firefly.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "2f7f6a546f1f872fbaa1dc3cbde6bcc3fd907986df87b2968c3e1dd3648146ca",
+          "bytes": 1537502,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-05.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 45,
+      "image_id": "assets/dragonfly.svg",
+      "theme_id": "dragonfly",
+      "name": "アキアカネ（成虫）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/dragonfly.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/dragonfly.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "9688f90dd4c5b322ff327b2ebbd642061b48d57fa03236d40cfa2b32a0338624",
+          "bytes": 1606538,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-05.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 46,
+      "image_id": "assets/cricket.svg",
+      "theme_id": "cricket",
+      "name": "エンマコオロギ（成虫）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/cricket.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/cricket.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "10082da2dbbd4257cef0a792a66e363619b35e5feb974e271bd5688dbd8c6b3e",
+          "bytes": 1618602,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-05.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 47,
+      "image_id": "assets/ladybird.svg",
+      "theme_id": "ladybird",
+      "name": "ナナホシテントウ（成虫）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/ladybird.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/ladybird.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "3be503ff0670a130db959a89c320dca9793f126b31c882e2ab5bd7eb3ebdb13d",
+          "bytes": 1716646,
+          "archive": [
+            "kisetsu-originals-part-01-chunk-05.zip"
+          ],
+          "part": "archive-part-01"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 48,
+      "image_id": "assets/stag.svg",
+      "theme_id": "stag",
+      "name": "コクワガタ（成虫・雄）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/stag.jpg",
+      "state": "CONFLICT",
+      "source_original_png": "assets/generated/stag.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "a636cf82c8897703eadc35dadd74176502bcf71b7ffac063901b1ad46ab6e8eb",
+          "bytes": 1564532,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-02.zip"
+          ],
+          "part": "archive-part-02"
+        },
+        {
+          "sha256": "eca02480c6f1df31a92d83614cf7dec5828723af234b90f7710475f66948bf6b",
+          "bytes": 1622702,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-03.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 49,
+      "image_id": "assets/newyear.svg",
+      "theme_id": "newyear",
+      "name": "正月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/newyear.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/newyear.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "d12a2c1410e5b055c58b070a90e9e879748964ce029748799e3fb8a9a6fc243c",
+          "bytes": 2060571,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-01.zip"
+          ],
+          "part": "archive-part-02"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 50,
+      "image_id": "assets/setsubun.svg",
+      "theme_id": "setsubun",
+      "name": "節分（立春の前日）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/setsubun.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/setsubun.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "9fa672311b61cb1ed686ce2abc39a3dd4f8f6ed43b8c9f2ac5d7ec17f47ebc5a",
+          "bytes": 1969311,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-01.zip"
+          ],
+          "part": "archive-part-02"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 51,
+      "image_id": "assets/hina.svg",
+      "theme_id": "hina",
+      "name": "ひな祭り（新暦）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/hina.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/hina.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "41ff3241e351acdc05451809df8b3a28542faf96e9970e3e4b9a45ae58499836",
+          "bytes": 2532528,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-01.zip"
+          ],
+          "part": "archive-part-02"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 52,
+      "image_id": "assets/children.svg",
+      "theme_id": "children",
+      "name": "こどもの日",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/children.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/children.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "94e95ed614f765232c4b601b51117f902e5328dbf2b621c61fb8b9ed8998d2f6",
+          "bytes": 2055550,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-01.zip"
+          ],
+          "part": "archive-part-02"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 53,
+      "image_id": "assets/tanabata.svg",
+      "theme_id": "tanabata",
+      "name": "七夕（新暦）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/tanabata.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/tanabata.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "6d372f083794c6e92e700cea21a9d00b89e8e79daf28a9b17840833b90318236",
+          "bytes": 1717359,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-02.zip"
+          ],
+          "part": "archive-part-02"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 54,
+      "image_id": "assets/moonview.svg",
+      "theme_id": "moonview",
+      "name": "十五夜のお月見",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/moonview.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/moonview.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "1c1dbc4d80287c67cd39c721e79ece9114537453867799e40673f167d4b371b1",
+          "bytes": 1891638,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-01.zip"
+          ],
+          "part": "archive-part-02"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 55,
+      "image_id": "assets/shichigosan.svg",
+      "theme_id": "shichigosan",
+      "name": "七五三",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/shichigosan.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/shichigosan.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "10d12d9947ec79b50817a3ba4b1a885c6ec8368af756a7d0446dfcf71e2c1107",
+          "bytes": 2056941,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-02.zip"
+          ],
+          "part": "archive-part-02"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 56,
+      "image_id": "assets/solstice.svg",
+      "theme_id": "solstice",
+      "name": "冬至",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/solstice.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/solstice.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "a3b06feac718d4e763aa561b993fa03b6257d43cba536581c5fe23c4cc79164e",
+          "bytes": 2058552,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-02.zip"
+          ],
+          "part": "archive-part-02"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 57,
+      "image_id": "assets/lastday.svg",
+      "theme_id": "lastday",
+      "name": "大晦日",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/lastday.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/lastday.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "ffd866479dbb913a405f18536d0c14e59b4330c4537a72958b5bfe260d69bbaf",
+          "bytes": 2026562,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-01.zip"
+          ],
+          "part": "archive-part-02"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 58,
+      "image_id": "assets/kadomatsu.svg",
+      "theme_id": "kadomatsu",
+      "name": "門松",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/kadomatsu.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/kadomatsu.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "a94aa06a9914bdc2cb27c30c6c7d692b9bc90de60fd13f058ba930f9018bfd7a",
+          "bytes": 2332771,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-02.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 59,
+      "image_id": "assets/kagamimochi.svg",
+      "theme_id": "kagamimochi",
+      "name": "鏡餅",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/kagamimochi.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/kagamimochi.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "979fb8446410627e3efcefeb41d473248910808f758a203450bce3891718d2e8",
+          "bytes": 1700386,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-01.zip"
+          ],
+          "part": "archive-part-02"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 60,
+      "image_id": "assets/osechi.svg",
+      "theme_id": "osechi",
+      "name": "おせち料理",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/osechi.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/osechi.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "64d565fdd245f0556cf098625bc3d2b7bb18a231725c4e70717793c47c15c857",
+          "bytes": 2194700,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-01.zip"
+          ],
+          "part": "archive-part-02"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 61,
+      "image_id": "assets/zoni.svg",
+      "theme_id": "zoni",
+      "name": "雑煮",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/zoni.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/zoni.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "4417f455b00cfefe388156f3e42669e11426f4748a12d5eb395d8a9f8ccf95aa",
+          "bytes": 2165764,
+          "archive": [
+            "kisetsu-originals-part-02-chunk-02.zip"
+          ],
+          "part": "archive-part-02"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 62,
+      "image_id": "assets/nanakusa.svg",
+      "theme_id": "nanakusa",
+      "name": "七草がゆ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/nanakusa.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/nanakusa.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "b68fa7f5b83cd196033676ab6bee64017ace6b20be4f88842fc58c6047fdd547",
+          "bytes": 1816128,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-02.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 63,
+      "image_id": "assets/beans.svg",
+      "theme_id": "beans",
+      "name": "福豆",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/beans.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/beans.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "c7e2849aab3719fe34ef971a5a27da43d7fbbc7a822cd2d396ce0ed53c332dd9",
+          "bytes": 1947440,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-01.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 64,
+      "image_id": "assets/arare.svg",
+      "theme_id": "arare",
+      "name": "ひなあられ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/arare.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/arare.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "dd60f8954f90c923cd27cf7b76db796d6b7ebe7de3a016c84e2191b6f9467801",
+          "bytes": 1686939,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-01.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 65,
+      "image_id": "assets/kashiwa.svg",
+      "theme_id": "kashiwa",
+      "name": "柏餅",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/kashiwa.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/kashiwa.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "592bed7511491837b2ad616b8652259316e3fbe2e2a1968ca17f21516e4a6c08",
+          "bytes": 1773753,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-02.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 66,
+      "image_id": "assets/chimaki.svg",
+      "theme_id": "chimaki",
+      "name": "ちまき（端午の節句）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/chimaki.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/chimaki.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "b5e790d5f920ad6cccce3a357d9dad6a2a104459ca1af1fc18b0955fe35bf186",
+          "bytes": 1703291,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-01.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 67,
+      "image_id": "assets/somen.svg",
+      "theme_id": "somen",
+      "name": "七夕のそうめん",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/somen.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/somen.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "b6b01f012afeed321a5264166f47084cc7b84a9535aa8c006e4b838b2bc92245",
+          "bytes": 1957367,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-03.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 68,
+      "image_id": "assets/dango.svg",
+      "theme_id": "dango",
+      "name": "月見団子",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/dango.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/dango.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "a12dea2f377d09435cf322d492fbbec974e18a5f4415fa1d1bea557161cec68b",
+          "bytes": 1505887,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-01.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 69,
+      "image_id": "assets/candy.svg",
+      "theme_id": "candy",
+      "name": "千歳飴",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/candy.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/candy.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "9af18a61df83a9351e358e0031cb4a7acfe755773459041a53092a09ec4a9c11",
+          "bytes": 1522208,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-01.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 70,
+      "image_id": "assets/soba.svg",
+      "theme_id": "soba",
+      "name": "年越しそば",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/soba.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/soba.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "2523e263a4e99713e94ec92b2abfdc7214a32178b576f1b407bccecd2f720030",
+          "bytes": 2014758,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-03.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 71,
+      "image_id": "assets/snow.svg",
+      "theme_id": "snow",
+      "name": "雪",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/snow.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/snow.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "b860622d6bb296852fbc91da381153048f2efed1a2bd845596ef61018ee0d710",
+          "bytes": 2195866,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-03.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 72,
+      "image_id": "assets/frost.svg",
+      "theme_id": "frost",
+      "name": "霜",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/frost.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/frost.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "63cc27ce9aa18640d8392e2431c202b72c64df299662dfa5e2ae849066c1b865",
+          "bytes": 2496535,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-01.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 73,
+      "image_id": "assets/rainy.svg",
+      "theme_id": "rainy",
+      "name": "梅雨（関東など）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/rainy.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/rainy.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "3a1e56f80c36fb2217e423a97d46f9ce98953d03a6ccfa9c0f9a375fb0ab14dd",
+          "bytes": 2496142,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-03.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 74,
+      "image_id": "assets/leaves.svg",
+      "theme_id": "leaves",
+      "name": "紅葉",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/leaves.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/leaves.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "33fb70782c9a3865678e11170580c2907474ccca344104c446864a55cb1f08ca",
+          "bytes": 2202226,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-02.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 75,
+      "image_id": "assets/hanami.svg",
+      "theme_id": "hanami",
+      "name": "桜の花見",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/hanami.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/hanami.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "fb0d724b1cb3e35098088fc12680c982057c74f0b52ca354e51785a66c41cd0e",
+          "bytes": 2324656,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-02.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 76,
+      "image_id": "assets/fireworks.svg",
+      "theme_id": "fireworks",
+      "name": "花火",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/fireworks.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/fireworks.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "fac189cfb352498b89b7673f929f5d0a4481bbc7fe327dad1f8905b94a9673e8",
+          "bytes": 2693379,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-01.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 77,
+      "image_id": "assets/windbell.svg",
+      "theme_id": "windbell",
+      "name": "風鈴",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/windbell.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/windbell.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "37e7733ac93f828791265eaf9af1b4ad6023a299c574d3303b2ee46ac53bf7ca",
+          "bytes": 1244305,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-03.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 78,
+      "image_id": "assets/yukata.svg",
+      "theme_id": "yukata",
+      "name": "浴衣",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/yukata.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/yukata.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "9a5ea0b0a27d033edce48c8476d519a977aa5bdee4c508baa117c91d4d143375",
+          "bytes": 1465292,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-03.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 79,
+      "image_id": "assets/ice.svg",
+      "theme_id": "ice",
+      "name": "かき氷",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/ice.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/ice.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "5435686968e38ed38ed17b54ba37ea8f98d0828342e01171198bff1bdeee8c99",
+          "bytes": 2307417,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-02.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 80,
+      "image_id": "assets/kite.svg",
+      "theme_id": "kite",
+      "name": "凧揚げ（正月遊び）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/kite.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/kite.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "75167830f18c1c2b64b1e95e154d341dbc89d66a5fe93dfa26ae82b2c53299af",
+          "bytes": 1387026,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-02.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 81,
+      "image_id": "assets/top.svg",
+      "theme_id": "top",
+      "name": "こま回し（正月遊び）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/top.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/top.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "c4784ab2d60b2564367a8f7f526f45390c4f3b585cb8fd81a9e91a3de1933528",
+          "bytes": 1729618,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-03.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 82,
+      "image_id": "assets/battledore.svg",
+      "theme_id": "battledore",
+      "name": "羽根つき（正月遊び）",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/battledore.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/battledore.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "ac67929be11b668b45ef9babf955a3f12478034db3b5f8a0e5fe30d5d2554bcb",
+          "bytes": 1531507,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-01.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 83,
+      "image_id": "assets/acorn.svg",
+      "theme_id": "acorn",
+      "name": "ドングリ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/acorn.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/acorn.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "8bcc0740e23e894b4fc6d822c9a51b691becaeeb6ae007adc9e17accbfb343dd",
+          "bytes": 1726020,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-01.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 84,
+      "image_id": "assets/pinecone.svg",
+      "theme_id": "pinecone",
+      "name": "アカマツの球果",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/pinecone.jpg",
+      "state": "FOUND_VERIFIED",
+      "source_original_png": "assets/generated/pinecone.png",
+      "verified_archived_candidates": [
+        {
+          "sha256": "862ab016cc1f17be84f7a8fb900c8d2ed455185068324453af77ff989361c455",
+          "bytes": 2422023,
+          "archive": [
+            "kisetsu-originals-part-03-chunk-02.zip"
+          ],
+          "part": "archive-part-03"
+        }
+      ],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 85,
+      "image_id": "assets/month1.svg",
+      "theme_id": "month1",
+      "name": "1月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/month1.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/month1.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 86,
+      "image_id": "assets/month2.svg",
+      "theme_id": "month2",
+      "name": "2月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/month2.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/month2.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 87,
+      "image_id": "assets/month3.svg",
+      "theme_id": "month3",
+      "name": "3月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/month3.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/month3.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 88,
+      "image_id": "assets/month4.svg",
+      "theme_id": "month4",
+      "name": "4月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/month4.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/month4.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 89,
+      "image_id": "assets/month5.svg",
+      "theme_id": "month5",
+      "name": "5月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/month5.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/month5.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 90,
+      "image_id": "assets/month6.svg",
+      "theme_id": "month6",
+      "name": "6月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/month6.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/month6.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 91,
+      "image_id": "assets/month7.svg",
+      "theme_id": "month7",
+      "name": "7月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/month7.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/month7.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 92,
+      "image_id": "assets/month8.svg",
+      "theme_id": "month8",
+      "name": "8月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/month8.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/month8.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 93,
+      "image_id": "assets/month9.svg",
+      "theme_id": "month9",
+      "name": "9月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/month9.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/month9.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 94,
+      "image_id": "assets/month10.svg",
+      "theme_id": "month10",
+      "name": "10月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/month10.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/month10.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 95,
+      "image_id": "assets/month11.svg",
+      "theme_id": "month11",
+      "name": "11月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/month11.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/month11.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 96,
+      "image_id": "assets/month12.svg",
+      "theme_id": "month12",
+      "name": "12月",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/month12.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/month12.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 97,
+      "image_id": "assets/spring.svg",
+      "theme_id": "spring",
+      "name": "はる",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/spring.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/spring.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 98,
+      "image_id": "assets/summer.svg",
+      "theme_id": "summer",
+      "name": "なつ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/summer.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/summer.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 99,
+      "image_id": "assets/autumn.svg",
+      "theme_id": "autumn",
+      "name": "あき",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/autumn.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/autumn.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 100,
+      "image_id": "assets/winter.svg",
+      "theme_id": "winter",
+      "name": "ふゆ",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/winter.jpg",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/winter.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 101,
+      "image_id": "assets/icon.svg",
+      "theme_id": "icon",
+      "name": "assets/icon.svg",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/icon.png",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/icon.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 102,
+      "image_id": "assets/icon-512.png",
+      "theme_id": "icon-512",
+      "name": "assets/icon-512.png",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/icon-512.png",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/icon-512.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 103,
+      "image_id": "assets/icon-192.png",
+      "theme_id": "icon-192",
+      "name": "assets/icon-192.png",
+      "group": "baseline_103",
+      "expected_output": "assets/generated/icon-192.png",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/icon-192.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 104,
+      "image_id": "assets/icicle.svg",
+      "theme_id": "icicle",
+      "name": "つらら",
+      "group": "additional_7",
+      "expected_output": "assets/generated/icicle.png",
+      "state": "RECOVERABLE",
+      "source_original_png": "assets/generated/icicle.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 105,
+      "image_id": "assets/halloween-pumpkin.svg",
+      "theme_id": "halloween-pumpkin",
+      "name": "ハロウィンのかぼちゃ飾り",
+      "group": "additional_7",
+      "expected_output": "assets/generated/halloween-pumpkin.png",
+      "state": "RECOVERABLE",
+      "source_original_png": "assets/generated/halloween-pumpkin.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 106,
+      "image_id": "assets/halloween-costume.svg",
+      "theme_id": "halloween-costume",
+      "name": "ハロウィンの仮装",
+      "group": "additional_7",
+      "expected_output": "assets/generated/halloween-costume.png",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/halloween-costume.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 107,
+      "image_id": "assets/tulip-leaf.svg",
+      "theme_id": "tulip-leaf",
+      "name": "チューリップの葉",
+      "group": "additional_7",
+      "expected_output": "assets/generated/tulip-leaf.png",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/tulip-leaf.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 108,
+      "image_id": "assets/sunflower-leaf.svg",
+      "theme_id": "sunflower-leaf",
+      "name": "ヒマワリの葉",
+      "group": "additional_7",
+      "expected_output": "assets/generated/sunflower-leaf.png",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/sunflower-leaf.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 109,
+      "image_id": "assets/tanpopo-leaf.svg",
+      "theme_id": "tanpopo-leaf",
+      "name": "タンポポの葉",
+      "group": "additional_7",
+      "expected_output": "assets/generated/tanpopo-leaf.png",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/tanpopo-leaf.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    },
+    {
+      "ordinal": 110,
+      "image_id": "assets/cosmos-leaf.svg",
+      "theme_id": "cosmos-leaf",
+      "name": "コスモスの葉",
+      "group": "additional_7",
+      "expected_output": "assets/generated/cosmos-leaf.png",
+      "state": "INACCESSIBLE_WORK_ONLY",
+      "source_original_png": "assets/generated/cosmos-leaf.png",
+      "verified_archived_candidates": [],
+      "visual_qa": "PENDING_LATEST_WORK_AND_BROWSER_EVIDENCE",
+      "integrated": false
+    }
+  ]
+}
