@@ -4,21 +4,25 @@
   "scope": "Safe workflow/QA/recovery implementation without app content, asset, or release changes",
   "baseline_main_sha": "928dcb943342cf735a18be681ff4bec3e4b12686",
   "branch": "ops/exec-resilience-20261010-02",
-  "state": "INITIALIZED",
+  "state": "IMPLEMENTED_ON_ISOLATED_BRANCH_PENDING_REAL_CI",
   "completed_units": [
     "Source/ruleset/workflow baseline inspected",
     "Official GitHub Actions/ref/security docs inspected",
-    "Isolated branch created"
+    "Isolated branch created",
+    "Checkpoint SHA-version/fence/idempotency module and negative tests saved/readback",
+    "Durable trusted-main job worker saved/readback",
+    "Dedicated state branch initialized/readback",
+    "Pre-merge DOM regression in required CI",
+    "Post-merge hash readback on main push",
+    "Event/scheduled bounded recovery controller saved/readback",
+    "Rollback and authority contract stored"
   ],
   "remaining_units": [
-    "CI visual regression gate",
-    "Checkpoint state manager and fault injection tests",
-    "Independent execution/recovery controller workflows",
-    "Post-release readback wiring",
-    "PR CI and readback",
-    "Merge only if QA and safety gates pass",
-    "Production smoke checks",
-    "Control Plane ledger and evaluations readback"
+    "Open PR and observe actual required CI",
+    "Repair failed tests and re-run",
+    "Independent regression review and safe merge",
+    "Observe post-merge durable worker/readback, public checker, recovery-controller",
+    "Update Control Plane change log/eval/ledger with exact results"
   ],
   "replay_id": "CP-EXEC-20261010-02-INIT",
   "protection": [
@@ -29,6 +33,8 @@
     "No secrets in public logs/checkpoints"
   ],
   "evidence_pointers": [
-    "https://github.com/00983266shigemura/kisetsu-no-bouken/pull/9"
-  ]
+    "https://github.com/00983266shigemura/kisetsu-no-bouken/pull/9",
+    "https://github.com/00983266shigemura/kisetsu-no-bouken/tree/ops/exec-resilience-20261010-02"
+  ],
+  "last_verified_sha": "56bf6528800133fffced6156e5263bbc56b01fb3"
 }
