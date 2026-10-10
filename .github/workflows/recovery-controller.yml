@@ -18,6 +18,7 @@ jobs:
     timeout-minutes: 5
     concurrency:
       group: cp-recovery-controller
+      queue: max
       cancel-in-progress: false
     steps:
       - name: Reconcile recent safe failed runs, with one permitted rerun
