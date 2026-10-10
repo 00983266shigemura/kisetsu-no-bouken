@@ -1,0 +1,29 @@
+name: Recovery E2E self-test
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/recovery-fault-e2e.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  retry-check:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Fail only on initial attempt; pass on exactly one authorized replay
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "$GITHUB_RUN_ATTEMPT" = "1" ]; then
+            echo 'INTENTIONAL_TEST_FAILURE: verify controller real rerun'
+            exit 1
+          fi
+          if [ "$GITHUB_RUN_ATTEMPT" = "2" ]; then
+            echo 'RECOVERY_E2E_PASS: same run ID, second attempt, no application writes'
+            exit 0
+          fi
+          echo "Unexpected attempt count: $GITHUB_RUN_ATTEMPT"
+          exit 1
