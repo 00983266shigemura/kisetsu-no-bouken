@@ -4,13 +4,21 @@
     "job_id": "release_b0df0ba0f379098dc24b5cffb2e830a9648d1471",
     "input_sha": "b0df0ba0f379098dc24b5cffb2e830a9648d1471",
     "replay_id": "release_b0df0ba0f379098dc24b5cffb2e830a9648d1471:b0df0ba0f379098dc24b5cffb2e830a9648d1471",
-    "version": 1,
+    "version": 2,
     "fence": 1,
-    "phase": "RUNNING",
+    "phase": "VERIFIED",
     "attempt": 1,
-    "completed_units": [],
-    "evidence": null,
-    "updated_at": "2026-10-12T01:09:03.338Z"
+    "completed_units": [
+      "npm_test",
+      "independent_build",
+      "dom_season_labels"
+    ],
+    "evidence": {
+      "release_id": "021feef6a37b2ce9cd2f5771dc68c84b9ee1476bf034f55121df488a064948ce",
+      "commit_sha": "b0df0ba0f379098dc24b5cffb2e830a9648d1471",
+      "run_id": "38190749551"
+    },
+    "updated_at": "2026-10-12T01:09:08.496Z"
   },
-  "payload_sha256": "f4db6e3a8a3455f8f33e5a18052373925fa84be1b26b9d467971bb778a9ae1a4"
+  "payload_sha256": "12cc895b5ae6f03d1c523609e79993d42f2097912f41ef7143188cc802f2058f"
 }
