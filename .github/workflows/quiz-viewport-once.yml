@@ -1,0 +1,36 @@
+name: One-time quiz viewport build
+on:
+  push:
+    branches: [fix/quiz-viewport-focus-20261012]
+permissions:
+  contents: write
+jobs:
+  apply:
+    if: github.repository == '00983266shigemura/kisetsu-no-bouken' && github.ref == 'refs/heads/fix/quiz-viewport-focus-20261012'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.20.0'
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Apply patch and regenerate committed release
+        run: |
+          set -euo pipefail
+          node scripts/apply-quiz-viewport.cjs
+          node build.js
+          npm test
+          node scripts/verify-season-dom.cjs
+      - name: Commit verified outputs and remove temporary workflow
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/quiz-viewport-once.yml scripts/apply-quiz-viewport.cjs
+          git add source.html index.html sw.js offline.appcache release.json
+          git diff --cached --name-only
+          git commit -m "Fit quiz into phone viewport without the global header"
+          git push origin HEAD:refs/heads/fix/quiz-viewport-focus-20261012
