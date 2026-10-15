@@ -23,6 +23,7 @@ jobs:
       - name: Run isolated logic and blind-fixture QA
         run: |
           set -euo pipefail
+          cp scripts/completion-gate.cjs ops/completion/verifier-runtime/completion-gate.cjs
           node ops/completion/verifier-runtime/test-core.mjs
           node ops/completion/verifier-runtime/test-merge-readiness.cjs
           node ops/completion/blind-eval/validate-fixtures.mjs
