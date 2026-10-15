@@ -46,7 +46,7 @@ Resources:
       SqsManagedSseEnabled: true
       RedrivePolicy:
         deadLetterTargetArn: !GetAtt WebhookDeadLetterQueue.Arn
-        maxReceiveCount: 3
+        maxReceiveCount: 5
 
   IdempotencyTable:
     Type: AWS::DynamoDB::Table
@@ -176,6 +176,22 @@ Resources:
       Principal: events.amazonaws.com
       SourceArn: !GetAtt ReconcileSchedule.Arn
 
+  ReconcileFailedInvocationAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: Scheduled reconciliation target delivery failed; verifier may remain pending
+      Namespace: AWS/Events
+      MetricName: FailedInvocations
+      Dimensions:
+        - {Name: RuleName, Value: !Ref ReconcileSchedule}
+      Statistic: Sum
+      Period: 300
+      EvaluationPeriods: 1
+      Threshold: 0
+      ComparisonOperator: GreaterThanThreshold
+      TreatMissingData: notBreaching
+      AlarmActions: [!Ref AlarmTopicArn]
+
   IngressLogGroup:
     Type: AWS::Logs::LogGroup
     Properties: {LogGroupName: !Sub '/aws/lambda/${IngressFunction}', RetentionInDays: 30}
@@ -223,3 +239,5 @@ Outputs:
     Value: !GetAtt DeadLetterQueueAlarm.Arn
   WorkerErrorAlarmArn:
     Value: !GetAtt WorkerErrorAlarm.Arn
+  ReconcileFailedInvocationAlarmArn:
+    Value: !GetAtt ReconcileFailedInvocationAlarm.Arn
