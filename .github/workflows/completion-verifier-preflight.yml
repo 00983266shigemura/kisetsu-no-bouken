@@ -1,0 +1,38 @@
+name: Completion verifier staged preflight
+on:
+  pull_request:
+    paths:
+      - 'ops/completion/verifier-runtime/**'
+      - 'ops/completion/blind-eval/**'
+      - '.github/workflows/completion-verifier-preflight.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verifier-preflight:
+    name: completion-verifier-preflight
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.20.0'
+      - name: Run isolated logic and blind-fixture QA
+        run: |
+          set -euo pipefail
+          node ops/completion/verifier-runtime/test-core.mjs
+          node ops/completion/verifier-runtime/test-merge-readiness.cjs
+          node ops/completion/blind-eval/validate-fixtures.mjs
+          node --check ops/completion/verifier-runtime/worker.mjs
+          node --check ops/completion/verifier-runtime/webhook.mjs
+          node --check ops/completion/verifier-runtime/github-app.mjs
+      - name: Lockfile and supply-chain invariants
+        run: |
+          set -euo pipefail
+          cd ops/completion/verifier-runtime
+          test -f package-lock.json
+          npm ci --ignore-scripts --no-audit --no-fund
+          git diff --exit-code -- package-lock.json
