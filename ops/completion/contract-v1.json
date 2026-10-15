@@ -1,0 +1,69 @@
+{
+  "schema_version": "completion-contract/v1.1",
+  "contract_id": "CP-COMPLETION-OS-20261015-01-R2-PILOT",
+  "revision": "1.0.0",
+  "owner": "10｜アプリ開発 / kisetsu-no-bouken",
+  "control_plane_ref": "CP-COMPLETION-OS-20261015-01-R2",
+  "baseline_commit": "b0df0ba0f379098dc24b5cffb2e830a9648d1471",
+  "approval": {
+    "ref": "User approval: CP-COMPLETION-OS-20261015-01-R2",
+    "scope": "pilot verifier, tests, recovery integration and evidence checks",
+    "approved_on": "2026-10-15"
+  },
+  "invariants": {
+    "no_unapproved_weakening": true,
+    "no_bypass_of_existing_main_ruleset": true,
+    "no_modify_app_payload": true,
+    "frozen_case_excluded": "CP-024"
+  },
+  "acceptance": [
+    {
+      "id": "AC-G01",
+      "type": "D",
+      "required": true,
+      "condition": "Required gate rejects absent or failing evidence",
+      "evidence_kind": "test_run"
+    },
+    {
+      "id": "AC-G02",
+      "type": "D",
+      "required": true,
+      "condition": "Contract tamper and insufficient authority are rejected",
+      "evidence_kind": "fault_test"
+    },
+    {
+      "id": "AC-R01",
+      "type": "D",
+      "required": true,
+      "condition": "Owner runner recovers safe work from checkpoint without duplicated side effects",
+      "evidence_kind": "runtime_run"
+    },
+    {
+      "id": "AC-Q01",
+      "type": "E",
+      "required": true,
+      "condition": "Independent, evidence-based quality review finds zero critical defects",
+      "rubric_ref": "ops/completion/quality-rubric-v1.md",
+      "evidence_kind": "quality_review"
+    },
+    {
+      "id": "AC-H01",
+      "type": "H",
+      "required": false,
+      "condition": "Human decision on deployment or policy change when independently required",
+      "evidence_kind": "approval"
+    }
+  ],
+  "delivery": {
+    "required": true,
+    "target_kind": "verified_output",
+    "preexisting_app_url": "https://00983266shigemura.github.io/kisetsu-no-bouken/"
+  },
+  "enforcement": {
+    "chat": "L1/L2; no generic machine enforcement",
+    "work": "L1/L2; no generic machine enforcement",
+    "codex": "L1/L2 unless connected to protected runner",
+    "github": "L3 only after required trusted checks and protected verifier are verified; otherwise unverified"
+  },
+  "release_status": "BLOCKED_PENDING_EXTERNAL_E2E"
+}
