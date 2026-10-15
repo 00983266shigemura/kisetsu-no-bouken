@@ -1,0 +1,36 @@
+name: Completion verifier lockfile bootstrap (one-shot, isolated branch)
+on:
+  push:
+    branches:
+      - cp-completion-os-r2-verifier-prep-20261015
+permissions:
+  contents: write
+jobs:
+  lockfile:
+    if: github.repository == '00983266shigemura/kisetsu-no-bouken'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: completion-r2-lockfile
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: cp-completion-os-r2-verifier-prep-20261015
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.20.0'
+      - name: Resolve only pinned dependencies without lifecycle scripts
+        working-directory: ops/completion/verifier-runtime
+        run: npm install --package-lock-only --ignore-scripts --no-audit --no-fund
+      - name: Commit reproducible lockfile if needed
+        run: |
+          set -euo pipefail
+          git add ops/completion/verifier-runtime/package-lock.json
+          if git diff --cached --quiet; then
+            echo "LOCKFILE_NO_CHANGE"
+            exit 0
+          fi
+          git -c user.name=github-actions\[bot\] -c user.email=41898282+github-actions\[bot\]@users.noreply.github.com commit -m "completion-r2: lock exact AWS SDK dependency tree"
+          git push origin HEAD:cp-completion-os-r2-verifier-prep-20261015
