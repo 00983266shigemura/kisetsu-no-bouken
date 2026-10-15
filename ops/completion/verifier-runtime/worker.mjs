@@ -104,9 +104,9 @@ export async function processItem(item,{now=Date.now()}={}){
     }
     const required=latestRequiredActionsChecks(runs,item.headSha);
     const ciState=ciWaitingState(required,now,lease.item.createdAt,Number(process.env.MAX_CI_WAIT_MS||3600000));
-    if(ciState==='WAITING_CI'){
+    if(ciState==='WAITING_CI'||ciState==='WAITING_CI_RETRY'){
       await deferWaiting(pk,lease.item,now);
-      return {status:'WAITING_CI',checkRunId:checkRun.id};
+      return {status:ciState,checkRunId:checkRun.id};
     }
     if(ciState==='TIMED_OUT'||required.some(c=>c.conclusion!=='success')){
       const blocked=await finishCheck(item,checkRun,token,'failure',['CI_FAILED_OR_TIMED_OUT']);
