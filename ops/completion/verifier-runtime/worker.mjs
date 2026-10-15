@@ -111,7 +111,10 @@ export async function processItem(item,{now=Date.now()}={}){
     await complete(pk,lease.item,lease.claim,savedCheck.id,now);
     return {status:conclusion==='success'?'MERGE_READY_ONLY':'BLOCKED',checkRunId:savedCheck.id,errors:verdict.errors||[]};
   }catch(error){
-    if(checkRun&&token){try{await finishCheck(item,checkRun,token,'failure',[String(error.message||error)]);}catch{}}
+    // Transient network/secret/S3/readback faults must NOT permanently fail a
+    // check for this SHA. Leave it in_progress; SQS/DLQ + scheduled reconciliation
+    // retry after the lease expires. The protected merge remains blocked.
+    console.error('VERIFIER_RETRY_REQUIRED '+String(error?.message||error));
     throw error;
   }
 }
