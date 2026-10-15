@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { createHmac } from 'node:crypto';
-import { verifyWebhookSignature, normalizeWebhook, checkExternalId, chooseExistingCheckRun, checkConclusion, claimLease, completeLease, latestRequiredActionsChecks, ciWaitingState } from './core.mjs';
+import { verifyWebhookSignature, normalizeWebhook, checkExternalId, chooseExistingCheckRun, checkConclusion, claimLease, completeLease, latestRequiredActionsChecks, ciWaitingState, protectedChanges } from './core.mjs';
 
 const secret = 'unit-test-only-not-a-real-secret';
 const repoId = 1411339641, installationId = 1;
@@ -29,6 +29,11 @@ assert.equal(checkConclusion({...base,currentSha:'d'.repeat(40)}),'failure');
 assert.equal(checkConclusion({...base,expectedDigest:'e'.repeat(64)}),'failure');
 assert.equal(checkConclusion({...base,verdict:{...base.verdict,status:'BLOCKED'}}),'failure');
 assert.equal(checkConclusion({...base,verdict:{...base.verdict,status:'BLOCKED',errors:['CRITICAL_QUALITY_UNVERIFIED_OR_FAILED']}}),'failure','failed QA must block');
+assert.deepEqual(protectedChanges([{filename:'src/index.html'},{filename:'assets/icon.png'}]),[]);
+assert.deepEqual(protectedChanges([{filename:'.github/workflows/new-fake.yml'}]),['.github/workflows/new-fake.yml']);
+assert.deepEqual(protectedChanges([{filename:'ops/completion/contract-v1.json'}]),['ops/completion/contract-v1.json']);
+assert.deepEqual(protectedChanges([{filename:'src/a.html',previous_filename:'scripts/verify-build.js'}]),['src/a.html']);
+assert.throws(()=>protectedChanges([{filename:'x'}].concat(Array.from({length:99},(_,i)=>({filename:'p'+i})))),/TRUNCATED/);
 // CI runs are asynchronous: absence and in-progress are WAITING, never terminal failure.
 const cases=[
  {id:10,name:'app-ci-build',head_sha:sha,app:{id:15368},status:'completed',conclusion:'success'},
