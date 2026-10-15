@@ -22,10 +22,13 @@ assert.equal(chooseExistingCheckRun([{id:4,app:{id:10},external_id:externalId}],
 assert.throws(()=>chooseExistingCheckRun([{id:4,app:{id:9},external_id:externalId},{id:5,app:{id:9},external_id:externalId}],9,externalId),/DUPLICATE/);
 const base={verdict:{status:'VERIFIED_DELIVERED',target_revision:sha,contract_digest:digest},expectedSha:sha,currentSha:sha,expectedDigest:digest,requiredChecks:[{head_sha:sha,conclusion:'success'}]};
 assert.equal(checkConclusion(base),'success');
+assert.equal(checkConclusion({}), 'failure', 'omitted verifier verdict must block');
+assert.equal(checkConclusion({...base,requiredChecks:[]}), 'failure', 'missing/denied required checks must block');
 for(const conclusion of ['failure','neutral','skipped','cancelled',undefined]) assert.equal(checkConclusion({...base,requiredChecks:[{head_sha:sha,conclusion}]}),'failure',`must reject ${conclusion}`);
 assert.equal(checkConclusion({...base,currentSha:'d'.repeat(40)}),'failure');
 assert.equal(checkConclusion({...base,expectedDigest:'e'.repeat(64)}),'failure');
 assert.equal(checkConclusion({...base,verdict:{...base.verdict,status:'BLOCKED'}}),'failure');
+assert.equal(checkConclusion({...base,verdict:{...base.verdict,status:'BLOCKED',errors:['CRITICAL_QUALITY_UNVERIFIED_OR_FAILED']}}),'failure','failed QA must block');
 const first=claimLease(null,{owner:'run-A',now:1000,leaseMs:100});
 assert.equal(first.fence,1);
 const processing={state:'PROCESSING',owner:'run-A',fence:1,leaseUntil:1100};
