@@ -97,12 +97,21 @@ export async function processItem(item,{now=Date.now()}={}){
     if(currentSha!==item.headSha)throw new Error('STALE_HEAD_SHA');
     const files=await api(repoPath(item,`/pulls/${item.pullRequest}/files?per_page=100`),token);
     const sensitive=protectedChanges(files);
-    if(sensitive.length)throw new Error('UNAPPROVED_PROTECTED_VERIFIER_OR_CI_CHANGE: '+sensitive.join(','));
+    if(sensitive.length){
+      const blocked=await finishCheck(item,checkRun,token,'failure',['UNAPPROVED_PROTECTED_VERIFIER_OR_CI_CHANGE']);
+      await complete(pk,lease.item,lease.claim,blocked.id,now);
+      return {status:'BLOCKED_PROTECTED_FILES',checkRunId:blocked.id};
+    }
     const required=latestRequiredActionsChecks(runs,item.headSha);
     const ciState=ciWaitingState(required,now,lease.item.createdAt,Number(process.env.MAX_CI_WAIT_MS||3600000));
     if(ciState==='WAITING_CI'){
       await deferWaiting(pk,lease.item,now);
       return {status:'WAITING_CI',checkRunId:checkRun.id};
+    }
+    if(ciState==='TIMED_OUT'||required.some(c=>c.conclusion!=='success')){
+      const blocked=await finishCheck(item,checkRun,token,'failure',['CI_FAILED_OR_TIMED_OUT']);
+      await complete(pk,lease.item,lease.claim,blocked.id,now);
+      return {status:'BLOCKED_CI',checkRunId:blocked.id};
     }
     const contract=await getObject(process.env.CONTRACT_BUCKET,process.env.CONTRACT_KEY,process.env.CONTRACT_VERSION_ID,process.env.CONTRACT_SHA256);
     const anchor=await getObject(process.env.ANCHOR_BUCKET,process.env.ANCHOR_KEY,process.env.ANCHOR_VERSION_ID,process.env.ANCHOR_SHA256);
@@ -131,7 +140,7 @@ export async function reconcileOpenPullRequests(){
   let checked=0;
   const failures=[];
   for(const pr of res){
-    if(pr.base?.ref!=='main'||pr.head?.repo?.id!==Number(process.env.REPOSITORY_ID))continue;
+    if(pr.draft||pr.base?.ref!=='main'||pr.head?.repo?.id!==Number(process.env.REPOSITORY_ID))continue;
     const item={repositoryId:Number(process.env.REPOSITORY_ID),installationId:Number(process.env.INSTALLATION_ID),pullRequest:pr.number,headSha:pr.head.sha};
     try{await processItem(item);checked++;}
     catch(error){failures.push({pr:pr.number,error:String(error?.message||error)});}
