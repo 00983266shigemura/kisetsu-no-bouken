@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { createHmac } from 'node:crypto';
-import { verifyWebhookSignature, normalizeWebhook, checkExternalId, chooseExistingCheckRun, checkConclusion, claimLease, completeLease } from './core.mjs';
+import { verifyWebhookSignature, normalizeWebhook, checkExternalId, chooseExistingCheckRun, checkConclusion, claimLease, completeLease, latestRequiredActionsChecks, ciWaitingState } from './core.mjs';
 
 const secret = 'unit-test-only-not-a-real-secret';
 const repoId = 1411339641, installationId = 1;
@@ -20,7 +20,7 @@ assert.equal(externalId.length,64);
 assert.equal(chooseExistingCheckRun([{id:4,app:{id:9},external_id:externalId}],9,externalId).id,4);
 assert.equal(chooseExistingCheckRun([{id:4,app:{id:10},external_id:externalId}],9,externalId),null);
 assert.throws(()=>chooseExistingCheckRun([{id:4,app:{id:9},external_id:externalId},{id:5,app:{id:9},external_id:externalId}],9,externalId),/DUPLICATE/);
-const base={verdict:{status:'VERIFIED_DELIVERED',target_revision:sha,contract_digest:digest},expectedSha:sha,currentSha:sha,expectedDigest:digest,requiredChecks:[{head_sha:sha,conclusion:'success'}]};
+const base={verdict:{status:'MERGE_READY',phase:'PREMERGE_ONLY',target_revision:sha,contract_digest:digest},expectedSha:sha,currentSha:sha,expectedDigest:digest,requiredChecks:[{head_sha:sha,conclusion:'success'}]};
 assert.equal(checkConclusion(base),'success');
 assert.equal(checkConclusion({}), 'failure', 'omitted verifier verdict must block');
 assert.equal(checkConclusion({...base,requiredChecks:[]}), 'failure', 'missing/denied required checks must block');
@@ -29,6 +29,22 @@ assert.equal(checkConclusion({...base,currentSha:'d'.repeat(40)}),'failure');
 assert.equal(checkConclusion({...base,expectedDigest:'e'.repeat(64)}),'failure');
 assert.equal(checkConclusion({...base,verdict:{...base.verdict,status:'BLOCKED'}}),'failure');
 assert.equal(checkConclusion({...base,verdict:{...base.verdict,status:'BLOCKED',errors:['CRITICAL_QUALITY_UNVERIFIED_OR_FAILED']}}),'failure','failed QA must block');
+// CI runs are asynchronous: absence and in-progress are WAITING, never terminal failure.
+const cases=[
+ {id:10,name:'app-ci-build',head_sha:sha,app:{id:15368},status:'completed',conclusion:'success'},
+ {id:11,name:'completion-contract-qa',head_sha:sha,app:{id:15368},status:'in_progress',conclusion:null}
+];
+let required=latestRequiredActionsChecks(cases,sha);
+assert.equal(ciWaitingState(required,5000,1000), 'WAITING_CI');
+assert.equal(checkConclusion({...base,requiredChecks:required}),'failure','in-progress checks are never green');
+assert.equal(ciWaitingState(required,3601001,1000),'TIMED_OUT');
+required=latestRequiredActionsChecks([...cases,{id:12,name:'completion-contract-qa',head_sha:sha,app:{id:15368},status:'completed',conclusion:'success'}],sha);
+assert.equal(ciWaitingState(required,5000,1000),'DECIDABLE');
+assert.equal(checkConclusion({...base,requiredChecks:required}),'success','newest completed CI enables green');
+required=latestRequiredActionsChecks([...cases,{id:13,name:'completion-contract-qa',head_sha:sha,app:{id:15368},status:'completed',conclusion:'neutral'}],sha);
+assert.equal(checkConclusion({...base,requiredChecks:required}),'failure','latest neutral must override earlier pass');
+assert.equal(checkConclusion({...base,verdict:{...base.verdict,phase:'POST_DELIVERY'}}),'failure','stage confusion must fail');
+assert.equal(checkConclusion({...base,verdict:{...base.verdict,status:'VERIFIED_DELIVERED'}}),'failure','delivered is not a premerge verdict');
 const first=claimLease(null,{owner:'run-A',now:1000,leaseMs:100});
 assert.equal(first.fence,1);
 const processing={state:'PROCESSING',owner:'run-A',fence:1,leaseUntil:1100};
@@ -57,4 +73,4 @@ assert.equal(sideEffects,1);
 assert.equal(externalRuns.length,1);
 assert.equal(durable.state,'COMPLETED');
 assert.equal(claimLease(durable,{owner:'run-replay',now:2200,leaseMs:100}).completed,true);
-console.log('PASS verifier-core: signature/scope; strict success; stale SHA/digest; lease fencing; synthetic crash/replay idempotency (1 side effect). NOT an owner-runner E2E.');
+console.log('PASS verifier-core: signature/scope, latest CI state transition and timeout, strict premerge stage, stale SHA/digest, lease fencing, synthetic crash/replay idempotency (1 side effect). NOT an owner-runner E2E.');
