@@ -1,0 +1,243 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Isolated GitHub completion verifier. Deploy only from a signed, owner-approved artifact.
+Parameters:
+  GitHubAppId: {Type: String, MinLength: 1}
+  InstallationId: {Type: String, MinLength: 1}
+  RepositoryId: {Type: String, MinLength: 1}
+  RepositoryOwner: {Type: String, MinLength: 1}
+  RepositoryName: {Type: String, MinLength: 1}
+  CodeSigningConfigArn: {Type: String, MinLength: 1, Description: Must be created and controlled by a separate security administrator; app stack role must not modify it.}
+  AppPrivateKeySecretArn: {Type: String, MinLength: 1}
+  WebhookSecretArn: {Type: String, MinLength: 1}
+  AlarmTopicArn: {Type: String, MinLength: 1, Description: Owner-managed SNS topic with an approved on-call subscription.}
+  ContractBucket: {Type: String, MinLength: 1}
+  ContractKey: {Type: String, MinLength: 1}
+  ContractVersionId: {Type: String, MinLength: 1}
+  ContractObjectSha256: {Type: String, AllowedPattern: '^[a-fA-F0-9]{64}$'}
+  ContractCanonicalDigest: {Type: String, AllowedPattern: '^[a-fA-F0-9]{64}$'}
+  AnchorBucket: {Type: String, MinLength: 1}
+  AnchorKey: {Type: String, MinLength: 1}
+  AnchorVersionId: {Type: String, MinLength: 1}
+  AnchorObjectSha256: {Type: String, AllowedPattern: '^[a-fA-F0-9]{64}$'}
+  AppCheckName: {Type: String, Default: completion-contract-l3}
+  EvidencePath: {Type: String, Default: .completion/evidence.json}
+
+Globals:
+  Function:
+    Runtime: nodejs22.x
+    Architectures: [arm64]
+    Tracing: Active
+    Environment:
+      Variables:
+        NODE_OPTIONS: '--enable-source-maps'
+
+Resources:
+  WebhookDeadLetterQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      MessageRetentionPeriod: 1209600
+      SqsManagedSseEnabled: true
+  VerifierQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      VisibilityTimeout: 180
+      MessageRetentionPeriod: 345600
+      SqsManagedSseEnabled: true
+      RedrivePolicy:
+        deadLetterTargetArn: !GetAtt WebhookDeadLetterQueue.Arn
+        maxReceiveCount: 5
+
+  IdempotencyTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions: [{AttributeName: pk, AttributeType: S}]
+      KeySchema: [{AttributeName: pk, KeyType: HASH}]
+      TimeToLiveSpecification: {AttributeName: ttl, Enabled: true}
+      PointInTimeRecoverySpecification: {PointInTimeRecoveryEnabled: true}
+      SSESpecification: {SSEEnabled: true}
+
+  WebhookApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      StageName: v1
+      DisableExecuteApiEndpoint: false
+      DefaultRouteSettings:
+        ThrottlingBurstLimit: 20
+        ThrottlingRateLimit: 5
+
+  IngressFunction:
+    Type: AWS::Serverless::Function
+    Metadata: {BuildMethod: makefile}
+    Properties:
+      CodeUri: .
+      Handler: webhook.handler
+      Timeout: 8
+      MemorySize: 256
+      CodeSigningConfigArn: !Ref CodeSigningConfigArn
+      ReservedConcurrentExecutions: 5
+      Environment:
+        Variables:
+          QUEUE_URL: !Ref VerifierQueue
+          WEBHOOK_SECRET_ARN: !Ref WebhookSecretArn
+          REPOSITORY_ID: !Ref RepositoryId
+          INSTALLATION_ID: !Ref InstallationId
+      Policies:
+        - Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action: [sqs:SendMessage]
+              Resource: !GetAtt VerifierQueue.Arn
+            - Effect: Allow
+              Action: [secretsmanager:GetSecretValue]
+              Resource: !Ref WebhookSecretArn
+      Events:
+        GitHubWebhook:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref WebhookApi
+            Path: /github/webhook
+            Method: POST
+
+  WorkerFunction:
+    Type: AWS::Serverless::Function
+    Metadata: {BuildMethod: makefile}
+    Properties:
+      CodeUri: .
+      Handler: worker.handler
+      Timeout: 30
+      MemorySize: 512
+      CodeSigningConfigArn: !Ref CodeSigningConfigArn
+      ReservedConcurrentExecutions: 5
+      Environment:
+        Variables:
+          IDEMPOTENCY_TABLE: !Ref IdempotencyTable
+          GITHUB_APP_ID: !Ref GitHubAppId
+          INSTALLATION_ID: !Ref InstallationId
+          REPOSITORY_ID: !Ref RepositoryId
+          REPOSITORY_OWNER: !Ref RepositoryOwner
+          REPOSITORY_NAME: !Ref RepositoryName
+          APP_PRIVATE_KEY_SECRET_ARN: !Ref AppPrivateKeySecretArn
+          CONTRACT_BUCKET: !Ref ContractBucket
+          CONTRACT_KEY: !Ref ContractKey
+          CONTRACT_VERSION_ID: !Ref ContractVersionId
+          CONTRACT_SHA256: !Ref ContractObjectSha256
+          CONTRACT_DIGEST: !Ref ContractCanonicalDigest
+          ANCHOR_BUCKET: !Ref AnchorBucket
+          ANCHOR_KEY: !Ref AnchorKey
+          ANCHOR_VERSION_ID: !Ref AnchorVersionId
+          ANCHOR_SHA256: !Ref AnchorObjectSha256
+          APP_CHECK_NAME: !Ref AppCheckName
+          EVIDENCE_PATH: !Ref EvidencePath
+          LEASE_MS: '120000'
+          MAX_CI_WAIT_MS: '3600000'
+      Policies:
+        - Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action: [sqs:ReceiveMessage, sqs:DeleteMessage, sqs:GetQueueAttributes, sqs:ChangeMessageVisibility]
+              Resource: !GetAtt VerifierQueue.Arn
+            - Effect: Allow
+              Action: [dynamodb:GetItem, dynamodb:PutItem, dynamodb:UpdateItem]
+              Resource: !GetAtt IdempotencyTable.Arn
+            - Effect: Allow
+              Action: [secretsmanager:GetSecretValue]
+              Resource: !Ref AppPrivateKeySecretArn
+            - Effect: Allow
+              Action: [s3:GetObject, s3:GetObjectVersion]
+              Resource:
+                - !Sub 'arn:${AWS::Partition}:s3:::${ContractBucket}/${ContractKey}'
+                - !Sub 'arn:${AWS::Partition}:s3:::${AnchorBucket}/${AnchorKey}'
+      Events:
+        Queue:
+          Type: SQS
+          Properties:
+            Queue: !GetAtt VerifierQueue.Arn
+            BatchSize: 1
+            FunctionResponseTypes: [ReportBatchItemFailures]
+            MaximumBatchingWindowInSeconds: 0
+
+  ReconcileSchedule:
+    Type: AWS::Events::Rule
+    Properties:
+      Description: Recheck open PRs so completed CI cannot leave premerge Gate permanently pending
+      ScheduleExpression: rate(10 minutes)
+      State: ENABLED
+      Targets:
+        - Arn: !GetAtt WorkerFunction.Arn
+          Id: CompletionVerifierReconcile
+          Input: '{"reconcile":true}'
+  ReconcileInvokePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref WorkerFunction
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt ReconcileSchedule.Arn
+
+  ReconcileFailedInvocationAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: Scheduled reconciliation target delivery failed; verifier may remain pending
+      Namespace: AWS/Events
+      MetricName: FailedInvocations
+      Dimensions:
+        - {Name: RuleName, Value: !Ref ReconcileSchedule}
+      Statistic: Sum
+      Period: 300
+      EvaluationPeriods: 1
+      Threshold: 0
+      ComparisonOperator: GreaterThanThreshold
+      TreatMissingData: notBreaching
+      AlarmActions: [!Ref AlarmTopicArn]
+
+  IngressLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties: {LogGroupName: !Sub '/aws/lambda/${IngressFunction}', RetentionInDays: 30}
+  WorkerLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties: {LogGroupName: !Sub '/aws/lambda/${WorkerFunction}', RetentionInDays: 30}
+
+  DeadLetterQueueAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: Completion verifier messages require owner inspection or controlled replay.
+      Namespace: AWS/SQS
+      MetricName: ApproximateNumberOfMessagesVisible
+      Dimensions: [{Name: QueueName, Value: !GetAtt WebhookDeadLetterQueue.QueueName}]
+      Statistic: Maximum
+      Period: 60
+      EvaluationPeriods: 1
+      Threshold: 0
+      ComparisonOperator: GreaterThanThreshold
+      TreatMissingData: notBreaching
+      AlarmActions: [!Ref AlarmTopicArn]
+  WorkerErrorAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: Completion verifier worker errors require owner inspection.
+      Namespace: AWS/Lambda
+      MetricName: Errors
+      Dimensions: [{Name: FunctionName, Value: !Ref WorkerFunction}]
+      Statistic: Sum
+      Period: 60
+      EvaluationPeriods: 1
+      Threshold: 0
+      ComparisonOperator: GreaterThanThreshold
+      TreatMissingData: notBreaching
+      AlarmActions: [!Ref AlarmTopicArn]
+
+Outputs:
+  WebhookUrl:
+    Value: !Sub 'https://${WebhookApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}/v1/github/webhook'
+  RequiredCheckName:
+    Value: !Ref AppCheckName
+  DeadLetterQueueArn:
+    Value: !GetAtt WebhookDeadLetterQueue.Arn
+  DeadLetterQueueAlarmArn:
+    Value: !GetAtt DeadLetterQueueAlarm.Arn
+  WorkerErrorAlarmArn:
+    Value: !GetAtt WorkerErrorAlarm.Arn
+  ReconcileFailedInvocationAlarmArn:
+    Value: !GetAtt ReconcileFailedInvocationAlarm.Arn

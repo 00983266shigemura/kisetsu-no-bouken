@@ -1,0 +1,54 @@
+name: Completion verifier staged preflight
+on:
+  pull_request:
+    paths:
+      - 'ops/completion/verifier-runtime/**'
+      - 'ops/completion/blind-eval/**'
+      - '.github/workflows/completion-verifier-preflight.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: completion-r2-verifier-pr-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  verifier-preflight:
+    name: completion-verifier-preflight
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.20.0'
+      - name: Run isolated logic and blind-fixture QA
+        run: |
+          set -euo pipefail
+          cmp scripts/completion-gate.cjs ops/completion/verifier-runtime/completion-gate.cjs
+          node ops/completion/verifier-runtime/test-core.mjs
+          node ops/completion/verifier-runtime/test-merge-readiness.cjs
+          node ops/completion/blind-eval/validate-fixtures.mjs
+          node --check ops/completion/verifier-runtime/worker.mjs
+          node --check ops/completion/verifier-runtime/webhook.mjs
+          node --check ops/completion/verifier-runtime/github-app.mjs
+      - uses: aws-actions/setup-sam@v2
+      - name: Validate AWS SAM and restricted security bootstrap without deployment
+        run: |
+          set -euo pipefail
+          sam validate --lint --template-file ops/completion/verifier-runtime/template.yaml
+          sam validate --lint --template-file ops/completion/verifier-runtime/security-bootstrap.yaml
+      - name: Build both Lambda packages with SAM (uncontainerized staging preflight)
+        run: |
+          set -euo pipefail
+          sam build --template-file ops/completion/verifier-runtime/template.yaml --no-cached
+      - name: Lockfile and supply-chain invariants
+        run: |
+          set -euo pipefail
+          cd ops/completion/verifier-runtime
+          test -f package-lock.json
+          npm ci --ignore-scripts --no-audit --no-fund
+          git diff --exit-code -- package-lock.json
+      - name: Exercise Worker orchestrator against deterministic AWS/GitHub mocks
+        run: node ops/completion/verifier-runtime/test-worker-simulation.mjs

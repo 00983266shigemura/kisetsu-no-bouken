@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Security-admin-only bootstrap for verifier artifact signing and Lambda enforcement.
+Parameters:
+  SigningProfileVersionArn: {Type: String, MinLength: 1}
+Resources:
+  VerifierCodeSigningConfig:
+    Type: AWS::Lambda::CodeSigningConfig
+    Properties:
+      AllowedPublishers:
+        SigningProfileVersionArns: [!Ref SigningProfileVersionArn]
+      CodeSigningPolicies:
+        UntrustedArtifactOnDeployment: Enforce
+Outputs:
+  CodeSigningConfigArn:
+    Value: !GetAtt VerifierCodeSigningConfig.CodeSigningConfigArn
