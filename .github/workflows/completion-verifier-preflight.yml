@@ -12,7 +12,7 @@ jobs:
   verifier-preflight:
     name: completion-verifier-preflight
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,6 +30,12 @@ jobs:
           node --check ops/completion/verifier-runtime/worker.mjs
           node --check ops/completion/verifier-runtime/webhook.mjs
           node --check ops/completion/verifier-runtime/github-app.mjs
+      - uses: aws-actions/setup-sam@v2
+      - name: Validate AWS SAM and restricted security bootstrap without deployment
+        run: |
+          set -euo pipefail
+          sam validate --lint --template-file ops/completion/verifier-runtime/template.yaml
+          sam validate --lint --template-file ops/completion/verifier-runtime/security-bootstrap.yaml
       - name: Lockfile and supply-chain invariants
         run: |
           set -euo pipefail
