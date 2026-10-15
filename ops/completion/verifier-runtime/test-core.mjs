@@ -9,6 +9,8 @@ const rawBody = Buffer.from(JSON.stringify({ action:'synchronize', repository:{i
 const signature = 'sha256='+createHmac('sha256',secret).update(rawBody).digest('hex');
 assert.equal(verifyWebhookSignature(rawBody,signature,[secret]),true);
 assert.equal(verifyWebhookSignature(rawBody,signature,['wrong']),false);
+assert.equal(verifyWebhookSignature(rawBody,signature+'junk',[secret]),false,'reject invalid trailing signature chars');
+assert.equal(verifyWebhookSignature(rawBody,signature.slice(0,-2),[secret]),false,'reject too-short digest');
 assert.throws(()=>normalizeWebhook({rawBody,signature:'sha256='+'0'.repeat(64),secrets:[secret],deliveryId:'12345678-1234-1234-1234-123456789012',eventName:'pull_request',repoId,installationId}),/SIGNATURE_INVALID/);
 assert.throws(()=>normalizeWebhook({rawBody,signature,secrets:[secret],deliveryId:'bad',eventName:'pull_request',repoId,installationId}),/DELIVERY_ID_INVALID/);
 assert.throws(()=>normalizeWebhook({rawBody,signature,secrets:[secret],deliveryId:'12345678-1234-1234-1234-123456789012',eventName:'pull_request',repoId:repoId+1,installationId}),/SCOPE_INVALID/);
