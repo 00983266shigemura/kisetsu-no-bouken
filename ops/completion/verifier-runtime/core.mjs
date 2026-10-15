@@ -4,7 +4,7 @@ const SHA = /^[a-f0-9]{40,64}$/i;
 const safeInt = n => Number.isSafeInteger(n) && n > 0;
 
 export function verifyWebhookSignature(rawBody, signature, secrets) {
-  if (!Buffer.isBuffer(rawBody) || typeof signature !== 'string' || !signature.startsWith('sha256=')) return false;
+  if (!Buffer.isBuffer(rawBody) || typeof signature !== 'string' || !/^sha256=[a-f0-9]{64}$/i.test(signature)) return false;
   const supplied = Buffer.from(signature.slice(7), 'hex');
   if (supplied.length !== 32) return false;
   return secrets.filter(Boolean).some(secret => {
