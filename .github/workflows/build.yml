@@ -21,6 +21,8 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Verify checkpoint state/replay fault injection
         run: node scripts/test-execution-state.cjs
+      - name: Completion OS signed evidence, contract tamper, and QA faults
+        run: node scripts/test-completion-gate.cjs
       - name: Verify rendered seasonal DOM labels
         run: node scripts/verify-season-dom.cjs
       - name: Verify isolated builds, regression and committed outputs
