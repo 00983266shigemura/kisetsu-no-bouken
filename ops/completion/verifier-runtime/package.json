@@ -1,0 +1,14 @@
+{
+  "name": "completion-contract-verifier-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22 <23"},
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "3.1152.0",
+    "@aws-sdk/client-s3": "3.1152.0",
+    "@aws-sdk/client-secrets-manager": "3.1152.0",
+    "@aws-sdk/client-sqs": "3.1152.0",
+    "@aws-sdk/lib-dynamodb": "3.1152.0"
+  }
+}
