@@ -64,3 +64,5 @@ x=make();x.acceptance['AC-Q01'].supporting_sources[0]='unreviewed/source';check(
 x=make();x.acceptance['AC-G01'].attestation.signature='ZmFrZQ==';check('forged D signature',false,verify(x));
 check('absent trusted anchor',false,verify(make(),contract,null));
 console.log('COMPLETION_GATE_FAULT_TESTS '+n+'/'+n+' PASS (synthetic signed evidence only; independent key custody and runtime not yet verified)');
+
+throw new Error('FAULT_INJECT_EXPECTED_FAILURE: required app-ci-build must block merge');
