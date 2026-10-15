@@ -36,6 +36,10 @@ jobs:
           set -euo pipefail
           sam validate --lint --template-file ops/completion/verifier-runtime/template.yaml
           sam validate --lint --template-file ops/completion/verifier-runtime/security-bootstrap.yaml
+      - name: Build both AWS Lambda packages with SAM and locked dependencies
+        run: |
+          set -euo pipefail
+          sam build --template-file ops/completion/verifier-runtime/template.yaml --use-container --no-cached
       - name: Lockfile and supply-chain invariants
         run: |
           set -euo pipefail
