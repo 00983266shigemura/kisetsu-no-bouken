@@ -40,3 +40,6 @@ e=make();e.acceptance['AC-G01'].attestation.signature='ZmFrZQ==';check('forged p
 e=make();delete e.quality.attestation;check('unsigned QA',e);
 check('missing anchor',make(),'BLOCKED',contract,{...anchor,sha256:'0'.repeat(64)});
 console.log('PASS merge-readiness: '+n+' signed premerge positive/negative tests; full VERIFIED_DELIVERED remains blocked.');
+
+// Expose only synthetic test fixtures for separate runtime simulation (never deployment keys).
+module.exports={make,contract,anchor,sha,digest};
