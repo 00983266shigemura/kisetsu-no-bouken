@@ -3,7 +3,7 @@ import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3';
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 import { DynamoDBDocumentClient, GetCommand, PutCommand, UpdateCommand } from '@aws-sdk/lib-dynamodb';
 import { createRequire } from 'node:module';
-import { checkConclusion, checkExternalId, chooseExistingCheckRun, claimLease, completeLease, latestRequiredActionsChecks, ciWaitingState } from './core.mjs';
+import { checkConclusion, checkExternalId, chooseExistingCheckRun, claimLease, completeLease, latestRequiredActionsChecks, ciWaitingState, protectedChanges } from './core.mjs';
 import { githubRequest, installationToken } from './github-app.mjs';
 
 const require=createRequire(import.meta.url);
@@ -95,6 +95,9 @@ export async function processItem(item,{now=Date.now()}={}){
     checkRun=await createOrReuseCheck(item,externalId,token,runs);
     const currentSha=await getPullRequest(item,token);
     if(currentSha!==item.headSha)throw new Error('STALE_HEAD_SHA');
+    const files=await api(repoPath(item,`/pulls/${item.pullRequest}/files?per_page=100`),token);
+    const sensitive=protectedChanges(files);
+    if(sensitive.length)throw new Error('UNAPPROVED_PROTECTED_VERIFIER_OR_CI_CHANGE: '+sensitive.join(','));
     const required=latestRequiredActionsChecks(runs,item.headSha);
     const ciState=ciWaitingState(required,now,lease.item.createdAt,Number(process.env.MAX_CI_WAIT_MS||3600000));
     if(ciState==='WAITING_CI'){
