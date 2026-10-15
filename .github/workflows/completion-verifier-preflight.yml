@@ -50,3 +50,5 @@ jobs:
           test -f package-lock.json
           npm ci --ignore-scripts --no-audit --no-fund
           git diff --exit-code -- package-lock.json
+      - name: Exercise Worker orchestrator against deterministic AWS/GitHub mocks
+        run: node ops/completion/verifier-runtime/test-worker-simulation.mjs
