@@ -3,7 +3,7 @@ import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3';
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 import { DynamoDBDocumentClient, GetCommand, PutCommand, UpdateCommand } from '@aws-sdk/lib-dynamodb';
 import { createRequire } from 'node:module';
-import { checkConclusion, checkExternalId, chooseExistingCheckRun, claimLease, completeLease } from './core.mjs';
+import { checkConclusion, checkExternalId, chooseExistingCheckRun, claimLease, completeLease, latestRequiredActionsChecks, ciWaitingState } from './core.mjs';
 import { githubRequest, installationToken } from './github-app.mjs';
 
 const require=createRequire(import.meta.url);
@@ -28,19 +28,6 @@ async function listCheckRuns(item,token){
   const res=await api(repoPath(item,`/commits/${item.headSha}/check-runs?per_page=100`),token);
   if(res.total_count>100)throw new Error('CHECK_RUN_LIST_TRUNCATED_FAIL_CLOSED');
   return res.check_runs||[];
-}
-function requiredActionsChecks(runs,sha){
-  const names=['app-ci-build','completion-contract-qa'];
-  const actionsAppId=15368; // Live readback on main SHA cf0e7037… on 2026-10-15.
-  return names.map(name=>{
-    const matches=runs.filter(r=>r.name===name&&r.head_sha===sha&&r.app?.id===actionsAppId);
-    // Rerun attempts can produce several Check Runs for the same SHA.
-    // The most recent run is authoritative; never use an older success.
-    matches.sort((a,b)=>(b.id||0)-(a.id||0));
-    const latest=matches[0];
-    return latest?{name,head_sha:latest.head_sha,conclusion:latest.conclusion,status:latest.status,check_run_id:latest.id}
-      :{name,head_sha:sha,conclusion:'missing',status:'missing'};
-  });
 }
 async function loadEvidence(item,token){
   const path=repoPath(item,`/contents/${process.env.EVIDENCE_PATH||'.completion/evidence.json'}?ref=${item.headSha}`);
@@ -108,10 +95,9 @@ export async function processItem(item,{now=Date.now()}={}){
     checkRun=await createOrReuseCheck(item,externalId,token,runs);
     const currentSha=await getPullRequest(item,token);
     if(currentSha!==item.headSha)throw new Error('STALE_HEAD_SHA');
-    const required=requiredActionsChecks(runs,item.headSha);
-    const waiting=required.some(c=>c.status==='missing'||c.status!=='completed');
-    const waitLimitMs=Number(process.env.MAX_CI_WAIT_MS||3600000);
-    if(waiting && now-lease.item.createdAt<waitLimitMs){
+    const required=latestRequiredActionsChecks(runs,item.headSha);
+    const ciState=ciWaitingState(required,now,lease.item.createdAt,Number(process.env.MAX_CI_WAIT_MS||3600000));
+    if(ciState==='WAITING_CI'){
       await deferWaiting(pk,lease.item,now);
       return {status:'WAITING_CI',checkRunId:checkRun.id};
     }
@@ -137,12 +123,14 @@ export async function reconcileOpenPullRequests(){
   const res=await api(`/repos/${process.env.REPOSITORY_OWNER}/${process.env.REPOSITORY_NAME}/pulls?state=open&per_page=100`,token);
   if(!Array.isArray(res)||res.length>=100)throw new Error('RECONCILE_PR_LIST_TRUNCATED');
   let checked=0;
+  const failures=[];
   for(const pr of res){
     if(pr.base?.ref!=='main'||pr.head?.repo?.id!==Number(process.env.REPOSITORY_ID))continue;
     const item={repositoryId:Number(process.env.REPOSITORY_ID),installationId:Number(process.env.INSTALLATION_ID),pullRequest:pr.number,headSha:pr.head.sha};
-    await processItem(item);
-    checked++;
+    try{await processItem(item);checked++;}
+    catch(error){failures.push({pr:pr.number,error:String(error?.message||error)});}
   }
+  if(failures.length){console.error('RECONCILE_ERRORS '+JSON.stringify(failures));throw Error('RECONCILE_PARTIAL_FAILURE');}
   return {status:'RECONCILED',checked};
 }
 export async function handler(event){
