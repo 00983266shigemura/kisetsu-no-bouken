@@ -92,8 +92,14 @@ export function latestRequiredActionsChecks(runs,sha,names=['app-ci-build','comp
 export function ciWaitingState(checks,now,createdAt,maxWaitMs=3600000){
   if(!Array.isArray(checks)||!checks.length||!Number.isSafeInteger(now)||
      !Number.isSafeInteger(createdAt)||!Number.isSafeInteger(maxWaitMs)||maxWaitMs<=0)throw new Error('CI_WAIT_INPUT_INVALID');
-  const pending=checks.some(x=>x?.status==='missing'||x?.status!=='completed');
-  return pending && now-createdAt<maxWaitMs?'WAITING_CI':pending?'TIMED_OUT':'DECIDABLE';
+  // Never certify a failed/neutral/skipped or missing Actions result. Keep the
+  // App check pending during the bounded retry window so a same-SHA Actions
+  // rerun can recover without an empty commit. After the deadline, fail closed.
+  const unfinished=checks.some(x=>x?.status==='missing'||x?.status!=='completed');
+  const unsuccessful=checks.some(x=>x?.conclusion!=='success');
+  if(unfinished)return now-createdAt<maxWaitMs?'WAITING_CI':'TIMED_OUT';
+  if(unsuccessful)return now-createdAt<maxWaitMs?'WAITING_CI_RETRY':'TIMED_OUT';
+  return 'DECIDABLE';
 }
 
 export function protectedChanges(files){
