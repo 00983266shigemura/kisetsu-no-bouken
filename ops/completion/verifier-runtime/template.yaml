@@ -131,6 +131,7 @@ Resources:
           APP_CHECK_NAME: !Ref AppCheckName
           EVIDENCE_PATH: !Ref EvidencePath
           LEASE_MS: '120000'
+          MAX_CI_WAIT_MS: '3600000'
       Policies:
         - Version: '2012-10-17'
           Statement:
@@ -156,6 +157,24 @@ Resources:
             BatchSize: 1
             FunctionResponseTypes: [ReportBatchItemFailures]
             MaximumBatchingWindowInSeconds: 0
+
+  ReconcileSchedule:
+    Type: AWS::Events::Rule
+    Properties:
+      Description: Recheck open PRs so completed CI cannot leave premerge Gate permanently pending
+      ScheduleExpression: rate(10 minutes)
+      State: ENABLED
+      Targets:
+        - Arn: !GetAtt WorkerFunction.Arn
+          Id: CompletionVerifierReconcile
+          Input: '{"reconcile":true}'
+  ReconcileInvokePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref WorkerFunction
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt ReconcileSchedule.Arn
 
   IngressLogGroup:
     Type: AWS::Logs::LogGroup
