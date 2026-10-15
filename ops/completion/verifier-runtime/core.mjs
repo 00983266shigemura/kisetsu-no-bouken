@@ -101,8 +101,9 @@ export function protectedChanges(files){
   if(files.length>=100)throw new Error('PR_DIFF_TRUNCATED_FAIL_CLOSED');
   const protectedRoot=/^(?:\.github\/|ops\/completion\/|scripts\/(?:completion-gate\.cjs|test-completion-gate\.cjs|verify-build\.js|test-execution-state\.cjs|verify-season-dom\.cjs)$|package(?:-lock)?\.json$)/;
   return files.filter(f=>{
-    const paths=[f?.filename,f?.previous_filename];
-    if(paths.some(p=>typeof p!=='string'||!p))throw new Error('PR_DIFF_PATH_INVALID');
+    if(typeof f?.filename!=='string'||!f.filename||
+       (f.previous_filename!==undefined&&(typeof f.previous_filename!=='string'||!f.previous_filename)))throw new Error('PR_DIFF_PATH_INVALID');
+    const paths=[f.filename,...(f.previous_filename?[f.previous_filename]:[])];
     return paths.some(p=>protectedRoot.test(p));
   }).map(f=>f.filename);
 }
