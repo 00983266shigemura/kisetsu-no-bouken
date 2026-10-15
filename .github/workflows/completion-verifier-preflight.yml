@@ -8,6 +8,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: completion-r2-verifier-pr-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 jobs:
   verifier-preflight:
     name: completion-verifier-preflight
@@ -36,10 +39,10 @@ jobs:
           set -euo pipefail
           sam validate --lint --template-file ops/completion/verifier-runtime/template.yaml
           sam validate --lint --template-file ops/completion/verifier-runtime/security-bootstrap.yaml
-      - name: Build both AWS Lambda packages with SAM and locked dependencies
+      - name: Build both Lambda packages with SAM (uncontainerized staging preflight)
         run: |
           set -euo pipefail
-          sam build --template-file ops/completion/verifier-runtime/template.yaml --use-container --no-cached
+          sam build --template-file ops/completion/verifier-runtime/template.yaml --no-cached
       - name: Lockfile and supply-chain invariants
         run: |
           set -euo pipefail
