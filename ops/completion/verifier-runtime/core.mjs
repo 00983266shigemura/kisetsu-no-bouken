@@ -95,3 +95,14 @@ export function ciWaitingState(checks,now,createdAt,maxWaitMs=3600000){
   const pending=checks.some(x=>x?.status==='missing'||x?.status!=='completed');
   return pending && now-createdAt<maxWaitMs?'WAITING_CI':pending?'TIMED_OUT':'DECIDABLE';
 }
+
+export function protectedChanges(files){
+  if(!Array.isArray(files))throw new Error('PR_DIFF_INVALID');
+  if(files.length>=100)throw new Error('PR_DIFF_TRUNCATED_FAIL_CLOSED');
+  const protectedRoot=/^(?:\.github\/|ops\/completion\/|scripts\/(?:completion-gate\.cjs|test-completion-gate\.cjs|verify-build\.js|test-execution-state\.cjs|verify-season-dom\.cjs)$|package(?:-lock)?\.json$)/;
+  return files.filter(f=>{
+    const paths=[f?.filename,f?.previous_filename];
+    if(paths.some(p=>typeof p!=='string'||!p))throw new Error('PR_DIFF_PATH_INVALID');
+    return paths.some(p=>protectedRoot.test(p));
+  }).map(f=>f.filename);
+}
