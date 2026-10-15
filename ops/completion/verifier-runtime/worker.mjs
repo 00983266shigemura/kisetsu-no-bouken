@@ -7,7 +7,7 @@ import { checkConclusion, checkExternalId, chooseExistingCheckRun, claimLease, c
 import { githubRequest, installationToken } from './github-app.mjs';
 
 const require=createRequire(import.meta.url);
-const {evaluate}=require('./completion-gate.cjs');
+const {assessMergeReadiness}=require('./merge-readiness.cjs');
 const secretsClient=new SecretsManagerClient({}), s3=new S3Client({});
 const db=DynamoDBDocumentClient.from(new DynamoDBClient({}),{marshallOptions:{removeUndefinedValues:true}});
 const table=process.env.IDEMPOTENCY_TABLE;
@@ -34,7 +34,12 @@ function requiredActionsChecks(runs,sha){
   const actionsAppId=15368; // Live readback on main SHA cf0e7037… on 2026-10-15.
   return names.map(name=>{
     const matches=runs.filter(r=>r.name===name&&r.head_sha===sha&&r.app?.id===actionsAppId);
-    return matches.length===1?{name,head_sha:matches[0].head_sha,conclusion:matches[0].conclusion}:{name,head_sha:sha,conclusion:'missing'};
+    // Rerun attempts can produce several Check Runs for the same SHA.
+    // The most recent run is authoritative; never use an older success.
+    matches.sort((a,b)=>(b.id||0)-(a.id||0));
+    const latest=matches[0];
+    return latest?{name,head_sha:latest.head_sha,conclusion:latest.conclusion,status:latest.status,check_run_id:latest.id}
+      :{name,head_sha:sha,conclusion:'missing',status:'missing'};
   });
 }
 async function loadEvidence(item,token){
@@ -45,6 +50,8 @@ async function loadEvidence(item,token){
 }
 async function getPullRequest(item,token){
   const pr=await api(repoPath(item,`/pulls/${item.pullRequest}`),token);
+  if(pr.base?.ref!=='main'||pr.base?.repo?.id!==Number(process.env.REPOSITORY_ID)||
+     pr.head?.repo?.id!==Number(process.env.REPOSITORY_ID))throw new Error('PR_REPOSITORY_OR_BASE_INVALID');
   return pr.head?.sha?.toLowerCase();
 }
 async function getLease(pk){return (await db.send(new GetCommand({TableName:table,Key:{pk},ConsistentRead:true}))).Item||null;}
@@ -53,11 +60,19 @@ async function acquire(pk,now){
   const claim=claimLease(previous,{owner,now,leaseMs:Number(process.env.LEASE_MS||120000)});
   if(claim.completed)return {done:true,item:previous};
   if(claim.busy)throw new Error('IDEMPOTENCY_LEASE_BUSY_RETRY');
-  const next={pk,state:'PROCESSING',owner,leaseUntil:claim.leaseUntil,fence:claim.fence,updatedAt:now,ttl:Math.floor(now/1000)+86400*14};
+  const next={pk,state:'PROCESSING',owner,leaseUntil:claim.leaseUntil,fence:claim.fence,
+    createdAt:previous?.createdAt||now,updatedAt:now,ttl:Math.floor(now/1000)+86400*14};
   try{
     await db.send(new PutCommand({TableName:table,Item:next,ConditionExpression:'attribute_not_exists(pk) OR leaseUntil <= :now',ExpressionAttributeValues:{':now':now}}));
   }catch(e){if(e.name==='ConditionalCheckFailedException')throw new Error('IDEMPOTENCY_LEASE_RACE_RETRY');throw e;}
   return {done:false,item:next,claim};
+}
+async function deferWaiting(pk,lease,now){
+  await db.send(new UpdateCommand({TableName:table,Key:{pk},
+    UpdateExpression:'SET #s=:waiting,leaseUntil=:zero,updatedAt=:at',
+    ConditionExpression:'#s=:processing AND owner=:owner AND fence=:fence AND leaseUntil > :at',
+    ExpressionAttributeNames:{'#s':'state'},
+    ExpressionAttributeValues:{':waiting':'WAITING',':zero':0,':at':now,':processing':'PROCESSING',':owner':owner,':fence':lease.fence}}));
 }
 async function complete(pk,lease,claim,checkRunId,now){
   const completed=completeLease(lease,claim,checkRunId,now);
@@ -71,12 +86,16 @@ async function createOrReuseCheck(item,externalId,token,runs){
 }
 async function finishCheck(item,checkRun,token,conclusion,errors){
   const safeConclusion=conclusion==='success'?'success':'failure';
-  return api(repoPath(item,`/check-runs/${checkRun.id}`),token,{method:'PATCH',body:{status:'completed',conclusion:safeConclusion,completed_at:new Date().toISOString(),output:{title:safeConclusion==='success'?'Contract verified':'Contract blocked',summary:safeConclusion==='success'?'Pinned contract, current SHA and all required evidence verified.':`Fail closed. ${errors.slice(0,12).join(', ')||'Required evidence unavailable or invalid.'}`}}});
+  if(checkRun.status==='completed'){
+    if(checkRun.conclusion!==safeConclusion)throw new Error('IMMUTABLE_CHECK_RESULT_CONFLICT_NEW_SHA_REQUIRED');
+    return checkRun; // Crash after external success: no second PATCH side effect.
+  }
+  return api(repoPath(item,`/check-runs/${checkRun.id}`),token,{method:'PATCH',body:{status:'completed',conclusion:safeConclusion,completed_at:new Date().toISOString(),output:{title:safeConclusion==='success'?'Premerge evidence verified':'Premerge gate blocked',summary:safeConclusion==='success'?'Premerge readiness only; post-delivery acceptance remains separately required.':`Fail closed. ${errors.slice(0,12).join(', ')||'Required evidence unavailable or invalid.'}`}}});
 }
 
 export async function processItem(item,{now=Date.now()}={}){
   if(item.repositoryId!==Number(process.env.REPOSITORY_ID)||item.installationId!==Number(process.env.INSTALLATION_ID))throw new Error('QUEUE_ITEM_SCOPE_INVALID');
-  const externalId=checkExternalId(item,process.env.CONTRACT_SHA256);
+  const externalId=checkExternalId(item,process.env.CONTRACT_DIGEST);
   const pk=`${item.repositoryId}#${item.pullRequest}#${item.headSha}#${externalId}`;
   const lease=await acquire(pk,now);
   if(lease.done)return {status:'IDEMPOTENT_NOOP',checkRunId:lease.item.checkRunId};
@@ -89,22 +108,45 @@ export async function processItem(item,{now=Date.now()}={}){
     checkRun=await createOrReuseCheck(item,externalId,token,runs);
     const currentSha=await getPullRequest(item,token);
     if(currentSha!==item.headSha)throw new Error('STALE_HEAD_SHA');
+    const required=requiredActionsChecks(runs,item.headSha);
+    const waiting=required.some(c=>c.status==='missing'||c.status!=='completed');
+    const waitLimitMs=Number(process.env.MAX_CI_WAIT_MS||3600000);
+    if(waiting && now-lease.item.createdAt<waitLimitMs){
+      await deferWaiting(pk,lease.item,now);
+      return {status:'WAITING_CI',checkRunId:checkRun.id};
+    }
     const contract=await getObject(process.env.CONTRACT_BUCKET,process.env.CONTRACT_KEY,process.env.CONTRACT_VERSION_ID,process.env.CONTRACT_SHA256);
     const anchor=await getObject(process.env.ANCHOR_BUCKET,process.env.ANCHOR_KEY,process.env.ANCHOR_VERSION_ID,process.env.ANCHOR_SHA256);
     const evidence=await loadEvidence(item,token);
-    const required=requiredActionsChecks(runs,item.headSha);
-    const verdict=evaluate({contract,anchor,evidence,targetRevision:item.headSha});
-    const conclusion=checkConclusion({verdict,expectedSha:item.headSha,currentSha,expectedDigest:process.env.CONTRACT_DIGEST,requiredChecks:required});
-    await finishCheck(item,checkRun,token,conclusion,verdict.errors||[]);
-    await complete(pk,lease.item,lease.claim,checkRun.id,now);
-    return {status:conclusion==='success'?'VERIFIED':'BLOCKED',checkRunId:checkRun.id,errors:verdict.errors||[]};
+    const verdict=assessMergeReadiness({contract,anchor,evidence,targetRevision:item.headSha});
+    const confirmedSha=await getPullRequest(item,token);
+    const conclusion=checkConclusion({verdict,expectedSha:item.headSha,currentSha:confirmedSha,expectedDigest:process.env.CONTRACT_DIGEST,requiredChecks:required});
+    const savedCheck=await finishCheck(item,checkRun,token,conclusion,verdict.errors||[]);
+    await complete(pk,lease.item,lease.claim,savedCheck.id,now);
+    return {status:conclusion==='success'?'MERGE_READY_ONLY':'BLOCKED',checkRunId:savedCheck.id,errors:verdict.errors||[]};
   }catch(error){
     if(checkRun&&token){try{await finishCheck(item,checkRun,token,'failure',[String(error.message||error)]);}catch{}}
     throw error;
   }
 }
 
+export async function reconcileOpenPullRequests(){
+  const appSecret=JSON.parse((await secretsClient.send(new GetSecretValueCommand({SecretId:process.env.APP_PRIVATE_KEY_SECRET_ARN}))).SecretString||'{}');
+  if(!appSecret.current)throw new Error('APP_PRIVATE_KEY_MISSING');
+  const token=await accessToken(appSecret.current);
+  const res=await api(`/repos/${process.env.REPOSITORY_OWNER}/${process.env.REPOSITORY_NAME}/pulls?state=open&per_page=100`,token);
+  if(!Array.isArray(res)||res.length>=100)throw new Error('RECONCILE_PR_LIST_TRUNCATED');
+  let checked=0;
+  for(const pr of res){
+    if(pr.base?.ref!=='main'||pr.head?.repo?.id!==Number(process.env.REPOSITORY_ID))continue;
+    const item={repositoryId:Number(process.env.REPOSITORY_ID),installationId:Number(process.env.INSTALLATION_ID),pullRequest:pr.number,headSha:pr.head.sha};
+    await processItem(item);
+    checked++;
+  }
+  return {status:'RECONCILED',checked};
+}
 export async function handler(event){
+  if(event?.reconcile===true)return reconcileOpenPullRequests();
   for(const record of event.Records||[]){
     const item=JSON.parse(record.body);
     await processItem(item);
