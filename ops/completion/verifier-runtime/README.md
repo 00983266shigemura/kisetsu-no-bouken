@@ -24,7 +24,7 @@ The ID `15368` and names were read from the live check-runs for main SHA `cf0e70
 3. If any probe fails, restore the previous secret version; do not revoke the old App key.
 4. After a green isolated test and expected-source readback, revoke the old GitHub key. Record key fingerprint/rotation time only, never key material.
 5. For webhook-secret rotation, accept `current` and `previous` for one delivery retry window, update the GitHub App webhook secret, confirm deliveries, then remove `previous`.
-6. SQS retries transient failures three times and then routes to DLQ. A CloudWatch alarm must notify an owner (SNS subscription is an owner-set destination); recovery is inspect delivery/run state, replay only the DLQ message or redeliver the same GitHub delivery, and rely on the same semantic idempotency key. Never force a green result during recovery.
+6. SQS retries transient failures three times and then routes to DLQ. `template.yaml` provisions alarms for DLQ depth and worker errors; deployment requires an owner-managed SNS topic ARN with an approved on-call subscription. Recovery is inspect delivery/run state, replay only the DLQ message or redeliver the same GitHub delivery, and rely on the same semantic idempotency key. Never force a green result during recovery.
 
 ## Safe staged rollout / rollback
 
