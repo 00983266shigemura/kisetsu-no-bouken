@@ -1,0 +1,26 @@
+name: Completion contract fail-closed tests
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - 'ops/completion/**'
+      - 'scripts/completion-gate.cjs'
+      - 'scripts/test-completion-gate.cjs'
+      - '.github/workflows/completion-contract-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  completion-contract-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.20.0"
+      - name: Fault injection - fail closed
+        run: node scripts/test-completion-gate.cjs
